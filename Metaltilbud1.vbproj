@@ -112,6 +112,12 @@
     <Compile Include="CuttingCalculations.vb" />
     <Compile Include="DatabaseIO.vb" />
     <Compile Include="FilterKeys.vb" />
+    <Compile Include="oper_sequence.Designer.vb">
+      <DependentUpon>oper_sequence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="oper_sequence.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GetsurfacetreatmentValues.vb" />
     <Compile Include="Kommakontrol.vb" />
     <Compile Include="LaserCalculations.vb" />
@@ -181,6 +187,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oper_sequence.resx">
+      <DependentUpon>oper_sequence.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SAMLET TILBUD.resx">
       <DependentUpon>SAMLET TILBUD.vb</DependentUpon>
