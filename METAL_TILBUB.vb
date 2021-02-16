@@ -554,7 +554,7 @@ Public Class metal_tilbud
 
             If SubjectX < 150 Then
                 If SubjectY < 150 Then
-                    MsgBox("Emnet er for lille til Steelmasteren")
+                    MsgBox("The item is too small for the Steelmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -563,7 +563,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1250 Then
                 If SubjectY > 1250 Then
-                    MsgBox("Emnet er for stort til Steelmasteren")
+                    MsgBox("The item is too big for the Steelmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -574,7 +574,7 @@ Public Class metal_tilbud
         If matrgruppe = 2 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("Emnet er for lille til Grindingmasteren")
+                    MsgBox("The item is too small for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -583,7 +583,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("Emnet er for stort til Grindingmasteren")
+                    MsgBox("The item is too small for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -594,7 +594,7 @@ Public Class metal_tilbud
         If matrgruppe = 3 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("Emnet er for lille til Grindingmasteren")
+                    MsgBox("The item is too small for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -603,7 +603,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("Emnet er for stort til Grindingmasteren")
+                    MsgBox("The item is too big for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -614,7 +614,7 @@ Public Class metal_tilbud
         If matrgruppe = 4 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("Emnet er for lille til Grindingmasteren")
+                    MsgBox("The item is too small for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -623,7 +623,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("Emnet er for stort til Grindingmasteren")
+                    MsgBox("The item is too big for the Grindingmaster")
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -634,7 +634,7 @@ Public Class metal_tilbud
 
                 If SubjectX < 150 Then
                     If SubjectY < 150 Then
-                        MsgBox("Emnet er for lille til Steelmasteren")
+                        MsgBox("The item is too small for the Steelmaster")
                         lb_grinding.Text = ""
                         tb_grinding_uk.Text = ""
                         cb_steelmaster.CheckState = CheckState.Unchecked
@@ -643,7 +643,7 @@ Public Class metal_tilbud
                 End If
                 If SubjectX > 1250 Then
                     If SubjectY > 1250 Then
-                        MsgBox("Emnet er for stort til Steelmasteren")
+                        MsgBox("The item is too big for the Steelmaster")
                         lb_grinding.Text = ""
                         tb_grinding_uk.Text = ""
                         cb_steelmaster.CheckState = CheckState.Unchecked
@@ -677,7 +677,7 @@ Public Class metal_tilbud
             Exit Function
         End If
         If sheetthickness > 3 Then
-            MsgBox("Pladetykkelsen er for stort til Rettemaskinen")
+            MsgBox("The plate thickness is too big for the Straightener machine")
             lb_rette.Text = ""
             tb_rette_uk.Text = ""
             Exit Function
@@ -686,7 +686,7 @@ Public Class metal_tilbud
 
         If SubjectX > 550 Then
             If SubjectY > 550 Then
-                MsgBox("Emnet er for stort til Rettemaskinen")
+                MsgBox("The item is too big for the Straightener machine")
                 lb_rette.Text = ""
                 tb_rette_uk.Text = ""
                 cb_rette.CheckState = CheckState.Unchecked
@@ -773,7 +773,7 @@ Public Class metal_tilbud
             If cb_fravælg_1500_3000.CheckState = "1" Then
                 If cb_fravælg_1250_2500.CheckState = "1" Then
                     If cb_fravælg_1000_2000.CheckState = "1" Then
-                        MsgBox("ALLE FORMATER ER FRAVALGT")
+                        MsgBox("ALL FORMATS ARE DESELECTED")
                         cb_fravælg_1250_2500.CheckState = "0"
                     End If
                 End If
@@ -813,7 +813,7 @@ Public Class metal_tilbud
 
         If iSubjectsPerPlate = 0 Then
 
-            MsgBox("Emnet kan ikke være på 1 plade")
+            MsgBox("The item does not fit on one plate")
             CalculateBestPlate = 1
             Exit Function
         End If
@@ -825,7 +825,7 @@ Public Class metal_tilbud
         lb_pladeformatY.Text = iPlateY
         If iPlateY = 4000 Then
             If rb_C_laser.Checked = False Then
-                MsgBox("Kun C-LASER KAN anvendes til format 2000x4000")
+                MsgBox("Only C-LASER CAN be used for 2000x4000 format")
                 rb_C_laser.Checked = True
             End If
         End If
@@ -1048,7 +1048,7 @@ Public Class metal_tilbud
 
             If Waste >= WasteMinimumSize Then
                 Areareduce = 1
-                lb_spildtype.Text = "TIL LAGER"
+                lb_spildtype.Text = "IN STOCK"
                 SpildTilLager = Wastenetto
                 lb_spildnetto.Text = FormatNumber(SpildTilLager, 2)
             Else
@@ -1060,7 +1060,7 @@ Public Class metal_tilbud
         End If
 
         If Areareducelastplate = 1 Then
-            lb_spildtype.Text = "TIL LAGER"
+            lb_spildtype.Text = "IN STOCK"
             SpildTilLager = SpildTilLager + Wastenettolastplate
             lb_spildnetto.Text = FormatNumber(SpildTilLager, 2)
 
@@ -1498,26 +1498,26 @@ Public Class metal_tilbud
         If cb_spotweld.CheckState = CheckState.Checked Then
 
             If tb_numberofspotweldseams.Text = "" Then
-                MsgBox("Antal svejsesømme og antal punktsvejsninger skal være udfyldt")
+                MsgBox("Number of welds and number of spot welds must be setted")
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_numberofspots.Text = "" Then
-                MsgBox("Antal svejsesømme og antal punktsvejsninger skal være udfyldt")
+                MsgBox("Number of welds and number of spot welds must be setted")
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
 
             If Val(Lb_matrgruppe.Text) = 3 Then
                 If Val(tb_pladetykkelse.Text) > 4 Then
-                    MsgBox("Pladetykkelse er max 4mm for punktsvejsning i Aluminium")
+                    MsgBox("Plate thickness is max 4mm for spot welding in Aluminum")
                     cb_spotweld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
             End If
 
             If Val(tb_pladetykkelse.Text) > 6 Then
-                MsgBox("Pladetykkelse er max 6mm for punktsvejsning i jern og rustfri")
+                MsgBox("Plate thickness is max 6mm for spot welding in iron and stainless steel")
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1574,7 +1574,7 @@ Public Class metal_tilbud
         End If
         If cb_weld.CheckState = CheckState.Checked Then
             If Val(Lb_matrgruppe.Text) = 4 Then
-                MsgBox("Materialet kan ikke svejses")
+                MsgBox("That material cannot be welded")
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1585,7 +1585,7 @@ Public Class metal_tilbud
                 Exit Function
             End If
             If Val(Lb_matrgruppe.Text) = 5 Then
-                MsgBox("Materialet kan ikke svejses")
+                MsgBox("That material cannot be welded")
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1599,7 +1599,7 @@ Public Class metal_tilbud
 
         If cb_tackweld.CheckState = CheckState.Checked Then
             If Val(Lb_matrgruppe.Text) = 4 Then
-                MsgBox("Materialet kan ikke svejses")
+                MsgBox("That material cannot be welded")
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1610,7 +1610,7 @@ Public Class metal_tilbud
                 Exit Function
             End If
             If Val(Lb_matrgruppe.Text) = 5 Then
-                MsgBox("Materialet kan ikke svejses")
+                MsgBox("That material cannot be welded")
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1663,12 +1663,12 @@ Public Class metal_tilbud
             cb_tackweld.CheckState = CheckState.Unchecked
 
             If tb_numberofwelds.Text = "" Then
-                MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                MsgBox("Number of welds and weld length must be setted")
                 cb_weld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_weldlength.Text = "" Then
-                MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                MsgBox("Number of welds and weld length must be setted")
                 cb_weld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1713,12 +1713,12 @@ Public Class metal_tilbud
             cb_weld.CheckState = CheckState.Unchecked
 
             If tb_numberofwelds.Text = "" Then
-                MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                MsgBox("Number of welds and weld length must be setted")
                 cb_tackweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_weldlength.Text = "" Then
-                MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                MsgBox("Number of welds and weld length must be setted")
                 cb_tackweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1811,12 +1811,12 @@ Public Class metal_tilbud
             If cb_tackweld.CheckState = CheckState.Checked Then
 
                 If tb_numberofwelds.Text = "" Then
-                    MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                    MsgBox("Number of welds and weld length must be setted")
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
                 If tb_weldlength.Text = "" Then
-                    MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                    MsgBox("Number of welds and weld length must be setted")
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
@@ -1834,12 +1834,12 @@ Public Class metal_tilbud
             If cb_weld.CheckState = CheckState.Checked Then
 
                 If tb_numberofwelds.Text = "" Then
-                    MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                    MsgBox("Number of welds and weld length must be setted")
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
                 If tb_weldlength.Text = "" Then
-                    MsgBox("Antal svejsninger og svejselængde skal være udfyldt")
+                    MsgBox("Number of welds and weld length must be setted")
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
@@ -2269,7 +2269,7 @@ Public Class metal_tilbud
 
         If (Val(tb_pladetykkelse.Text)) > 10 Then
             If Val(tb_buk1_x.Text) + Val(tb_buk1_y.Text) <> 0 Then
-                MsgBox("Ved buk i pladetykkelser over 10mm er beregningen usikker, spørg bukoperatøren om buk tid ")
+                MsgBox("For bends in plate thicknesses over 10mm, the calculation is uncertain, ask the bending operator about bending time ")
             End If
         End If
 
@@ -2504,7 +2504,7 @@ Public Class metal_tilbud
         Dim objListSupplierschromit As ListSuppliersChromit
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
-        If cb_overfl_beh1.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh1.Text = "No Surface Treatment" Then
             Getsupplierlist1 = ""
             cb_overfl_leverandør1.Text = ""
             tb_overfl_opstart1.Text = ""
@@ -2514,15 +2514,15 @@ Public Class metal_tilbud
             tb_overfl_pris100_1.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh1.Text = "Pulverlak" Then
+            If cb_overfl_beh1.Text = "Powder coating" Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør1)
                 objListSuppliersPulver.List()
             End If
-            If cb_overfl_beh1.Text = "Vådlak" Then
+            If cb_overfl_beh1.Text = "Wet varnish" Then
                 objListSuppliersvåd = New ListSuppliersVåd(cb_overfl_leverandør1)
                 objListSuppliersvåd.List()
             End If
-            If cb_overfl_beh1.Text = "Chromit (jern)" Then
+            If cb_overfl_beh1.Text = "Chromite (iron)" Then
                 objListSupplierschromit = New ListSuppliersChromit(cb_overfl_leverandør1)
                 objListSupplierschromit.List()
             End If
@@ -2530,7 +2530,7 @@ Public Class metal_tilbud
                 objListSupplierschromitAL = New ListSuppliersChromital(cb_overfl_leverandør1)
                 objListSupplierschromitAL.List()
             End If
-            If cb_overfl_beh1.Text = "Eloxering (natur/sort)" Then
+            If cb_overfl_beh1.Text = "Anodizing (natural / black)" Then
                 objListSuppliersEloxering = New ListSuppliersEloxering(cb_overfl_leverandør1)
                 objListSuppliersEloxering.List()
             End If
@@ -2545,7 +2545,7 @@ Public Class metal_tilbud
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
 
-        If cb_overfl_beh2.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh2.Text = "No Surface Treatment" Then
             Getsupplierlist2 = ""
             cb_overfl_leverandør2.Text = ""
             tb_overfl_opstart2.Text = ""
@@ -2555,15 +2555,15 @@ Public Class metal_tilbud
             tb_overfl_pris100_2.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh2.Text = "Pulverlak" Then
+            If cb_overfl_beh2.Text = "Powder coating" Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør2)
                 objListSuppliersPulver.List()
             End If
-            If cb_overfl_beh2.Text = "Vådlak" Then
+            If cb_overfl_beh2.Text = "Wet varnish" Then
                 objListSuppliersvåd = New ListSuppliersVåd(cb_overfl_leverandør2)
                 objListSuppliersvåd.List()
             End If
-            If cb_overfl_beh2.Text = "Chromit (jern)" Then
+            If cb_overfl_beh2.Text = "Chromite (iron)" Then
                 objListSupplierschromit = New ListSuppliersChromit(cb_overfl_leverandør2)
                 objListSupplierschromit.List()
             End If
@@ -2571,7 +2571,7 @@ Public Class metal_tilbud
                 objListSupplierschromitAL = New ListSuppliersChromital(cb_overfl_leverandør2)
                 objListSupplierschromitAL.List()
             End If
-            If cb_overfl_beh2.Text = "Eloxering (natur/sort)" Then
+            If cb_overfl_beh2.Text = "Anodizing (natural / black)" Then
                 objListSuppliersEloxering = New ListSuppliersEloxering(cb_overfl_leverandør2)
                 objListSuppliersEloxering.List()
             End If
@@ -2587,7 +2587,7 @@ Public Class metal_tilbud
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
 
-        If cb_overfl_beh3.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh3.Text = "No Surface Treatment" Then
             Getsupplierlist3 = ""
             cb_overfl_leverandør3.Text = ""
             tb_overfl_opstart3.Text = ""
@@ -2597,7 +2597,7 @@ Public Class metal_tilbud
             tb_overfl_pris100_3.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh3.Text = "Pulverlak" Then
+            If cb_overfl_beh3.Text = "Powder coating" Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør3)
                 objListSuppliersPulver.List()
             End If
@@ -2626,7 +2626,7 @@ Public Class metal_tilbud
 
         Dim objListSuppliers As ListSuppliers
 
-        If cb_overfl_beh4.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh4.Text = "No Surface Treatment" Then
             Getsupplierlist4 = ""
             cb_overfl_leverandør4.Text = ""
             tb_overfl_opstart4.Text = ""
@@ -2646,7 +2646,7 @@ Public Class metal_tilbud
 
         Dim objListSuppliers As ListSuppliers
 
-        If cb_overfl_beh5.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh5.Text = "No Surface Treatmentg" Then
             Getsupplierlist5 = ""
             cb_overfl_leverandør5.Text = ""
             tb_overfl_opstart5.Text = ""
@@ -2710,7 +2710,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh1.Text = "Pulverlak" Then
+        If cb_overfl_beh1.Text = "Powder coating" Then
             If cb_overfl_leverandør1.Text = "Laduco" Then
                 tb_overfl_opstart1.Text = 400
                 tb_overfl_afdæk1.Text = 2
@@ -2912,7 +2912,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh2.Text = "Pulverlak" Then
+        If cb_overfl_beh2.Text = "Powder coating" Then
             If cb_overfl_leverandør2.Text = "Laduco" Then
                 tb_overfl_opstart2.Text = 400
                 tb_overfl_afdæk2.Text = 2
@@ -3113,7 +3113,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh3.Text = "Pulverlak" Then
+        If cb_overfl_beh3.Text = "Powder coating" Then
             If cb_overfl_leverandør3.Text = "Laduco" Then
                 tb_overfl_opstart3.Text = 400
                 tb_overfl_afdæk3.Text = 2
@@ -3328,7 +3328,7 @@ Public Class metal_tilbud
             surfacetreatmentcost = surfacetreatmentcost + surfacetreatment
         End If
 
-        If cb_overfl_beh4.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh4.Text = "No Surface Treatment" Then
             cb_overfl_leverandør4.Text = ""
             tb_overfl_opstart4.Text = ""
             tb_overfl_afdæk4.Text = ""
@@ -3344,7 +3344,7 @@ Public Class metal_tilbud
             tb_overfl_pris100_4.Text = ""
         End If
 
-        If cb_overfl_beh5.Text = "Ingen Overfladebehandling" Then
+        If cb_overfl_beh5.Text = "No Surface Treatment" Then
             cb_overfl_leverandør5.Text = ""
             tb_overfl_opstart5.Text = ""
             tb_overfl_afdæk5.Text = ""
@@ -4166,6 +4166,16 @@ Public Class metal_tilbud
         CalculateOrdrestr()
     End Sub
     Private Sub bu_gem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_gem.Click
+
+
+        If cb_Tegning.Text = "" Then
+            MsgBox("Drawing number is missing")
+            Exit Sub
+        End If
+        If cb_kunde.Text = "" Then
+            MsgBox("Customer name is missing")
+            Exit Sub
+        End If
         Dim ex As New Microsoft.Office.Interop.Excel.Application
         Dim wb As Microsoft.Office.Interop.Excel.Workbook
         'Dim ex As New Excel.Application
@@ -4176,20 +4186,7 @@ Public Class metal_tilbud
         Dim sRevision As String
         Dim filnavn As String
 
-
-        If cb_Tegning.Text = "" Then
-            MsgBox("Tegningsnummer mangler")
-            Exit Sub
-        End If
-        If cb_kunde.Text = "" Then
-            MsgBox("Kundenavn mangler")
-            Exit Sub
-        End If
-        If tb_tilbudnr.Text = "" Then
-            MsgBox("Tilbudsnummer mangler")
-            Exit Sub
-        End If
-
+        Me.UseWaitCursor = True
         sFilename = cb_Tegning.Text
         sKundenavn = cb_kunde.Text
         sRevision = tb_revision.Text
@@ -4481,7 +4478,7 @@ Public Class metal_tilbud
 
         'Gem xls filen med fil navnet i DK
         'wb.SaveAs("C:\TilbudsFiler\" & filnavn & " ")
-        wb.SaveAs("W:\Tilbud\TilbudsFiler\" & filnavn & " ")
+        wb.SaveAs("\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\" & filnavn & " ")
 
         'wb.SaveCopyAs("\\Win2000server\AKS Metal\Tilbud\Tilbudsfiler\" & filnavn & " ")
 
@@ -4493,6 +4490,8 @@ Public Class metal_tilbud
         wb.Close()
         'Afslut Excel
         ex.Quit()
+        Me.UseWaitCursor = False
+        MsgBox("File Saved Succesfully")
     End Sub
     Private Sub bu_hent_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_hent.Click
         Dim FileDialog As New OpenFileDialog
@@ -4508,7 +4507,7 @@ Public Class metal_tilbud
         FileDialog.Filter = "Excel Filer (*.xls)|*.xls"
         'DK
         'FileDialog.InitialDirectory = "C:\TilbudsFiler"
-        FileDialog.InitialDirectory = "W:\Tilbud\TilbudsFiler"
+        FileDialog.InitialDirectory = "\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files"
         'Polen
         'FileDialog.InitialDirectory = "\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\"
         'Vis åben fil dialogen
@@ -4807,9 +4806,44 @@ Public Class metal_tilbud
 
     Private Sub bu_udskriv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_udskriv.Click
 
+        If cb_Tegning.Text = "" Then
+            MsgBox("Drawing number is missing")
+            Exit Sub
+        End If
+        If cb_kunde.Text = "" Then
+            MsgBox("Customer name is missing")
+            Exit Sub
+        End If
+        'If tb_tilbudnr.Text = "" Then
+        '    MsgBox("Offer number is missing")
+        '    Exit Sub
+        'End If
 
-        'Print(Me.Metaltilbud1.metal_tilbub)
+        If Me.lb_salg1.Text <> "" Then
 
+
+            Dim numberOfOperations = 27
+            Dim totalPieces = CInt(tb_antal1.Text)
+            Dim client = cb_kunde.Text
+            Dim operatorr = lb_operatør_opr.Text
+            Dim drawing = cb_Tegning.Text
+            Dim revision = tb_revision.Text
+            Dim itemName = tb_emne.Text
+
+
+            Dim isTilbudOperation(numberOfOperations) As Boolean
+            Dim runTime(numberOfOperations) As Decimal
+            Dim setupTime(numberOfOperations) As Decimal
+
+            getTimesPerOperation(isTilbudOperation, runTime, setupTime)
+            overruleValues(isTilbudOperation, runTime, setupTime)
+
+            Dim operationSequence As New oper_sequence
+            operationSequence.setLabelValues(runTime, setupTime, totalPieces, operatorr, drawing, revision, itemName, client)
+            operationSequence.ShowDialog()
+        Else
+            MsgBox("Enter some data first")
+        End If
     End Sub
     Public Sub Resetunderkend()
 
@@ -5280,6 +5314,56 @@ Public Class metal_tilbud
         End If
 
     End Sub
+    'Private Sub getAllLabels()
+
+
+    '    Dim ex As New Microsoft.Office.Interop.Excel.Application
+    '    Dim rng As Microsoft.Office.Interop.Excel.Range
+    '    Dim wb As Microsoft.Office.Interop.Excel.Workbook
+    '    Try
+    '        'Åben template xls filen DK
+    '        wb = ex.Workbooks.Open("C:\Users\admbd\Desktop\lables3.xlsx")
+    '        'Åben template xls filen POL
+    '        'wb = ex.Workbooks.Open("\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\tilbudsdata.xlt")
+
+
+    '    Catch err As Exception
+    '        'Xls filen kan ikke åbnes.
+    '        MsgBox("The Excel template cannot be opened")
+    '        ex.Quit()
+    '        Exit Sub
+    '    End Try
+    '    Dim sheet As Microsoft.Office.Interop.Excel.Worksheet = wb.Worksheets.Item(1)
+
+    '    Dim i = 1
+
+    '    For Each ctrl As Control In Me.Controls
+
+    '        If TypeName(ctrl) = "GroupBox" Then
+    '            sheet.Cells(i, 1) = ctrl.Name
+    '            i += 1
+    '            For Each ctrl2 As Control In ctrl.Controls
+    '                If TypeName(ctrl2) = "Label" Then
+    '                    Dim j = 1
+
+    '                    For j = 1 To 143
+    '                        Dim value = CType(sheet.Cells(j, 1), Microsoft.Office.Interop.Excel.Range).Value
+    '                        If ctrl2.Text = value Then
+    '                            Dim value2 = CType(sheet.Cells(j, 2), Microsoft.Office.Interop.Excel.Range).Value
+    '                            ctrl2.Text = value2
+    '                        End If
+
+    '                    Next
+    '                End If
+    '            Next
+    '        End If
+    '    Next
+
+    '    MsgBox("Listo")
+    '    wb.Close()
+    '    ex.Quit()
+    'End Sub
+
     Private Sub ResetUK()
         tb_buk_uk.Text = ""
         tb_buk_opst_uk.Text = ""
@@ -5318,27 +5402,490 @@ Public Class metal_tilbud
 
     End Sub
 
-    Private Sub lb_antal_opstart_LocationChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles lb_antal_opstart.LocationChanged
+    Private Sub getTimesPerOperation(ByRef isTilbudOperation, ByRef runTime, ByRef setupTime)
+
+        Dim currentOperation = 0
+
+        'Saw: not present 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Laser 2
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        If Me.lb_laserCNC_tid.Text <> "" Then
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_laserCNC_tid.Text)
+            setupTime(currentOperation) = Convert.ToDecimal(Me.lb_laser_opstart.Text)
+        Else
+            runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
+        End If
+
+
+        'Punching 3
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        If Me.lb_combi_ialt.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_CombiCNC_tid.Text)
+            If IsNumeric(Me.lb_CombiCNCstans_tid.Text) Then
+                runTime(currentOperation) += Convert.ToDecimal(Me.lb_CombiCNCstans_tid.Text)
+            End If
+            setupTime(currentOperation) = Convert.ToDecimal(Me.lb_Combi_opstart.Text)
+        Else
+            runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
+
+        End If
+
+        'Gilotyna: not present 4
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Steelmaster 5
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_grinding.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_grinding.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Szlif Krawedzi = edge deburring 6
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_afgrat.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_afgrat.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Szlif wibracyjne = vibration deburring 7
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_vibration.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_vibration.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Prostowanie = streightening 8
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_rettesvejs_tid.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_rettesvejs_tid.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Spawanie = welding 9
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.tb_svejstid_ialt.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.tb_svejstid_ialt.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Spawanie punktowe = spot welding 10
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_spotweld.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_spotweld.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Szlifowanie = grinding 11
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_slib.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_slib.Text)
+
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Giecie = Bending 12
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        If Me.lb_buk_tid.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_tid.Text)
+            setupTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_opst.Text)
+
+        Else
+            runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
+        End If
+
+        'Rolowanie = rolling : not present 13
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_valsetid.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_valsetid.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Wtlaczanie el. gwintowanych = Screw pressing 14
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_presstag.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_presstag.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        If Me.lb_pressnut.Text <> "" Then
+
+            runTime(currentOperation) = runTime(currentOperation) + Convert.ToDecimal(Me.lb_pressnut.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Wspawywanie el. gwintowanych = Screw welding 15
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_boltesvejs.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_boltesvejs.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Gwintowanie = Threading 16
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_gevind.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_gevind.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Rozwiercanie = Reaming 17
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Wiercenie = Drilling 18
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Transport = Transport 19
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Pakowanie = packing 20
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Sprzatanie = cleaning 21
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Pokrywanie powierzchni 22
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Obrobka mechaniczna = Machining 23
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Perelkowanie = Sand/glass blasting 24
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_glasbl.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_glasbl.Text)
+        Else
+            runTime(currentOperation) = 0
+        End If
+
+        'Ojlejanie folia = Cover with foil 25
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Montage = Montage 26
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = False
+        runTime(currentOperation) = 0
+        setupTime(currentOperation) = 0
+
+        'Kontrol 27
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_kontrol.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToInt32(Me.lb_kontrol.Text)
+
+        End If
+
+        'Kontrol 28
+        currentOperation = currentOperation + 1
+        isTilbudOperation(currentOperation) = True
+        setupTime(currentOperation) = 0
+        If Me.lb_kontor.Text <> "" Then
+
+            runTime(currentOperation) = Convert.ToInt32(Me.lb_kontor.Text)
+
+        End If
 
     End Sub
 
-    Private Sub rb_netto_CursorChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles rb_netto.CursorChanged
+    Private Sub overruleValues(ByRef isTilbudOperation, ByRef runTime, ByRef setupTime)
+
+        Dim currentOperation = 0
+
+        'Saw: not present 1
+
+
+        'Laser 2
+        If runTime(1) <> 0 Then
+            If Me.tb_laserCNC_tid_uk.Text <> "" Then
+                runTime(1) = Convert.ToDecimal(Me.tb_laserCNC_tid_uk.Text)
+
+            End If
+            If Me.tb_laser_opstart_uk.Text <> "" Then
+
+                setupTime(1) = Convert.ToDecimal(Me.tb_laser_opstart_uk.Text)
+            End If
+        End If
+
+
+        'Punching 3
+        If runTime(2) <> 0 Then
+            Dim punchUK = 0
+            If Me.tb_combiCNC_tid_uk.Text <> "" Then
+                punchUK += Convert.ToDecimal(Me.tb_combiCNC_tid_uk.Text)
+            End If
+
+            If Me.tb_CombiCNCstans_tid_uk.Text <> "" Then
+                punchUK += Convert.ToDecimal(Me.tb_CombiCNCstans_tid_uk.Text)
+            End If
+
+            If punchUK <> 0 Then
+                runTime(2) = punchUK
+            End If
+            If Me.tb_combi_opstart_uk.Text <> "" Then
+                setupTime(2) = Convert.ToDecimal(Me.tb_combi_opstart_uk.Text)
+            End If
+        End If
+
+        'Gilotyna: not present 4
+
+        'Steelmaster 5
+        If runTime(4) <> 0 Then
+            If Me.tb_grinding_uk.Text <> "" Then
+                runTime(4) = Convert.ToDecimal(Me.tb_grinding_uk.Text)
+
+            End If
+        End If
+
+        'Szlif Krawedzi = edge deburring 6
+        If runTime(5) <> 0 Then
+            If Me.tb_afgrat_uk.Text <> "" Then
+                runTime(5) = Convert.ToDecimal(Me.tb_afgrat_uk.Text)
+
+            End If
+        End If
+
+        'Szlif wibracyjne = vibration deburring 7
+        If Me.tb_vibration_uk.Text <> "" Then
+            runTime(6) = Convert.ToDecimal(Me.tb_vibration_uk.Text)
+        End If
+
+
+        'Prostowanie = streightening 8
+        If runTime(7) <> 0 Then
+            If Me.tb_rettesvejs_uk.Text <> "" Then
+                runTime(7) = Convert.ToDecimal(Me.tb_rettesvejs_uk.Text)
+            End If
+        End If
+
+        'Spawanie = welding 9
+        If runTime(8) <> 0 Then
+            Dim weldUK = 0
+
+            If Me.tb_tackweld_uk.Text <> "" Then
+                weldUK = Convert.ToDecimal(Me.tb_tackweld_uk.Text)
+            End If
+
+            If Me.tb_weld_uk.Text <> "" Then
+                weldUK += Convert.ToDecimal(Me.tb_weld_uk.Text)
+            End If
+
+            If Me.tb_grind_weld_uk.Text <> "" Then
+                weldUK += Convert.ToDecimal(Me.tb_grind_weld_uk.Text)
+            End If
+
+            If Me.tb_rettesvejs_uk.Text <> "" Then
+                weldUK += Convert.ToDecimal(Me.tb_rettesvejs_uk.Text)
+            End If
+
+            If Me.tb_tapsvejs_uk.Text <> "" Then
+                weldUK += Convert.ToDecimal(Me.tb_tapsvejs_uk.Text)
+            End If
+
+            If weldUK <> 0 Then
+                runTime(8) = weldUK
+            End If
+        End If
+
+
+        'Spawanie punktowe = spot welding 10
+        If runTime(9) <> 0 Then
+            If Me.tb_spotweld_uk.Text <> "" Then
+                runTime(9) = Convert.ToDecimal(Me.tb_spotweld_uk.Text)
+            End If
+        End If
+
+        'Szlifowanie = grinding 11
+        If runTime(10) <> 0 Then
+            If Me.tb_slib_uk.Text <> "" Then
+                runTime(10) = Convert.ToDecimal(Me.tb_slib_uk.Text)
+            End If
+        End If
+
+        'Giecie = Bending 12
+        If runTime(11) <> 0 Then
+            If Me.tb_buk_uk.Text <> "" Then
+                runTime(11) = Convert.ToDecimal(Me.tb_buk_uk.Text)
+            End If
+            If Me.tb_buk_opst_uk.Text <> "" Then
+                setupTime(1) = Convert.ToDecimal(Me.tb_buk_opst_uk.Text)
+            End If
+        End If
+
+        'Rolowanie = rolling : not present 13
+        If Me.tb_valsning_uk.Text <> "" Then
+            runTime(12) = Convert.ToDecimal(Me.tb_valsning_uk.Text)
+        End If
+
+        'Wtlaczanie el. gwintowanych = Screw pressing 14
+        If runTime(13) <> 0 Then
+            Dim pressUK = 0
+            If Me.tb_presstag_uk.Text <> "" Then
+                pressUK = Convert.ToDecimal(Me.tb_presstag_uk.Text)
+            End If
+
+            If Me.tb_pressnut_uk.Text <> "" Then
+                pressUK += Convert.ToDecimal(Me.tb_pressnut_uk.Text)
+            End If
+
+            If pressUK <> 0 Then
+                runTime(13) = pressUK
+            End If
+        End If
+
+        'Wspawywanie el. gwintowanych = Screw welding 15
+        If runTime(14) <> 0 Then
+            If Me.tb_boltesvejs_uk.Text <> "" Then
+                runTime(14) = Convert.ToDecimal(Me.tb_boltesvejs_uk.Text)
+            End If
+        End If
+
+        'Gwintowanie = Threading 16
+        If runTime(15) <> 0 Then
+            If Me.tb_gevind_uk.Text <> "" Then
+                runTime(15) = Convert.ToDecimal(Me.tb_gevind_uk.Text)
+            End If
+        End If
+
+        'Rozwiercanie = Reaming 17
+
+
+        'Wiercenie = Drilling 18
+
+
+        'Transport = Transport 19
+
+
+        'Pakowanie = packing 20
+
+
+        'Sprzatanie = cleaning 21
+
+
+        'Pokrywanie powierzchni 22
+
+
+        'Obrobka mechaniczna = Machining 23
+
+
+        'Perelkowanie = Sand/glass blasting 24
+        If runTime(23) <> 0 Then
+            If Me.tb_glasbl_uk.Text <> "" Then
+                runTime(23) = Convert.ToDecimal(Me.tb_glasbl_uk.Text)
+            End If
+        End If
+
+        'Ojlejanie folia = Cover with foil 25
+
+
+        'Montage = Montage 26
+
+        'Kontrol 27
+        If runTime(26) <> 0 Then
+            If Me.tb_kontrol_uk.Text <> "" Then
+                runTime(26) = Convert.ToDecimal(Me.tb_kontrol_uk.Text)
+            End If
+        End If
+
+        If runTime(27) <> 0 Then
+            If Me.tb_kontor_uk.Text <> "" Then
+                runTime(27) = Convert.ToDecimal(Me.tb_kontor_uk.Text)
+            End If
+        End If
 
     End Sub
 
 
-    Private Sub bu_hent_CursorChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles bu_hent.CursorChanged
-
-    End Sub
-
-
-
-
-
-
-
-
-    Private Sub Label257_Click(sender As System.Object, e As System.EventArgs) Handles Label257.Click
-
-    End Sub
 End Class
