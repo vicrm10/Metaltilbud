@@ -106,18 +106,32 @@
 
             setOperationInMK(runTime(i), setupTime(i), sheet, sheet2, operationPosition, operation + 1)
         Next
+        Dim fileString = "\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\Method Cards\" & client & "_" & drawing & ".xlsx"
+        Dim flag = False
+        If System.IO.File.Exists(fileString) Then
 
-        wb.SaveAs("\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\Method Cards\" & client & "_" & drawing & ".xlsx" & " ")
-        wb.Close()
-        ex.Quit()
-        'Process.Start("C:\Users\admbd\Desktop\" & drawing & ".xlsx")
-        Enabled = True
-        Dim result As DialogResult = MessageBox.Show("Do you want to open it?", "Method Card Saved Succesfully", MessageBoxButtons.YesNo)
-        If result = DialogResult.Yes Then
-            Process.Start("\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\Method Cards\" & client & "_" & drawing & ".xlsx")
-        ElseIf result = DialogResult.No Then
+            Dim override As DialogResult = MessageBox.Show("File already exists! Do you want to override it?", "A file with that name already exists", MessageBoxButtons.YesNo)
+            If override = DialogResult.Yes Then
+                System.IO.File.Delete(fileString)
+                flag = True
+            ElseIf override = DialogResult.No Then
+            End If
+        Else
+            flag = True
         End If
 
+        If flag Then
+            wb.SaveAs(fileString)
+            Enabled = True
+            Dim result As DialogResult = MessageBox.Show("Do you want to open it?", "Method Card Saved Succesfully", MessageBoxButtons.YesNo)
+            If result = DialogResult.Yes Then
+                Process.Start(fileString)
+            ElseIf result = DialogResult.No Then
+            End If
+        End If
+
+        wb.Close(SaveChanges:=False)
+        ex.Quit()
         Close()
 
     End Sub

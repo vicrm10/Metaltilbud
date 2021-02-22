@@ -3878,62 +3878,6 @@ Public Class metal_tilbud
     'End Sub
 
 
-    Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-
-    Private Sub rb_B_kombi_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_B_kombi.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-
-    Private Sub rb_klip_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_klip.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_netto_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_netto.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_brutto_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_brutto.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_tig_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_tig.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_rustfri_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_rustfri.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_jern_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_jern.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub tb_numberofwelds_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tb_numberofwelds.TextChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub tb_weldlength_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tb_weldlength.TextChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub cb_Spotweld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_spotweld.CheckStateChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub cb_weld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_weld.CheckStateChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub cb_tackweld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_tackweld.CheckStateChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub cb_Grind_weld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_grind_weld.CheckStateChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_factor1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor1.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_factor2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor2.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_factor3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor3.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
-    Private Sub rb_factor4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor4.CheckedChanged
-        CalculateOrdrestr()
-    End Sub
     Private Sub rb_factor5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor5.CheckedChanged
         If tb_tapantal.Text <> "" Then
             CalculateOrdrestr()
@@ -4224,7 +4168,7 @@ Public Class metal_tilbud
 
         Try
             'Åben template xls filen DK
-            'wb = ex.Workbooks.Open("C:\TilbudsFiler\tilbudsdata.xlt")
+            'wb = ex.Workbooks.Open("C:\Tilbbu_udskrivsFiler\tilbudsdata.xlt")
             wb = ex.Workbooks.Open("W:\Tilbud\TilbudsFiler\tilbudsdata.xlt")
             'Åben template xls filen POL
             'wb = ex.Workbooks.Open("\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\tilbudsdata.xlt")
