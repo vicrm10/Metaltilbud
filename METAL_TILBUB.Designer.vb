@@ -114,6 +114,9 @@ Partial Class metal_tilbud
         Me.tb_pladetykkelse = New System.Windows.Forms.TextBox()
         Me.cb_materiale = New System.Windows.Forms.ComboBox()
         Me.gb_gruppe1 = New System.Windows.Forms.GroupBox()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.tb_hulantal_2C = New System.Windows.Forms.TextBox()
+        Me.tb_hulantal_3C = New System.Windows.Forms.TextBox()
         Me.Label241 = New System.Windows.Forms.Label()
         Me.Label238 = New System.Windows.Forms.Label()
         Me.tb_hulantal_4C = New System.Windows.Forms.TextBox()
@@ -123,16 +126,13 @@ Partial Class metal_tilbud
         Me.lb_laser_opstart = New System.Windows.Forms.Label()
         Me.Label85 = New System.Windows.Forms.Label()
         Me.lb_laserCNC_tid = New System.Windows.Forms.Label()
-        Me.tb_hulantal_3C = New System.Windows.Forms.TextBox()
         Me.tb_laserCNC_tid_uk = New System.Windows.Forms.TextBox()
         Me.tb_laser_opstart_uk = New System.Windows.Forms.TextBox()
         Me.Label97 = New System.Windows.Forms.Label()
         Me.Label64 = New System.Windows.Forms.Label()
         Me.Label98 = New System.Windows.Forms.Label()
-        Me.tb_hulantal_2C = New System.Windows.Forms.TextBox()
         Me.tb_hulantal_1C = New System.Windows.Forms.TextBox()
         Me.lb_opstart = New System.Windows.Forms.Label()
-        Me.Label32 = New System.Windows.Forms.Label()
         Me.tb_cuttinglength_C = New System.Windows.Forms.TextBox()
         Me.Label31 = New System.Windows.Forms.Label()
         Me.rb_C_laser = New System.Windows.Forms.RadioButton()
@@ -144,6 +144,7 @@ Partial Class metal_tilbud
         Me.rb_D_stans = New System.Windows.Forms.RadioButton()
         Me.tb_CNCmin_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe2 = New System.Windows.Forms.GroupBox()
+        Me.cb_rette = New System.Windows.Forms.CheckBox()
         Me.Label228 = New System.Windows.Forms.Label()
         Me.tb_info = New System.Windows.Forms.Label()
         Me.gb_stag = New System.Windows.Forms.GroupBox()
@@ -205,7 +206,6 @@ Partial Class metal_tilbud
         Me.cb_steelmaster = New System.Windows.Forms.CheckBox()
         Me.cb_brush = New System.Windows.Forms.CheckBox()
         Me.cb_vibrationsafgr = New System.Windows.Forms.CheckBox()
-        Me.cb_rette = New System.Windows.Forms.CheckBox()
         Me.cb_afgrat = New System.Windows.Forms.CheckBox()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.lb_grinding = New System.Windows.Forms.Label()
@@ -238,6 +238,7 @@ Partial Class metal_tilbud
         Me.lb_spotweld = New System.Windows.Forms.Label()
         Me.tb_spotweld_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe4 = New System.Windows.Forms.GroupBox()
+        Me.tb_weldlength = New System.Windows.Forms.TextBox()
         Me.cb_rettesvejs = New System.Windows.Forms.CheckBox()
         Me.Label226 = New System.Windows.Forms.Label()
         Me.lb_rettesvejs_tid = New System.Windows.Forms.Label()
@@ -254,7 +255,6 @@ Partial Class metal_tilbud
         Me.Label189 = New System.Windows.Forms.Label()
         Me.tb_numberofwelds = New System.Windows.Forms.TextBox()
         Me.Label150 = New System.Windows.Forms.Label()
-        Me.tb_weldlength = New System.Windows.Forms.TextBox()
         Me.Label132 = New System.Windows.Forms.Label()
         Me.lb_grind_weld = New System.Windows.Forms.Label()
         Me.lb_weld = New System.Windows.Forms.Label()
@@ -312,6 +312,7 @@ Partial Class metal_tilbud
         Me.lb_kontor = New System.Windows.Forms.Label()
         Me.tb_kontor_uk = New System.Windows.Forms.TextBox()
         Me.gb_admin = New System.Windows.Forms.GroupBox()
+        Me.lb_filnavn = New System.Windows.Forms.Label()
         Me.lb_operatør_opr = New System.Windows.Forms.Label()
         Me.Label250 = New System.Windows.Forms.Label()
         Me.lb_dato_opr = New System.Windows.Forms.Label()
@@ -328,7 +329,6 @@ Partial Class metal_tilbud
         Me.Label40 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label88 = New System.Windows.Forms.Label()
-        Me.lb_filnavn = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -398,6 +398,7 @@ Partial Class metal_tilbud
         Me.tb_bukmax_y = New System.Windows.Forms.TextBox()
         Me.Label70 = New System.Windows.Forms.Label()
         Me.gb_buk = New System.Windows.Forms.GroupBox()
+        Me.lb_buk_opst = New System.Windows.Forms.Label()
         Me.tb_stepantal = New System.Windows.Forms.TextBox()
         Me.Label244 = New System.Windows.Forms.Label()
         Me.lb_stepbuk = New System.Windows.Forms.Label()
@@ -414,7 +415,6 @@ Partial Class metal_tilbud
         Me.lb_nettoareal = New System.Windows.Forms.Label()
         Me.tb_buk_opst_uk = New System.Windows.Forms.TextBox()
         Me.Label30 = New System.Windows.Forms.Label()
-        Me.lb_buk_opst = New System.Windows.Forms.Label()
         Me.Label96 = New System.Windows.Forms.Label()
         Me.Label95 = New System.Windows.Forms.Label()
         Me.Label94 = New System.Windows.Forms.Label()
@@ -471,6 +471,7 @@ Partial Class metal_tilbud
         Me.TextBox71 = New System.Windows.Forms.TextBox()
         Me.cb_Tegning = New System.Windows.Forms.ComboBox()
         Me.gb_hul = New System.Windows.Forms.GroupBox()
+        Me.tb_slag_til_huller = New System.Windows.Forms.TextBox()
         Me.lb_stans_ialtuk = New System.Windows.Forms.Label()
         Me.Label236 = New System.Windows.Forms.Label()
         Me.lb_stans_ialt = New System.Windows.Forms.Label()
@@ -481,11 +482,11 @@ Partial Class metal_tilbud
         Me.Label33 = New System.Windows.Forms.Label()
         Me.tb_toolshift = New System.Windows.Forms.TextBox()
         Me.Label99 = New System.Windows.Forms.Label()
-        Me.tb_slag_til_huller = New System.Windows.Forms.TextBox()
         Me.tb_opstart_kr_uk = New System.Windows.Forms.TextBox()
         Me.tb_Program_kr_uk = New System.Windows.Forms.TextBox()
         Me.Label91 = New System.Windows.Forms.Label()
         Me.gb_pristabel = New System.Windows.Forms.GroupBox()
+        Me.lb_timer1 = New System.Windows.Forms.Label()
         Me.lb_råvarerstk5 = New System.Windows.Forms.Label()
         Me.lb_råvarerstk4 = New System.Windows.Forms.Label()
         Me.lb_råvarerstk3 = New System.Windows.Forms.Label()
@@ -508,7 +509,6 @@ Partial Class metal_tilbud
         Me.lb_timer2 = New System.Windows.Forms.Label()
         Me.lb_timer3 = New System.Windows.Forms.Label()
         Me.lb_timer4 = New System.Windows.Forms.Label()
-        Me.lb_timer1 = New System.Windows.Forms.Label()
         Me.Label122 = New System.Windows.Forms.Label()
         Me.Label121 = New System.Windows.Forms.Label()
         Me.Label120 = New System.Windows.Forms.Label()
@@ -520,6 +520,7 @@ Partial Class metal_tilbud
         Me.lb_opstart_kr = New System.Windows.Forms.Label()
         Me.lb_antal_program = New System.Windows.Forms.Label()
         Me.gb_matr = New System.Windows.Forms.GroupBox()
+        Me.tb_Kilopris_uk = New System.Windows.Forms.TextBox()
         Me.lb_pladeforbrug = New System.Windows.Forms.Label()
         Me.Label235 = New System.Windows.Forms.Label()
         Me.cb_fravælg_1000_2000 = New System.Windows.Forms.CheckBox()
@@ -527,7 +528,6 @@ Partial Class metal_tilbud
         Me.cb_fravælg_1500_3000 = New System.Windows.Forms.CheckBox()
         Me.Label178 = New System.Windows.Forms.Label()
         Me.Label177 = New System.Windows.Forms.Label()
-        Me.tb_Kilopris_uk = New System.Windows.Forms.TextBox()
         Me.Label149 = New System.Windows.Forms.Label()
         Me.tb_sværhed_uk = New System.Windows.Forms.TextBox()
         Me.lb_faktor = New System.Windows.Forms.Label()
@@ -559,6 +559,12 @@ Partial Class metal_tilbud
         Me.Label18 = New System.Windows.Forms.Label()
         Me.bu_udskriv = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lb_CombiCNCstans_tid = New System.Windows.Forms.Label()
+        Me.tb_cuttinglength_B = New System.Windows.Forms.TextBox()
+        Me.tb_hulantal_3B = New System.Windows.Forms.TextBox()
+        Me.tb_hulantal_2B = New System.Windows.Forms.TextBox()
+        Me.tb_hulantal_1B = New System.Windows.Forms.TextBox()
+        Me.tb_slag_til_huller_B = New System.Windows.Forms.TextBox()
         Me.Label240 = New System.Windows.Forms.Label()
         Me.Label239 = New System.Windows.Forms.Label()
         Me.tb_hulantal_4B = New System.Windows.Forms.TextBox()
@@ -567,27 +573,21 @@ Partial Class metal_tilbud
         Me.lb_combi_ialt = New System.Windows.Forms.Label()
         Me.tb_CombiCNCstans_tid_uk = New System.Windows.Forms.TextBox()
         Me.Label227 = New System.Windows.Forms.Label()
-        Me.lb_CombiCNCstans_tid = New System.Windows.Forms.Label()
         Me.Label123 = New System.Windows.Forms.Label()
         Me.Label131 = New System.Windows.Forms.Label()
-        Me.tb_slag_til_huller_B = New System.Windows.Forms.TextBox()
         Me.Label135 = New System.Windows.Forms.Label()
         Me.tb_toolshift_B = New System.Windows.Forms.TextBox()
         Me.Label136 = New System.Windows.Forms.Label()
         Me.tb_combiCNC_tid_uk = New System.Windows.Forms.TextBox()
         Me.Label109 = New System.Windows.Forms.Label()
         Me.lb_Combi_opstart = New System.Windows.Forms.Label()
-        Me.tb_hulantal_3B = New System.Windows.Forms.TextBox()
         Me.Label111 = New System.Windows.Forms.Label()
         Me.Label112 = New System.Windows.Forms.Label()
         Me.Label113 = New System.Windows.Forms.Label()
-        Me.tb_hulantal_2B = New System.Windows.Forms.TextBox()
         Me.Label114 = New System.Windows.Forms.Label()
         Me.lb_CombiCNC_tid = New System.Windows.Forms.Label()
-        Me.tb_cuttinglength_B = New System.Windows.Forms.TextBox()
         Me.tb_combi_opstart_uk = New System.Windows.Forms.TextBox()
         Me.Label125 = New System.Windows.Forms.Label()
-        Me.tb_hulantal_1B = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lb_klip_ialtuk = New System.Windows.Forms.Label()
         Me.Label231 = New System.Windows.Forms.Label()
@@ -692,33 +692,33 @@ Partial Class metal_tilbud
         Me.rb_factor2 = New System.Windows.Forms.RadioButton()
         Me.rb_factor3 = New System.Windows.Forms.RadioButton()
         Me.rb_factor4 = New System.Windows.Forms.RadioButton()
-        Me.gb_gruppe1.SuspendLayout()
-        Me.gb_gruppe2.SuspendLayout()
-        Me.gb_stag.SuspendLayout()
-        Me.gb_gevind.SuspendLayout()
-        Me.gb_undersænk.SuspendLayout()
-        Me.gb_gruppe3.SuspendLayout()
-        Me.gb_gruppe4.SuspendLayout()
-        Me.GroupBox15.SuspendLayout()
-        Me.gb_gruppe6.SuspendLayout()
-        Me.gb_admin.SuspendLayout()
-        Me.gb_overfladebeh.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
-        Me.gb_buk.SuspendLayout()
-        Me.gb_hul.SuspendLayout()
-        Me.gb_pristabel.SuspendLayout()
-        Me.gb_opstart.SuspendLayout()
-        Me.gb_matr.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.gb_forbrug.SuspendLayout()
-        Me.gb_gruppe5.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.gb_presmøtrik.SuspendLayout()
-        Me.gb_samkørsel.SuspendLayout()
-        Me.GroupBox6.SuspendLayout()
-        Me.SuspendLayout()
+        Me.gb_gruppe1.SuspendLayout
+        Me.gb_gruppe2.SuspendLayout
+        Me.gb_stag.SuspendLayout
+        Me.gb_gevind.SuspendLayout
+        Me.gb_undersænk.SuspendLayout
+        Me.gb_gruppe3.SuspendLayout
+        Me.gb_gruppe4.SuspendLayout
+        Me.GroupBox15.SuspendLayout
+        Me.gb_gruppe6.SuspendLayout
+        Me.gb_admin.SuspendLayout
+        Me.gb_overfladebeh.SuspendLayout
+        Me.GroupBox5.SuspendLayout
+        Me.gb_buk.SuspendLayout
+        Me.gb_hul.SuspendLayout
+        Me.gb_pristabel.SuspendLayout
+        Me.gb_opstart.SuspendLayout
+        Me.gb_matr.SuspendLayout
+        Me.GroupBox1.SuspendLayout
+        Me.GroupBox2.SuspendLayout
+        Me.gb_forbrug.SuspendLayout
+        Me.gb_gruppe5.SuspendLayout
+        Me.GroupBox3.SuspendLayout
+        Me.GroupBox4.SuspendLayout
+        Me.gb_presmøtrik.SuspendLayout
+        Me.gb_samkørsel.SuspendLayout
+        Me.GroupBox6.SuspendLayout
+        Me.SuspendLayout
         '
         'rb_factor1
         '
@@ -1068,21 +1068,21 @@ Partial Class metal_tilbud
         'Label47
         '
         Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(23, 114)
+        Me.Label47.Location = New System.Drawing.Point(1, 114)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(77, 13)
+        Me.Label47.Size = New System.Drawing.Size(109, 13)
         Me.Label47.TabIndex = 181
-        Me.Label47.Text = "Outsource dkk"
+        Me.Label47.Text = "Outsourced serv. dkk"
         Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label53
         '
         Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(34, 94)
+        Me.Label53.Location = New System.Drawing.Point(36, 94)
         Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(77, 13)
+        Me.Label53.Size = New System.Drawing.Size(74, 13)
         Me.Label53.TabIndex = 180
-        Me.Label53.Text = "Time price dkk"
+        Me.Label53.Text = "Time cost dkk"
         Me.Label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label52
@@ -1091,9 +1091,9 @@ Partial Class metal_tilbud
         Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label52.Location = New System.Drawing.Point(19, 73)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(91, 12)
+        Me.Label52.Size = New System.Drawing.Size(89, 12)
         Me.Label52.TabIndex = 179
-        Me.Label52.Text = "CNC price dkk-hours"
+        Me.Label52.Text = "CNC cost dkk-hours"
         Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label46
@@ -1102,9 +1102,9 @@ Partial Class metal_tilbud
         Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label46.Location = New System.Drawing.Point(19, 54)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(91, 12)
+        Me.Label46.Size = New System.Drawing.Size(89, 12)
         Me.Label46.TabIndex = 178
-        Me.Label46.Text = "Man price dkk -hours"
+        Me.Label46.Text = "Man cost dkk -hours"
         Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label45
@@ -1662,6 +1662,31 @@ Partial Class metal_tilbud
         Me.gb_gruppe1.TabIndex = 222
         Me.gb_gruppe1.TabStop = False
         '
+        'Label32
+        '
+        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label32.Location = New System.Drawing.Point(2, 77)
+        Me.Label32.Name = "Label32"
+        Me.Label32.Size = New System.Drawing.Size(130, 13)
+        Me.Label32.TabIndex = 250
+        Me.Label32.Text = "Tot cutting length (> ø100)"
+        '
+        'tb_hulantal_2C
+        '
+        Me.tb_hulantal_2C.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_hulantal_2C.Location = New System.Drawing.Point(132, 33)
+        Me.tb_hulantal_2C.Name = "tb_hulantal_2C"
+        Me.tb_hulantal_2C.Size = New System.Drawing.Size(53, 20)
+        Me.tb_hulantal_2C.TabIndex = 36
+        '
+        'tb_hulantal_3C
+        '
+        Me.tb_hulantal_3C.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_hulantal_3C.Location = New System.Drawing.Point(132, 53)
+        Me.tb_hulantal_3C.Name = "tb_hulantal_3C"
+        Me.tb_hulantal_3C.Size = New System.Drawing.Size(53, 20)
+        Me.tb_hulantal_3C.TabIndex = 37
+        '
         'Label241
         '
         Me.Label241.AutoSize = True
@@ -1742,14 +1767,6 @@ Partial Class metal_tilbud
         Me.lb_laserCNC_tid.Size = New System.Drawing.Size(53, 20)
         Me.lb_laserCNC_tid.TabIndex = 258
         '
-        'tb_hulantal_3C
-        '
-        Me.tb_hulantal_3C.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_hulantal_3C.Location = New System.Drawing.Point(132, 53)
-        Me.tb_hulantal_3C.Name = "tb_hulantal_3C"
-        Me.tb_hulantal_3C.Size = New System.Drawing.Size(53, 20)
-        Me.tb_hulantal_3C.TabIndex = 37
-        '
         'tb_laserCNC_tid_uk
         '
         Me.tb_laserCNC_tid_uk.Location = New System.Drawing.Point(191, 104)
@@ -1787,17 +1804,9 @@ Partial Class metal_tilbud
         Me.Label98.AutoSize = True
         Me.Label98.Location = New System.Drawing.Point(22, 106)
         Me.Label98.Name = "Label98"
-        Me.Label98.Size = New System.Drawing.Size(98, 13)
+        Me.Label98.Size = New System.Drawing.Size(90, 13)
         Me.Label98.TabIndex = 247
-        Me.Label98.Text = "CNC min./O.QTY.1"
-        '
-        'tb_hulantal_2C
-        '
-        Me.tb_hulantal_2C.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_hulantal_2C.Location = New System.Drawing.Point(132, 33)
-        Me.tb_hulantal_2C.Name = "tb_hulantal_2C"
-        Me.tb_hulantal_2C.Size = New System.Drawing.Size(53, 20)
-        Me.tb_hulantal_2C.TabIndex = 36
+        Me.Label98.Text = "CNC min./O.qty.1"
         '
         'tb_hulantal_1C
         '
@@ -1815,15 +1824,6 @@ Partial Class metal_tilbud
         Me.lb_opstart.Size = New System.Drawing.Size(57, 13)
         Me.lb_opstart.TabIndex = 253
         Me.lb_opstart.Text = "Setup min."
-        '
-        'Label32
-        '
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(2, 77)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(130, 13)
-        Me.Label32.TabIndex = 250
-        Me.Label32.Text = "Tot cutting length (> ø100)"
         '
         'tb_cuttinglength_C
         '
@@ -1961,6 +1961,16 @@ Partial Class metal_tilbud
         Me.gb_gruppe2.TabStop = False
         Me.gb_gruppe2.Text = "Group 2"
         '
+        'cb_rette
+        '
+        Me.cb_rette.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.cb_rette.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cb_rette.Location = New System.Drawing.Point(105, 105)
+        Me.cb_rette.Name = "cb_rette"
+        Me.cb_rette.Size = New System.Drawing.Size(16, 19)
+        Me.cb_rette.TabIndex = 51
+        Me.cb_rette.UseVisualStyleBackColor = False
+        '
         'Label228
         '
         Me.Label228.AutoSize = True
@@ -1970,7 +1980,6 @@ Partial Class metal_tilbud
         Me.Label228.Size = New System.Drawing.Size(90, 13)
         Me.Label228.TabIndex = 452
         Me.Label228.Text = "(only Order qty. 1)"
-        Me.Label228.Visible = False
         '
         'tb_info
         '
@@ -1981,7 +1990,6 @@ Partial Class metal_tilbud
         Me.tb_info.Size = New System.Drawing.Size(90, 13)
         Me.tb_info.TabIndex = 451
         Me.tb_info.Text = "(only Order qty. 1)"
-        Me.tb_info.Visible = False
         '
         'gb_stag
         '
@@ -2378,7 +2386,7 @@ Partial Class metal_tilbud
         Me.gb_undersænk.Size = New System.Drawing.Size(127, 295)
         Me.gb_undersænk.TabIndex = 290
         Me.gb_undersænk.TabStop = False
-        Me.gb_undersænk.Text = "CHANFERING"
+        Me.gb_undersænk.Text = "CHAMFERING"
         '
         'Label183
         '
@@ -2549,16 +2557,6 @@ Partial Class metal_tilbud
         Me.cb_vibrationsafgr.TabIndex = 50
         Me.cb_vibrationsafgr.UseVisualStyleBackColor = False
         Me.cb_vibrationsafgr.Visible = False
-        '
-        'cb_rette
-        '
-        Me.cb_rette.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.cb_rette.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.cb_rette.Location = New System.Drawing.Point(105, 105)
-        Me.cb_rette.Name = "cb_rette"
-        Me.cb_rette.Size = New System.Drawing.Size(16, 19)
-        Me.cb_rette.TabIndex = 51
-        Me.cb_rette.UseVisualStyleBackColor = False
         '
         'cb_afgrat
         '
@@ -2740,9 +2738,9 @@ Partial Class metal_tilbud
         'gb_gruppe3
         '
         Me.gb_gruppe3.BackColor = System.Drawing.Color.LightCyan
+        Me.gb_gruppe3.Controls.Add(Me.tb_numberofspotweldseams)
         Me.gb_gruppe3.Controls.Add(Me.cb_spotweld)
         Me.gb_gruppe3.Controls.Add(Me.Label34)
-        Me.gb_gruppe3.Controls.Add(Me.tb_numberofspotweldseams)
         Me.gb_gruppe3.Controls.Add(Me.Label203)
         Me.gb_gruppe3.Controls.Add(Me.tb_numberofspots)
         Me.gb_gruppe3.Controls.Add(Me.Label202)
@@ -2770,11 +2768,11 @@ Partial Class metal_tilbud
         '
         'Label34
         '
-        Me.Label34.Location = New System.Drawing.Point(4, 16)
+        Me.Label34.Location = New System.Drawing.Point(17, 16)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(140, 14)
         Me.Label34.TabIndex = 281
-        Me.Label34.Text = "antal svejsesømme pr emne"
+        Me.Label34.Text = "Number of welds per item"
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tb_numberofspotweldseams
@@ -2850,6 +2848,7 @@ Partial Class metal_tilbud
         'gb_gruppe4
         '
         Me.gb_gruppe4.BackColor = System.Drawing.Color.Honeydew
+        Me.gb_gruppe4.Controls.Add(Me.tb_numberofwelds)
         Me.gb_gruppe4.Controls.Add(Me.tb_weldlength)
         Me.gb_gruppe4.Controls.Add(Me.cb_rettesvejs)
         Me.gb_gruppe4.Controls.Add(Me.Label226)
@@ -2858,20 +2857,15 @@ Partial Class metal_tilbud
         Me.gb_gruppe4.Controls.Add(Me.rb_migmag)
         Me.gb_gruppe4.Controls.Add(Me.rb_tig)
         Me.gb_gruppe4.Controls.Add(Me.cb_weld)
-        Me.gb_gruppe4.Controls.Add(Me.cb_grind_weld)
         Me.gb_gruppe4.Controls.Add(Me.cb_tackweld)
         Me.gb_gruppe4.Controls.Add(Me.Label194)
         Me.gb_gruppe4.Controls.Add(Me.Label197)
-        Me.gb_gruppe4.Controls.Add(Me.Label200)
         Me.gb_gruppe4.Controls.Add(Me.Label192)
         Me.gb_gruppe4.Controls.Add(Me.Label189)
-        Me.gb_gruppe4.Controls.Add(Me.tb_numberofwelds)
         Me.gb_gruppe4.Controls.Add(Me.Label150)
         Me.gb_gruppe4.Controls.Add(Me.Label132)
-        Me.gb_gruppe4.Controls.Add(Me.lb_grind_weld)
         Me.gb_gruppe4.Controls.Add(Me.lb_weld)
         Me.gb_gruppe4.Controls.Add(Me.lb_tackweld)
-        Me.gb_gruppe4.Controls.Add(Me.tb_grind_weld_uk)
         Me.gb_gruppe4.Controls.Add(Me.tb_weld_uk)
         Me.gb_gruppe4.Controls.Add(Me.tb_tackweld_uk)
         Me.gb_gruppe4.Controls.Add(Me.GroupBox15)
@@ -2882,11 +2876,20 @@ Partial Class metal_tilbud
         Me.gb_gruppe4.TabStop = False
         Me.gb_gruppe4.Text = "Group 4  Welding"
         '
+        'tb_weldlength
+        '
+        Me.tb_weldlength.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_weldlength.Location = New System.Drawing.Point(145, 34)
+        Me.tb_weldlength.Name = "tb_weldlength"
+        Me.tb_weldlength.Size = New System.Drawing.Size(60, 20)
+        Me.tb_weldlength.TabIndex = 70
+        Me.tb_weldlength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'cb_rettesvejs
         '
         Me.cb_rettesvejs.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.cb_rettesvejs.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.cb_rettesvejs.Location = New System.Drawing.Point(73, 152)
+        Me.cb_rettesvejs.Location = New System.Drawing.Point(73, 139)
         Me.cb_rettesvejs.Name = "cb_rettesvejs"
         Me.cb_rettesvejs.Size = New System.Drawing.Size(16, 19)
         Me.cb_rettesvejs.TabIndex = 277
@@ -2895,17 +2898,17 @@ Partial Class metal_tilbud
         'Label226
         '
         Me.Label226.AutoSize = True
-        Me.Label226.Location = New System.Drawing.Point(1, 157)
+        Me.Label226.Location = New System.Drawing.Point(1, 144)
         Me.Label226.Name = "Label226"
-        Me.Label226.Size = New System.Drawing.Size(67, 13)
+        Me.Label226.Size = New System.Drawing.Size(69, 13)
         Me.Label226.TabIndex = 280
-        Me.Label226.Text = "straightening"
+        Me.Label226.Text = "Straightening"
         '
         'lb_rettesvejs_tid
         '
         Me.lb_rettesvejs_tid.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lb_rettesvejs_tid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_rettesvejs_tid.Location = New System.Drawing.Point(94, 151)
+        Me.lb_rettesvejs_tid.Location = New System.Drawing.Point(94, 138)
         Me.lb_rettesvejs_tid.Name = "lb_rettesvejs_tid"
         Me.lb_rettesvejs_tid.Size = New System.Drawing.Size(53, 20)
         Me.lb_rettesvejs_tid.TabIndex = 279
@@ -2914,7 +2917,7 @@ Partial Class metal_tilbud
         'tb_rettesvejs_uk
         '
         Me.tb_rettesvejs_uk.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.tb_rettesvejs_uk.Location = New System.Drawing.Point(153, 151)
+        Me.tb_rettesvejs_uk.Location = New System.Drawing.Point(153, 138)
         Me.tb_rettesvejs_uk.Name = "tb_rettesvejs_uk"
         Me.tb_rettesvejs_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_rettesvejs_uk.TabIndex = 278
@@ -2948,7 +2951,7 @@ Partial Class metal_tilbud
         '
         Me.cb_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.cb_weld.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.cb_weld.Location = New System.Drawing.Point(73, 112)
+        Me.cb_weld.Location = New System.Drawing.Point(73, 115)
         Me.cb_weld.Name = "cb_weld"
         Me.cb_weld.Size = New System.Drawing.Size(16, 19)
         Me.cb_weld.TabIndex = 74
@@ -2958,7 +2961,7 @@ Partial Class metal_tilbud
         '
         Me.cb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.cb_grind_weld.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.cb_grind_weld.Location = New System.Drawing.Point(73, 132)
+        Me.cb_grind_weld.Location = New System.Drawing.Point(74, 75)
         Me.cb_grind_weld.Name = "cb_grind_weld"
         Me.cb_grind_weld.Size = New System.Drawing.Size(16, 19)
         Me.cb_grind_weld.TabIndex = 75
@@ -2982,12 +2985,12 @@ Partial Class metal_tilbud
         Me.Label194.Name = "Label194"
         Me.Label194.Size = New System.Drawing.Size(71, 26)
         Me.Label194.TabIndex = 274
-        Me.Label194.Text = "Only staple welding"
+        Me.Label194.Text = "Only tack welding"
         '
         'Label197
         '
         Me.Label197.AutoSize = True
-        Me.Label197.Location = New System.Drawing.Point(1, 115)
+        Me.Label197.Location = New System.Drawing.Point(1, 118)
         Me.Label197.Name = "Label197"
         Me.Label197.Size = New System.Drawing.Size(62, 13)
         Me.Label197.TabIndex = 275
@@ -2996,11 +2999,11 @@ Partial Class metal_tilbud
         'Label200
         '
         Me.Label200.AutoSize = True
-        Me.Label200.Location = New System.Drawing.Point(1, 135)
+        Me.Label200.Location = New System.Drawing.Point(2, 78)
         Me.Label200.Name = "Label200"
-        Me.Label200.Size = New System.Drawing.Size(69, 13)
+        Me.Label200.Size = New System.Drawing.Size(72, 13)
         Me.Label200.TabIndex = 276
-        Me.Label200.Text = "grind welding"
+        Me.Label200.Text = "Weld grinding"
         '
         'Label192
         '
@@ -3013,11 +3016,11 @@ Partial Class metal_tilbud
         '
         'Label189
         '
-        Me.Label189.Location = New System.Drawing.Point(2, 16)
+        Me.Label189.Location = New System.Drawing.Point(12, 16)
         Me.Label189.Name = "Label189"
         Me.Label189.Size = New System.Drawing.Size(140, 14)
         Me.Label189.TabIndex = 260
-        Me.Label189.Text = "antal svejsesømme pr emne"
+        Me.Label189.Text = "Number of welds per item"
         Me.Label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tb_numberofwelds
@@ -3039,15 +3042,6 @@ Partial Class metal_tilbud
         Me.Label150.Text = "welding length per item in mm"
         Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'tb_weldlength
-        '
-        Me.tb_weldlength.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_weldlength.Location = New System.Drawing.Point(145, 34)
-        Me.tb_weldlength.Name = "tb_weldlength"
-        Me.tb_weldlength.Size = New System.Drawing.Size(60, 20)
-        Me.tb_weldlength.TabIndex = 70
-        Me.tb_weldlength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Label132
         '
         Me.Label132.AutoSize = True
@@ -3061,7 +3055,7 @@ Partial Class metal_tilbud
         '
         Me.lb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lb_grind_weld.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_grind_weld.Location = New System.Drawing.Point(94, 131)
+        Me.lb_grind_weld.Location = New System.Drawing.Point(94, 74)
         Me.lb_grind_weld.Name = "lb_grind_weld"
         Me.lb_grind_weld.Size = New System.Drawing.Size(53, 20)
         Me.lb_grind_weld.TabIndex = 255
@@ -3071,7 +3065,7 @@ Partial Class metal_tilbud
         '
         Me.lb_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lb_weld.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_weld.Location = New System.Drawing.Point(94, 111)
+        Me.lb_weld.Location = New System.Drawing.Point(94, 114)
         Me.lb_weld.Name = "lb_weld"
         Me.lb_weld.Size = New System.Drawing.Size(53, 20)
         Me.lb_weld.TabIndex = 254
@@ -3090,14 +3084,14 @@ Partial Class metal_tilbud
         'tb_grind_weld_uk
         '
         Me.tb_grind_weld_uk.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.tb_grind_weld_uk.Location = New System.Drawing.Point(153, 131)
+        Me.tb_grind_weld_uk.Location = New System.Drawing.Point(153, 74)
         Me.tb_grind_weld_uk.Name = "tb_grind_weld_uk"
         Me.tb_grind_weld_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_grind_weld_uk.TabIndex = 153
         '
         'tb_weld_uk
         '
-        Me.tb_weld_uk.Location = New System.Drawing.Point(153, 111)
+        Me.tb_weld_uk.Location = New System.Drawing.Point(153, 114)
         Me.tb_weld_uk.Name = "tb_weld_uk"
         Me.tb_weld_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_weld_uk.TabIndex = 152
@@ -3605,6 +3599,17 @@ Partial Class metal_tilbud
         Me.gb_admin.TabIndex = 227
         Me.gb_admin.TabStop = False
         '
+        'lb_filnavn
+        '
+        Me.lb_filnavn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lb_filnavn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lb_filnavn.Location = New System.Drawing.Point(56, 54)
+        Me.lb_filnavn.Name = "lb_filnavn"
+        Me.lb_filnavn.Size = New System.Drawing.Size(200, 21)
+        Me.lb_filnavn.TabIndex = 232
+        Me.lb_filnavn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lb_filnavn.UseCompatibleTextRendering = True
+        '
         'lb_operatør_opr
         '
         Me.lb_operatør_opr.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -3766,17 +3771,6 @@ Partial Class metal_tilbud
         Me.Label88.Size = New System.Drawing.Size(52, 13)
         Me.Label88.TabIndex = 234
         Me.Label88.Text = "File name"
-        '
-        'lb_filnavn
-        '
-        Me.lb_filnavn.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lb_filnavn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_filnavn.Location = New System.Drawing.Point(56, 54)
-        Me.lb_filnavn.Name = "lb_filnavn"
-        Me.lb_filnavn.Size = New System.Drawing.Size(200, 21)
-        Me.lb_filnavn.TabIndex = 232
-        Me.lb_filnavn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lb_filnavn.UseCompatibleTextRendering = True
         '
         'Label10
         '
@@ -4575,6 +4569,15 @@ Partial Class metal_tilbud
         Me.gb_buk.TabStop = False
         Me.gb_buk.Text = "Bending (Group 3)"
         '
+        'lb_buk_opst
+        '
+        Me.lb_buk_opst.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lb_buk_opst.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lb_buk_opst.Location = New System.Drawing.Point(82, 361)
+        Me.lb_buk_opst.Name = "lb_buk_opst"
+        Me.lb_buk_opst.Size = New System.Drawing.Size(53, 20)
+        Me.lb_buk_opst.TabIndex = 242
+        '
         'tb_stepantal
         '
         Me.tb_stepantal.Location = New System.Drawing.Point(193, 318)
@@ -4711,15 +4714,6 @@ Partial Class metal_tilbud
         Me.Label30.Size = New System.Drawing.Size(76, 13)
         Me.Label30.TabIndex = 243
         Me.Label30.Text = "Setup bending"
-        '
-        'lb_buk_opst
-        '
-        Me.lb_buk_opst.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lb_buk_opst.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_buk_opst.Location = New System.Drawing.Point(82, 361)
-        Me.lb_buk_opst.Name = "lb_buk_opst"
-        Me.lb_buk_opst.Size = New System.Drawing.Size(53, 20)
-        Me.lb_buk_opst.TabIndex = 242
         '
         'Label96
         '
@@ -5212,6 +5206,14 @@ Partial Class metal_tilbud
         Me.gb_hul.TabIndex = 231
         Me.gb_hul.TabStop = False
         '
+        'tb_slag_til_huller
+        '
+        Me.tb_slag_til_huller.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_slag_til_huller.Location = New System.Drawing.Point(133, 40)
+        Me.tb_slag_til_huller.Name = "tb_slag_til_huller"
+        Me.tb_slag_til_huller.Size = New System.Drawing.Size(53, 20)
+        Me.tb_slag_til_huller.TabIndex = 33
+        '
         'lb_stans_ialtuk
         '
         Me.lb_stans_ialtuk.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -5300,14 +5302,6 @@ Partial Class metal_tilbud
         Me.Label99.Size = New System.Drawing.Size(67, 13)
         Me.Label99.TabIndex = 245
         Me.Label99.Text = "Tool change"
-        '
-        'tb_slag_til_huller
-        '
-        Me.tb_slag_til_huller.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_slag_til_huller.Location = New System.Drawing.Point(133, 40)
-        Me.tb_slag_til_huller.Name = "tb_slag_til_huller"
-        Me.tb_slag_til_huller.Size = New System.Drawing.Size(53, 20)
-        Me.tb_slag_til_huller.TabIndex = 33
         '
         'tb_opstart_kr_uk
         '
@@ -5432,6 +5426,16 @@ Partial Class metal_tilbud
         Me.gb_pristabel.TabIndex = 241
         Me.gb_pristabel.TabStop = False
         Me.gb_pristabel.Text = "Price Scheme"
+        '
+        'lb_timer1
+        '
+        Me.lb_timer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lb_timer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lb_timer1.Location = New System.Drawing.Point(109, 94)
+        Me.lb_timer1.Name = "lb_timer1"
+        Me.lb_timer1.Size = New System.Drawing.Size(126, 20)
+        Me.lb_timer1.TabIndex = 162
+        Me.lb_timer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_råvarerstk5
         '
@@ -5635,16 +5639,6 @@ Partial Class metal_tilbud
         Me.lb_timer4.TabIndex = 164
         Me.lb_timer4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lb_timer1
-        '
-        Me.lb_timer1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lb_timer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_timer1.Location = New System.Drawing.Point(109, 94)
-        Me.lb_timer1.Name = "lb_timer1"
-        Me.lb_timer1.Size = New System.Drawing.Size(126, 20)
-        Me.lb_timer1.TabIndex = 162
-        Me.lb_timer1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label122
         '
         Me.Label122.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
@@ -5819,6 +5813,14 @@ Partial Class metal_tilbud
         Me.gb_matr.TabStop = False
         Me.gb_matr.Text = "SELECT MATERIAL"
         '
+        'tb_Kilopris_uk
+        '
+        Me.tb_Kilopris_uk.Location = New System.Drawing.Point(96, 283)
+        Me.tb_Kilopris_uk.Name = "tb_Kilopris_uk"
+        Me.tb_Kilopris_uk.Size = New System.Drawing.Size(53, 20)
+        Me.tb_Kilopris_uk.TabIndex = 310
+        Me.tb_Kilopris_uk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'lb_pladeforbrug
         '
         Me.lb_pladeforbrug.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -5885,14 +5887,6 @@ Partial Class metal_tilbud
         Me.Label177.Size = New System.Drawing.Size(38, 13)
         Me.Label177.TabIndex = 311
         Me.Label177.Text = "Kr./Kg"
-        '
-        'tb_Kilopris_uk
-        '
-        Me.tb_Kilopris_uk.Location = New System.Drawing.Point(96, 283)
-        Me.tb_Kilopris_uk.Name = "tb_Kilopris_uk"
-        Me.tb_Kilopris_uk.Size = New System.Drawing.Size(53, 20)
-        Me.tb_Kilopris_uk.TabIndex = 310
-        Me.tb_Kilopris_uk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label149
         '
@@ -6219,6 +6213,55 @@ Partial Class metal_tilbud
         Me.GroupBox1.TabIndex = 246
         Me.GroupBox1.TabStop = False
         '
+        'lb_CombiCNCstans_tid
+        '
+        Me.lb_CombiCNCstans_tid.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lb_CombiCNCstans_tid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lb_CombiCNCstans_tid.Location = New System.Drawing.Point(133, 175)
+        Me.lb_CombiCNCstans_tid.Name = "lb_CombiCNCstans_tid"
+        Me.lb_CombiCNCstans_tid.Size = New System.Drawing.Size(53, 20)
+        Me.lb_CombiCNCstans_tid.TabIndex = 347
+        '
+        'tb_cuttinglength_B
+        '
+        Me.tb_cuttinglength_B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_cuttinglength_B.Location = New System.Drawing.Point(133, 122)
+        Me.tb_cuttinglength_B.Name = "tb_cuttinglength_B"
+        Me.tb_cuttinglength_B.Size = New System.Drawing.Size(53, 20)
+        Me.tb_cuttinglength_B.TabIndex = 45
+        '
+        'tb_hulantal_3B
+        '
+        Me.tb_hulantal_3B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_hulantal_3B.Location = New System.Drawing.Point(133, 102)
+        Me.tb_hulantal_3B.Name = "tb_hulantal_3B"
+        Me.tb_hulantal_3B.Size = New System.Drawing.Size(53, 20)
+        Me.tb_hulantal_3B.TabIndex = 44
+        '
+        'tb_hulantal_2B
+        '
+        Me.tb_hulantal_2B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_hulantal_2B.Location = New System.Drawing.Point(133, 82)
+        Me.tb_hulantal_2B.Name = "tb_hulantal_2B"
+        Me.tb_hulantal_2B.Size = New System.Drawing.Size(53, 20)
+        Me.tb_hulantal_2B.TabIndex = 43
+        '
+        'tb_hulantal_1B
+        '
+        Me.tb_hulantal_1B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_hulantal_1B.Location = New System.Drawing.Point(133, 62)
+        Me.tb_hulantal_1B.Name = "tb_hulantal_1B"
+        Me.tb_hulantal_1B.Size = New System.Drawing.Size(53, 20)
+        Me.tb_hulantal_1B.TabIndex = 42
+        '
+        'tb_slag_til_huller_B
+        '
+        Me.tb_slag_til_huller_B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_slag_til_huller_B.Location = New System.Drawing.Point(133, 42)
+        Me.tb_slag_til_huller_B.Name = "tb_slag_til_huller_B"
+        Me.tb_slag_til_huller_B.Size = New System.Drawing.Size(53, 20)
+        Me.tb_slag_til_huller_B.TabIndex = 41
+        '
         'Label240
         '
         Me.Label240.AutoSize = True
@@ -6288,15 +6331,6 @@ Partial Class metal_tilbud
         Me.Label227.TabIndex = 346
         Me.Label227.Text = "CNC min.stans/O.qty.1"
         '
-        'lb_CombiCNCstans_tid
-        '
-        Me.lb_CombiCNCstans_tid.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lb_CombiCNCstans_tid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_CombiCNCstans_tid.Location = New System.Drawing.Point(133, 175)
-        Me.lb_CombiCNCstans_tid.Name = "lb_CombiCNCstans_tid"
-        Me.lb_CombiCNCstans_tid.Size = New System.Drawing.Size(53, 20)
-        Me.lb_CombiCNCstans_tid.TabIndex = 347
-        '
         'Label123
         '
         Me.Label123.AutoSize = True
@@ -6314,14 +6348,6 @@ Partial Class metal_tilbud
         Me.Label131.Size = New System.Drawing.Size(127, 13)
         Me.Label131.TabIndex = 260
         Me.Label131.Text = "Nmbr of strokes per holes"
-        '
-        'tb_slag_til_huller_B
-        '
-        Me.tb_slag_til_huller_B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_slag_til_huller_B.Location = New System.Drawing.Point(133, 42)
-        Me.tb_slag_til_huller_B.Name = "tb_slag_til_huller_B"
-        Me.tb_slag_til_huller_B.Size = New System.Drawing.Size(53, 20)
-        Me.tb_slag_til_huller_B.TabIndex = 41
         '
         'Label135
         '
@@ -6374,14 +6400,6 @@ Partial Class metal_tilbud
         Me.lb_Combi_opstart.Size = New System.Drawing.Size(53, 20)
         Me.lb_Combi_opstart.TabIndex = 254
         '
-        'tb_hulantal_3B
-        '
-        Me.tb_hulantal_3B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_hulantal_3B.Location = New System.Drawing.Point(133, 102)
-        Me.tb_hulantal_3B.Name = "tb_hulantal_3B"
-        Me.tb_hulantal_3B.Size = New System.Drawing.Size(53, 20)
-        Me.tb_hulantal_3B.TabIndex = 44
-        '
         'Label111
         '
         Me.Label111.AutoSize = True
@@ -6409,14 +6427,6 @@ Partial Class metal_tilbud
         Me.Label113.TabIndex = 247
         Me.Label113.Text = "CNC min.laser/O.qty.1"
         '
-        'tb_hulantal_2B
-        '
-        Me.tb_hulantal_2B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_hulantal_2B.Location = New System.Drawing.Point(133, 82)
-        Me.tb_hulantal_2B.Name = "tb_hulantal_2B"
-        Me.tb_hulantal_2B.Size = New System.Drawing.Size(53, 20)
-        Me.tb_hulantal_2B.TabIndex = 43
-        '
         'Label114
         '
         Me.Label114.AutoSize = True
@@ -6435,14 +6445,6 @@ Partial Class metal_tilbud
         Me.lb_CombiCNC_tid.Size = New System.Drawing.Size(53, 20)
         Me.lb_CombiCNC_tid.TabIndex = 251
         '
-        'tb_cuttinglength_B
-        '
-        Me.tb_cuttinglength_B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_cuttinglength_B.Location = New System.Drawing.Point(133, 122)
-        Me.tb_cuttinglength_B.Name = "tb_cuttinglength_B"
-        Me.tb_cuttinglength_B.Size = New System.Drawing.Size(53, 20)
-        Me.tb_cuttinglength_B.TabIndex = 45
-        '
         'tb_combi_opstart_uk
         '
         Me.tb_combi_opstart_uk.Location = New System.Drawing.Point(191, 196)
@@ -6458,14 +6460,6 @@ Partial Class metal_tilbud
         Me.Label125.Size = New System.Drawing.Size(120, 13)
         Me.Label125.TabIndex = 248
         Me.Label125.Text = "Numb. of holes (ø2-ø10)"
-        '
-        'tb_hulantal_1B
-        '
-        Me.tb_hulantal_1B.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_hulantal_1B.Location = New System.Drawing.Point(133, 62)
-        Me.tb_hulantal_1B.Name = "tb_hulantal_1B"
-        Me.tb_hulantal_1B.Size = New System.Drawing.Size(53, 20)
-        Me.tb_hulantal_1B.TabIndex = 42
         '
         'GroupBox2
         '
@@ -6966,6 +6960,7 @@ Partial Class metal_tilbud
         'gb_gruppe5
         '
         Me.gb_gruppe5.BackColor = System.Drawing.Color.Lavender
+        Me.gb_gruppe5.Controls.Add(Me.Label200)
         Me.gb_gruppe5.Controls.Add(Me.cb_slib)
         Me.gb_gruppe5.Controls.Add(Me.cb_glasbl)
         Me.gb_gruppe5.Controls.Add(Me.Label254)
@@ -6974,8 +6969,11 @@ Partial Class metal_tilbud
         Me.gb_gruppe5.Controls.Add(Me.Label214)
         Me.gb_gruppe5.Controls.Add(Me.Label219)
         Me.gb_gruppe5.Controls.Add(Me.Label220)
+        Me.gb_gruppe5.Controls.Add(Me.cb_grind_weld)
         Me.gb_gruppe5.Controls.Add(Me.lb_glasbl)
         Me.gb_gruppe5.Controls.Add(Me.tb_glasbl_uk)
+        Me.gb_gruppe5.Controls.Add(Me.lb_grind_weld)
+        Me.gb_gruppe5.Controls.Add(Me.tb_grind_weld_uk)
         Me.gb_gruppe5.Location = New System.Drawing.Point(1022, 690)
         Me.gb_gruppe5.Name = "gb_gruppe5"
         Me.gb_gruppe5.Size = New System.Drawing.Size(210, 100)
@@ -7100,7 +7098,7 @@ Partial Class metal_tilbud
         Me.Label221.Name = "Label221"
         Me.Label221.Size = New System.Drawing.Size(155, 18)
         Me.Label221.TabIndex = 491
-        Me.Label221.Text = "Welding + grinding welds"
+        Me.Label221.Text = "Welding + straightening"
         Me.Label221.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label222

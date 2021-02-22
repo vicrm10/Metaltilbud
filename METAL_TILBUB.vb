@@ -220,6 +220,22 @@ Public Class metal_tilbud
     '    End If'
 
     ' Creates a connection string used for APPLSRV01\SQLEXPRESS
+
+    Private laserRectificationFactor = 0.21
+    Private punchingRectificationFactor = 1
+    Private steelmasterRectificationFactor = 1
+    Private edgeDeburringRectificationFactor = 1
+    Private streightRectificationFactor = 1
+    Private tackRectificationFactor = 0.42
+    Private filletRectificationFactor = 0.69
+    Private spotRectificationFactor = 1
+    Private weldGrindRectificationFactor = 0.6
+    Private areaGrindRectificationFactor = 1
+    Private bendRectificationFactor = 1
+    Private screwPressRectificationFactor = 1
+    Private screwWeldRectificationFactor = 1
+    Private threadingRectificationFactor = 1
+    Private sanddRectificationFactor = 1
     Private Function GetConnectionString() As String
         Return "SERVER=APPLSRV01\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
         ' Return "SERVER=APPLSRV02-2016\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
@@ -1757,7 +1773,7 @@ Public Class metal_tilbud
             tb_tackweld_uk.Text = ""
         End If
         'tapsvejsning
-        If tb_tapantal.Text <> "" Then
+        If tb_tapantal.Text <> "" And tb_tapantal.Text <> "0" Then
             tapsvejstid100 = 30
             If Totalweldingtime + Totaltackweldingtime + oprettetid + Val(lb_grind_weld.Text) > 15 Then
                 opstart = 0
@@ -1772,7 +1788,8 @@ Public Class metal_tilbud
             tb_tapsvejs_uk.Text = ""
         End If
 
-        calculated_weldingtime = Totalweldingtime + Totaltackweldingtime + oprettetid + Val(lb_grind_weld.Text) + tapsvejstid
+        calculated_weldingtime = Totalweldingtime + Totaltackweldingtime + oprettetid + tapsvejstid
+        'Val(lb_grind_weld.Text)
         tb_svejstid_ialt.Text = Format(calculated_weldingtime, 0)
 
         If calculated_weldingtime = 0 Then
@@ -2353,7 +2370,8 @@ Public Class metal_tilbud
         If lb_gruppetid3.Text = 0.0 Then
             lb_gruppetid3.Text = ""
         End If
-        lb_gruppetid4.Text = FormatNumber((Convert.ToDouble(pobjFilter_tb_tackweld_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_weld_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_rettesvejs_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_grind_weld_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_tapsvejs_uk.GetValue)) / 60, 2)
+        lb_gruppetid4.Text = FormatNumber((Convert.ToDouble(pobjFilter_tb_tackweld_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_weld_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_rettesvejs_uk.GetValue) + 'Convert.ToDouble(pobjFilter_tb_grind_weld_uk.GetValue) 
+                                          +Convert.ToDouble(pobjFilter_tb_tapsvejs_uk.GetValue)) / 60, 2)
         If lb_gruppetid4.Text = 0.0 Then
             lb_gruppetid4.Text = ""
         End If
@@ -2361,7 +2379,7 @@ Public Class metal_tilbud
         If lb_gruppetid5.Text = 0.0 Then
             lb_gruppetid5.Text = ""
         End If
-        lb_gruppetid5slib.Text = FormatNumber((Convert.ToDouble(pobjFilter_tb_glasbl_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_slib_uk.GetValue)) / 60, 2)
+        lb_gruppetid5slib.Text = FormatNumber((Convert.ToDouble(pobjFilter_tb_glasbl_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_slib_uk.GetValue) + Convert.ToDouble(pobjFilter_tb_grind_weld_uk.GetValue)) / 60, 2)
         If lb_gruppetid5slib.Text = 0.0 Then
             lb_gruppetid5slib.Text = ""
         End If
@@ -5402,6 +5420,11 @@ Public Class metal_tilbud
 
     End Sub
 
+
+
+
+
+
     Private Sub getTimesPerOperation(ByRef isTilbudOperation, ByRef runTime, ByRef setupTime)
 
         Dim currentOperation = 0
@@ -5415,7 +5438,7 @@ Public Class metal_tilbud
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
         If Me.lb_laserCNC_tid.Text <> "" Then
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_laserCNC_tid.Text)
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_laserCNC_tid.Text) * laserRectificationFactor
             setupTime(currentOperation) = Convert.ToDecimal(Me.lb_laser_opstart.Text)
         Else
             runTime(currentOperation) = 0
@@ -5432,6 +5455,7 @@ Public Class metal_tilbud
             If IsNumeric(Me.lb_CombiCNCstans_tid.Text) Then
                 runTime(currentOperation) += Convert.ToDecimal(Me.lb_CombiCNCstans_tid.Text)
             End If
+            runTime(currentOperation) *= punchingRectificationFactor
             setupTime(currentOperation) = Convert.ToDecimal(Me.lb_Combi_opstart.Text)
         Else
             runTime(currentOperation) = 0
@@ -5448,25 +5472,27 @@ Public Class metal_tilbud
         'Steelmaster 5
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 10
         If Me.lb_grinding.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_grinding.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_grinding.Text) - setupTime(currentOperation)) * steelmasterRectificationFactor
 
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Szlif Krawedzi = edge deburring 6
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 15
         If Me.lb_afgrat.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_afgrat.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_afgrat.Text) - setupTime(currentOperation)) * edgeDeburringRectificationFactor
 
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Szlif wibracyjne = vibration deburring 7
@@ -5487,54 +5513,78 @@ Public Class metal_tilbud
         setupTime(currentOperation) = 0
         If Me.lb_rettesvejs_tid.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_rettesvejs_tid.Text)
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_rettesvejs_tid.Text) * streightRectificationFactor
 
         Else
             runTime(currentOperation) = 0
         End If
 
+
         'Spawanie = welding 9
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 15
         If Me.tb_svejstid_ialt.Text <> "" Then
+            Dim recti = 0
+            If Me.lb_tackweld.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.tb_svejstid_ialt.Text)
+                recti = (CDec(Me.lb_tackweld.Text) - setupTime(currentOperation)) * tackRectificationFactor  ' .42 is the factor to reduce to a more tight one for the MK
+
+            End If
+
+            If Me.lb_weld.Text <> "" Then
+
+                recti = (CDec(Me.lb_weld.Text) - setupTime(currentOperation)) * filletRectificationFactor ' .69 is the factor to reduce to a more tight one for the MK
+
+            End If
+
+            runTime(currentOperation) = recti
 
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Spawanie punktowe = spot welding 10
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 20
         If Me.lb_spotweld.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_spotweld.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_spotweld.Text) - setupTime(currentOperation)) * spotRectificationFactor
 
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Szlifowanie = grinding 11
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
         setupTime(currentOperation) = 0
-        If Me.lb_slib.Text <> "" Then
+        runTime(currentOperation) = 0
+        Dim flag = False
+        If Me.lb_grind_weld.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_slib.Text)
-
-        Else
-            runTime(currentOperation) = 0
+            setupTime(currentOperation) = 5
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_grind_weld.Text) - setupTime(currentOperation)) * weldGrindRectificationFactor
+            flag = True
         End If
+        If Me.lb_slib.Text <> "" Then
+            setupTime(currentOperation) = 15
+            runTime(currentOperation) += (Convert.ToDecimal(Me.lb_slib.Text) - setupTime(currentOperation)) * areaGrindRectificationFactor
+            If flag Then
+                setupTime(currentOperation) += 5
+            End If
+        End If
+
 
         'Giecie = Bending 12
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
         If Me.lb_buk_tid.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_tid.Text)
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_tid.Text) * bendRectificationFactor
             setupTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_opst.Text)
 
         Else
@@ -5545,41 +5595,44 @@ Public Class metal_tilbud
         'Rolowanie = rolling : not present 13
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 10
         If Me.lb_valsetid.Text <> "" Then
 
             runTime(currentOperation) = Convert.ToDecimal(Me.lb_valsetid.Text)
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Wtlaczanie el. gwintowanych = Screw pressing 14
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 20
         If Me.lb_presstag.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_presstag.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_presstag.Text) - setupTime(currentOperation)) * screwPressRectificationFactor
         Else
             runTime(currentOperation) = 0
         End If
 
         If Me.lb_pressnut.Text <> "" Then
 
-            runTime(currentOperation) = runTime(currentOperation) + Convert.ToDecimal(Me.lb_pressnut.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_pressnut.Text) - setupTime(currentOperation) * screwPressRectificationFactor) + runTime(currentOperation)
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Wspawywanie el. gwintowanych = Screw welding 15
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 20
         If Me.lb_boltesvejs.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_boltesvejs.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_boltesvejs.Text) - setupTime(currentOperation)) * screwWeldRectificationFactor
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Gwintowanie = Threading 16
@@ -5588,7 +5641,7 @@ Public Class metal_tilbud
         setupTime(currentOperation) = 0
         If Me.lb_gevind.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_gevind.Text)
+            runTime(currentOperation) = Convert.ToDecimal(Me.lb_gevind.Text) * threadingRectificationFactor
         Else
             runTime(currentOperation) = 0
         End If
@@ -5638,12 +5691,13 @@ Public Class metal_tilbud
         'Perelkowanie = Sand/glass blasting 24
         currentOperation = currentOperation + 1
         isTilbudOperation(currentOperation) = True
-        setupTime(currentOperation) = 0
+        setupTime(currentOperation) = 15
         If Me.lb_glasbl.Text <> "" Then
 
-            runTime(currentOperation) = Convert.ToDecimal(Me.lb_glasbl.Text)
+            runTime(currentOperation) = (Convert.ToDecimal(Me.lb_glasbl.Text) - setupTime(currentOperation)) * sanddRectificationFactor
         Else
             runTime(currentOperation) = 0
+            setupTime(currentOperation) = 0
         End If
 
         'Ojlejanie folia = Cover with foil 25
@@ -5762,10 +5816,6 @@ Public Class metal_tilbud
                 weldUK += Convert.ToDecimal(Me.tb_weld_uk.Text)
             End If
 
-            If Me.tb_grind_weld_uk.Text <> "" Then
-                weldUK += Convert.ToDecimal(Me.tb_grind_weld_uk.Text)
-            End If
-
             If Me.tb_rettesvejs_uk.Text <> "" Then
                 weldUK += Convert.ToDecimal(Me.tb_rettesvejs_uk.Text)
             End If
@@ -5789,8 +5839,18 @@ Public Class metal_tilbud
 
         'Szlifowanie = grinding 11
         If runTime(10) <> 0 Then
+            Dim flag = False
             If Me.tb_slib_uk.Text <> "" Then
                 runTime(10) = Convert.ToDecimal(Me.tb_slib_uk.Text)
+                flag = True
+            End If
+            If Me.tb_grind_weld_uk.Text <> "" Then
+                If flag Then
+                    runTime(10) += Convert.ToDecimal(Me.tb_grind_weld_uk.Text)
+                Else
+                    runTime(10) = Convert.ToDecimal(Me.tb_grind_weld_uk.Text)
+                End If
+
             End If
         End If
 

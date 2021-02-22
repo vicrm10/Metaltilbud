@@ -1456,7 +1456,7 @@ Partial Class oper_sequence
         Me.lb_setup.Name = "lb_setup"
         Me.lb_setup.Size = New System.Drawing.Size(35, 13)
         Me.lb_setup.TabIndex = 55
-        Me.lb_setup.Text = "Setup"
+        Me.lb_setup.Text = "Setup time (min)"
 
         '
         'lb_timePiece
@@ -1467,7 +1467,7 @@ Partial Class oper_sequence
         Me.lb_timePiece.Name = "lb_timePiece"
         Me.lb_timePiece.Size = New System.Drawing.Size(62, 13)
         Me.lb_timePiece.TabIndex = 56
-        Me.lb_timePiece.Text = "Time/Piece"
+        Me.lb_timePiece.Text = "Run time (min)"
 
         '
         'lb_pila

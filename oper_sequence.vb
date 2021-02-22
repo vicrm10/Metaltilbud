@@ -29,6 +29,7 @@
                 If runTime(i) <> 0 Then
                     run_array(i).Text = CStr(runTime(i))
                     setup_array(i).Text = CStr(setupTime(i))
+
                 Else
                     combo_array(i).Enabled = False
 
