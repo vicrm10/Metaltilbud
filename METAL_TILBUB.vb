@@ -221,21 +221,22 @@ Public Class metal_tilbud
 
     ' Creates a connection string used for APPLSRV01\SQLEXPRESS
 
+    'Factors to reduce and get more tight times to include in method card
     Private laserRectificationFactor = 0.21
     Private punchingRectificationFactor = 1
     Private steelmasterRectificationFactor = 1
-    Private edgeDeburringRectificationFactor = 1
+    Private edgeDeburringRectificationFactor = 0.52
     Private streightRectificationFactor = 1
     Private tackRectificationFactor = 0.42
     Private filletRectificationFactor = 0.69
-    Private spotRectificationFactor = 1
+    Private spotRectificationFactor = 0.75
     Private weldGrindRectificationFactor = 0.6
-    Private areaGrindRectificationFactor = 1
-    Private bendRectificationFactor = 1
-    Private screwPressRectificationFactor = 1
-    Private screwWeldRectificationFactor = 1
-    Private threadingRectificationFactor = 1
-    Private sanddRectificationFactor = 1
+    Private areaGrindRectificationFactor = 0.66
+    Private bendRectificationFactor = 0.13
+    Private screwPressRectificationFactor = 0.66
+    Private screwWeldRectificationFactor = 0.7
+    Private threadingRectificationFactor = 0.16
+    Private sanddRectificationFactor = 0.75
     Private Function GetConnectionString() As String
         Return "SERVER=APPLSRV01\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
         ' Return "SERVER=APPLSRV02-2016\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
@@ -3877,6 +3878,62 @@ Public Class metal_tilbud
     'tb_antal5.Text = ""
     'End Sub
 
+    Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+
+    Private Sub rb_B_kombi_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_B_kombi.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+
+    Private Sub rb_klip_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_klip.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_netto_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_netto.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_brutto_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_brutto.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_tig_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_tig.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_rustfri_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_rustfri.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_jern_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_jern.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub tb_numberofwelds_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tb_numberofwelds.TextChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub tb_weldlength_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles tb_weldlength.TextChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub cb_Spotweld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_spotweld.CheckStateChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub cb_weld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_weld.CheckStateChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub cb_tackweld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_tackweld.CheckStateChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub cb_Grind_weld_CheckstateChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cb_grind_weld.CheckStateChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_factor1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor1.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_factor2_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor2.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_factor3_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor3.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
+    Private Sub rb_factor4_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor4.CheckedChanged
+        CalculateOrdrestr()
+    End Sub
 
     Private Sub rb_factor5_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_factor5.CheckedChanged
         If tb_tapantal.Text <> "" Then
@@ -5383,7 +5440,7 @@ Public Class metal_tilbud
         isTilbudOperation(currentOperation) = True
         If Me.lb_laserCNC_tid.Text <> "" Then
             runTime(currentOperation) = Convert.ToDecimal(Me.lb_laserCNC_tid.Text) * laserRectificationFactor
-            setupTime(currentOperation) = Convert.ToDecimal(Me.lb_laser_opstart.Text)
+            setupTime(currentOperation) = 5 'Convert.ToDecimal(Me.lb_laser_opstart.Text)
         Else
             runTime(currentOperation) = 0
             setupTime(currentOperation) = 0
@@ -5421,6 +5478,7 @@ Public Class metal_tilbud
 
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_grinding.Text) - setupTime(currentOperation)) * steelmasterRectificationFactor
 
+
         Else
             runTime(currentOperation) = 0
             setupTime(currentOperation) = 0
@@ -5433,6 +5491,7 @@ Public Class metal_tilbud
         If Me.lb_afgrat.Text <> "" Then
 
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_afgrat.Text) - setupTime(currentOperation)) * edgeDeburringRectificationFactor
+            setupTime(currentOperation) = 5 ' hardsetted value 5 minutes
 
         Else
             runTime(currentOperation) = 0
@@ -5483,6 +5542,7 @@ Public Class metal_tilbud
             End If
 
             runTime(currentOperation) = recti
+            setupTime(currentOperation) = 5 'Hard setted value to 5 min
 
         Else
             runTime(currentOperation) = 0
@@ -5496,6 +5556,7 @@ Public Class metal_tilbud
         If Me.lb_spotweld.Text <> "" Then
 
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_spotweld.Text) - setupTime(currentOperation)) * spotRectificationFactor
+            setupTime(currentOperation) = 10 'Hard setted value to 10 min
 
         Else
             runTime(currentOperation) = 0
@@ -5508,17 +5569,20 @@ Public Class metal_tilbud
         setupTime(currentOperation) = 0
         runTime(currentOperation) = 0
         Dim flag = False
+
+        If Me.lb_slib.Text <> "" Then
+            setupTime(currentOperation) = 15
+            runTime(currentOperation) += (Convert.ToDecimal(Me.lb_slib.Text) - setupTime(currentOperation)) * areaGrindRectificationFactor
+            flag = True
+        End If
+
         If Me.lb_grind_weld.Text <> "" Then
 
             setupTime(currentOperation) = 5
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_grind_weld.Text) - setupTime(currentOperation)) * weldGrindRectificationFactor
-            flag = True
-        End If
-        If Me.lb_slib.Text <> "" Then
-            setupTime(currentOperation) = 15
-            runTime(currentOperation) += (Convert.ToDecimal(Me.lb_slib.Text) - setupTime(currentOperation)) * areaGrindRectificationFactor
+
             If flag Then
-                setupTime(currentOperation) += 5
+                setupTime(currentOperation) += 10 ' hard setted setup time 5 (weldgrind) plus 10 (grind surface)
             End If
         End If
 
@@ -5529,7 +5593,7 @@ Public Class metal_tilbud
         If Me.lb_buk_tid.Text <> "" Then
 
             runTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_tid.Text) * bendRectificationFactor
-            setupTime(currentOperation) = Convert.ToDecimal(Me.lb_buk_opst.Text)
+            setupTime(currentOperation) = 15 'Convert.ToDecimal(Me.lb_buk_opst.Text)
 
         Else
             runTime(currentOperation) = 0
@@ -5566,6 +5630,7 @@ Public Class metal_tilbud
             runTime(currentOperation) = 0
             setupTime(currentOperation) = 0
         End If
+        setupTime(currentOperation) = 15 ' hardsetted value to 15 minutes
 
         'Wspawywanie el. gwintowanych = Screw welding 15
         currentOperation = currentOperation + 1
@@ -5574,6 +5639,7 @@ Public Class metal_tilbud
         If Me.lb_boltesvejs.Text <> "" Then
 
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_boltesvejs.Text) - setupTime(currentOperation)) * screwWeldRectificationFactor
+            setupTime(currentOperation) = 15 ' hardsetted value to 15 minutes
         Else
             runTime(currentOperation) = 0
             setupTime(currentOperation) = 0
@@ -5586,6 +5652,7 @@ Public Class metal_tilbud
         If Me.lb_gevind.Text <> "" Then
 
             runTime(currentOperation) = Convert.ToDecimal(Me.lb_gevind.Text) * threadingRectificationFactor
+            setupTime(currentOperation) = 5 ' hardsetted value to 5 minutes
         Else
             runTime(currentOperation) = 0
         End If
@@ -5639,6 +5706,7 @@ Public Class metal_tilbud
         If Me.lb_glasbl.Text <> "" Then
 
             runTime(currentOperation) = (Convert.ToDecimal(Me.lb_glasbl.Text) - setupTime(currentOperation)) * sanddRectificationFactor
+            setupTime(currentOperation) = 10 ' hardsetted value to 5 minutes
         Else
             runTime(currentOperation) = 0
             setupTime(currentOperation) = 0
@@ -5890,6 +5958,5 @@ Public Class metal_tilbud
         End If
 
     End Sub
-
 
 End Class

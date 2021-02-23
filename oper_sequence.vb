@@ -122,6 +122,8 @@
 
         If flag Then
             wb.SaveAs(fileString)
+            wb.Close(SaveChanges:=False)
+            ex.Quit()
             Enabled = True
             Dim result As DialogResult = MessageBox.Show("Do you want to open it?", "Method Card Saved Succesfully", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
@@ -130,8 +132,7 @@
             End If
         End If
 
-        wb.Close(SaveChanges:=False)
-        ex.Quit()
+
         Close()
 
     End Sub
@@ -144,7 +145,7 @@
         Dim timePerpieceStr As String
         If timePerPiece < 1 Then
 
-            timePerpieceStr = Fix(timePerPiece * 60).ToString + "s"
+            timePerpieceStr = CInt(timePerPiece * 60).ToString + "s"
 
 
 

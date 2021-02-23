@@ -227,9 +227,9 @@ Partial Class metal_tilbud
         Me.Label102 = New System.Windows.Forms.Label()
         Me.tb_stans_manuel_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe3 = New System.Windows.Forms.GroupBox()
+        Me.tb_numberofspotweldseams = New System.Windows.Forms.TextBox()
         Me.cb_spotweld = New System.Windows.Forms.CheckBox()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.tb_numberofspotweldseams = New System.Windows.Forms.TextBox()
         Me.Label203 = New System.Windows.Forms.Label()
         Me.tb_numberofspots = New System.Windows.Forms.TextBox()
         Me.Label202 = New System.Windows.Forms.Label()
@@ -238,6 +238,7 @@ Partial Class metal_tilbud
         Me.lb_spotweld = New System.Windows.Forms.Label()
         Me.tb_spotweld_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe4 = New System.Windows.Forms.GroupBox()
+        Me.tb_numberofwelds = New System.Windows.Forms.TextBox()
         Me.tb_weldlength = New System.Windows.Forms.TextBox()
         Me.cb_rettesvejs = New System.Windows.Forms.CheckBox()
         Me.Label226 = New System.Windows.Forms.Label()
@@ -246,20 +247,15 @@ Partial Class metal_tilbud
         Me.rb_migmag = New System.Windows.Forms.RadioButton()
         Me.rb_tig = New System.Windows.Forms.RadioButton()
         Me.cb_weld = New System.Windows.Forms.CheckBox()
-        Me.cb_grind_weld = New System.Windows.Forms.CheckBox()
         Me.cb_tackweld = New System.Windows.Forms.CheckBox()
         Me.Label194 = New System.Windows.Forms.Label()
         Me.Label197 = New System.Windows.Forms.Label()
-        Me.Label200 = New System.Windows.Forms.Label()
         Me.Label192 = New System.Windows.Forms.Label()
         Me.Label189 = New System.Windows.Forms.Label()
-        Me.tb_numberofwelds = New System.Windows.Forms.TextBox()
         Me.Label150 = New System.Windows.Forms.Label()
         Me.Label132 = New System.Windows.Forms.Label()
-        Me.lb_grind_weld = New System.Windows.Forms.Label()
         Me.lb_weld = New System.Windows.Forms.Label()
         Me.lb_tackweld = New System.Windows.Forms.Label()
-        Me.tb_grind_weld_uk = New System.Windows.Forms.TextBox()
         Me.tb_weld_uk = New System.Windows.Forms.TextBox()
         Me.tb_tackweld_uk = New System.Windows.Forms.TextBox()
         Me.GroupBox15 = New System.Windows.Forms.GroupBox()
@@ -302,6 +298,10 @@ Partial Class metal_tilbud
         Me.TextBox90 = New System.Windows.Forms.TextBox()
         Me.TextBox91 = New System.Windows.Forms.TextBox()
         Me.Label176 = New System.Windows.Forms.Label()
+        Me.cb_grind_weld = New System.Windows.Forms.CheckBox()
+        Me.Label200 = New System.Windows.Forms.Label()
+        Me.lb_grind_weld = New System.Windows.Forms.Label()
+        Me.tb_grind_weld_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe6 = New System.Windows.Forms.GroupBox()
         Me.Label63 = New System.Windows.Forms.Label()
         Me.Label137 = New System.Windows.Forms.Label()
@@ -2755,6 +2755,15 @@ Partial Class metal_tilbud
         Me.gb_gruppe3.TabStop = False
         Me.gb_gruppe3.Text = "Group 3 SpotWelding"
         '
+        'tb_numberofspotweldseams
+        '
+        Me.tb_numberofspotweldseams.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_numberofspotweldseams.Location = New System.Drawing.Point(155, 12)
+        Me.tb_numberofspotweldseams.Name = "tb_numberofspotweldseams"
+        Me.tb_numberofspotweldseams.Size = New System.Drawing.Size(53, 20)
+        Me.tb_numberofspotweldseams.TabIndex = 66
+        Me.tb_numberofspotweldseams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'cb_spotweld
         '
         Me.cb_spotweld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
@@ -2774,15 +2783,6 @@ Partial Class metal_tilbud
         Me.Label34.TabIndex = 281
         Me.Label34.Text = "Number of welds per item"
         Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'tb_numberofspotweldseams
-        '
-        Me.tb_numberofspotweldseams.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_numberofspotweldseams.Location = New System.Drawing.Point(155, 12)
-        Me.tb_numberofspotweldseams.Name = "tb_numberofspotweldseams"
-        Me.tb_numberofspotweldseams.Size = New System.Drawing.Size(53, 20)
-        Me.tb_numberofspotweldseams.TabIndex = 66
-        Me.tb_numberofspotweldseams.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label203
         '
@@ -2876,6 +2876,15 @@ Partial Class metal_tilbud
         Me.gb_gruppe4.TabStop = False
         Me.gb_gruppe4.Text = "Group 4  Welding"
         '
+        'tb_numberofwelds
+        '
+        Me.tb_numberofwelds.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.tb_numberofwelds.Location = New System.Drawing.Point(145, 12)
+        Me.tb_numberofwelds.Name = "tb_numberofwelds"
+        Me.tb_numberofwelds.Size = New System.Drawing.Size(60, 20)
+        Me.tb_numberofwelds.TabIndex = 69
+        Me.tb_numberofwelds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'tb_weldlength
         '
         Me.tb_weldlength.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
@@ -2957,16 +2966,6 @@ Partial Class metal_tilbud
         Me.cb_weld.TabIndex = 74
         Me.cb_weld.UseVisualStyleBackColor = False
         '
-        'cb_grind_weld
-        '
-        Me.cb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.cb_grind_weld.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.cb_grind_weld.Location = New System.Drawing.Point(74, 75)
-        Me.cb_grind_weld.Name = "cb_grind_weld"
-        Me.cb_grind_weld.Size = New System.Drawing.Size(16, 19)
-        Me.cb_grind_weld.TabIndex = 75
-        Me.cb_grind_weld.UseVisualStyleBackColor = False
-        '
         'cb_tackweld
         '
         Me.cb_tackweld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
@@ -2996,15 +2995,6 @@ Partial Class metal_tilbud
         Me.Label197.TabIndex = 275
         Me.Label197.Text = "Full welding"
         '
-        'Label200
-        '
-        Me.Label200.AutoSize = True
-        Me.Label200.Location = New System.Drawing.Point(2, 78)
-        Me.Label200.Name = "Label200"
-        Me.Label200.Size = New System.Drawing.Size(72, 13)
-        Me.Label200.TabIndex = 276
-        Me.Label200.Text = "Weld grinding"
-        '
         'Label192
         '
         Me.Label192.AutoSize = True
@@ -3022,15 +3012,6 @@ Partial Class metal_tilbud
         Me.Label189.TabIndex = 260
         Me.Label189.Text = "Number of welds per item"
         Me.Label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'tb_numberofwelds
-        '
-        Me.tb_numberofwelds.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.tb_numberofwelds.Location = New System.Drawing.Point(145, 12)
-        Me.tb_numberofwelds.Name = "tb_numberofwelds"
-        Me.tb_numberofwelds.Size = New System.Drawing.Size(60, 20)
-        Me.tb_numberofwelds.TabIndex = 69
-        Me.tb_numberofwelds.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label150
         '
@@ -3051,16 +3032,6 @@ Partial Class metal_tilbud
         Me.Label132.TabIndex = 256
         Me.Label132.Text = "Overrule"
         '
-        'lb_grind_weld
-        '
-        Me.lb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.lb_grind_weld.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lb_grind_weld.Location = New System.Drawing.Point(94, 74)
-        Me.lb_grind_weld.Name = "lb_grind_weld"
-        Me.lb_grind_weld.Size = New System.Drawing.Size(53, 20)
-        Me.lb_grind_weld.TabIndex = 255
-        Me.lb_grind_weld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'lb_weld
         '
         Me.lb_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
@@ -3080,14 +3051,6 @@ Partial Class metal_tilbud
         Me.lb_tackweld.Size = New System.Drawing.Size(53, 20)
         Me.lb_tackweld.TabIndex = 253
         Me.lb_tackweld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'tb_grind_weld_uk
-        '
-        Me.tb_grind_weld_uk.AccessibleRole = System.Windows.Forms.AccessibleRole.None
-        Me.tb_grind_weld_uk.Location = New System.Drawing.Point(153, 74)
-        Me.tb_grind_weld_uk.Name = "tb_grind_weld_uk"
-        Me.tb_grind_weld_uk.Size = New System.Drawing.Size(53, 20)
-        Me.tb_grind_weld_uk.TabIndex = 153
         '
         'tb_weld_uk
         '
@@ -3478,6 +3441,43 @@ Partial Class metal_tilbud
         Me.Label176.Size = New System.Drawing.Size(72, 13)
         Me.Label176.TabIndex = 47
         Me.Label176.Text = "Rettemaskine"
+        '
+        'cb_grind_weld
+        '
+        Me.cb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
+        Me.cb_grind_weld.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.cb_grind_weld.Location = New System.Drawing.Point(74, 75)
+        Me.cb_grind_weld.Name = "cb_grind_weld"
+        Me.cb_grind_weld.Size = New System.Drawing.Size(16, 19)
+        Me.cb_grind_weld.TabIndex = 75
+        Me.cb_grind_weld.UseVisualStyleBackColor = False
+        '
+        'Label200
+        '
+        Me.Label200.AutoSize = True
+        Me.Label200.Location = New System.Drawing.Point(2, 78)
+        Me.Label200.Name = "Label200"
+        Me.Label200.Size = New System.Drawing.Size(72, 13)
+        Me.Label200.TabIndex = 276
+        Me.Label200.Text = "Weld grinding"
+        '
+        'lb_grind_weld
+        '
+        Me.lb_grind_weld.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.lb_grind_weld.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lb_grind_weld.Location = New System.Drawing.Point(94, 74)
+        Me.lb_grind_weld.Name = "lb_grind_weld"
+        Me.lb_grind_weld.Size = New System.Drawing.Size(53, 20)
+        Me.lb_grind_weld.TabIndex = 255
+        Me.lb_grind_weld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'tb_grind_weld_uk
+        '
+        Me.tb_grind_weld_uk.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.tb_grind_weld_uk.Location = New System.Drawing.Point(153, 74)
+        Me.tb_grind_weld_uk.Name = "tb_grind_weld_uk"
+        Me.tb_grind_weld_uk.Size = New System.Drawing.Size(53, 20)
+        Me.tb_grind_weld_uk.TabIndex = 153
         '
         'gb_gruppe6
         '
@@ -4687,7 +4687,7 @@ Partial Class metal_tilbud
         Me.Label204.Name = "Label204"
         Me.Label204.Size = New System.Drawing.Size(44, 27)
         Me.Label204.TabIndex = 2013
-        Me.Label204.Text = "Areal  M2"
+        Me.Label204.Text = "Area  M2"
         Me.Label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_nettoareal
