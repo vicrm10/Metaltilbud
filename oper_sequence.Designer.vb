@@ -1479,7 +1479,7 @@ Partial Class oper_sequence
         Me.lb_array(0).Size = New System.Drawing.Size(26, 13)
         Me.lb_array(0).TabIndex = 0
         Me.lb_array(0).Text = "Piła"
-        isMKOperation(0) = False
+        is_in_mk_and_tilbud(0) = False
 
         '
         'lb_laser
@@ -1491,7 +1491,7 @@ Partial Class oper_sequence
         Me.lb_array(1).Size = New System.Drawing.Size(33, 13)
         Me.lb_array(1).TabIndex = 2
         Me.lb_array(1).Text = "Laser"
-        isMKOperation(1) = True
+        is_in_mk_and_tilbud(1) = True
         '
         'lb_punching
         '
@@ -1502,7 +1502,7 @@ Partial Class oper_sequence
         Me.lb_array(2).Size = New System.Drawing.Size(52, 13)
         Me.lb_array(2).TabIndex = 3
         Me.lb_array(2).Text = "Punching"
-        isMKOperation(2) = True
+        is_in_mk_and_tilbud(2) = True
         '
         'lb_gilotyna
         '
@@ -1513,7 +1513,7 @@ Partial Class oper_sequence
         Me.lb_array(3).Size = New System.Drawing.Size(45, 13)
         Me.lb_array(3).TabIndex = 4
         Me.lb_array(3).Text = "Gilotyna"
-        isMKOperation(3) = False
+        is_in_mk_and_tilbud(3) = False
         '
         'lb_steel
         '
@@ -1524,7 +1524,7 @@ Partial Class oper_sequence
         Me.lb_array(4).Size = New System.Drawing.Size(62, 13)
         Me.lb_array(4).TabIndex = 5
         Me.lb_array(4).Text = "Steelmaster"
-        isMKOperation(4) = True
+        is_in_mk_and_tilbud(4) = True
         '
         'lb_slifKra
         '
@@ -1535,7 +1535,7 @@ Partial Class oper_sequence
         Me.lb_array(5).Size = New System.Drawing.Size(105, 13)
         Me.lb_array(5).TabIndex = 6
         Me.lb_array(5).Text = "Szlifowanie krawędzi"
-        isMKOperation(5) = True
+        is_in_mk_and_tilbud(5) = True
         '
         'lb_szlifWib
         '
@@ -1546,7 +1546,7 @@ Partial Class oper_sequence
         Me.lb_array(6).Size = New System.Drawing.Size(116, 13)
         Me.lb_array(6).TabIndex = 7
         Me.lb_array(6).Text = "Szlifowanie wibracyjne "
-        isMKOperation(6) = True
+        is_in_mk_and_tilbud(6) = True
         '
         'lb_prosto
         '
@@ -1557,7 +1557,7 @@ Partial Class oper_sequence
         Me.lb_array(7).Size = New System.Drawing.Size(65, 13)
         Me.lb_array(7).TabIndex = 8
         Me.lb_array(7).Text = "Prostowanie"
-        isMKOperation(7) = True
+        is_in_mk_and_tilbud(7) = True
         '
         'lb_spawanie
         '
@@ -1568,7 +1568,7 @@ Partial Class oper_sequence
         Me.lb_array(8).Size = New System.Drawing.Size(54, 13)
         Me.lb_array(8).TabIndex = 9
         Me.lb_array(8).Text = "Spawanie"
-        isMKOperation(8) = True
+        is_in_mk_and_tilbud(8) = True
         '
         'lb_spawPunk
         '
@@ -1579,7 +1579,7 @@ Partial Class oper_sequence
         Me.lb_array(9).Size = New System.Drawing.Size(104, 13)
         Me.lb_array(9).TabIndex = 10
         Me.lb_array(9).Text = "Spawanie punktowe"
-        isMKOperation(9) = True
+        is_in_mk_and_tilbud(9) = True
         '
         'lb_szlif
         '
@@ -1590,7 +1590,7 @@ Partial Class oper_sequence
         Me.lb_array(10).Size = New System.Drawing.Size(60, 13)
         Me.lb_array(10).TabIndex = 11
         Me.lb_array(10).Text = "Szlifowanie"
-        isMKOperation(10) = True
+        is_in_mk_and_tilbud(10) = True
         '
         'lb_giecie
         '
@@ -1601,7 +1601,7 @@ Partial Class oper_sequence
         Me.lb_array(11).Size = New System.Drawing.Size(37, 13)
         Me.lb_array(11).TabIndex = 12
         Me.lb_array(11).Text = "Gięcie"
-        isMKOperation(11) = True
+        is_in_mk_and_tilbud(11) = True
         '
         'lb_rolo
         '
@@ -1612,7 +1612,7 @@ Partial Class oper_sequence
         Me.lb_array(12).Size = New System.Drawing.Size(57, 13)
         Me.lb_array(12).TabIndex = 13
         Me.lb_array(12).Text = "Rolowanie"
-        isMKOperation(12) = False
+        is_in_mk_and_tilbud(12) = False
         '
         'lb_wtlacz
         '
@@ -1623,7 +1623,7 @@ Partial Class oper_sequence
         Me.lb_array(13).Size = New System.Drawing.Size(147, 13)
         Me.lb_array(13).TabIndex = 14
         Me.lb_array(13).Text = "Wtłaczanie el. gwintowanych"
-        isMKOperation(13) = True
+        is_in_mk_and_tilbud(13) = True
         '
         'lb_wspaw
         '
@@ -1634,7 +1634,7 @@ Partial Class oper_sequence
         Me.lb_array(14).Size = New System.Drawing.Size(161, 13)
         Me.lb_array(14).TabIndex = 15
         Me.lb_array(14).Text = "Wspawywanie el. gwintowanych"
-        isMKOperation(14) = True
+        is_in_mk_and_tilbud(14) = True
         '
         'lb_gwinto
         '
@@ -1645,7 +1645,7 @@ Partial Class oper_sequence
         Me.lb_array(15).Size = New System.Drawing.Size(68, 13)
         Me.lb_array(15).TabIndex = 16
         Me.lb_array(15).Text = "Gwintowanie"
-        isMKOperation(15) = True
+        is_in_mk_and_tilbud(15) = True
         '
         'lb_rozwier
         '
@@ -1656,7 +1656,7 @@ Partial Class oper_sequence
         Me.lb_array(16).Size = New System.Drawing.Size(71, 13)
         Me.lb_array(16).TabIndex = 17
         Me.lb_array(16).Text = "Rozwiercanie"
-        isMKOperation(16) = False
+        is_in_mk_and_tilbud(16) = False
         '
         'lb_wierce
         '
@@ -1667,7 +1667,7 @@ Partial Class oper_sequence
         Me.lb_array(17).Size = New System.Drawing.Size(55, 13)
         Me.lb_array(17).TabIndex = 18
         Me.lb_array(17).Text = "Wiercenie"
-        isMKOperation(17) = False
+        is_in_mk_and_tilbud(17) = False
         '
         'lb_transport
         '
@@ -1678,7 +1678,7 @@ Partial Class oper_sequence
         Me.lb_array(18).Size = New System.Drawing.Size(52, 13)
         Me.lb_array(18).TabIndex = 19
         Me.lb_array(18).Text = "Transport"
-        isMKOperation(18) = False
+        is_in_mk_and_tilbud(18) = False
         '
         'lb_pako
         '
@@ -1689,7 +1689,7 @@ Partial Class oper_sequence
         Me.lb_array(19).Size = New System.Drawing.Size(60, 13)
         Me.lb_array(19).TabIndex = 20
         Me.lb_array(19).Text = "Pakowanie"
-        isMKOperation(19) = False
+        is_in_mk_and_tilbud(19) = False
         '
         'lb_sprzatanie
         '
@@ -1700,7 +1700,7 @@ Partial Class oper_sequence
         Me.lb_array(20).Size = New System.Drawing.Size(60, 13)
         Me.lb_array(20).TabIndex = 21
         Me.lb_array(20).Text = "Sprzątanie "
-        isMKOperation(20) = False
+        is_in_mk_and_tilbud(20) = False
         '
         'lb_pokrywa
         '
@@ -1711,7 +1711,7 @@ Partial Class oper_sequence
         Me.lb_array(21).Size = New System.Drawing.Size(121, 13)
         Me.lb_array(21).TabIndex = 22
         Me.lb_array(21).Text = "Pokrywanie powierzchni"
-        isMKOperation(21) = False
+        is_in_mk_and_tilbud(21) = False
         '
         'lb_obrobka
         '
@@ -1722,7 +1722,7 @@ Partial Class oper_sequence
         Me.lb_array(22).Size = New System.Drawing.Size(117, 13)
         Me.lb_array(22).TabIndex = 23
         Me.lb_array(22).Text = "Obróbka mechaniczna "
-        isMKOperation(22) = False
+        is_in_mk_and_tilbud(22) = False
         '
         'lb_perelko
         '
@@ -1733,7 +1733,7 @@ Partial Class oper_sequence
         Me.lb_array(23).Size = New System.Drawing.Size(73, 13)
         Me.lb_array(23).TabIndex = 24
         Me.lb_array(23).Text = "Perełkowanie"
-        isMKOperation(23) = True
+        is_in_mk_and_tilbud(23) = True
 
         '
         'lb_oklejanieFolia
@@ -1745,7 +1745,7 @@ Partial Class oper_sequence
         Me.lb_array(24).Size = New System.Drawing.Size(73, 13)
         Me.lb_array(24).TabIndex = 53
         Me.lb_array(24).Text = "Oklejanie folią"
-        isMKOperation(24) = False
+        is_in_mk_and_tilbud(24) = False
         '
         'lb_montage
         '
@@ -1756,7 +1756,7 @@ Partial Class oper_sequence
         Me.lb_array(25).Size = New System.Drawing.Size(49, 13)
         Me.lb_array(25).TabIndex = 25
         Me.lb_array(25).Text = "Montage"
-        isMKOperation(25) = False
+        is_in_mk_and_tilbud(25) = False
 
         '
         'lb_kontrola
@@ -1768,7 +1768,7 @@ Partial Class oper_sequence
         Me.lb_array(26).Size = New System.Drawing.Size(46, 13)
         Me.lb_array(26).TabIndex = 26
         Me.lb_array(26).Text = "Kontrola"
-        isMKOperation(26) = True
+        is_in_mk_and_tilbud(26) = True
 
 
         'ComboBoxes
@@ -1795,7 +1795,7 @@ Partial Class oper_sequence
         startY = 28
         For i = 0 To 27
 
-            If isMKOperation(i) = True Then
+            If is_in_mk_and_tilbud(i) = True Then
                 Me.setup_array(i).Anchor = System.Windows.Forms.AnchorStyles.None
                 Me.setup_array(i).AutoSize = True
                 Me.setup_array(i).Location = New System.Drawing.Point(265, startY)
@@ -1809,7 +1809,7 @@ Partial Class oper_sequence
         i = 0
         startY = 28
         For i = 0 To 27
-            If isMKOperation(i) = False Then
+            If is_in_mk_and_tilbud(i) = False Then
                 Me.tb_setup_array(i).Location = New System.Drawing.Point(216, startY)
                 Me.tb_setup_array(i).Name = "tb_setup_op" + CStr(i + 1)
                 Me.tb_setup_array(i).Size = New System.Drawing.Size(99, 20)
@@ -1824,7 +1824,7 @@ Partial Class oper_sequence
         startY = 28
         For i = 0 To 27
 
-            If isMKOperation(i) = True Then
+            If is_in_mk_and_tilbud(i) = True Then
                 Me.run_array(i).Anchor = System.Windows.Forms.AnchorStyles.None
                 Me.run_array(i).AutoSize = True
                 Me.run_array(i).Location = New System.Drawing.Point(372, startY)
@@ -1838,7 +1838,7 @@ Partial Class oper_sequence
         i = 0
         startY = 28
         For i = 0 To 27
-            If isMKOperation(i) = False Then
+            If is_in_mk_and_tilbud(i) = False Then
                 Me.tb_run_array(i).Location = New System.Drawing.Point(322, startY)
                 Me.tb_run_array(i).Name = "tb_run_op" + CStr(i + 1)
                 Me.tb_run_array(i).Size = New System.Drawing.Size(99, 20)
@@ -1862,7 +1862,7 @@ Partial Class oper_sequence
 
             Me.TableLayoutPanel1.Controls.Add(Me.lb_array(j), 0, j + 1)
             Me.TableLayoutPanel1.Controls.Add(Me.combo_array(j), 1, j + 1)
-            If isMKOperation(j) = True Then
+            If is_in_mk_and_tilbud(j) = True Then
                 Me.TableLayoutPanel1.Controls.Add(Me.setup_array(j), 2, j + 1)
                 Me.TableLayoutPanel1.Controls.Add(Me.run_array(j), 3, j + 1)
             Else
@@ -1911,7 +1911,7 @@ Partial Class oper_sequence
     Friend WithEvents lb_setup As Label
     Friend WithEvents lb_timePiece As Label
 
-    Dim isMKOperation(27) As Boolean
+    Dim is_in_mk_and_tilbud(27) As Boolean
     Dim lb_array(27) As System.Windows.Forms.Label
     Dim combo_array(27) As ComboBox
     Dim setup_array(27) As System.Windows.Forms.Label

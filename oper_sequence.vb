@@ -24,11 +24,14 @@
         itemName = aitemName
         officeTime = runTime(27)
         Dim i = 0
+        Dim operationIndex = 1
         For i = 0 To 27
-            If isMKOperation(i) = True Then
+            If is_in_mk_and_tilbud(i) = True Then
                 If runTime(i) <> 0 Then
                     run_array(i).Text = CStr(runTime(i))
                     setup_array(i).Text = CStr(setupTime(i))
+                    combo_array(i).SelectedIndex = operationIndex
+                    operationIndex += 1
 
                 Else
                     combo_array(i).Enabled = False
@@ -96,7 +99,7 @@
         Dim setupTime(count) As Decimal
         For i = 0 To count - 1
             Dim operation = selecteds.Item(i).Value
-            If isMKOperation(operation) = True Then
+            If is_in_mk_and_tilbud(operation) = True Then
                 setupTime(i) = Convert.ToDecimal(setup_array(operation).Text)
                 runTime(i) = Convert.ToDecimal(run_array(operation).Text)
             Else
@@ -106,7 +109,9 @@
 
             setOperationInMK(runTime(i), setupTime(i), sheet, sheet2, operationPosition, operation + 1)
         Next
-        Dim fileString = "\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\Method Cards\" & client & "_" & drawing & ".xlsx"
+        Dim filename = client & "_" & drawing
+        filename = filename.Replace("/", "-")
+        Dim fileString = "\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\Method Cards\" & filename & ".xlsx"
         Dim flag = False
         If System.IO.File.Exists(fileString) Then
 
@@ -121,15 +126,20 @@
         End If
 
         If flag Then
-            wb.SaveAs(fileString)
-            wb.Close(SaveChanges:=False)
-            ex.Quit()
-            Enabled = True
-            Dim result As DialogResult = MessageBox.Show("Do you want to open it?", "Method Card Saved Succesfully", MessageBoxButtons.YesNo)
-            If result = DialogResult.Yes Then
-                Process.Start(fileString)
-            ElseIf result = DialogResult.No Then
-            End If
+            Try
+                wb.SaveAs(fileString)
+                wb.Close(SaveChanges:=False)
+                ex.Quit()
+                Enabled = True
+                Dim result As DialogResult = MessageBox.Show("Do you want to open it?", "Method Card Saved Succesfully", MessageBoxButtons.YesNo)
+                If result = DialogResult.Yes Then
+                    Process.Start(fileString)
+                ElseIf result = DialogResult.No Then
+                End If
+            Catch exe As Exception
+                MessageBox.Show("Failed to save the file, check for uncompatible characters in client or drawing No.")
+            End Try
+
         End If
 
 
@@ -184,7 +194,7 @@
                 Dim operNumber = Convert.ToInt32(Convert.ToInt32(combo_array(i).SelectedItem))
 
                 'If the operation is one of the inputted manually and thier text boxes are not good then throw error message
-                If isMKOperation(i) = False And (Not IsNumeric(tb_setup_array(i).Text) Or Not IsNumeric(tb_run_array(i).Text)) Then
+                If is_in_mk_and_tilbud(i) = False And (Not IsNumeric(tb_setup_array(i).Text) Or Not IsNumeric(tb_run_array(i).Text)) Then
                     MsgBox("Values for setup and run time must be set correctly for: " + lb_array(i).Text)
                     Return False
                 End If

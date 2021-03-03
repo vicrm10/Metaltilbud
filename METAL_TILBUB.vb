@@ -4195,8 +4195,16 @@ Public Class metal_tilbud
             MsgBox("Customer name is missing")
             Exit Sub
         End If
+
+        Dim pb As New progressBarForma
+        pb.ProgressBar1.Minimum = 0
+        pb.ProgressBar1.Maximum = 250
+        pb.Label1.Text = "SAVING...PLEASE WAIT"
+        pb.Show()
+        pb.ProgressBar1.Value = 50
         Dim ex As New Microsoft.Office.Interop.Excel.Application
         Dim wb As Microsoft.Office.Interop.Excel.Workbook
+        pb.ProgressBar1.Value = 100
         'Dim ex As New Excel.Application
         'Dim wb As Excel.Workbook
 
@@ -4205,7 +4213,7 @@ Public Class metal_tilbud
         Dim sRevision As String
         Dim filnavn As String
 
-        Me.UseWaitCursor = True
+
         sFilename = cb_Tegning.Text
         sKundenavn = cb_kunde.Text
         sRevision = tb_revision.Text
@@ -4226,14 +4234,16 @@ Public Class metal_tilbud
         Try
             'Åben template xls filen DK
             'wb = ex.Workbooks.Open("C:\Tilbbu_udskrivsFiler\tilbudsdata.xlt")
+            pb.ProgressBar1.Value = 110
             wb = ex.Workbooks.Open("W:\Tilbud\TilbudsFiler\tilbudsdata.xlt")
+
             'Åben template xls filen POL
             'wb = ex.Workbooks.Open("\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\tilbudsdata.xlt")
 
 
         Catch err As Exception
             'Xls filen kan ikke åbnes.
-            MsgBox("Excel templaten kan ikke åbnes")
+            MsgBox("Excel template cannot be open")
             ex.Quit()
             Exit Sub
         End Try
@@ -4242,6 +4252,7 @@ Public Class metal_tilbud
         Dim sheet As Microsoft.Office.Interop.Excel.Worksheet = wb.Worksheets.Item(1)
         ' Dim sheet As Excel.Worksheet = wb.Worksheets.Item(1)
         'Læs data ud i kolonne D
+        pb.ProgressBar1.Value = 200
         sheet.Cells(2, 4) = Me.lb_filnavn.Text
         sheet.Cells(3, 4) = Me.lb_operatør_opr.Text
         sheet.Cells(4, 4) = Me.lb_dato_opr.Text
@@ -4494,28 +4505,43 @@ Public Class metal_tilbud
         sheet.Cells(259, 4) = Me.rb_factor3.Checked
         sheet.Cells(260, 4) = Me.rb_factor4.Checked
         sheet.Cells(261, 4) = Me.rb_factor5.Checked
-
+        pb.ProgressBar1.Value = 240
         'Gem xls filen med fil navnet i DK
         'wb.SaveAs("C:\TilbudsFiler\" & filnavn & " ")
-        wb.SaveAs("\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\" & filnavn & " ")
+        Try
+            wb.SaveAs("\\akspol\AKS Gruppen Dokumenter\Production documents\AKS Poland\Zamówienia\Metal Tilbud Files\" & filnavn & " ")
+            pb.ProgressBar1.Value = 250
+
+        Catch exe As Exception
+
+        Finally
+
+            pb.Close()
+
+            'Gem xls filen med fil navnet i Polen
+            'wb.SaveAs("\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\" & filnavn & " ")
+
+            'Luk regnearket
+            wb.Close(SaveChanges:=False)
+            'Afslut Excel
+            ex.Quit()
+
+        End Try
+
 
         'wb.SaveCopyAs("\\Win2000server\AKS Metal\Tilbud\Tilbudsfiler\" & filnavn & " ")
 
 
-        'Gem xls filen med fil navnet i Polen
-        'wb.SaveAs("\\Akspol\AKS Gruppen Dokumenter Polen\Tilbud\Metaltilbud\Tilbudsfiler\" & filnavn & " ")
 
-        'Luk regnearket
-        wb.Close()
-        'Afslut Excel
-        ex.Quit()
-        Me.UseWaitCursor = False
-        MsgBox("File Saved Succesfully")
     End Sub
     Private Sub bu_hent_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_hent.Click
         Dim FileDialog As New OpenFileDialog
         Dim sFilename As String
         Dim wb As Microsoft.Office.Interop.Excel.Workbook
+        Dim pb As New progressBarForma
+        pb.ProgressBar1.Minimum = 0
+        pb.ProgressBar1.Maximum = 250
+        pb.Label1.Text = "LOADING...PLEASE WAIT"
 
         'Dim materiale As String
 
@@ -4536,164 +4562,456 @@ Public Class metal_tilbud
         Else
             Exit Sub
         End If
-
+        pb.Show()
         Dim ex As New Microsoft.Office.Interop.Excel.Application
         ' Dim ex As New Excel.Application
 
         Try
+
             'Åben xls filen
+            pb.ProgressBar1.Value = 100
             wb = ex.Workbooks.Open(sFilename)
+            pb.ProgressBar1.Value = 150
+
+
+
+
+
 
             'Åben det det første ark i regnearket.
             Dim sheet As Microsoft.Office.Interop.Excel.Worksheet = wb.Worksheets.Item(1)
             ' Dim sheet As Excel.Worksheet = wb.Worksheets.Item(1)
-
+            pb.ProgressBar1.Value = 200
             ResetAll()
-
+            pb.ProgressBar1.Value = 240
             'Indlæs kolonne B fra regnearket til Text boks.
 
 
             Me.lb_filnavn.Text = sheet.Cells(2, 4).value
+
+
             Me.lb_operatør_opr.Text = sheet.Cells(3, 4).value
+
+
             Me.lb_dato_opr.Text = sheet.Cells(4, 4).value
+
+
             Me.cb_kunde.Text = sheet.Cells(5, 4).value
+
+
             Me.tb_emne.Text = sheet.Cells(6, 4).value
+
+
             Me.cb_Tegning.Text = sheet.Cells(7, 4).value
+
+
             Me.tb_revision.Text = sheet.Cells(8, 4).value
+
+
             Me.cb_materiale.Text = sheet.Cells(9, 4).value
+
+
             Me.tb_sværhed_uk.Text = sheet.Cells(11, 4).value
+
+
             Me.tb_Kilopris_uk.Text = sheet.Cells(12, 4).value
+
+
             Me.rb_netto.Checked = sheet.Cells(13, 4).value
+
+
             Me.rb_brutto.Checked = sheet.Cells(14, 4).value
+
+
             Me.cb_fravælg.CheckState = sheet.Cells(15, 4).value
+
+
             Me.tb_bukmax_x.Text = sheet.Cells(16, 4).value
+
+
             Me.tb_buk1_x.Text = sheet.Cells(17, 4).value
+
+
             Me.tb_buk2_x.Text = sheet.Cells(18, 4).value
+
+
             Me.tb_buk3_x.Text = sheet.Cells(19, 4).value
+
+
             Me.tb_buk4_x.Text = sheet.Cells(20, 4).value
+
+
             Me.tb_buk5_x.Text = sheet.Cells(21, 4).value
+
+
             Me.tb_buk6_x.Text = sheet.Cells(22, 4).value
+
+
             Me.tb_buk7_x.Text = sheet.Cells(23, 4).value
+
+
             Me.tb_buk8_x.Text = sheet.Cells(24, 4).value
+
+
             Me.tb_buk9_x.Text = sheet.Cells(25, 4).value
+
+
             Me.tb_buk10_x.Text = sheet.Cells(26, 4).value
+
+
             Me.tb_buk11_x.Text = sheet.Cells(27, 4).value
+
+
             Me.tb_bukmax_y.Text = sheet.Cells(28, 4).value
+
+
             Me.tb_buk1_y.Text = sheet.Cells(29, 4).value
+
+
             Me.tb_buk2_y.Text = sheet.Cells(30, 4).value
+
+
             Me.tb_buk3_y.Text = sheet.Cells(31, 4).value
+
+
             Me.tb_buk4_y.Text = sheet.Cells(32, 4).value
+
+
             Me.tb_buk5_y.Text = sheet.Cells(33, 4).value
+
+
             Me.tb_buk6_y.Text = sheet.Cells(34, 4).value
+
+
             Me.tb_buk7_y.Text = sheet.Cells(35, 4).value
+
+
             Me.tb_buk8_y.Text = sheet.Cells(36, 4).value
+
+
             Me.tb_buk9_y.Text = sheet.Cells(37, 4).value
+
+
             Me.tb_buk10_y.Text = sheet.Cells(38, 4).value
+
+
             Me.tb_buk11_y.Text = sheet.Cells(39, 4).value
+
+
             Me.tb_buk_uk.Text = sheet.Cells(42, 4).value
+
+
             Me.tb_buk_opst_uk.Text = sheet.Cells(43, 4).value
+
+
             Me.rb_D_stans.Checked = sheet.Cells(47, 4).value
+
+
             Me.tb_toolshift.Text = sheet.Cells(48, 4).value
+
+
             Me.tb_slag_til_huller.Text = sheet.Cells(49, 4).value
+
+
             Me.tb_CNCmin_uk.Text = sheet.Cells(52, 4).value
+
+
             Me.tb_gruppe1_opstart_uk.Text = sheet.Cells(53, 4).value
+
+
             Me.rb_C_laser.Checked = sheet.Cells(54, 4).value
+
+
             Me.tb_hulantal_1C.Text = sheet.Cells(55, 4).value
+
+
             Me.tb_hulantal_2C.Text = sheet.Cells(56, 4).value
+
+
             Me.tb_hulantal_3C.Text = sheet.Cells(57, 4).value
+
+
             Me.tb_hulantal_4C.Text = sheet.Cells(243, 4).value
+
+
             Me.tb_cuttinglength_C.Text = sheet.Cells(58, 4).value
+
+
             Me.tb_laserCNC_tid_uk.Text = sheet.Cells(61, 4).value
+
+
             Me.tb_laser_opstart_uk.Text = sheet.Cells(62, 4).value
+
+
             Me.rb_B_kombi.Checked = sheet.Cells(63, 4).value
+
+
             Me.tb_toolshift_B.Text = sheet.Cells(64, 4).value
+
+
             Me.tb_slag_til_huller_B.Text = sheet.Cells(65, 4).value
+
+
             Me.tb_hulantal_1B.Text = sheet.Cells(66, 4).value
+
+
             Me.tb_hulantal_2B.Text = sheet.Cells(67, 4).value
+
+
             Me.tb_hulantal_3B.Text = sheet.Cells(68, 4).value
+
+
             Me.tb_hulantal_4B.Text = sheet.Cells(244, 4).value
+
+
             Me.tb_cuttinglength_B.Text = sheet.Cells(69, 4).value
+
+
             Me.tb_combiCNC_tid_uk.Text = sheet.Cells(72, 4).value
+
+
             Me.tb_combi_opstart_uk.Text = sheet.Cells(73, 4).value
+
+
             Me.rb_klip.Checked = sheet.Cells(74, 4).value
+
+
             Me.tb_klip_tid_uk.Text = sheet.Cells(77, 4).value
+
+
             Me.tb_klip_opstart_uk.Text = sheet.Cells(78, 4).value
+
+
             Me.tb_CombiCNCstans_tid_uk.Text = sheet.Cells(79, 4).value
+
+
             Me.cb_afgrat.CheckState = sheet.Cells(80, 4).value
+
+
             Me.tb_afgrat_uk.Text = sheet.Cells(82, 4).value
+
+
             Me.cb_steelmaster.CheckState = sheet.Cells(83, 4).value
+
+
             Me.tb_grinding_uk.Text = sheet.Cells(85, 4).value
+
+
             Me.cb_brush.CheckState = sheet.Cells(86, 4).value
+
+
             Me.tb_brush_uk.Text = sheet.Cells(88, 4).value
+
+
             Me.cb_vibrationsafgr.CheckState = sheet.Cells(89, 4).value
+
+
             Me.tb_vibration_uk.Text = sheet.Cells(91, 4).value
+
+
             Me.cb_rette.CheckState = sheet.Cells(92, 4).value
+
+
             Me.tb_rette_uk.Text = sheet.Cells(94, 4).value
+
+
             Me.tb_stans_manuel_uk.Text = sheet.Cells(95, 4).value
+
+
             Me.tb_presmøtrik_antal.Text = sheet.Cells(96, 4).value
+
+
             Me.tb_pressnut_uk.Text = sheet.Cells(98, 4).value
+
+
             Me.tb_presstag_antal.Text = sheet.Cells(216, 4).value
+
+
             Me.tb_presstag_uk.Text = sheet.Cells(218, 4).value
+
+
             Me.tb_boltesvejs_antal.Text = sheet.Cells(99, 4).value
+
+
             Me.tb_boltesvejs_uk.Text = sheet.Cells(101, 4).value
+
+
             Me.tb_m2.Text = sheet.Cells(103, 4).value
+
+
             Me.tb_m2_5.Text = sheet.Cells(104, 4).value
+
+
             Me.tb_m3.Text = sheet.Cells(105, 4).value
+
+
             Me.tb_m4.Text = sheet.Cells(106, 4).value
+
+
             Me.tb_m5.Text = sheet.Cells(107, 4).value
+
+
             Me.tb_m6.Text = sheet.Cells(108, 4).value
+
+
             Me.tb_m8.Text = sheet.Cells(109, 4).value
+
+
             Me.tb_m10.Text = sheet.Cells(110, 4).value
+
+
             Me.tb_gevind_uk.Text = sheet.Cells(112, 4).value
+
+
             Me.tb_1.Text = sheet.Cells(114, 4).value
+
+
             Me.tb_2.Text = sheet.Cells(115, 4).value
+
+
             Me.tb_3.Text = sheet.Cells(116, 4).value
+
+
             Me.tb_4.Text = sheet.Cells(117, 4).value
+
+
             Me.tb_countersink_uk.Text = sheet.Cells(119, 4).value
+
+
             Me.cb_spotweld.CheckState = sheet.Cells(120, 4).value
+
+
+
             Me.tb_numberofspotweldseams.Text = sheet.Cells(121, 4).value
+
+
+
             Me.tb_numberofspots.Text = sheet.Cells(122, 4).value
+
+
             Me.tb_spotweld_uk.Text = sheet.Cells(124, 4).value
+
+
             Me.tb_numberofwelds.Text = sheet.Cells(126, 4).value
+
+
             Me.tb_weldlength.Text = sheet.Cells(127, 4).value
+
+
             Me.rb_tig.Checked = sheet.Cells(128, 4).value
+
+
             Me.cb_tackweld.CheckState = sheet.Cells(130, 4).value
+
+
             Me.tb_tackweld_uk.Text = sheet.Cells(132, 4).value
+
+
             Me.cb_weld.CheckState = sheet.Cells(133, 4).value
+
+
             Me.tb_weld_uk.Text = sheet.Cells(135, 4).value
+
+
             Me.cb_grind_weld.CheckState = sheet.Cells(136, 4).value
+
+
             Me.tb_grind_weld_uk.Text = sheet.Cells(138, 4).value
+
+
             Me.tb_kontor_uk.Text = sheet.Cells(141, 4).value
+
+
             Me.tb_kontrol_uk.Text = sheet.Cells(143, 4).value
+
+
             Me.rb_danmark.Checked = sheet.Cells(145, 4).value
+
+
             Me.rb_polen.Checked = sheet.Cells(146, 4).value
+
+
             Me.tb_presstag_kr_uk.Text = sheet.Cells(148, 4).value
+
+
             Me.tb_pressnut_kr_uk.Text = sheet.Cells(150, 4).value
+
+
             Me.lb_svejsestag_kr.Text = sheet.Cells(151, 4).value
+
+
             Me.tb_svejsestag_kr_uk.Text = sheet.Cells(152, 4).value
+
+
             Me.tb_tilsatsmatr_kr_uk.Text = sheet.Cells(154, 4).value
+
+
             Me.rtb_bem.Text = sheet.Cells(161, 4).value
+
+
             Me.cb_overfl_beh1.Text = sheet.Cells(162, 4).value
+
+
             Me.cb_overfl_leverandør1.Text = sheet.Cells(163, 4).value
+
+
             Me.cb_1side_1.CheckState = sheet.Cells(164, 4).value
+
+
             Me.tb_overfl_avance1.Text = sheet.Cells(165, 4).value
+
+
             Me.tb_overfl_pris1_uk.Text = sheet.Cells(167, 4).value
+
+
             Me.cb_overfl_beh2.Text = sheet.Cells(168, 4).value
+
+
             Me.cb_overfl_leverandør2.Text = sheet.Cells(169, 4).value
+
+
             Me.cb_1side_2.CheckState = sheet.Cells(170, 4).value
+
+
             Me.tb_overfl_avance2.Text = sheet.Cells(171, 4).value
+
+
             Me.tb_overfl_pris2_uk.Text = sheet.Cells(173, 4).value
+
+
             Me.cb_overfl_beh3.Text = sheet.Cells(174, 4).value
+
+
             Me.cb_overfl_leverandør3.Text = sheet.Cells(175, 4).value
+
+
             Me.cb_1side_3.CheckState = sheet.Cells(176, 4).value
+
+
             Me.tb_overfl_avance3.Text = sheet.Cells(177, 4).value
+
+
             Me.tb_overfl_pris3_uk.Text = sheet.Cells(179, 4).value
+
+
             Me.cb_overfl_beh4.Text = sheet.Cells(180, 4).value
+
+
             Me.cb_overfl_leverandør4.Text = sheet.Cells(181, 4).value
+
+
             Me.tb_overfl_opstart4.Text = sheet.Cells(182, 4).value
+
+
             Me.tb_overfl_afdæk4.Text = sheet.Cells(183, 4).value
+
+
             Me.tb_overfl_pris4.Text = sheet.Cells(184, 4).value
+
+
             Me.tb_overfl_avance4.Text = sheet.Cells(185, 4).value
+
+
             Me.tb_antal1.Text = "100"
 
             'Me.tb_antal1.Text = sheet.Cells(188, 4).value
@@ -4705,104 +5023,264 @@ Public Class metal_tilbud
             'Me.tb_antal4.Text = sheet.Cells(194, 4).value
             Me.tb_tilbud4.Text = sheet.Cells(195, 4).value
             'Me.tb_antal5.Text = sheet.Cells(196, 4).value
+
+
             Me.tb_tilbud5.Text = sheet.Cells(197, 4).value
+
+
             Me.tb_avance.Text = sheet.Cells(198, 4).value
+
+
             Me.tb_antal_opstart_uk.Text = sheet.Cells(200, 4).value
+
+
             Me.tb_opstart_kr_uk.Text = sheet.Cells(202, 4).value
+
+
             Me.tb_antal_program_uk.Text = sheet.Cells(204, 4).value
+
+
             Me.tb_Program_kr_uk.Text = sheet.Cells(206, 4).value
+
+
             Me.tb_opstart_avance.Text = sheet.Cells(207, 4).value
+
+
             Me.tb_opstart_afgivettilbud.Text = sheet.Cells(208, 4).value
+
+
             Me.tb_pladetykkelse.Text = sheet.Cells(10, 4).value
+
+
             Me.tb_glasbl_uk.Text = sheet.Cells(219, 4).value
+
+
             Me.cb_fravælg_1500_3000.CheckState = sheet.Cells(221, 4).value
+
+
             Me.cb_fravælg_1250_2500.CheckState = sheet.Cells(222, 4).value
+
+
             Me.cb_fravælg_1000_2000.CheckState = sheet.Cells(223, 4).value
+
+
             Me.cb_rettesvejs.CheckState = sheet.Cells(226, 4).value
+
+
             Me.lb_rettesvejs_tid.Text = sheet.Cells(227, 4).value
+
+
 
             'CalculateOrdrestr2()
             Me.tb_antal1.Text = sheet.Cells(188, 4).value
+
+
             Me.tb_antal2.Text = sheet.Cells(190, 4).value
+
+
             If tb_antal2.Text = "" Then
                 tb_antal2.Text = 0
                 tb_antal2.Text = ""
             End If
             Me.tb_antal3.Text = sheet.Cells(192, 4).value
+
+
             Me.tb_antal4.Text = sheet.Cells(194, 4).value
+
+
             Me.tb_antal5.Text = sheet.Cells(196, 4).value
 
+
+
             Me.tb_buk_uk.Text = sheet.Cells(42, 4).value
+
+
             Me.tb_buk_opst_uk.Text = sheet.Cells(43, 4).value
+
+
             Me.tb_CNCmin_uk.Text = sheet.Cells(52, 4).value
+
+
             Me.tb_gruppe1_opstart_uk.Text = sheet.Cells(53, 4).value
+
+
+
+
             Me.tb_laserCNC_tid_uk.Text = sheet.Cells(61, 4).value
+
+
             Me.tb_laser_opstart_uk.Text = sheet.Cells(62, 4).value
+
+
             Me.tb_combiCNC_tid_uk.Text = sheet.Cells(72, 4).value
+
+
             Me.tb_combi_opstart_uk.Text = sheet.Cells(73, 4).value
+
+
             Me.tb_klip_tid_uk.Text = sheet.Cells(77, 4).value
+
+
             Me.tb_klip_opstart_uk.Text = sheet.Cells(78, 4).value
+
+
             Me.tb_rettesvejs_uk.Text = sheet.Cells(225, 4).value
+
+
             Me.tb_valsning_uk.Text = sheet.Cells(45, 4).value
+
+
             Me.tb_glasbl_uk.Text = sheet.Cells(219, 4).value
 
+
+
             Me.tb_afgrat_uk.Text = sheet.Cells(82, 4).value
+
+
             Me.tb_grinding_uk.Text = sheet.Cells(85, 4).value
+
+
             Me.tb_brush_uk.Text = sheet.Cells(88, 4).value
+
+
             Me.tb_vibration_uk.Text = sheet.Cells(91, 4).value
+
+
             Me.tb_rette_uk.Text = sheet.Cells(94, 4).value
+
+
             Me.tb_stans_manuel_uk.Text = sheet.Cells(95, 4).value
+
+
             Me.tb_pressnut_uk.Text = sheet.Cells(98, 4).value
+
+
             Me.tb_presstag_uk.Text = sheet.Cells(218, 4).value
+
+
             Me.tb_boltesvejs_uk.Text = sheet.Cells(101, 4).value
+
+
             Me.tb_gevind_uk.Text = sheet.Cells(112, 4).value
+
+
             Me.tb_countersink_uk.Text = sheet.Cells(119, 4).value
+
+
             Me.tb_spotweld_uk.Text = sheet.Cells(124, 4).value
+
+
             Me.tb_tackweld_uk.Text = sheet.Cells(132, 4).value
+
+
             Me.tb_weld_uk.Text = sheet.Cells(135, 4).value
+
+
             Me.tb_grind_weld_uk.Text = sheet.Cells(138, 4).value
+
+
             Me.tb_kontor_uk.Text = sheet.Cells(141, 4).value
+
+
             Me.tb_kontrol_uk.Text = sheet.Cells(143, 4).value
+
+
 
             Me.Lb_Kilopris.Text = sheet.Cells(215, 4).value
 
+
+
             Me.tb_overfl_tilbudpris1_uk.Text = sheet.Cells(230, 4).value
+
+
             Me.tb_overfl_tilbudpris2_uk.Text = sheet.Cells(231, 4).value
+
+
             Me.tb_overfl_tilbudpris3_uk.Text = sheet.Cells(232, 4).value
+
+
             Me.tb_overfltilbud_antal.Text = sheet.Cells(233, 4).value
 
+
+
             Me.cb_overfl_beh5.Text = sheet.Cells(235, 4).value
+
+
             Me.cb_overfl_leverandør5.Text = sheet.Cells(236, 4).value
+
+
             Me.tb_overfl_afdæk5.Text = sheet.Cells(237, 4).value
+
+
             Me.tb_overfl_pris5.Text = sheet.Cells(238, 4).value
+
+
             Me.tb_overfl_avance5.Text = sheet.Cells(239, 4).value
+
+
             Me.tb_overfl_opstart5.Text = sheet.Cells(240, 4).value
+
+
             Me.rb_jern.Checked = sheet.Cells(241, 4).value
+
+
             Me.rb_rustfri.Checked = sheet.Cells(242, 4).value
 
+
+
             Me.tb_stepantal.Text = sheet.Cells(245, 4).value
+
+
             Me.tb_stepbuk_uk.Text = sheet.Cells(246, 4).value
+
+
             Me.tb_tilbudnr.Text = sheet.Cells(247, 4).value
 
             Me.lb_operatør.Text = sheet.Cells(248, 4).value
+
+
             Me.lb_dato.Text = sheet.Cells(249, 4).value
+
+
             tb_numberofsurface.Text = sheet.Cells(250, 4).value
             If tb_numberofsurface.Text = "" Then
                 tb_numberofsurface.Text = 1
             End If
             Me.cb_glasbl.CheckState = sheet.Cells(251, 4).value
+
+
             Me.tb_glasbl_uk.Text = sheet.Cells(252, 4).value
+
+
             Me.cb_slib.CheckState = sheet.Cells(253, 4).value
+
+
             Me.tb_slib_uk.Text = sheet.Cells(254, 4).value
+
+
             'materiale = cb_materiale.Text
             Me.tb_tapantal.Text = sheet.Cells(255, 4).value
+
+
             Me.tb_tapsvejs_uk.Text = sheet.Cells(256, 4).value
+
+
             Me.rb_factor1.Checked = sheet.Cells(257, 4).value
+
+
             Me.rb_factor2.Checked = sheet.Cells(258, 4).value
+
+
             Me.rb_factor3.Checked = sheet.Cells(259, 4).value
+
+
             Me.rb_factor4.Checked = sheet.Cells(260, 4).value
+
+
+
             Me.rb_factor5.Checked = sheet.Cells(261, 4).value
 
+            pb.ProgressBar1.Value = 250
         Catch err As Exception
             'Der er opstået en fejl. Vis fejl beskeden
             MsgBox(err.Message)
@@ -4811,7 +5289,9 @@ Public Class metal_tilbud
             'Luk regnearket
             'wb.Close()
             'Afslut Excel
+
             ex.Quit()
+            pb.Close()
 
         End Try
 

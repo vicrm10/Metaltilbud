@@ -401,11 +401,6 @@ Public Class DatabaseIO
         Dim alRow As ArrayList
 
 
-
-
-
-
-
         alReturn = New ArrayList(4)
         alRow = New ArrayList(2)
         alRow.Add(1000)
@@ -990,7 +985,7 @@ Public Class DatabaseIO
         alReturn.Add(alRow)
         alRow = New ArrayList(14)
         alRow.Add(14)
-        alRow.Add("Cooper")
+        alRow.Add("Copper")
         alRow.Add(93.8)
         alRow.Add(4)
         alRow.Add(1.75)
