@@ -72,6 +72,15 @@
     <Reference Include="Accessibility">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SharePoint.dll.15.0.4867.1000\lib\Microsoft.SharePoint\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SharePoint.Client.14.0.4762.1000\lib\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\SharePoint.Client.Runtime.15.0.0\lib\Microsoft.SharePoint.Client.Runtime\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic.PowerPacks">
       <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\VBPowerPacks\v12.0\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
     </Reference>
@@ -240,6 +249,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">

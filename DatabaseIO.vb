@@ -1,3 +1,6 @@
+Imports Microsoft.SharePoint.Client
+Imports SP = Microsoft.SharePoint.Client
+
 Public Class DatabaseIO
 
 
@@ -863,13 +866,24 @@ Public Class DatabaseIO
     Public Function GetMaterials() As ArrayList
         Dim alReturn As ArrayList
         Dim alRow As ArrayList
+        Dim prices As New ArrayList()
+        Try
+            prices = retreiveSharepointPrices()
+        Catch ex As Exception
 
+            MsgBox("Unable to get prices from intranet. Old value will be use so beware")
+
+        End Try
 
         alReturn = New ArrayList(15)
         alRow = New ArrayList(7)
         alRow.Add(1)
-        alRow.Add("Iron, P01 AM, 12.03")
-        alRow.Add(8.5)
+        alRow.Add("Steel, P01 AM, 12.03")
+        If prices.Count > 0 Then
+            alRow.Add(prices(0))
+        Else
+            alRow.Add(8.5)
+        End If
         alRow.Add(1)
         alRow.Add(1)
         alRow.Add(1)
@@ -878,7 +892,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(2)
         alRow.Add("ALU, 2S Al99")
-        alRow.Add(25)
+        If prices.Count > 0 Then
+            alRow.Add(prices(1))
+        Else
+            alRow.Add(25)
+        End If
         alRow.Add(3)
         alRow.Add(1)
         alRow.Add(2)
@@ -887,7 +905,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(3)
         alRow.Add("ALU, AlMg3,Seawater resistant")
-        alRow.Add(26.8)
+        If prices.Count > 0 Then
+            alRow.Add(prices(2))
+        Else
+            alRow.Add(26.8)
+        End If
         alRow.Add(3)
         alRow.Add(1)
         alRow.Add(2)
@@ -896,7 +918,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(4)
         alRow.Add("Stainless AISI 304, 1.4301")
-        alRow.Add(22.4)
+        If prices.Count > 0 Then
+            alRow.Add(prices(3))
+        Else
+            alRow.Add(22.4)
+        End If
         alRow.Add(2)
         alRow.Add(1)
         alRow.Add(1)
@@ -905,7 +931,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(5)
         alRow.Add("Stainless AISI 316L, 1.4404")
-        alRow.Add(31.8)
+        If prices.Count > 0 Then
+            alRow.Add(prices(4))
+        Else
+            alRow.Add(31.8)
+        End If
         alRow.Add(2)
         alRow.Add(1)
         alRow.Add(1)
@@ -913,8 +943,12 @@ Public Class DatabaseIO
         alReturn.Add(alRow)
         alRow = New ArrayList(7)
         alRow.Add(6)
-        alRow.Add("Messing")
-        alRow.Add(81)
+        alRow.Add("Brass")
+        If prices.Count > 0 Then
+            alRow.Add(prices(5))
+        Else
+            alRow.Add(81)
+        End If
         alRow.Add(4)
         alRow.Add(1)
         alRow.Add(2)
@@ -923,7 +957,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(7)
         alRow.Add("Elgalv, Fe P01 ZE, Zintec")
-        alRow.Add(10.6)
+        If prices.Count > 0 Then
+            alRow.Add(prices(6))
+        Else
+            alRow.Add(10.6)
+        End If
         alRow.Add(5)
         alRow.Add(1)
         alRow.Add(1)
@@ -932,7 +970,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(8)
         alRow.Add("Aluzink, B500A")
-        alRow.Add(10.6)
+        If prices.Count > 0 Then
+            alRow.Add(prices(7))
+        Else
+            alRow.Add(10.6)
+        End If
         alRow.Add(5)
         alRow.Add(1)
         alRow.Add(1)
@@ -941,7 +983,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(9)
         alRow.Add("ALU, AlMg3, Seawter rest .m.PVC")
-        alRow.Add(28.1)
+        If prices.Count > 0 Then
+            alRow.Add(prices(8))
+        Else
+            alRow.Add(28.1)
+        End If
         alRow.Add(3)
         alRow.Add(1.75)
         alRow.Add(2)
@@ -950,7 +996,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(10)
         alRow.Add("ALU, AlMg1,m.PVC")
-        alRow.Add(26.3)
+        If prices.Count > 0 Then
+            alRow.Add(prices(9))
+        Else
+            alRow.Add(26.3)
+        End If
         alRow.Add(3)
         alRow.Add(1.75)
         alRow.Add(2)
@@ -959,7 +1009,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(11)
         alRow.Add(11)
         alRow.Add("Stainless AISI 304, 1.4301 m.PVC")
-        alRow.Add(23.6)
+        If prices.Count > 0 Then
+            alRow.Add(prices(10))
+        Else
+            alRow.Add(23.6)
+        End If
         alRow.Add(2)
         alRow.Add(1.75)
         alRow.Add(1)
@@ -968,7 +1022,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(12)
         alRow.Add(12)
         alRow.Add("Stainless AISI 304, 1.4301 Slebet")
-        alRow.Add(26.8)
+        If prices.Count > 0 Then
+            alRow.Add(prices(11))
+        Else
+            alRow.Add(26.8)
+        End If
         alRow.Add(2)
         alRow.Add(1)
         alRow.Add(2)
@@ -977,7 +1035,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(13)
         alRow.Add(13)
         alRow.Add("Stainless AISI 316L, 1.4404 m.PVC")
-        alRow.Add(33.1)
+        If prices.Count > 0 Then
+            alRow.Add(prices(12))
+        Else
+            alRow.Add(33.1)
+        End If
         alRow.Add(2)
         alRow.Add(1.75)
         alRow.Add(1)
@@ -986,7 +1048,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(14)
         alRow.Add(14)
         alRow.Add("Copper")
-        alRow.Add(93.8)
+        If prices.Count > 0 Then
+            alRow.Add(prices(13))
+        Else
+            alRow.Add(93.8)
+        End If
         alRow.Add(4)
         alRow.Add(1.75)
         alRow.Add(1)
@@ -995,7 +1061,11 @@ Public Class DatabaseIO
         alRow = New ArrayList(15)
         alRow.Add(15)
         alRow.Add("Hot-dip galvanized")
-        alRow.Add(10)
+        If prices.Count > 0 Then
+            alRow.Add(prices(14))
+        Else
+            alRow.Add(10)
+        End If
         alRow.Add(5)
         alRow.Add(1)
         alRow.Add(1)
@@ -1003,6 +1073,34 @@ Public Class DatabaseIO
         alReturn.Add(alRow)
 
         GetMaterials = alReturn
+    End Function
+
+    Private Function retreiveSharepointPrices() As ArrayList
+        Dim prices As New ArrayList()
+        Dim urlSite As String
+        urlSite = "http://intrasrv01:8080/sites/Poland/materialPrices/"
+        Dim listName = "Metal Prices"
+        Dim trackingList As List
+        Dim camlXmlQuery = "<View><Query><Where><Geq><FieldRef Name='ID'/>" +
+                    "<Value Type='Number'>0</Value></Geq></Where></Query><RowLimit>500</RowLimit></View>"
+
+        Dim clientContext As New SP.ClientContext(urlSite)
+        trackingList = clientContext.Web.Lists.GetByTitle(listName)
+        Dim camlQuery As New CamlQuery()
+        camlQuery.ViewXml = camlXmlQuery
+        Dim collTrackings As ListItemCollection
+        collTrackings = trackingList.GetItems(camlQuery)
+
+
+        clientContext.Load(collTrackings)
+        clientContext.ExecuteQuery()
+
+        For Each item As ListItem In collTrackings
+
+            prices.Add(item("Price_Kg"))
+
+        Next
+        retreiveSharepointPrices = prices
     End Function
     Public Function GetDifficultclass(ByVal Klasse As Integer, ByVal Thickness As Double) As Double
         Dim Difficult As Integer
@@ -1527,7 +1625,7 @@ Public Class DatabaseIO
                 weldspeed = 9
             End If
         End If
-        GetweldspeedTIG100 = weldspeed 
+        GetweldspeedTIG100 = weldspeed
     End Function
     Public Function GetweldspeedMIG100(ByVal sheetthickness As Double, ByVal Matrgroup As Integer) As Double
         Dim weldspeed As Double
@@ -1816,7 +1914,7 @@ Public Class DatabaseIO
             weldspeed = 3.5
         End If
 
-        GetgrindtackweldspeedTIG100 = weldspeed 
+        GetgrindtackweldspeedTIG100 = weldspeed
     End Function
     Public Function GetgrindweldspeedTIG100(ByVal sheetthickness As Double) As Double
         Dim weldspeed As Double
