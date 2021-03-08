@@ -871,7 +871,7 @@ Public Class DatabaseIO
             prices = retreiveSharepointPrices()
         Catch ex As Exception
 
-            MsgBox("Unable to get prices from intranet. Old value will be use so beware")
+            MsgBox("Unable to get prices from Intranet. Old values will be use, Beware")
 
         End Try
 
