@@ -9,6 +9,7 @@ Public Class metal_tilbud
     'Private pobjListSuppliers3 As ListSuppliers
     'Private pobjListSuppliers4 As ListSuppliers
     'Private pobjListSuppliers5 As ListSuppliers
+
     Private pobjListSurface1 As Listsurfaces
     Private pobjListSurface2 As Listsurfaces
     Private pobjListSurface3 As Listsurfaces
@@ -186,6 +187,8 @@ Public Class metal_tilbud
     'Private pobjFilter_tb_antal5 As FilterKeys
 
 
+
+
     Private pbLoading As Boolean
     Dim Metaltilbud1 As Object
 
@@ -221,6 +224,8 @@ Public Class metal_tilbud
 
     ' Creates a connection string used for APPLSRV01\SQLEXPRESS
 
+
+
     'Factors to reduce and get more tight times to include in method card
     Private laserRectificationFactor = 0.21
     Private punchingRectificationFactor = 1
@@ -237,6 +242,8 @@ Public Class metal_tilbud
     Private screwWeldRectificationFactor = 0.7
     Private threadingRectificationFactor = 0.16
     Private sanddRectificationFactor = 0.75
+
+
     Private Function GetConnectionString() As String
         Return "SERVER=APPLSRV01\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
         ' Return "SERVER=APPLSRV02-2016\SQLEXPRESS;User ID=MetalTilbud;Password=MetalTilbud;DATABASE=MetalTilbud;"
@@ -332,7 +339,7 @@ Public Class metal_tilbud
         totaltime = totaltime + ((number * (((calculatethread(Val(tb_m3.Text))) * 2.5) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m3.Text))) / 60)
         totaltime = totaltime + ((number * (((calculatethread(Val(tb_m4.Text))) * 3) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m4.Text))) / 60)
         totaltime = totaltime + ((number * (((calculatethread(Val(tb_m5.Text))) * 3.5) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m5.Text))) / 60)
-        totaltime = totaltime + ((number * (((calculatethread(Val(tb_m6.Text))) * 4) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m6.Text))) / 60)
+        totaltime = totaltime + ((number * (((calculatethread(Val(tb_m6.Text))) * 4) + objDatabaseIO.gettimeprcut(modulesize) * Val(tb_m6.Text))) / 60)
         totaltime = totaltime + ((number * (((calculatethread(Val(tb_m8.Text))) * 4.5) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m8.Text))) / 60)
         totaltime = totaltime + ((number * (((calculatethread(Val(tb_m10.Text))) * 5) + (objDatabaseIO.gettimeprcut(modulesize)) * Val(tb_m10.Text))) / 60)
 
@@ -566,12 +573,25 @@ Public Class metal_tilbud
             tb_grinding_uk.Text = ""
             Exit Function
         End If
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+
 
         If matrgruppe = 1 Then
 
             If SubjectX < 150 Then
                 If SubjectY < 150 Then
-                    MsgBox("The item is too small for the Steelmaster")
+                    MsgBox(texStrings.getTheItemIsTooSmallForTheSteelmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -580,7 +600,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1250 Then
                 If SubjectY > 1250 Then
-                    MsgBox("The item is too big for the Steelmaster")
+                    MsgBox(texStrings.getTheItemIsTooBigForTheSteelmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -591,7 +611,7 @@ Public Class metal_tilbud
         If matrgruppe = 2 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("The item is too small for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooSmallForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -600,7 +620,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("The item is too small for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooBigForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -611,7 +631,7 @@ Public Class metal_tilbud
         If matrgruppe = 3 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("The item is too small for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooSmallForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -620,7 +640,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("The item is too big for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooBigForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -631,7 +651,7 @@ Public Class metal_tilbud
         If matrgruppe = 4 Then
             If SubjectX < 25 Then
                 If SubjectY < 25 Then
-                    MsgBox("The item is too small for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooSmallForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -640,7 +660,7 @@ Public Class metal_tilbud
             End If
             If SubjectX > 1350 Then
                 If SubjectY > 1350 Then
-                    MsgBox("The item is too big for the Grindingmaster")
+                    MsgBox(texStrings.getTheItemIsTooBigForTheGrindmasterString())
                     lb_grinding.Text = ""
                     tb_grinding_uk.Text = ""
                     cb_steelmaster.CheckState = CheckState.Unchecked
@@ -651,7 +671,7 @@ Public Class metal_tilbud
 
                 If SubjectX < 150 Then
                     If SubjectY < 150 Then
-                        MsgBox("The item is too small for the Steelmaster")
+                        MsgBox(texStrings.getTheItemIsTooSmallForTheSteelmasterString())
                         lb_grinding.Text = ""
                         tb_grinding_uk.Text = ""
                         cb_steelmaster.CheckState = CheckState.Unchecked
@@ -660,7 +680,7 @@ Public Class metal_tilbud
                 End If
                 If SubjectX > 1250 Then
                     If SubjectY > 1250 Then
-                        MsgBox("The item is too big for the Steelmaster")
+                        MsgBox(texStrings.getTheItemIsTooBigForTheSteelmasterString())
                         lb_grinding.Text = ""
                         tb_grinding_uk.Text = ""
                         cb_steelmaster.CheckState = CheckState.Unchecked
@@ -687,6 +707,17 @@ Public Class metal_tilbud
         Difficultfactor = Convert.ToDouble(lb_faktor.Text)
         objDatabaseIO = New DatabaseIO
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
 
         If cb_rette.CheckState = CheckState.Unchecked Then
             lb_rette.Text = ""
@@ -694,7 +725,7 @@ Public Class metal_tilbud
             Exit Function
         End If
         If sheetthickness > 3 Then
-            MsgBox("The plate thickness is too big for the Straightener machine")
+            MsgBox(texStrings.getThePlateThicknessIsTooBigForTheStraigString())
             lb_rette.Text = ""
             tb_rette_uk.Text = ""
             Exit Function
@@ -703,7 +734,7 @@ Public Class metal_tilbud
 
         If SubjectX > 550 Then
             If SubjectY > 550 Then
-                MsgBox("The item is too big for the Straightener machine")
+                MsgBox(texStrings.getTheItemIsTooBigForTheStraigString())
                 lb_rette.Text = ""
                 tb_rette_uk.Text = ""
                 cb_rette.CheckState = CheckState.Unchecked
@@ -782,6 +813,17 @@ Public Class metal_tilbud
         Dim iPlateY As Integer
         Dim i As Long
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
 
         '-------------------------------------------------
         ' Read input-boxes.
@@ -790,7 +832,7 @@ Public Class metal_tilbud
             If cb_fravælg_1500_3000.CheckState = "1" Then
                 If cb_fravælg_1250_2500.CheckState = "1" Then
                     If cb_fravælg_1000_2000.CheckState = "1" Then
-                        MsgBox("ALL FORMATS ARE DESELECTED")
+                        MsgBox(texStrings.getAllFormatsAreDeselectedString)
                         cb_fravælg_1250_2500.CheckState = "0"
                     End If
                 End If
@@ -830,7 +872,7 @@ Public Class metal_tilbud
 
         If iSubjectsPerPlate = 0 Then
 
-            MsgBox("The item does not fit on one plate")
+            MsgBox(texStrings.getTheItemDontFitInThePlateString)
             CalculateBestPlate = 1
             Exit Function
         End If
@@ -842,7 +884,7 @@ Public Class metal_tilbud
         lb_pladeformatY.Text = iPlateY
         If iPlateY = 4000 Then
             If rb_C_laser.Checked = False Then
-                MsgBox("Only C-LASER CAN be used for 2000x4000 format")
+                MsgBox(texStrings.getOnlyCLaserCanBeUsedString)
                 rb_C_laser.Checked = True
             End If
         End If
@@ -1061,11 +1103,23 @@ Public Class metal_tilbud
         Wastenettolastplate = alwasteValues(0)
         Areareducelastplate = alwasteValues(1)
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
         If iLastPlateCount >= 1 Then
 
             If Waste >= WasteMinimumSize Then
                 Areareduce = 1
-                lb_spildtype.Text = "IN STOCK"
+                lb_spildtype.Text = texStrings.getInStockString
                 SpildTilLager = Wastenetto
                 lb_spildnetto.Text = FormatNumber(SpildTilLager, 2)
             Else
@@ -1077,7 +1131,7 @@ Public Class metal_tilbud
         End If
 
         If Areareducelastplate = 1 Then
-            lb_spildtype.Text = "IN STOCK"
+            lb_spildtype.Text = texStrings.getInStockString
             SpildTilLager = SpildTilLager + Wastenettolastplate
             lb_spildnetto.Text = FormatNumber(SpildTilLager, 2)
 
@@ -1500,6 +1554,18 @@ Public Class metal_tilbud
         Dim opstart As Double
         Dim totalspotweldingtime As Double
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
 
         Difficultfactor = Convert.ToDouble(lb_faktor.Text)
         objDatabaseIO = New DatabaseIO
@@ -1515,26 +1581,26 @@ Public Class metal_tilbud
         If cb_spotweld.CheckState = CheckState.Checked Then
 
             If tb_numberofspotweldseams.Text = "" Then
-                MsgBox("Number of welds and number of spot welds must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndNUmberOfSpotWeldsString)
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_numberofspots.Text = "" Then
-                MsgBox("Number of welds and number of spot welds must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndNUmberOfSpotWeldsString)
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
 
             If Val(Lb_matrgruppe.Text) = 3 Then
                 If Val(tb_pladetykkelse.Text) > 4 Then
-                    MsgBox("Plate thickness is max 4mm for spot welding in Aluminum")
+                    MsgBox(texStrings.getPlateThicknessIsMax4ForSpotString)
                     cb_spotweld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
             End If
 
             If Val(tb_pladetykkelse.Text) > 6 Then
-                MsgBox("Plate thickness is max 6mm for spot welding in iron and stainless steel")
+                MsgBox(texStrings.getPlateThicknessIsMax6String)
                 cb_spotweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1579,6 +1645,18 @@ Public Class metal_tilbud
         Dim calculated_weldingtime As Double
         Dim check As Integer
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
         If cb_weld.CheckState = CheckState.Unchecked Then
             If cb_tackweld.CheckState = CheckState.Unchecked Then
                 lb_weld.Text = ""
@@ -1591,7 +1669,7 @@ Public Class metal_tilbud
         End If
         If cb_weld.CheckState = CheckState.Checked Then
             If Val(Lb_matrgruppe.Text) = 4 Then
-                MsgBox("That material cannot be welded")
+                MsgBox(texStrings.getThatMaterialCannotBeWeldedString)
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1602,7 +1680,7 @@ Public Class metal_tilbud
                 Exit Function
             End If
             If Val(Lb_matrgruppe.Text) = 5 Then
-                MsgBox("That material cannot be welded")
+                MsgBox(texStrings.getThatMaterialCannotBeWeldedString)
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1616,7 +1694,7 @@ Public Class metal_tilbud
 
         If cb_tackweld.CheckState = CheckState.Checked Then
             If Val(Lb_matrgruppe.Text) = 4 Then
-                MsgBox("That material cannot be welded")
+                MsgBox(texStrings.getThatMaterialCannotBeWeldedString)
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1627,7 +1705,7 @@ Public Class metal_tilbud
                 Exit Function
             End If
             If Val(Lb_matrgruppe.Text) = 5 Then
-                MsgBox("That material cannot be welded")
+                MsgBox(texStrings.getThatMaterialCannotBeWeldedString)
                 lb_weld.Text = ""
                 tb_weld_uk.Text = ""
                 lb_tackweld.Text = ""
@@ -1680,12 +1758,12 @@ Public Class metal_tilbud
             cb_tackweld.CheckState = CheckState.Unchecked
 
             If tb_numberofwelds.Text = "" Then
-                MsgBox("Number of welds and weld length must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                 cb_weld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_weldlength.Text = "" Then
-                MsgBox("Number of welds and weld length must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                 cb_weld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1730,12 +1808,12 @@ Public Class metal_tilbud
             cb_weld.CheckState = CheckState.Unchecked
 
             If tb_numberofwelds.Text = "" Then
-                MsgBox("Number of welds and weld length must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                 cb_tackweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
             If tb_weldlength.Text = "" Then
-                MsgBox("Number of welds and weld length must be setted")
+                MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                 cb_tackweld.CheckState = CheckState.Unchecked
                 Exit Function
             End If
@@ -1812,6 +1890,18 @@ Public Class metal_tilbud
         Dim opstart As Double
         Dim totalgrindweldingtime As Double
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
 
         Difficultfactor = Convert.ToDouble(lb_faktor.Text)
         objDatabaseIO = New DatabaseIO
@@ -1829,12 +1919,12 @@ Public Class metal_tilbud
             If cb_tackweld.CheckState = CheckState.Checked Then
 
                 If tb_numberofwelds.Text = "" Then
-                    MsgBox("Number of welds and weld length must be setted")
+                    MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
                 If tb_weldlength.Text = "" Then
-                    MsgBox("Number of welds and weld length must be setted")
+                    MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
@@ -1852,12 +1942,12 @@ Public Class metal_tilbud
             If cb_weld.CheckState = CheckState.Checked Then
 
                 If tb_numberofwelds.Text = "" Then
-                    MsgBox("Number of welds and weld length must be setted")
+                    MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
                 If tb_weldlength.Text = "" Then
-                    MsgBox("Number of welds and weld length must be setted")
+                    MsgBox(texStrings.getNumberOfWeldsAndWeldLenghtString)
                     cb_weld.CheckState = CheckState.Unchecked
                     Exit Function
                 End If
@@ -2281,13 +2371,23 @@ Public Class metal_tilbud
             CalculateOrdrestr5()
         End If
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
 
 
         CalculateAll(tb_antal1.Text)
 
         If (Val(tb_pladetykkelse.Text)) > 10 Then
             If Val(tb_buk1_x.Text) + Val(tb_buk1_y.Text) <> 0 Then
-                MsgBox("For bends in plate thicknesses over 10mm, the calculation is uncertain, ask the bending operator about bending time ")
+                MsgBox(texStrings.getForBendInPlateThicknessElipsisisString)
             End If
         End If
 
@@ -2518,12 +2618,26 @@ Public Class metal_tilbud
     End Function
     Public Function Getsupplierlist1() As String
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
         Dim objListSuppliersPulver As ListSuppliersPulver
         Dim objListSuppliersvåd As ListSuppliersVåd
         Dim objListSupplierschromit As ListSuppliersChromit
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
-        If cb_overfl_beh1.Text = "No Surface Treatment" Then
+
+        If cb_overfl_beh1.Text = texStrings.getNoSurfaceTreatmentString Then
+
             Getsupplierlist1 = ""
             cb_overfl_leverandør1.Text = ""
             tb_overfl_opstart1.Text = ""
@@ -2533,15 +2647,15 @@ Public Class metal_tilbud
             tb_overfl_pris100_1.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh1.Text = "Powder coating" Then
+            If cb_overfl_beh1.Text = texStrings.getPowderCoatingString Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør1)
                 objListSuppliersPulver.List()
             End If
-            If cb_overfl_beh1.Text = "Wet varnish" Then
+            If cb_overfl_beh1.Text = texStrings.getWetVarnishString Then
                 objListSuppliersvåd = New ListSuppliersVåd(cb_overfl_leverandør1)
                 objListSuppliersvåd.List()
             End If
-            If cb_overfl_beh1.Text = "Chromite (iron)" Then
+            If cb_overfl_beh1.Text = texStrings.getChromiteString Then
                 objListSupplierschromit = New ListSuppliersChromit(cb_overfl_leverandør1)
                 objListSupplierschromit.List()
             End If
@@ -2549,7 +2663,7 @@ Public Class metal_tilbud
                 objListSupplierschromitAL = New ListSuppliersChromital(cb_overfl_leverandør1)
                 objListSupplierschromitAL.List()
             End If
-            If cb_overfl_beh1.Text = "Anodizing (natural / black)" Then
+            If cb_overfl_beh1.Text = texStrings.getAnodizingString Then
                 objListSuppliersEloxering = New ListSuppliersEloxering(cb_overfl_leverandør1)
                 objListSuppliersEloxering.List()
             End If
@@ -2564,7 +2678,19 @@ Public Class metal_tilbud
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
 
-        If cb_overfl_beh2.Text = "No Surface Treatment" Then
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+        If cb_overfl_beh2.Text = texStrings.getNoSurfaceTreatmentString Then
             Getsupplierlist2 = ""
             cb_overfl_leverandør2.Text = ""
             tb_overfl_opstart2.Text = ""
@@ -2574,15 +2700,15 @@ Public Class metal_tilbud
             tb_overfl_pris100_2.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh2.Text = "Powder coating" Then
+            If cb_overfl_beh2.Text = texStrings.getPowderCoatingString Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør2)
                 objListSuppliersPulver.List()
             End If
-            If cb_overfl_beh2.Text = "Wet varnish" Then
+            If cb_overfl_beh2.Text = texStrings.getWetVarnishString Then
                 objListSuppliersvåd = New ListSuppliersVåd(cb_overfl_leverandør2)
                 objListSuppliersvåd.List()
             End If
-            If cb_overfl_beh2.Text = "Chromite (iron)" Then
+            If cb_overfl_beh2.Text = texStrings.getChamferingString Then
                 objListSupplierschromit = New ListSuppliersChromit(cb_overfl_leverandør2)
                 objListSupplierschromit.List()
             End If
@@ -2590,7 +2716,7 @@ Public Class metal_tilbud
                 objListSupplierschromitAL = New ListSuppliersChromital(cb_overfl_leverandør2)
                 objListSupplierschromitAL.List()
             End If
-            If cb_overfl_beh2.Text = "Anodizing (natural / black)" Then
+            If cb_overfl_beh2.Text = texStrings.getAnodizingString Then
                 objListSuppliersEloxering = New ListSuppliersEloxering(cb_overfl_leverandør2)
                 objListSuppliersEloxering.List()
             End If
@@ -2606,7 +2732,19 @@ Public Class metal_tilbud
         Dim objListSupplierschromitAL As ListSuppliersChromital
         Dim objListSuppliersEloxering As ListSuppliersEloxering
 
-        If cb_overfl_beh3.Text = "No Surface Treatment" Then
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+        If cb_overfl_beh3.Text = texStrings.getNoSurfaceTreatmentString Then
             Getsupplierlist3 = ""
             cb_overfl_leverandør3.Text = ""
             tb_overfl_opstart3.Text = ""
@@ -2616,15 +2754,15 @@ Public Class metal_tilbud
             tb_overfl_pris100_3.Text = ""
             Exit Function
         Else
-            If cb_overfl_beh3.Text = "Powder coating" Then
+            If cb_overfl_beh3.Text = texStrings.getPowderCoatingString Then
                 objListSuppliersPulver = New ListSuppliersPulver(cb_overfl_leverandør3)
                 objListSuppliersPulver.List()
             End If
-            If cb_overfl_beh3.Text = "Vådlak" Then
+            If cb_overfl_beh3.Text = texStrings.getWetVarnishString Then
                 objListSuppliersvåd = New ListSuppliersVåd(cb_overfl_leverandør3)
                 objListSuppliersvåd.List()
             End If
-            If cb_overfl_beh3.Text = "Chromit (jern)" Then
+            If cb_overfl_beh3.Text = texStrings.getChromiteString Then
                 objListSupplierschromit = New ListSuppliersChromit(cb_overfl_leverandør3)
                 objListSupplierschromit.List()
             End If
@@ -2632,7 +2770,7 @@ Public Class metal_tilbud
                 objListSupplierschromitAL = New ListSuppliersChromital(cb_overfl_leverandør3)
                 objListSupplierschromitAL.List()
             End If
-            If cb_overfl_beh3.Text = "Eloxering (natur/sort)" Then
+            If cb_overfl_beh3.Text = texStrings.getAnodizingString Then
                 objListSuppliersEloxering = New ListSuppliersEloxering(cb_overfl_leverandør3)
                 objListSuppliersEloxering.List()
             End If
@@ -2645,7 +2783,19 @@ Public Class metal_tilbud
 
         Dim objListSuppliers As ListSuppliers
 
-        If cb_overfl_beh4.Text = "No Surface Treatment" Then
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+        If cb_overfl_beh4.Text = texStrings.getNoSurfaceTreatmentString Then
             Getsupplierlist4 = ""
             cb_overfl_leverandør4.Text = ""
             tb_overfl_opstart4.Text = ""
@@ -2665,7 +2815,19 @@ Public Class metal_tilbud
 
         Dim objListSuppliers As ListSuppliers
 
-        If cb_overfl_beh5.Text = "No Surface Treatmentg" Then
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+        If cb_overfl_beh5.Text = texStrings.getNoSurfaceTreatmentString Then
             Getsupplierlist5 = ""
             cb_overfl_leverandør5.Text = ""
             tb_overfl_opstart5.Text = ""
@@ -2688,6 +2850,17 @@ Public Class metal_tilbud
         Dim surfacefactor As Double
         Dim surfacenumber As Double
         Dim paintprotection As Double
+
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
 
         If lb_nettoareal.Text = "" Then
             Exit Sub
@@ -2729,7 +2902,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh1.Text = "Powder coating" Then
+        If cb_overfl_beh1.Text = texStrings.getPowderCoatingString Then
             If cb_overfl_leverandør1.Text = "Laduco" Then
                 tb_overfl_opstart1.Text = 400
                 tb_overfl_afdæk1.Text = 2
@@ -2774,7 +2947,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh1.Text = "Vådlak" Then
+        If cb_overfl_beh1.Text = texStrings.getWetVarnishString Then
             If cb_overfl_leverandør1.Text = "Laduco" Then
                 tb_overfl_opstart1.Text = 300
                 tb_overfl_afdæk1.Text = 2
@@ -2807,7 +2980,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh1.Text = "Chromit (jern)" Then
+        If cb_overfl_beh1.Text = texStrings.getChromiteString Then
             If cb_overfl_leverandør1.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart1.Text = 300
                 tb_overfl_afdæk1.Text = 0
@@ -2853,7 +3026,7 @@ Public Class metal_tilbud
                 tb_overfl_pris1.Text = FormatNumber(stkppris, 2)
             End If
         End If
-        If cb_overfl_beh1.Text = "Eloxering (natur/sort)" Then
+        If cb_overfl_beh1.Text = texStrings.getAnodizingString Then
             If cb_overfl_leverandør1.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart1.Text = 300
                 tb_overfl_afdæk1.Text = 0
@@ -2889,6 +3062,17 @@ Public Class metal_tilbud
         Dim surfacefactor As Double
         Dim surfacenumber As Double
         Dim paintprotection As Double
+
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
 
         If lb_nettoareal.Text = "" Then
             Exit Sub
@@ -2931,7 +3115,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh2.Text = "Powder coating" Then
+        If cb_overfl_beh2.Text = texStrings.getPowderCoatingString Then
             If cb_overfl_leverandør2.Text = "Laduco" Then
                 tb_overfl_opstart2.Text = 400
                 tb_overfl_afdæk2.Text = 2
@@ -2976,7 +3160,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh2.Text = "Vådlak" Then
+        If cb_overfl_beh2.Text = texStrings.getWetVarnishString Then
             If cb_overfl_leverandør2.Text = "Laduco" Then
                 tb_overfl_opstart2.Text = 300
                 tb_overfl_afdæk2.Text = 2
@@ -3009,7 +3193,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh2.Text = "Chromit (jern)" Then
+        If cb_overfl_beh2.Text = texStrings.getChromiteString Then
             If cb_overfl_leverandør2.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart2.Text = 300
                 tb_overfl_afdæk2.Text = 0
@@ -3055,7 +3239,7 @@ Public Class metal_tilbud
                 tb_overfl_pris2.Text = FormatNumber(stkppris, 2)
             End If
         End If
-        If cb_overfl_beh2.Text = "Eloxering (natur/sort)" Then
+        If cb_overfl_beh2.Text = texStrings.getAnodizingString Then
             If cb_overfl_leverandør2.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart2.Text = 300
                 tb_overfl_afdæk2.Text = 0
@@ -3090,6 +3274,18 @@ Public Class metal_tilbud
         Dim surfacefactor As Double
         Dim surfacenumber As Double
         Dim paintprotection As Double
+
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
 
         If lb_nettoareal.Text = "" Then
             Exit Sub
@@ -3132,7 +3328,7 @@ Public Class metal_tilbud
             surfacefactor = 1.5
         End If
 
-        If cb_overfl_beh3.Text = "Powder coating" Then
+        If cb_overfl_beh3.Text = texStrings.getPowderCoatingString Then
             If cb_overfl_leverandør3.Text = "Laduco" Then
                 tb_overfl_opstart3.Text = 400
                 tb_overfl_afdæk3.Text = 2
@@ -3177,7 +3373,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh3.Text = "Vådlak" Then
+        If cb_overfl_beh3.Text = texStrings.getWetVarnishString Then
             If cb_overfl_leverandør3.Text = "Laduco" Then
                 tb_overfl_opstart3.Text = 300
                 tb_overfl_afdæk3.Text = 2
@@ -3210,7 +3406,7 @@ Public Class metal_tilbud
             End If
 
         End If
-        If cb_overfl_beh3.Text = "Chromit (jern)" Then
+        If cb_overfl_beh3.Text = texStrings.getChromiteString Then
             If cb_overfl_leverandør3.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart3.Text = 300
                 tb_overfl_afdæk3.Text = 0
@@ -3256,7 +3452,7 @@ Public Class metal_tilbud
                 tb_overfl_pris3.Text = FormatNumber(stkppris, 2)
             End If
         End If
-        If cb_overfl_beh3.Text = "Eloxering (natur/sort)" Then
+        If cb_overfl_beh3.Text = texStrings.getAnodizingString Then
             If cb_overfl_leverandør3.Text = "Værløse Galvaniske" Then
                 tb_overfl_opstart3.Text = 300
                 tb_overfl_afdæk3.Text = 0
@@ -3293,6 +3489,18 @@ Public Class metal_tilbud
         Dim surfacetreatment As Double
         Dim stykpris As Double
         Dim antal100 As Double
+
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
 
         'antal100 = 100
         antal100 = antal
@@ -3347,7 +3555,7 @@ Public Class metal_tilbud
             surfacetreatmentcost = surfacetreatmentcost + surfacetreatment
         End If
 
-        If cb_overfl_beh4.Text = "No Surface Treatment" Then
+        If cb_overfl_beh4.Text = texStrings.getNoSurfaceTreatmentString Then
             cb_overfl_leverandør4.Text = ""
             tb_overfl_opstart4.Text = ""
             tb_overfl_afdæk4.Text = ""
@@ -3363,7 +3571,7 @@ Public Class metal_tilbud
             tb_overfl_pris100_4.Text = ""
         End If
 
-        If cb_overfl_beh5.Text = "No Surface Treatment" Then
+        If cb_overfl_beh5.Text = texStrings.getNoSurfaceTreatmentString Then
             cb_overfl_leverandør5.Text = ""
             tb_overfl_opstart5.Text = ""
             tb_overfl_afdæk5.Text = ""
@@ -3879,6 +4087,7 @@ Public Class metal_tilbud
     'End Sub
 
     Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
+
         CalculateOrdrestr()
     End Sub
 
@@ -4186,20 +4395,31 @@ Public Class metal_tilbud
     End Sub
     Private Sub bu_gem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_gem.Click
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
 
         If cb_Tegning.Text = "" Then
-            MsgBox("Drawing number is missing")
+            MsgBox(texStrings.getDrawingIsMissingString)
             Exit Sub
         End If
         If cb_kunde.Text = "" Then
-            MsgBox("Customer name is missing")
+            MsgBox(texStrings.getCustomerIsMissingString)
             Exit Sub
         End If
 
         Dim pb As New progressBarForma
         pb.ProgressBar1.Minimum = 0
         pb.ProgressBar1.Maximum = 250
-        pb.Label1.Text = "SAVING...PLEASE WAIT"
+        pb.Label1.Text = texStrings.getSaveString
         pb.Show()
         pb.ProgressBar1.Value = 50
         Dim ex As New Microsoft.Office.Interop.Excel.Application
@@ -4243,7 +4463,7 @@ Public Class metal_tilbud
 
         Catch err As Exception
             'Xls filen kan ikke åbnes.
-            MsgBox("Excel template cannot be open")
+            MsgBox(texStrings.getExcelTemplateCouldNotBeOpenString)
             ex.Quit()
             Exit Sub
         End Try
@@ -4541,7 +4761,22 @@ Public Class metal_tilbud
         Dim pb As New progressBarForma
         pb.ProgressBar1.Minimum = 0
         pb.ProgressBar1.Maximum = 250
-        pb.Label1.Text = "LOADING...PLEASE WAIT"
+
+
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+
+        End If
+
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
+
+        pb.Label1.Text = texStrings.getLoadingPleaseWaitString
 
         'Dim materiale As String
 
@@ -5305,12 +5540,22 @@ Public Class metal_tilbud
 
     Private Sub bu_udskriv_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles bu_udskriv.Click
 
+        Dim texStrings As New TextStrings()
+        If engRadio.Checked = True Then
+            texStrings.setLanguage("E")
+        End If
+        If danRadio.Checked = True Then
+            texStrings.setLanguage("D")
+
+        End If
+
+
         If cb_Tegning.Text = "" Then
-            MsgBox("Drawing number is missing")
+            MsgBox(texStrings.getDrawingIsMissingString)
             Exit Sub
         End If
         If cb_kunde.Text = "" Then
-            MsgBox("Customer name is missing")
+            MsgBox(texStrings.getCustomerIsMissingString)
             Exit Sub
         End If
         'If tb_tilbudnr.Text = "" Then
@@ -5341,7 +5586,7 @@ Public Class metal_tilbud
             operationSequence.setLabelValues(runTime, setupTime, totalPieces, operatorr, drawing, revision, itemName, client)
             operationSequence.ShowDialog()
         Else
-            MsgBox("Enter some data first")
+            MsgBox(texStrings.getEnterSomeDataFirstString)
         End If
     End Sub
     Public Sub Resetunderkend()
@@ -5939,10 +6184,19 @@ Public Class metal_tilbud
             runTime(currentOperation) *= punchingRectificationFactor
             setupTime(currentOperation) = Convert.ToDecimal(Me.lb_Combi_opstart.Text)
         Else
-            runTime(currentOperation) = 0
-            setupTime(currentOperation) = 0
+            If Me.lb_gruppe1_tid.Text <> "" Then
+
+                runTime(currentOperation) = Convert.ToDecimal(Me.lb_gruppe1_tid.Text) * punchingRectificationFactor
+                setupTime(currentOperation) = Convert.ToDecimal(Me.lb_gruppe1_opstart.Text)
+            Else
+                runTime(currentOperation) = 0
+                setupTime(currentOperation) = 0
+
+            End If
 
         End If
+
+
 
         'Gilotyna: not present 4
         currentOperation = currentOperation + 1
@@ -6436,6 +6690,308 @@ Public Class metal_tilbud
                 runTime(27) = Convert.ToDecimal(Me.tb_kontor_uk.Text)
             End If
         End If
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub engRadio_CheckedChanged(sender As Object, e As EventArgs) Handles engRadio.CheckedChanged
+
+        If Me.engRadio.Checked Then
+            If Not pbLoading Then
+                setStrings("E")
+
+            End If
+        End If
+
+    End Sub
+
+    Private Sub danRadio_CheckedChanged(sender As Object, e As EventArgs) Handles danRadio.CheckedChanged
+        If Me.danRadio.Checked Then
+            setStrings("D")
+        End If
+    End Sub
+
+    Private Sub setStrings(lang As String)
+        Dim tesxtStrings As New TextStrings(lang)
+
+        Me.clientLbl.Text = tesxtStrings.getClientString()
+        Me.partNameLbl.Text = tesxtStrings.getPartNameString()
+        Me.drawingNumbLbl.Text = tesxtStrings.getDrawingNumbString()
+
+        Me.gb_pristabel.Text = tesxtStrings.getPriceSchemeString()
+        Me.oQty1Lbl.Text = tesxtStrings.getQtyO1String()
+        Me.oQty2Lbl.Text = tesxtStrings.getQtyO2String()
+        Me.oQty3Lbl.Text = tesxtStrings.getQtyO3String()
+        Me.oQty4Lbl.Text = tesxtStrings.getQtyO4String()
+        Me.oQty5Lbl.Text = tesxtStrings.getQtyO5String()
+        Me.qtyLbl.Text = tesxtStrings.getQtyString()
+
+        Me.ManCostDkkHoursLbl.Text = tesxtStrings.getMansCostString()
+        Me.CNCCostDkkHoursLbl.Text = tesxtStrings.getCNCCostString()
+        Me.TimeCostDkkLbl.Text = tesxtStrings.getTimeCostString()
+        Me.outsourcedServDkkLbl.Text = tesxtStrings.getOutsourceCostString()
+        Me.rawMatPcTotDkkLbl.Text = tesxtStrings.getRawMatCostString()
+        Me.sumPcTotDkkLbl.Text = tesxtStrings.getSumCostString()
+        Me.profitLbl.Text = tesxtStrings.getProfitString()
+        Me.salepricePcTotDkkLbl.Text = tesxtStrings.getSalepriceString()
+        Me.actualOfferDkkLbl.Text = tesxtStrings.getActualOfferString()
+
+        Me.gb_opstart.Text = tesxtStrings.getCNCSetupProgramString()
+        Me.setup1stTimeLbl.Text = tesxtStrings.getSetup1timeString()
+        Me.setupDkkLbl.Text = tesxtStrings.getSetupDkkString()
+        Me.programQtyLbl.Text = tesxtStrings.getProgramQtyString()
+        Me.programsDkkLbl.Text = tesxtStrings.getProgramsDkkString()
+        Me.setupProgramsTotalDkkLbl.Text = tesxtStrings.getSetupProgramsTotalDkkString()
+        Me.profit2Lbl.Text = tesxtStrings.getProfitString()
+        Me.salespriceSetupProgDkkLbl.Text = tesxtStrings.getSalespriceSetupProgramDkkString()
+        Me.actualOfferDkk2Lbl.Text = tesxtStrings.getActualOfferString()
+        Me.overrule1Lbl.Text = tesxtStrings.getOverruleString()
+
+        Me.groupTimesByOQty1Lbl.Text = tesxtStrings.getGroupTimesByOQty1String()
+        Me.hoursLbl.Text = tesxtStrings.getHoursString()
+        Me.group1Lbl.Text = tesxtStrings.getGroup1String()
+        Me.group2Lbl.Text = tesxtStrings.getGroup2String()
+        Me.group3Lbl.Text = tesxtStrings.getGroup3String()
+        Me.group4Lbl.Text = tesxtStrings.getGroup4String()
+        Me.group5Lbl.Text = tesxtStrings.getGroup5String()
+        Me.group6Lbl.Text = tesxtStrings.getGroup6String()
+        Me.cncGiloLbl.Text = tesxtStrings.getCncGiloString()
+        Me.manualLbl.Text = tesxtStrings.getManualString()
+        Me.bendSpotRollLbl.Text = tesxtStrings.getBendSpotRollString()
+        Me.weldStraiLbl.Text = tesxtStrings.getWeldingStraiString()
+        Me.grindingLbl.Text = tesxtStrings.getGrindingString()
+        Me.officeControl.Text = tesxtStrings.getOfficeControlString()
+        Me.dkkNetByOQty1Lbl.Text = tesxtStrings.getDkkNetByOrderQ1String()
+
+        Me.gb_matr.Text = tesxtStrings.getSelectMaterialString()
+        Me.plateThicknessLbl.Text = tesxtStrings.getplateThickString()
+        Me.moduleSizeLbl.Text = tesxtStrings.getModuleSizeString()
+        Me.materialGroupLbl.Text = tesxtStrings.getMaterialGroupString()
+        Me.gradeLbl.Text = tesxtStrings.getGradeString()
+        Me.difficultyLbl.Text = tesxtStrings.getDifficultyString()
+        Me.plateQtyLbl.Text = tesxtStrings.getPlateQtyString
+        Me.plateFormatLbl.Text = tesxtStrings.getPlateFormatString
+        Me.itemsPerPlateLbl.Text = tesxtStrings.getItemsPerPlateString
+        Me.plateConsumptionLbl.Text = tesxtStrings.getPlateConsumptionString
+        Me.wasteLbl.Text = tesxtStrings.getWasteString
+        Me.costPriceDkkKgLbl.Text = tesxtStrings.getCostPriceString
+        Me.overruleCostPriceLbl.Text = tesxtStrings.getOverruleCostPriceString
+        Me.DkkKgLbl.Text = tesxtStrings.getKrKgString
+        Me.rb_netto.Text = tesxtStrings.getNetRawMaterialString
+        Me.rb_brutto.Text = tesxtStrings.getGrossRawMaterialString
+        Me.cb_fravælg.Text = tesxtStrings.getExclude2000x4000String
+        Me.cb_fravælg_1500_3000.Text = tesxtStrings.getExclude1500x3000String
+        Me.cb_fravælg_1250_2500.Text = tesxtStrings.getExclude1250x2500String
+        Me.cb_fravælg_1000_2000.Text = tesxtStrings.getExclude1000x2000String
+        Me.overrule2Lbl.Text = tesxtStrings.getUKString
+        Me.factorLbl.Text = tesxtStrings.getFactorString
+        Me.oneTo6Lbl.Text = tesxtStrings.getOneTo6String
+        Me.forOQty1Lbl.Text = tesxtStrings.getForOQ1String
+        Me.itemWeightLbl.Text = tesxtStrings.getItemWeightString
+
+
+        Me.gb_buk.Text = tesxtStrings.getBendingGroup3String
+        Me.biggestMeasureLbl.Text = tesxtStrings.getBiggestMeasureString
+        Me.bend1Lbl.Text = tesxtStrings.getBendString("1")
+        Me.bend2Lbl.Text = tesxtStrings.getBendString("2")
+        Me.bend3Lbl.Text = tesxtStrings.getBendString("3")
+        Me.bend4Lbl.Text = tesxtStrings.getBendString("4")
+        Me.bend5Lbl.Text = tesxtStrings.getBendString("5")
+        Me.bend6Lbl.Text = tesxtStrings.getBendString("6")
+        Me.bend7Lbl.Text = tesxtStrings.getBendString("7")
+        Me.bend8Lbl.Text = tesxtStrings.getBendString("8")
+        Me.bend9Lbl.Text = tesxtStrings.getBendString("9")
+        Me.bend10Lbl.Text = tesxtStrings.getBendString("10")
+        Me.bend11Lbl.Text = tesxtStrings.getBendString("11")
+        Me.areaM2Lbl.Text = tesxtStrings.getAreaM2String
+        Me.unfoldingLbl.Text = tesxtStrings.getUnfoldingString
+        Me.bendMinOQ1.Text = tesxtStrings.getBendMinOQ1String
+        Me.overrule3Lbl.Text = tesxtStrings.getOverruleString
+        Me.paint1sideLbl.Text = tesxtStrings.getPaint1SideString
+        Me.stepbenNumbstepsLbl.Text = tesxtStrings.getStepBendNumbStepsString
+        Me.stepBendLbl.Text = tesxtStrings.getStepBendString
+        Me.setupBending.Text = tesxtStrings.getSetupBendingString
+        Me.totalBendTime.Text = tesxtStrings.getTotalBendString
+        Me.rollingLbl.Text = tesxtStrings.getRollingString
+
+        Me.rb_klip.Text = tesxtStrings.getCutString
+        Me.group1Lbl2.Text = tesxtStrings.getGroup1String
+        Me.cutMinOQ1Lbl.Text = tesxtStrings.getCutMinOQ1String
+        Me.setupMinLbl.Text = tesxtStrings.getSetupMinString
+        Me.cutTotalOQ1Lbl.Text = tesxtStrings.getCutTotalOQ1String
+
+        Me.group1Lbl3.Text = tesxtStrings.getGroup1String
+        Me.numbOfHoles2to10Lbl.Text = tesxtStrings.getNumbHoles2to10String
+        Me.numbHoles11to50Lbl.Text = tesxtStrings.getNumbHoles11to50String
+        Me.numbHoles51to100Lbl.Text = tesxtStrings.getNumbHoles51to100String
+        Me.totCuttingLen100Lbl.Text = tesxtStrings.getTotCuttingLen100String
+        Me.qty2Lbl.Text = tesxtStrings.getQtyString
+        Me.cncMinOQ1Lbl.Text = tesxtStrings.getCNCMinOQ1String
+        Me.setupMin2.Text = tesxtStrings.getSetupMinString
+        Me.cLaserTotalOQ1.Text = tesxtStrings.getCLaserTotOQ1String
+        Me.overruleLbl4.Text = tesxtStrings.getOverruleString
+
+        Me.rb_D_stans.Text = tesxtStrings.getPunchString
+        Me.group1Lbl4.Text = tesxtStrings.getGroup1String
+        Me.perItemLbl.Text = tesxtStrings.getPerEmneString
+        Me.toolChangeLbl1.Text = tesxtStrings.getToolChangeString
+        Me.numberOfStrokesPerHoleLbl.Text = tesxtStrings.getNumbOfStrokesString
+        Me.cncMinOQ1Lbl2.Text = tesxtStrings.getCNCMinOQ1String
+        Me.setupMinLbl3.Text = tesxtStrings.getSetupMinString
+        Me.dStansTotOQ1.Text = tesxtStrings.getDStansTotOQ1String
+        Me.overruleLbl5.Text = tesxtStrings.getOverruleString
+
+        Me.group1Lbl5.Text = tesxtStrings.getGroup1String
+        Me.peritemLbl2.Text = tesxtStrings.getPerEmneString
+        Me.toolChange2.Text = tesxtStrings.getToolChangeString
+        Me.numberOfStrokesPerHoleLbl2.Text = tesxtStrings.getNumbOfStrokesString
+        Me.numbOfHoles2to10Lbl2.Text = tesxtStrings.getNumbHoles2to10String
+        Me.numbOfHoles2to10Lbl2.Text = tesxtStrings.getNumbHoles2to10String
+        Me.numbHoles11to50Lbl2.Text = tesxtStrings.getNumbHoles11to50String
+        Me.numbHoles51to100Lbl2.Text = tesxtStrings.getNumbHoles51to100String
+        Me.totCuttingLen100Lbl2.Text = tesxtStrings.getTotCuttingLen100String
+        Me.qtyLbl3.Text = tesxtStrings.getQtyString
+        Me.overruleLbl6.Text = tesxtStrings.getOverruleString
+        Me.CncMinLaserOQ1Lbl.Text = tesxtStrings.getCncMinLaserOQ1String
+        Me.CncMinStansOQ1.Text = tesxtStrings.getCncMinStansOQ1String
+        Me.setupMinLbl4.Text = tesxtStrings.getSetupMinString
+        Me.BCombiTotOQ1Lbl.Text = tesxtStrings.getBKombiTotOQ1String
+
+        Me.gb_gruppe2.Text = tesxtStrings.getGroup2String
+        Me.manualDeburringLbl.Text = tesxtStrings.getManualDeburringString
+        Me.minOQ1Lbl1.Text = tesxtStrings.getMinOQ1String
+        Me.overruleLbl9.Text = tesxtStrings.getOverruleString
+        Me.brushDeburring.Text = tesxtStrings.getBrushDeburringString
+        Me.vibrateDeburring.Text = tesxtStrings.getVibrateDeburringString
+        Me.strainghtMachineLbl.Text = tesxtStrings.getStraightMachineString
+        Me.manualPunchLbl.Text = tesxtStrings.getManualPucnchString
+        Me.onlyOQ1Lbl1.Text = tesxtStrings.getOnlyOQ1String
+        Me.onlyOQ1Lbl2.Text = tesxtStrings.getOnlyOQ1String
+        Me.pressTagQPILbl.Text = tesxtStrings.getPresstagString
+        Me.presnutQPILbl.Text = tesxtStrings.getPresnutString
+        Me.screwWeldQPILbl.Text = tesxtStrings.getScrewWeldingString
+        Me.gb_gevind.Text = tesxtStrings.getThreadingString
+        Me.threadSizeLbl.Text = tesxtStrings.getThreadSizeString
+        Me.qtyPerItemLbl1.Text = tesxtStrings.getQtyPerItemString
+        Me.qtyPerItemLbl2.Text = tesxtStrings.getQtyPerItemString
+        Me.totalQtyLbl.Text = tesxtStrings.getTotalQtyString
+        Me.totalQtyLbl2.Text = tesxtStrings.getTotalQtyString
+        Me.minOQ1Lbl2.Text = tesxtStrings.getMinOQ1String2
+        Me.minOQ1Lbl3.Text = tesxtStrings.getMinOQ1String2
+        Me.overruleLbl7.Text = tesxtStrings.getOverruleString
+        Me.overruleLbl8.Text = tesxtStrings.getOverruleString
+        Me.gb_undersænk.Text = tesxtStrings.getChamferingString
+        Me.diameterThreadSizeLbl.Text = tesxtStrings.getDiameterThreadSizeString
+
+        Me.gb_gruppe3.Text = tesxtStrings.getGroup3SpotWeldString
+        Me.numbWeldsPerItemLbl.Text = tesxtStrings.getnumberOfWeldsPerItemString
+        Me.numbSpotWeldsPerItemLbl.Text = tesxtStrings.getnumberOfSpotWeldsPerItemString
+        Me.spotWeldLbl.Text = tesxtStrings.getSpotWeldingString
+        Me.minOQ1Lbl4.Text = tesxtStrings.getMinOQ1String
+        Me.overruleLbl10.Text = tesxtStrings.getOverruleString
+
+        Me.gb_gruppe4.Text = tesxtStrings.getGroup4WeldingString
+        Me.numbWeldsPerItemLbl2.Text = tesxtStrings.getnumberOfWeldsPerItemString
+        Me.weldingLengthPerItemLbl.Text = tesxtStrings.getWeldingLenghtPerItemString
+        Me.onlyTackWeldingLbl.Text = tesxtStrings.getOnlyTackWeldingString
+        Me.minOQ1Lbl5.Text = tesxtStrings.getMinOQ1String
+        Me.overruleLbl11.Text = tesxtStrings.getOverruleString
+        Me.fullWeldingLbl.Text = tesxtStrings.getFullWeldString
+        Me.strainghteningLbl.Text = tesxtStrings.getStraighteningString
+        Me.tapQtyLbl.Text = tesxtStrings.getTapQtyString
+        Me.tapWeldingLbl.Text = tesxtStrings.getTapWeldingString
+        Me.weldingDifficulty.Text = tesxtStrings.getWeldingDifficultyString
+        Me.totalWeldingTime.Text = tesxtStrings.getTotalWeldingTimeString
+
+        Me.gb_gruppe5.Text = tesxtStrings.getGroup5String
+        Me.minOQ1Lbl6.Text = tesxtStrings.getMinOQ1String
+        Me.overruleLbl12.Text = tesxtStrings.getOverruleString
+        Me.grindingLbl2.Text = tesxtStrings.getGrindingString
+        Me.weldGrindingLbl2.Text = tesxtStrings.getWeldGrindingString
+
+        Me.gb_gruppe6.Text = tesxtStrings.getGroup6String
+        Me.minutesLbl.Text = tesxtStrings.getMinutesString
+        Me.overruleLbl13.Text = tesxtStrings.getOverruleString
+        Me.officeLbl.Text = tesxtStrings.getOfficeString
+
+
+        Me.gb_presmøtrik.Text = tesxtStrings.getPresnutPresstagString
+        Me.rb_jern.Text = tesxtStrings.getIronString
+        Me.rb_rustfri.Text = tesxtStrings.getStainlessString
+
+        Me.gb_forbrug.Text = tesxtStrings.getSpendingsString
+        Me.presstagLbl.Text = tesxtStrings.getPresstagString2
+        Me.presnutLbl.Text = tesxtStrings.getPresnutString2
+        Me.screwWeldLbl.Text = tesxtStrings.getScreWeldString2
+        Me.additionalMatLbl.Text = tesxtStrings.getAdditionalMatString
+        Me.overruleLbl14.Text = tesxtStrings.getOverruleString
+
+        Me.dkkPerItemLbl1.Text = tesxtStrings.getDkkPerItemString
+        Me.dkkPerItemLbl2.Text = tesxtStrings.getDkkPerItemString
+        Me.dkkPerItemLbl3.Text = tesxtStrings.getDkkPerItemString
+        Me.dkkPerItemLbl4.Text = tesxtStrings.getDkkPerItemString
+
+        Me.additionalInfoLbl.Text = tesxtStrings.getAdditionalInfoString
+        Me.samkorselLbl.Text = tesxtStrings.getSamkorselString
+        Me.drawingNumbLbl2.Text = tesxtStrings.getDrawingNumbString
+        Me.oprDateLbl.Text = tesxtStrings.getOprDateString
+        Me.updateDateLbl.Text = tesxtStrings.getUpdateDateString
+        Me.operatorLbl.Text = tesxtStrings.getOperatorString
+        Me.operatorLbl2.Text = tesxtStrings.getOperatorString
+        Me.fileNameLbl.Text = tesxtStrings.getFileNameString
+        Me.hourPricesLbl.Text = tesxtStrings.getHoursPricesString
+        Me.rb_danmark.Text = tesxtStrings.getDenmarkString
+        Me.rb_polen.Text = tesxtStrings.getPolandString
+        Me.manLbl.Text = tesxtStrings.getmanString
+        Me.bPunchLbl.Text = tesxtStrings.getPunch2String
+        Me.bu_gem.Text = tesxtStrings.getSaveString
+        Me.bu_hent.Text = tesxtStrings.getLoadString
+        Me.offerNrLbl.Text = tesxtStrings.getOfferNumbString
+
+        Me.surfaceTreatmentLbl.Text = tesxtStrings.getSurfaceTreatmentOutSourceString
+        Me.supplierLbl.Text = tesxtStrings.getSupplierString
+        Me.surfaceQtyLbl.Text = tesxtStrings.getSurfaceQtyString
+        Me.setupDkkLbl2.Text = tesxtStrings.getSetupDkkString
+        Me.coatingDkkPc.Text = tesxtStrings.getCoatingDkkPcString
+        Me.priceDkkPcLbl.Text = tesxtStrings.getPriceDkkPcString
+        Me.overruleLbl15.Text = tesxtStrings.getOverruleString
+        Me.profitLbl3.Text = tesxtStrings.getProfitString2
+        Me.dkkPcLbl.Text = tesxtStrings.getDkkPcString
+        Me.offerDkkPcLbl.Text = tesxtStrings.getDkkPcString
+        Me.offerAppliesToLbl.Text = tesxtStrings.getOfferAppliesToString
+        Me.PcsLbl.Text = tesxtStrings.getPcsString
+
+        Me.pobjListSurface1 = New Listsurfaces(cb_overfl_beh1)
+        Me.pobjListSurface1.RefreshData(lang)
+        Me.pobjListSurface1.List()
+
+        Me.pobjListSurface2 = New Listsurfaces(cb_overfl_beh2)
+        Me.pobjListSurface2.RefreshData(lang)
+        Me.pobjListSurface2.List()
+
+        Me.pobjListSurface3 = New Listsurfaces(cb_overfl_beh3)
+        Me.pobjListSurface3.RefreshData(lang)
+        Me.pobjListSurface3.List()
+
+        Me.pobjListSurface4 = New Listsurfaces1(cb_overfl_beh4)
+        Me.pobjListSurface4.RefreshData(lang)
+        Me.pobjListSurface4.List()
+
+        Me.pobjListSurface5 = New Listsurfaces1(cb_overfl_beh5)
+        Me.pobjListSurface5.RefreshData(lang)
+        Me.pobjListSurface5.List()
+
+        'Me.pobjListMaterials = New ListMaterials(cb_materiale, Lb_matrgruppe, Lb_klasse, Lb_Kilopris)
+        Me.pobjListMaterials.RefreshData(lang)
+        Me.pobjListMaterials.List()
+
+
+
+
+
 
     End Sub
 

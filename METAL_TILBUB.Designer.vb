@@ -1,9 +1,9 @@
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class metal_tilbud
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso components IsNot Nothing Then
             components.Dispose()
@@ -17,49 +17,49 @@ Partial Class metal_tilbud
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(metal_tilbud))
         Me.rb_factor1 = New System.Windows.Forms.RadioButton()
-        Me.Label78 = New System.Windows.Forms.Label()
+        Me.additionalInfoLbl = New System.Windows.Forms.Label()
         Me.rtb_bem = New System.Windows.Forms.RichTextBox()
-        Me.Label76 = New System.Windows.Forms.Label()
-        Me.Label68 = New System.Windows.Forms.Label()
-        Me.Label69 = New System.Windows.Forms.Label()
+        Me.oQty1Lbl = New System.Windows.Forms.Label()
+        Me.operatorLbl2 = New System.Windows.Forms.Label()
+        Me.updateDateLbl = New System.Windows.Forms.Label()
         Me.lb_operatør = New System.Windows.Forms.Label()
         Me.lb_dato = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
+        Me.programsDkkLbl = New System.Windows.Forms.Label()
         Me.Label57 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
+        Me.actualOfferDkk2Lbl = New System.Windows.Forms.Label()
+        Me.salespriceSetupProgDkkLbl = New System.Windows.Forms.Label()
         Me.tb_opstart_afgivettilbud = New System.Windows.Forms.TextBox()
         Me.Label51 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
+        Me.profit2Lbl = New System.Windows.Forms.Label()
         Me.tb_opstart_avance = New System.Windows.Forms.TextBox()
-        Me.Label55 = New System.Windows.Forms.Label()
-        Me.Label59 = New System.Windows.Forms.Label()
-        Me.Label60 = New System.Windows.Forms.Label()
+        Me.setupProgramsTotalDkkLbl = New System.Windows.Forms.Label()
+        Me.setupDkkLbl = New System.Windows.Forms.Label()
+        Me.setup1stTimeLbl = New System.Windows.Forms.Label()
         Me.lb_opst_prog_brutto = New System.Windows.Forms.Label()
         Me.lb_opstart_program = New System.Windows.Forms.Label()
         Me.lb_program_kr = New System.Windows.Forms.Label()
         Me.lb_antal_opstart = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
+        Me.actualOfferDkkLbl = New System.Windows.Forms.Label()
+        Me.salepricePcTotDkkLbl = New System.Windows.Forms.Label()
         Me.tb_tilbud2 = New System.Windows.Forms.TextBox()
         Me.tb_tilbud3 = New System.Windows.Forms.TextBox()
         Me.tb_tilbud4 = New System.Windows.Forms.TextBox()
         Me.tb_tilbud5 = New System.Windows.Forms.TextBox()
         Me.tb_tilbud1 = New System.Windows.Forms.TextBox()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
+        Me.profitLbl = New System.Windows.Forms.Label()
         Me.tb_avance = New System.Windows.Forms.TextBox()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label53 = New System.Windows.Forms.Label()
-        Me.Label52 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
+        Me.sumPcTotDkkLbl = New System.Windows.Forms.Label()
+        Me.rawMatPcTotDkkLbl = New System.Windows.Forms.Label()
+        Me.outsourcedServDkkLbl = New System.Windows.Forms.Label()
+        Me.TimeCostDkkLbl = New System.Windows.Forms.Label()
+        Me.CNCCostDkkHoursLbl = New System.Windows.Forms.Label()
+        Me.ManCostDkkHoursLbl = New System.Windows.Forms.Label()
+        Me.qtyLbl = New System.Windows.Forms.Label()
         Me.lb_salg2 = New System.Windows.Forms.Label()
         Me.lb_salg3 = New System.Windows.Forms.Label()
         Me.lb_salg4 = New System.Windows.Forms.Label()
@@ -100,41 +100,41 @@ Partial Class metal_tilbud
         Me.tb_antal4 = New System.Windows.Forms.TextBox()
         Me.tb_antal5 = New System.Windows.Forms.TextBox()
         Me.tb_antal1 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.revLbl = New System.Windows.Forms.Label()
         Me.tb_revision = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.drawingNumbLbl = New System.Windows.Forms.Label()
+        Me.partNameLbl = New System.Windows.Forms.Label()
         Me.tb_emne = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.clientLbl = New System.Windows.Forms.Label()
         Me.cb_kunde = New System.Windows.Forms.ComboBox()
         Me.bu_Reset = New System.Windows.Forms.Button()
         Me.rb_netto = New System.Windows.Forms.RadioButton()
         Me.rb_brutto = New System.Windows.Forms.RadioButton()
-        Me.lb_tykkelse = New System.Windows.Forms.Label()
+        Me.plateThicknessLbl = New System.Windows.Forms.Label()
         Me.tb_pladetykkelse = New System.Windows.Forms.TextBox()
         Me.cb_materiale = New System.Windows.Forms.ComboBox()
         Me.gb_gruppe1 = New System.Windows.Forms.GroupBox()
-        Me.Label32 = New System.Windows.Forms.Label()
         Me.tb_hulantal_2C = New System.Windows.Forms.TextBox()
         Me.tb_hulantal_3C = New System.Windows.Forms.TextBox()
         Me.Label241 = New System.Windows.Forms.Label()
-        Me.Label238 = New System.Windows.Forms.Label()
+        Me.qty2Lbl = New System.Windows.Forms.Label()
         Me.tb_hulantal_4C = New System.Windows.Forms.TextBox()
         Me.lb_laser_ialtuk = New System.Windows.Forms.Label()
-        Me.Label234 = New System.Windows.Forms.Label()
+        Me.cLaserTotalOQ1 = New System.Windows.Forms.Label()
         Me.lb_laser_ialt = New System.Windows.Forms.Label()
         Me.lb_laser_opstart = New System.Windows.Forms.Label()
-        Me.Label85 = New System.Windows.Forms.Label()
+        Me.numbHoles51to100Lbl = New System.Windows.Forms.Label()
         Me.lb_laserCNC_tid = New System.Windows.Forms.Label()
         Me.tb_laserCNC_tid_uk = New System.Windows.Forms.TextBox()
         Me.tb_laser_opstart_uk = New System.Windows.Forms.TextBox()
-        Me.Label97 = New System.Windows.Forms.Label()
-        Me.Label64 = New System.Windows.Forms.Label()
-        Me.Label98 = New System.Windows.Forms.Label()
+        Me.overruleLbl4 = New System.Windows.Forms.Label()
+        Me.numbHoles11to50Lbl = New System.Windows.Forms.Label()
+        Me.cncMinOQ1Lbl = New System.Windows.Forms.Label()
         Me.tb_hulantal_1C = New System.Windows.Forms.TextBox()
-        Me.lb_opstart = New System.Windows.Forms.Label()
+        Me.setupMin2 = New System.Windows.Forms.Label()
         Me.tb_cuttinglength_C = New System.Windows.Forms.TextBox()
-        Me.Label31 = New System.Windows.Forms.Label()
+        Me.numbOfHoles2to10Lbl = New System.Windows.Forms.Label()
+        Me.totCuttingLen100Lbl = New System.Windows.Forms.Label()
         Me.rb_C_laser = New System.Windows.Forms.RadioButton()
         Me.lb_gruppe1_opstart = New System.Windows.Forms.Label()
         Me.tb_gruppe1_opstart_uk = New System.Windows.Forms.TextBox()
@@ -145,28 +145,28 @@ Partial Class metal_tilbud
         Me.tb_CNCmin_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe2 = New System.Windows.Forms.GroupBox()
         Me.cb_rette = New System.Windows.Forms.CheckBox()
-        Me.Label228 = New System.Windows.Forms.Label()
-        Me.tb_info = New System.Windows.Forms.Label()
+        Me.onlyOQ1Lbl2 = New System.Windows.Forms.Label()
+        Me.onlyOQ1Lbl1 = New System.Windows.Forms.Label()
         Me.gb_stag = New System.Windows.Forms.GroupBox()
-        Me.Label213 = New System.Windows.Forms.Label()
+        Me.pressTagQPILbl = New System.Windows.Forms.Label()
         Me.tb_presstag_antal = New System.Windows.Forms.TextBox()
         Me.lb_presstag = New System.Windows.Forms.Label()
         Me.tb_presstag_uk = New System.Windows.Forms.TextBox()
-        Me.Label146 = New System.Windows.Forms.Label()
+        Me.screwWeldQPILbl = New System.Windows.Forms.Label()
         Me.tb_pressnut_uk = New System.Windows.Forms.TextBox()
         Me.tb_boltesvejs_uk = New System.Windows.Forms.TextBox()
         Me.lb_pressnut = New System.Windows.Forms.Label()
         Me.lb_boltesvejs = New System.Windows.Forms.Label()
         Me.tb_presmøtrik_antal = New System.Windows.Forms.TextBox()
         Me.tb_boltesvejs_antal = New System.Windows.Forms.TextBox()
-        Me.Label147 = New System.Windows.Forms.Label()
+        Me.presnutQPILbl = New System.Windows.Forms.Label()
         Me.lb_stans_manuel = New System.Windows.Forms.Label()
         Me.gb_gevind = New System.Windows.Forms.GroupBox()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.tb_m6 = New System.Windows.Forms.TextBox()
-        Me.Label180 = New System.Windows.Forms.Label()
+        Me.overruleLbl7 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label179 = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl2 = New System.Windows.Forms.Label()
         Me.tb_m8 = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.tb_m10 = New System.Windows.Forms.TextBox()
@@ -178,12 +178,12 @@ Partial Class metal_tilbud
         Me.tb_m3 = New System.Windows.Forms.TextBox()
         Me.Label142 = New System.Windows.Forms.Label()
         Me.tb_m4 = New System.Windows.Forms.TextBox()
-        Me.Label143 = New System.Windows.Forms.Label()
-        Me.Label144 = New System.Windows.Forms.Label()
+        Me.qtyPerItemLbl1 = New System.Windows.Forms.Label()
+        Me.threadSizeLbl = New System.Windows.Forms.Label()
         Me.Label145 = New System.Windows.Forms.Label()
         Me.tb_m2 = New System.Windows.Forms.TextBox()
         Me.lb_gevind_antal = New System.Windows.Forms.Label()
-        Me.Label151 = New System.Windows.Forms.Label()
+        Me.totalQtyLbl = New System.Windows.Forms.Label()
         Me.lb_gevind = New System.Windows.Forms.Label()
         Me.tb_gevind_uk = New System.Windows.Forms.TextBox()
         Me.gb_undersænk = New System.Windows.Forms.GroupBox()
@@ -191,69 +191,69 @@ Partial Class metal_tilbud
         Me.tb_2 = New System.Windows.Forms.TextBox()
         Me.Label184 = New System.Windows.Forms.Label()
         Me.tb_3 = New System.Windows.Forms.TextBox()
-        Me.Label185 = New System.Windows.Forms.Label()
+        Me.over15mmLbl = New System.Windows.Forms.Label()
         Me.tb_4 = New System.Windows.Forms.TextBox()
-        Me.Label186 = New System.Windows.Forms.Label()
-        Me.Label187 = New System.Windows.Forms.Label()
+        Me.qtyPerItemLbl2 = New System.Windows.Forms.Label()
+        Me.diameterThreadSizeLbl = New System.Windows.Forms.Label()
         Me.Label188 = New System.Windows.Forms.Label()
         Me.tb_1 = New System.Windows.Forms.TextBox()
-        Me.Label182 = New System.Windows.Forms.Label()
-        Me.Label181 = New System.Windows.Forms.Label()
+        Me.overruleLbl8 = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl3 = New System.Windows.Forms.Label()
         Me.lb_undersænk_antal = New System.Windows.Forms.Label()
-        Me.Label148 = New System.Windows.Forms.Label()
+        Me.totalQtyLbl2 = New System.Windows.Forms.Label()
         Me.lb_countersink = New System.Windows.Forms.Label()
         Me.tb_countersink_uk = New System.Windows.Forms.TextBox()
         Me.cb_steelmaster = New System.Windows.Forms.CheckBox()
         Me.cb_brush = New System.Windows.Forms.CheckBox()
         Me.cb_vibrationsafgr = New System.Windows.Forms.CheckBox()
         Me.cb_afgrat = New System.Windows.Forms.CheckBox()
-        Me.Label41 = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl1 = New System.Windows.Forms.Label()
         Me.lb_grinding = New System.Windows.Forms.Label()
         Me.lb_afgrat = New System.Windows.Forms.Label()
         Me.lb_rette = New System.Windows.Forms.Label()
         Me.lb_vibration = New System.Windows.Forms.Label()
         Me.lb_brush = New System.Windows.Forms.Label()
-        Me.Label100 = New System.Windows.Forms.Label()
+        Me.overruleLbl9 = New System.Windows.Forms.Label()
         Me.tb_vibration_uk = New System.Windows.Forms.TextBox()
         Me.tb_afgrat_uk = New System.Windows.Forms.TextBox()
-        Me.Label106 = New System.Windows.Forms.Label()
+        Me.manualDeburringLbl = New System.Windows.Forms.Label()
         Me.tb_grinding_uk = New System.Windows.Forms.TextBox()
         Me.Label105 = New System.Windows.Forms.Label()
         Me.tb_brush_uk = New System.Windows.Forms.TextBox()
-        Me.Label104 = New System.Windows.Forms.Label()
-        Me.Label103 = New System.Windows.Forms.Label()
-        Me.Label101 = New System.Windows.Forms.Label()
+        Me.brushDeburring = New System.Windows.Forms.Label()
+        Me.vibrateDeburring = New System.Windows.Forms.Label()
+        Me.manualPunchLbl = New System.Windows.Forms.Label()
         Me.tb_rette_uk = New System.Windows.Forms.TextBox()
-        Me.Label102 = New System.Windows.Forms.Label()
+        Me.strainghtMachineLbl = New System.Windows.Forms.Label()
         Me.tb_stans_manuel_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe3 = New System.Windows.Forms.GroupBox()
         Me.tb_numberofspotweldseams = New System.Windows.Forms.TextBox()
         Me.cb_spotweld = New System.Windows.Forms.CheckBox()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label203 = New System.Windows.Forms.Label()
+        Me.numbWeldsPerItemLbl = New System.Windows.Forms.Label()
+        Me.numbSpotWeldsPerItemLbl = New System.Windows.Forms.Label()
         Me.tb_numberofspots = New System.Windows.Forms.TextBox()
-        Me.Label202 = New System.Windows.Forms.Label()
-        Me.Label201 = New System.Windows.Forms.Label()
-        Me.Label128 = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl4 = New System.Windows.Forms.Label()
+        Me.spotWeldLbl = New System.Windows.Forms.Label()
+        Me.overruleLbl10 = New System.Windows.Forms.Label()
         Me.lb_spotweld = New System.Windows.Forms.Label()
         Me.tb_spotweld_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe4 = New System.Windows.Forms.GroupBox()
         Me.tb_numberofwelds = New System.Windows.Forms.TextBox()
         Me.tb_weldlength = New System.Windows.Forms.TextBox()
         Me.cb_rettesvejs = New System.Windows.Forms.CheckBox()
-        Me.Label226 = New System.Windows.Forms.Label()
+        Me.strainghteningLbl = New System.Windows.Forms.Label()
         Me.lb_rettesvejs_tid = New System.Windows.Forms.Label()
         Me.tb_rettesvejs_uk = New System.Windows.Forms.TextBox()
         Me.rb_migmag = New System.Windows.Forms.RadioButton()
         Me.rb_tig = New System.Windows.Forms.RadioButton()
         Me.cb_weld = New System.Windows.Forms.CheckBox()
         Me.cb_tackweld = New System.Windows.Forms.CheckBox()
-        Me.Label194 = New System.Windows.Forms.Label()
-        Me.Label197 = New System.Windows.Forms.Label()
-        Me.Label192 = New System.Windows.Forms.Label()
-        Me.Label189 = New System.Windows.Forms.Label()
-        Me.Label150 = New System.Windows.Forms.Label()
-        Me.Label132 = New System.Windows.Forms.Label()
+        Me.onlyTackWeldingLbl = New System.Windows.Forms.Label()
+        Me.fullWeldingLbl = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl5 = New System.Windows.Forms.Label()
+        Me.numbWeldsPerItemLbl2 = New System.Windows.Forms.Label()
+        Me.weldingLengthPerItemLbl = New System.Windows.Forms.Label()
+        Me.overruleLbl11 = New System.Windows.Forms.Label()
         Me.lb_weld = New System.Windows.Forms.Label()
         Me.lb_tackweld = New System.Windows.Forms.Label()
         Me.tb_weld_uk = New System.Windows.Forms.TextBox()
@@ -299,49 +299,49 @@ Partial Class metal_tilbud
         Me.TextBox91 = New System.Windows.Forms.TextBox()
         Me.Label176 = New System.Windows.Forms.Label()
         Me.cb_grind_weld = New System.Windows.Forms.CheckBox()
-        Me.Label200 = New System.Windows.Forms.Label()
+        Me.weldGrindingLbl2 = New System.Windows.Forms.Label()
         Me.lb_grind_weld = New System.Windows.Forms.Label()
         Me.tb_grind_weld_uk = New System.Windows.Forms.TextBox()
         Me.gb_gruppe6 = New System.Windows.Forms.GroupBox()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label137 = New System.Windows.Forms.Label()
+        Me.minutesLbl = New System.Windows.Forms.Label()
+        Me.controlLbl = New System.Windows.Forms.Label()
         Me.lb_kontrol = New System.Windows.Forms.Label()
         Me.tb_kontrol_uk = New System.Windows.Forms.TextBox()
-        Me.Label133 = New System.Windows.Forms.Label()
-        Me.Label134 = New System.Windows.Forms.Label()
+        Me.overruleLbl13 = New System.Windows.Forms.Label()
+        Me.officeLbl = New System.Windows.Forms.Label()
         Me.lb_kontor = New System.Windows.Forms.Label()
         Me.tb_kontor_uk = New System.Windows.Forms.TextBox()
         Me.gb_admin = New System.Windows.Forms.GroupBox()
         Me.lb_filnavn = New System.Windows.Forms.Label()
         Me.lb_operatør_opr = New System.Windows.Forms.Label()
-        Me.Label250 = New System.Windows.Forms.Label()
+        Me.operatorLbl = New System.Windows.Forms.Label()
         Me.lb_dato_opr = New System.Windows.Forms.Label()
-        Me.Label252 = New System.Windows.Forms.Label()
+        Me.oprDateLbl = New System.Windows.Forms.Label()
         Me.rb_danmark = New System.Windows.Forms.RadioButton()
         Me.rb_polen = New System.Windows.Forms.RadioButton()
         Me.tb_timesats_C = New System.Windows.Forms.TextBox()
         Me.tb_timesats_B = New System.Windows.Forms.TextBox()
         Me.Label58 = New System.Windows.Forms.Label()
         Me.tb_timesats_D = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.hourPricesLbl = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.tb_timesats_mand = New System.Windows.Forms.TextBox()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label88 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.bPunchLbl = New System.Windows.Forms.Label()
+        Me.manLbl = New System.Windows.Forms.Label()
+        Me.fileNameLbl = New System.Windows.Forms.Label()
+        Me.oneTo6Lbl = New System.Windows.Forms.Label()
+        Me.materialGroupLbl = New System.Windows.Forms.Label()
+        Me.difficultyLbl = New System.Windows.Forms.Label()
+        Me.moduleSizeLbl = New System.Windows.Forms.Label()
         Me.gb_overfladebeh = New System.Windows.Forms.GroupBox()
         Me.Label251 = New System.Windows.Forms.Label()
-        Me.Label249 = New System.Windows.Forms.Label()
+        Me.surfaceQtyLbl = New System.Windows.Forms.Label()
         Me.tb_numberofsurface = New System.Windows.Forms.TextBox()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.tb_overfltilbud_antal = New System.Windows.Forms.TextBox()
-        Me.Label233 = New System.Windows.Forms.Label()
-        Me.Label229 = New System.Windows.Forms.Label()
-        Me.Label237 = New System.Windows.Forms.Label()
+        Me.PcsLbl = New System.Windows.Forms.Label()
+        Me.offerAppliesToLbl = New System.Windows.Forms.Label()
+        Me.offerDkkPcLbl = New System.Windows.Forms.Label()
         Me.tb_overfl_tilbudpris3_uk = New System.Windows.Forms.TextBox()
         Me.tb_overfl_tilbudpris2_uk = New System.Windows.Forms.TextBox()
         Me.tb_overfl_tilbudpris1_uk = New System.Windows.Forms.TextBox()
@@ -356,7 +356,7 @@ Partial Class metal_tilbud
         Me.cb_1side_2 = New System.Windows.Forms.CheckBox()
         Me.cb_1side_3 = New System.Windows.Forms.CheckBox()
         Me.cb_1side_1 = New System.Windows.Forms.CheckBox()
-        Me.Label42 = New System.Windows.Forms.Label()
+        Me.overruleLbl15 = New System.Windows.Forms.Label()
         Me.tb_overfl_pris2_uk = New System.Windows.Forms.TextBox()
         Me.tb_overfl_pris3_uk = New System.Windows.Forms.TextBox()
         Me.tb_overfl_pris1_uk = New System.Windows.Forms.TextBox()
@@ -383,84 +383,84 @@ Partial Class metal_tilbud
         Me.tb_overfl_pris2 = New System.Windows.Forms.TextBox()
         Me.tb_overfl_afdæk2 = New System.Windows.Forms.TextBox()
         Me.tb_overfl_opstart2 = New System.Windows.Forms.TextBox()
-        Me.Label140 = New System.Windows.Forms.Label()
+        Me.dkkPcLbl = New System.Windows.Forms.Label()
         Me.tb_overfl_pris100_1 = New System.Windows.Forms.Label()
-        Me.Label130 = New System.Windows.Forms.Label()
+        Me.profitLbl3 = New System.Windows.Forms.Label()
         Me.tb_overfl_avance1 = New System.Windows.Forms.TextBox()
-        Me.Label67 = New System.Windows.Forms.Label()
-        Me.Label66 = New System.Windows.Forms.Label()
-        Me.Label65 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Label61 = New System.Windows.Forms.Label()
+        Me.priceDkkPcLbl = New System.Windows.Forms.Label()
+        Me.coatingDkkPc = New System.Windows.Forms.Label()
+        Me.setupDkkLbl2 = New System.Windows.Forms.Label()
+        Me.surfaceTreatmentLbl = New System.Windows.Forms.Label()
+        Me.supplierLbl = New System.Windows.Forms.Label()
         Me.tb_overfl_pris1 = New System.Windows.Forms.TextBox()
         Me.tb_overfl_afdæk1 = New System.Windows.Forms.TextBox()
         Me.tb_overfl_opstart1 = New System.Windows.Forms.TextBox()
         Me.tb_bukmax_y = New System.Windows.Forms.TextBox()
-        Me.Label70 = New System.Windows.Forms.Label()
+        Me.biggestMeasureLbl = New System.Windows.Forms.Label()
         Me.gb_buk = New System.Windows.Forms.GroupBox()
         Me.lb_buk_opst = New System.Windows.Forms.Label()
         Me.tb_stepantal = New System.Windows.Forms.TextBox()
-        Me.Label244 = New System.Windows.Forms.Label()
+        Me.stepBendLbl = New System.Windows.Forms.Label()
         Me.lb_stepbuk = New System.Windows.Forms.Label()
-        Me.Label242 = New System.Windows.Forms.Label()
+        Me.stepbenNumbstepsLbl = New System.Windows.Forms.Label()
         Me.tb_stepbuk_uk = New System.Windows.Forms.TextBox()
         Me.lb_buk_ialtuk = New System.Windows.Forms.Label()
-        Me.Label230 = New System.Windows.Forms.Label()
+        Me.totalBendTime = New System.Windows.Forms.Label()
         Me.lb_buk_ialt = New System.Windows.Forms.Label()
         Me.tb_valsning_uk = New System.Windows.Forms.TextBox()
-        Me.Label225 = New System.Windows.Forms.Label()
+        Me.rollingLbl = New System.Windows.Forms.Label()
         Me.lb_valsetid = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
-        Me.Label204 = New System.Windows.Forms.Label()
+        Me.paint1sideLbl = New System.Windows.Forms.Label()
+        Me.areaM2Lbl = New System.Windows.Forms.Label()
         Me.lb_nettoareal = New System.Windows.Forms.Label()
         Me.tb_buk_opst_uk = New System.Windows.Forms.TextBox()
-        Me.Label30 = New System.Windows.Forms.Label()
+        Me.setupBending = New System.Windows.Forms.Label()
         Me.Label96 = New System.Windows.Forms.Label()
         Me.Label95 = New System.Windows.Forms.Label()
-        Me.Label94 = New System.Windows.Forms.Label()
-        Me.Label93 = New System.Windows.Forms.Label()
+        Me.overrule3Lbl = New System.Windows.Forms.Label()
+        Me.bendMinOQ1 = New System.Windows.Forms.Label()
         Me.lb_buk_tid = New System.Windows.Forms.Label()
         Me.tb_buk_uk = New System.Windows.Forms.TextBox()
         Me.lb_udfold_y = New System.Windows.Forms.Label()
         Me.TextBox77 = New System.Windows.Forms.TextBox()
         Me.lb_udfold_x = New System.Windows.Forms.Label()
         Me.TextBox76 = New System.Windows.Forms.TextBox()
-        Me.Label84 = New System.Windows.Forms.Label()
+        Me.unfoldingLbl = New System.Windows.Forms.Label()
         Me.TextBox75 = New System.Windows.Forms.TextBox()
-        Me.Label83 = New System.Windows.Forms.Label()
+        Me.bend11Lbl = New System.Windows.Forms.Label()
         Me.TextBox74 = New System.Windows.Forms.TextBox()
         Me.tb_buk11_x = New System.Windows.Forms.TextBox()
         Me.TextBox73 = New System.Windows.Forms.TextBox()
         Me.tb_buk11_y = New System.Windows.Forms.TextBox()
-        Me.Label82 = New System.Windows.Forms.Label()
+        Me.bend10Lbl = New System.Windows.Forms.Label()
         Me.tb_buk10_x = New System.Windows.Forms.TextBox()
         Me.TextBox72 = New System.Windows.Forms.TextBox()
         Me.tb_buk10_y = New System.Windows.Forms.TextBox()
-        Me.Label81 = New System.Windows.Forms.Label()
+        Me.bend9Lbl = New System.Windows.Forms.Label()
         Me.tb_buk9_x = New System.Windows.Forms.TextBox()
         Me.tb_buk9_y = New System.Windows.Forms.TextBox()
-        Me.Label80 = New System.Windows.Forms.Label()
+        Me.bend8Lbl = New System.Windows.Forms.Label()
         Me.tb_buk8_x = New System.Windows.Forms.TextBox()
         Me.tb_buk8_y = New System.Windows.Forms.TextBox()
-        Me.Label79 = New System.Windows.Forms.Label()
+        Me.bend7Lbl = New System.Windows.Forms.Label()
         Me.tb_buk7_x = New System.Windows.Forms.TextBox()
         Me.tb_buk7_y = New System.Windows.Forms.TextBox()
-        Me.Label77 = New System.Windows.Forms.Label()
+        Me.bend6Lbl = New System.Windows.Forms.Label()
         Me.tb_buk6_x = New System.Windows.Forms.TextBox()
         Me.tb_buk6_y = New System.Windows.Forms.TextBox()
-        Me.Label75 = New System.Windows.Forms.Label()
+        Me.bend5Lbl = New System.Windows.Forms.Label()
         Me.tb_buk5_x = New System.Windows.Forms.TextBox()
         Me.tb_buk5_y = New System.Windows.Forms.TextBox()
-        Me.Label74 = New System.Windows.Forms.Label()
+        Me.bend4Lbl = New System.Windows.Forms.Label()
         Me.tb_buk4_x = New System.Windows.Forms.TextBox()
         Me.tb_buk4_y = New System.Windows.Forms.TextBox()
-        Me.Label73 = New System.Windows.Forms.Label()
+        Me.bend3Lbl = New System.Windows.Forms.Label()
         Me.tb_buk3_x = New System.Windows.Forms.TextBox()
         Me.tb_buk3_y = New System.Windows.Forms.TextBox()
-        Me.Label72 = New System.Windows.Forms.Label()
+        Me.bend2Lbl = New System.Windows.Forms.Label()
         Me.tb_buk2_x = New System.Windows.Forms.TextBox()
         Me.tb_buk2_y = New System.Windows.Forms.TextBox()
-        Me.Label71 = New System.Windows.Forms.Label()
+        Me.bend1Lbl = New System.Windows.Forms.Label()
         Me.tb_buk1_x = New System.Windows.Forms.TextBox()
         Me.tb_buk1_y = New System.Windows.Forms.TextBox()
         Me.tb_bukmax_x = New System.Windows.Forms.TextBox()
@@ -473,18 +473,18 @@ Partial Class metal_tilbud
         Me.gb_hul = New System.Windows.Forms.GroupBox()
         Me.tb_slag_til_huller = New System.Windows.Forms.TextBox()
         Me.lb_stans_ialtuk = New System.Windows.Forms.Label()
-        Me.Label236 = New System.Windows.Forms.Label()
+        Me.dStansTotOQ1 = New System.Windows.Forms.Label()
         Me.lb_stans_ialt = New System.Windows.Forms.Label()
-        Me.Label90 = New System.Windows.Forms.Label()
-        Me.Label107 = New System.Windows.Forms.Label()
-        Me.Label108 = New System.Windows.Forms.Label()
-        Me.Label86 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
+        Me.setupMinLbl3 = New System.Windows.Forms.Label()
+        Me.cncMinOQ1Lbl2 = New System.Windows.Forms.Label()
+        Me.overruleLbl5 = New System.Windows.Forms.Label()
+        Me.numberOfStrokesPerHoleLbl = New System.Windows.Forms.Label()
+        Me.perItemLbl = New System.Windows.Forms.Label()
         Me.tb_toolshift = New System.Windows.Forms.TextBox()
-        Me.Label99 = New System.Windows.Forms.Label()
+        Me.toolChangeLbl1 = New System.Windows.Forms.Label()
         Me.tb_opstart_kr_uk = New System.Windows.Forms.TextBox()
         Me.tb_Program_kr_uk = New System.Windows.Forms.TextBox()
-        Me.Label91 = New System.Windows.Forms.Label()
+        Me.overrule1Lbl = New System.Windows.Forms.Label()
         Me.gb_pristabel = New System.Windows.Forms.GroupBox()
         Me.lb_timer1 = New System.Windows.Forms.Label()
         Me.lb_råvarerstk5 = New System.Windows.Forms.Label()
@@ -502,10 +502,10 @@ Partial Class metal_tilbud
         Me.lb_mand2_tid = New System.Windows.Forms.Label()
         Me.lb_CNC1_tid = New System.Windows.Forms.Label()
         Me.lb_mand1_tid = New System.Windows.Forms.Label()
-        Me.Label118 = New System.Windows.Forms.Label()
-        Me.Label117 = New System.Windows.Forms.Label()
-        Me.Label116 = New System.Windows.Forms.Label()
-        Me.Label115 = New System.Windows.Forms.Label()
+        Me.oQty2Lbl = New System.Windows.Forms.Label()
+        Me.oQty3Lbl = New System.Windows.Forms.Label()
+        Me.oQty4Lbl = New System.Windows.Forms.Label()
+        Me.oQty5Lbl = New System.Windows.Forms.Label()
         Me.lb_timer2 = New System.Windows.Forms.Label()
         Me.lb_timer3 = New System.Windows.Forms.Label()
         Me.lb_timer4 = New System.Windows.Forms.Label()
@@ -516,34 +516,34 @@ Partial Class metal_tilbud
         Me.gb_opstart = New System.Windows.Forms.GroupBox()
         Me.tb_antal_program_uk = New System.Windows.Forms.TextBox()
         Me.tb_antal_opstart_uk = New System.Windows.Forms.TextBox()
-        Me.Label126 = New System.Windows.Forms.Label()
+        Me.programQtyLbl = New System.Windows.Forms.Label()
         Me.lb_opstart_kr = New System.Windows.Forms.Label()
         Me.lb_antal_program = New System.Windows.Forms.Label()
         Me.gb_matr = New System.Windows.Forms.GroupBox()
         Me.tb_Kilopris_uk = New System.Windows.Forms.TextBox()
         Me.lb_pladeforbrug = New System.Windows.Forms.Label()
-        Me.Label235 = New System.Windows.Forms.Label()
+        Me.plateConsumptionLbl = New System.Windows.Forms.Label()
         Me.cb_fravælg_1000_2000 = New System.Windows.Forms.CheckBox()
         Me.cb_fravælg_1250_2500 = New System.Windows.Forms.CheckBox()
         Me.cb_fravælg_1500_3000 = New System.Windows.Forms.CheckBox()
-        Me.Label178 = New System.Windows.Forms.Label()
-        Me.Label177 = New System.Windows.Forms.Label()
-        Me.Label149 = New System.Windows.Forms.Label()
+        Me.overruleCostPriceLbl = New System.Windows.Forms.Label()
+        Me.DkkKgLbl = New System.Windows.Forms.Label()
+        Me.overrule2Lbl = New System.Windows.Forms.Label()
         Me.tb_sværhed_uk = New System.Windows.Forms.TextBox()
         Me.lb_faktor = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
+        Me.factorLbl = New System.Windows.Forms.Label()
         Me.lb_sværhed = New System.Windows.Forms.Label()
         Me.cb_fravælg = New System.Windows.Forms.CheckBox()
         Me.lb_spildnetto = New System.Windows.Forms.Label()
         Me.Lb_Kilopris = New System.Windows.Forms.Label()
-        Me.Label92 = New System.Windows.Forms.Label()
+        Me.costPriceDkkKgLbl = New System.Windows.Forms.Label()
         Me.Lb_matrgruppe = New System.Windows.Forms.Label()
         Me.Lb_klasse = New System.Windows.Forms.Label()
-        Me.Label89 = New System.Windows.Forms.Label()
+        Me.gradeLbl = New System.Windows.Forms.Label()
         Me.lb_emnevægt = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.itemWeightLbl = New System.Windows.Forms.Label()
         Me.lb_modulstr = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
+        Me.forOQty1Lbl = New System.Windows.Forms.Label()
         Me.lb_spildtype = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -553,10 +553,10 @@ Partial Class metal_tilbud
         Me.lb_pladeformatX = New System.Windows.Forms.Label()
         Me.lb_antalplader = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
+        Me.wasteLbl = New System.Windows.Forms.Label()
+        Me.plateFormatLbl = New System.Windows.Forms.Label()
+        Me.itemsPerPlateLbl = New System.Windows.Forms.Label()
+        Me.plateQtyLbl = New System.Windows.Forms.Label()
         Me.bu_udskriv = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lb_CombiCNCstans_tid = New System.Windows.Forms.Label()
@@ -566,96 +566,96 @@ Partial Class metal_tilbud
         Me.tb_hulantal_1B = New System.Windows.Forms.TextBox()
         Me.tb_slag_til_huller_B = New System.Windows.Forms.TextBox()
         Me.Label240 = New System.Windows.Forms.Label()
-        Me.Label239 = New System.Windows.Forms.Label()
+        Me.qtyLbl3 = New System.Windows.Forms.Label()
         Me.tb_hulantal_4B = New System.Windows.Forms.TextBox()
         Me.lb_combi_ialtuk = New System.Windows.Forms.Label()
-        Me.Label232 = New System.Windows.Forms.Label()
+        Me.BCombiTotOQ1Lbl = New System.Windows.Forms.Label()
         Me.lb_combi_ialt = New System.Windows.Forms.Label()
         Me.tb_CombiCNCstans_tid_uk = New System.Windows.Forms.TextBox()
-        Me.Label227 = New System.Windows.Forms.Label()
-        Me.Label123 = New System.Windows.Forms.Label()
-        Me.Label131 = New System.Windows.Forms.Label()
-        Me.Label135 = New System.Windows.Forms.Label()
+        Me.CncMinStansOQ1 = New System.Windows.Forms.Label()
+        Me.totCuttingLen100Lbl2 = New System.Windows.Forms.Label()
+        Me.numberOfStrokesPerHoleLbl2 = New System.Windows.Forms.Label()
+        Me.peritemLbl2 = New System.Windows.Forms.Label()
         Me.tb_toolshift_B = New System.Windows.Forms.TextBox()
-        Me.Label136 = New System.Windows.Forms.Label()
+        Me.toolChange2 = New System.Windows.Forms.Label()
         Me.tb_combiCNC_tid_uk = New System.Windows.Forms.TextBox()
-        Me.Label109 = New System.Windows.Forms.Label()
+        Me.numbHoles51to100Lbl2 = New System.Windows.Forms.Label()
         Me.lb_Combi_opstart = New System.Windows.Forms.Label()
-        Me.Label111 = New System.Windows.Forms.Label()
-        Me.Label112 = New System.Windows.Forms.Label()
-        Me.Label113 = New System.Windows.Forms.Label()
-        Me.Label114 = New System.Windows.Forms.Label()
+        Me.overruleLbl6 = New System.Windows.Forms.Label()
+        Me.numbHoles11to50Lbl2 = New System.Windows.Forms.Label()
+        Me.CncMinLaserOQ1Lbl = New System.Windows.Forms.Label()
+        Me.setupMinLbl4 = New System.Windows.Forms.Label()
         Me.lb_CombiCNC_tid = New System.Windows.Forms.Label()
         Me.tb_combi_opstart_uk = New System.Windows.Forms.TextBox()
-        Me.Label125 = New System.Windows.Forms.Label()
+        Me.numbOfHoles2to10Lbl2 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.lb_klip_ialtuk = New System.Windows.Forms.Label()
-        Me.Label231 = New System.Windows.Forms.Label()
+        Me.cutTotalOQ1Lbl = New System.Windows.Forms.Label()
         Me.lb_klip_ialt = New System.Windows.Forms.Label()
         Me.tb_klip_tid_uk = New System.Windows.Forms.TextBox()
         Me.lb_klip_opstart = New System.Windows.Forms.Label()
-        Me.Label127 = New System.Windows.Forms.Label()
-        Me.Label129 = New System.Windows.Forms.Label()
+        Me.cutMinOQ1Lbl = New System.Windows.Forms.Label()
+        Me.setupMinLbl = New System.Windows.Forms.Label()
         Me.lb_klip_tid = New System.Windows.Forms.Label()
         Me.tb_klip_opstart_uk = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label110 = New System.Windows.Forms.Label()
-        Me.Label124 = New System.Windows.Forms.Label()
-        Me.Label138 = New System.Windows.Forms.Label()
+        Me.group1Lbl4 = New System.Windows.Forms.Label()
+        Me.group1Lbl3 = New System.Windows.Forms.Label()
+        Me.group1Lbl5 = New System.Windows.Forms.Label()
+        Me.group1Lbl2 = New System.Windows.Forms.Label()
         Me.lb_rækkeantal = New System.Windows.Forms.Label()
         Me.gb_forbrug = New System.Windows.Forms.GroupBox()
         Me.tb_presstag_kr_uk = New System.Windows.Forms.TextBox()
-        Me.Label87 = New System.Windows.Forms.Label()
+        Me.dkkPerItemLbl1 = New System.Windows.Forms.Label()
         Me.lb_presstag_kr = New System.Windows.Forms.Label()
-        Me.Label215 = New System.Windows.Forms.Label()
-        Me.Label199 = New System.Windows.Forms.Label()
+        Me.presstagLbl = New System.Windows.Forms.Label()
+        Me.overruleLbl14 = New System.Windows.Forms.Label()
         Me.tb_svejsestag_kr_uk = New System.Windows.Forms.TextBox()
         Me.tb_tilsatsmatr_kr_uk = New System.Windows.Forms.TextBox()
         Me.tb_pressnut_kr_uk = New System.Windows.Forms.TextBox()
-        Me.Label196 = New System.Windows.Forms.Label()
+        Me.dkkPerItemLbl4 = New System.Windows.Forms.Label()
         Me.lb_tilsatsmatr_kr = New System.Windows.Forms.Label()
-        Me.Label198 = New System.Windows.Forms.Label()
-        Me.Label193 = New System.Windows.Forms.Label()
+        Me.additionalMatLbl = New System.Windows.Forms.Label()
+        Me.dkkPerItemLbl3 = New System.Windows.Forms.Label()
         Me.lb_svejsestag_kr = New System.Windows.Forms.Label()
-        Me.Label195 = New System.Windows.Forms.Label()
-        Me.Label191 = New System.Windows.Forms.Label()
+        Me.screwWeldLbl = New System.Windows.Forms.Label()
+        Me.dkkPerItemLbl2 = New System.Windows.Forms.Label()
         Me.lb_pressnut_kr = New System.Windows.Forms.Label()
-        Me.Label190 = New System.Windows.Forms.Label()
+        Me.presnutLbl = New System.Windows.Forms.Label()
         Me.bu_gem = New System.Windows.Forms.Button()
         Me.bu_hent = New System.Windows.Forms.Button()
-        Me.Label206 = New System.Windows.Forms.Label()
-        Me.Label207 = New System.Windows.Forms.Label()
-        Me.Label208 = New System.Windows.Forms.Label()
-        Me.Label209 = New System.Windows.Forms.Label()
-        Me.Label210 = New System.Windows.Forms.Label()
-        Me.Label211 = New System.Windows.Forms.Label()
+        Me.groupTimesByOQty1Lbl = New System.Windows.Forms.Label()
+        Me.group1Lbl = New System.Windows.Forms.Label()
+        Me.group2Lbl = New System.Windows.Forms.Label()
+        Me.group3Lbl = New System.Windows.Forms.Label()
+        Me.group4Lbl = New System.Windows.Forms.Label()
+        Me.group6Lbl = New System.Windows.Forms.Label()
         Me.lb_gruppetid1 = New System.Windows.Forms.Label()
         Me.lb_gruppetid2 = New System.Windows.Forms.Label()
         Me.lb_gruppetid3 = New System.Windows.Forms.Label()
         Me.lb_gruppetid4 = New System.Windows.Forms.Label()
         Me.lb_gruppetid5 = New System.Windows.Forms.Label()
-        Me.Label212 = New System.Windows.Forms.Label()
+        Me.hoursLbl = New System.Windows.Forms.Label()
         Me.lb_ukTime = New System.Windows.Forms.Label()
         Me.lb_ukCNCtime = New System.Windows.Forms.Label()
         Me.lb_gruppetid5slib = New System.Windows.Forms.Label()
-        Me.Label216 = New System.Windows.Forms.Label()
+        Me.group5Lbl = New System.Windows.Forms.Label()
         Me.gb_gruppe5 = New System.Windows.Forms.GroupBox()
         Me.cb_slib = New System.Windows.Forms.CheckBox()
         Me.cb_glasbl = New System.Windows.Forms.CheckBox()
-        Me.Label254 = New System.Windows.Forms.Label()
+        Me.grindingLbl2 = New System.Windows.Forms.Label()
         Me.lb_slib = New System.Windows.Forms.Label()
         Me.tb_slib_uk = New System.Windows.Forms.TextBox()
-        Me.Label214 = New System.Windows.Forms.Label()
-        Me.Label219 = New System.Windows.Forms.Label()
-        Me.Label220 = New System.Windows.Forms.Label()
+        Me.minOQ1Lbl6 = New System.Windows.Forms.Label()
+        Me.overruleLbl12 = New System.Windows.Forms.Label()
+        Me.sandblastingLbl = New System.Windows.Forms.Label()
         Me.lb_glasbl = New System.Windows.Forms.Label()
         Me.tb_glasbl_uk = New System.Windows.Forms.TextBox()
-        Me.Label217 = New System.Windows.Forms.Label()
-        Me.Label218 = New System.Windows.Forms.Label()
-        Me.Label221 = New System.Windows.Forms.Label()
-        Me.Label222 = New System.Windows.Forms.Label()
-        Me.Label223 = New System.Windows.Forms.Label()
-        Me.Label224 = New System.Windows.Forms.Label()
+        Me.grindingLbl = New System.Windows.Forms.Label()
+        Me.officeControl = New System.Windows.Forms.Label()
+        Me.weldStraiLbl = New System.Windows.Forms.Label()
+        Me.bendSpotRollLbl = New System.Windows.Forms.Label()
+        Me.manualLbl = New System.Windows.Forms.Label()
+        Me.cncGiloLbl = New System.Windows.Forms.Label()
         Me.lb_ukCNCstanstime = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
@@ -671,27 +671,32 @@ Partial Class metal_tilbud
         Me.rb_jern = New System.Windows.Forms.RadioButton()
         Me.rb_rustfri = New System.Windows.Forms.RadioButton()
         Me.tb_tilbudnr = New System.Windows.Forms.TextBox()
-        Me.Label243 = New System.Windows.Forms.Label()
-        Me.Label245 = New System.Windows.Forms.Label()
+        Me.offerNrLbl = New System.Windows.Forms.Label()
+        Me.nitrogenLbl = New System.Windows.Forms.Label()
         Me.lb_nitrogen = New System.Windows.Forms.Label()
-        Me.Label247 = New System.Windows.Forms.Label()
+        Me.dkkNetByOQty1Lbl = New System.Windows.Forms.Label()
         Me.tb_samkørsel = New System.Windows.Forms.TextBox()
-        Me.Label246 = New System.Windows.Forms.Label()
-        Me.Label248 = New System.Windows.Forms.Label()
+        Me.samkorselLbl = New System.Windows.Forms.Label()
+        Me.drawingNumbLbl2 = New System.Windows.Forms.Label()
         Me.gb_samkørsel = New System.Windows.Forms.GroupBox()
         Me.tb_tapsvejs_uk = New System.Windows.Forms.TextBox()
         Me.lb_tapsvejs_tid = New System.Windows.Forms.Label()
-        Me.Label255 = New System.Windows.Forms.Label()
+        Me.tapWeldingLbl = New System.Windows.Forms.Label()
         Me.tb_tapantal = New System.Windows.Forms.TextBox()
-        Me.Label256 = New System.Windows.Forms.Label()
-        Me.Label257 = New System.Windows.Forms.Label()
+        Me.tapQtyLbl = New System.Windows.Forms.Label()
+        Me.weldingDifficulty = New System.Windows.Forms.Label()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
-        Me.Label259 = New System.Windows.Forms.Label()
+        Me.totalWeldingTime = New System.Windows.Forms.Label()
         Me.tb_svejstid_ialt = New System.Windows.Forms.Label()
         Me.rb_factor5 = New System.Windows.Forms.RadioButton()
         Me.rb_factor2 = New System.Windows.Forms.RadioButton()
         Me.rb_factor3 = New System.Windows.Forms.RadioButton()
         Me.rb_factor4 = New System.Windows.Forms.RadioButton()
+        Me.engRadio = New System.Windows.Forms.RadioButton()
+        Me.danRadio = New System.Windows.Forms.RadioButton()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.langBox = New System.Windows.Forms.GroupBox()
         Me.gb_gruppe1.SuspendLayout
         Me.gb_gruppe2.SuspendLayout
         Me.gb_stag.SuspendLayout
@@ -718,6 +723,7 @@ Partial Class metal_tilbud
         Me.gb_presmøtrik.SuspendLayout
         Me.gb_samkørsel.SuspendLayout
         Me.GroupBox6.SuspendLayout
+        Me.langBox.SuspendLayout
         Me.SuspendLayout
         '
         'rb_factor1
@@ -736,14 +742,14 @@ Partial Class metal_tilbud
         Me.rb_factor1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.rb_factor1.UseVisualStyleBackColor = False
         '
-        'Label78
+        'additionalInfoLbl
         '
-        Me.Label78.AutoSize = True
-        Me.Label78.Location = New System.Drawing.Point(1295, 594)
-        Me.Label78.Name = "Label78"
-        Me.Label78.Size = New System.Drawing.Size(100, 13)
-        Me.Label78.TabIndex = 218
-        Me.Label78.Text = "ADDITIONAL INFO"
+        Me.additionalInfoLbl.AutoSize = True
+        Me.additionalInfoLbl.Location = New System.Drawing.Point(1295, 594)
+        Me.additionalInfoLbl.Name = "additionalInfoLbl"
+        Me.additionalInfoLbl.Size = New System.Drawing.Size(100, 13)
+        Me.additionalInfoLbl.TabIndex = 218
+        Me.additionalInfoLbl.Text = "ADDITIONAL INFO"
         '
         'rtb_bem
         '
@@ -753,32 +759,32 @@ Partial Class metal_tilbud
         Me.rtb_bem.TabIndex = 362
         Me.rtb_bem.Text = ""
         '
-        'Label76
+        'oQty1Lbl
         '
-        Me.Label76.AutoSize = True
-        Me.Label76.Location = New System.Drawing.Point(140, 8)
-        Me.Label76.Name = "Label76"
-        Me.Label76.Size = New System.Drawing.Size(62, 13)
-        Me.Label76.TabIndex = 214
-        Me.Label76.Text = "Order qty. 1"
+        Me.oQty1Lbl.AutoSize = True
+        Me.oQty1Lbl.Location = New System.Drawing.Point(140, 8)
+        Me.oQty1Lbl.Name = "oQty1Lbl"
+        Me.oQty1Lbl.Size = New System.Drawing.Size(62, 13)
+        Me.oQty1Lbl.TabIndex = 214
+        Me.oQty1Lbl.Text = "Order qty. 1"
         '
-        'Label68
+        'operatorLbl2
         '
-        Me.Label68.AutoSize = True
-        Me.Label68.Location = New System.Drawing.Point(137, 34)
-        Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(48, 13)
-        Me.Label68.TabIndex = 207
-        Me.Label68.Text = "Operator"
+        Me.operatorLbl2.AutoSize = True
+        Me.operatorLbl2.Location = New System.Drawing.Point(137, 34)
+        Me.operatorLbl2.Name = "operatorLbl2"
+        Me.operatorLbl2.Size = New System.Drawing.Size(48, 13)
+        Me.operatorLbl2.TabIndex = 207
+        Me.operatorLbl2.Text = "Operator"
         '
-        'Label69
+        'updateDateLbl
         '
-        Me.Label69.AutoSize = True
-        Me.Label69.Location = New System.Drawing.Point(10, 34)
-        Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(60, 13)
-        Me.Label69.TabIndex = 206
-        Me.Label69.Text = "Updte date"
+        Me.updateDateLbl.AutoSize = True
+        Me.updateDateLbl.Location = New System.Drawing.Point(10, 34)
+        Me.updateDateLbl.Name = "updateDateLbl"
+        Me.updateDateLbl.Size = New System.Drawing.Size(60, 13)
+        Me.updateDateLbl.TabIndex = 206
+        Me.updateDateLbl.Text = "Updte date"
         '
         'lb_operatør
         '
@@ -798,14 +804,15 @@ Partial Class metal_tilbud
         Me.lb_dato.Size = New System.Drawing.Size(65, 20)
         Me.lb_dato.TabIndex = 204
         '
-        'Label56
+        'programsDkkLbl
         '
-        Me.Label56.AutoSize = True
-        Me.Label56.Location = New System.Drawing.Point(1, 135)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(72, 13)
-        Me.Label56.TabIndex = 203
-        Me.Label56.Text = "Programs dkk"
+        Me.programsDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.programsDkkLbl.Location = New System.Drawing.Point(1, 135)
+        Me.programsDkkLbl.Name = "programsDkkLbl"
+        Me.programsDkkLbl.Size = New System.Drawing.Size(79, 13)
+        Me.programsDkkLbl.TabIndex = 203
+        Me.programsDkkLbl.Text = "Programs dkk"
+        Me.programsDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label57
         '
@@ -816,23 +823,25 @@ Partial Class metal_tilbud
         Me.Label57.TabIndex = 202
         Me.Label57.Text = "Programmer antal"
         '
-        'Label39
+        'actualOfferDkk2Lbl
         '
-        Me.Label39.AutoSize = True
-        Me.Label39.Location = New System.Drawing.Point(55, 215)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(82, 13)
-        Me.Label39.TabIndex = 201
-        Me.Label39.Text = "Actual offer dkk"
+        Me.actualOfferDkk2Lbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.actualOfferDkk2Lbl.Location = New System.Drawing.Point(50, 215)
+        Me.actualOfferDkk2Lbl.Name = "actualOfferDkk2Lbl"
+        Me.actualOfferDkk2Lbl.Size = New System.Drawing.Size(90, 13)
+        Me.actualOfferDkk2Lbl.TabIndex = 201
+        Me.actualOfferDkk2Lbl.Text = "Actual offer dkk"
+        Me.actualOfferDkk2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label50
+        'salespriceSetupProgDkkLbl
         '
-        Me.Label50.AutoSize = True
-        Me.Label50.Location = New System.Drawing.Point(5, 192)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(134, 13)
-        Me.Label50.TabIndex = 200
-        Me.Label50.Text = "Saleprice Stup.+Prog.  dkk"
+        Me.salespriceSetupProgDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.salespriceSetupProgDkkLbl.Location = New System.Drawing.Point(5, 192)
+        Me.salespriceSetupProgDkkLbl.Name = "salespriceSetupProgDkkLbl"
+        Me.salespriceSetupProgDkkLbl.Size = New System.Drawing.Size(134, 13)
+        Me.salespriceSetupProgDkkLbl.TabIndex = 200
+        Me.salespriceSetupProgDkkLbl.Text = "Saleprice Stup.+Prog.  dkk"
+        Me.salespriceSetupProgDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_opstart_afgivettilbud
         '
@@ -852,14 +861,15 @@ Partial Class metal_tilbud
         Me.Label51.TabIndex = 199
         Me.Label51.Text = "%"
         '
-        'Label54
+        'profit2Lbl
         '
-        Me.Label54.AutoSize = True
-        Me.Label54.Location = New System.Drawing.Point(50, 177)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(31, 13)
-        Me.Label54.TabIndex = 197
-        Me.Label54.Text = "Profit"
+        Me.profit2Lbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.profit2Lbl.Location = New System.Drawing.Point(44, 177)
+        Me.profit2Lbl.Name = "profit2Lbl"
+        Me.profit2Lbl.Size = New System.Drawing.Size(45, 13)
+        Me.profit2Lbl.TabIndex = 197
+        Me.profit2Lbl.Text = "Profit"
+        Me.profit2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_opstart_avance
         '
@@ -872,32 +882,35 @@ Partial Class metal_tilbud
         Me.tb_opstart_avance.Text = "20"
         Me.tb_opstart_avance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label55
+        'setupProgramsTotalDkkLbl
         '
-        Me.Label55.AutoSize = True
-        Me.Label55.Location = New System.Drawing.Point(3, 158)
-        Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(128, 13)
-        Me.Label55.TabIndex = 196
-        Me.Label55.Text = "Setup+programs total dkk"
+        Me.setupProgramsTotalDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.setupProgramsTotalDkkLbl.Location = New System.Drawing.Point(3, 158)
+        Me.setupProgramsTotalDkkLbl.Name = "setupProgramsTotalDkkLbl"
+        Me.setupProgramsTotalDkkLbl.Size = New System.Drawing.Size(134, 13)
+        Me.setupProgramsTotalDkkLbl.TabIndex = 196
+        Me.setupProgramsTotalDkkLbl.Text = "Setup+programs total dkk"
+        Me.setupProgramsTotalDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label59
+        'setupDkkLbl
         '
-        Me.Label59.AutoSize = True
-        Me.Label59.Location = New System.Drawing.Point(24, 74)
-        Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(56, 13)
-        Me.Label59.TabIndex = 195
-        Me.Label59.Text = "Setup dkk"
+        Me.setupDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.setupDkkLbl.Location = New System.Drawing.Point(1, 74)
+        Me.setupDkkLbl.Name = "setupDkkLbl"
+        Me.setupDkkLbl.Size = New System.Drawing.Size(79, 13)
+        Me.setupDkkLbl.TabIndex = 195
+        Me.setupDkkLbl.Text = "Setup dkk"
+        Me.setupDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label60
+        'setup1stTimeLbl
         '
-        Me.Label60.AutoSize = True
-        Me.Label60.Location = New System.Drawing.Point(2, 55)
-        Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(74, 13)
-        Me.Label60.TabIndex = 194
-        Me.Label60.Text = "Setup 1st time"
+        Me.setup1stTimeLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.setup1stTimeLbl.Location = New System.Drawing.Point(1, 55)
+        Me.setup1stTimeLbl.Name = "setup1stTimeLbl"
+        Me.setup1stTimeLbl.Size = New System.Drawing.Size(80, 13)
+        Me.setup1stTimeLbl.TabIndex = 194
+        Me.setup1stTimeLbl.Text = "Setup 1st time"
+        Me.setup1stTimeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_opst_prog_brutto
         '
@@ -941,24 +954,26 @@ Partial Class metal_tilbud
         Me.lb_antal_opstart.TabIndex = 188
         Me.lb_antal_opstart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label38
+        'actualOfferDkkLbl
         '
-        Me.Label38.AutoSize = True
-        Me.Label38.Location = New System.Drawing.Point(28, 215)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(82, 13)
-        Me.Label38.TabIndex = 187
-        Me.Label38.Text = "Actual offer dkk"
+        Me.actualOfferDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.actualOfferDkkLbl.Location = New System.Drawing.Point(0, 215)
+        Me.actualOfferDkkLbl.Name = "actualOfferDkkLbl"
+        Me.actualOfferDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.actualOfferDkkLbl.TabIndex = 187
+        Me.actualOfferDkkLbl.Text = "Actual offer dkk"
+        Me.actualOfferDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label37
+        'salepricePcTotDkkLbl
         '
-        Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(2, 192)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(109, 13)
-        Me.Label37.TabIndex = 186
-        Me.Label37.Text = "Saleprice pc/tot dkk"
-        Me.Label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.salepricePcTotDkkLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.5!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.salepricePcTotDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.salepricePcTotDkkLbl.Location = New System.Drawing.Point(0, 192)
+        Me.salepricePcTotDkkLbl.Name = "salepricePcTotDkkLbl"
+        Me.salepricePcTotDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.salepricePcTotDkkLbl.TabIndex = 186
+        Me.salepricePcTotDkkLbl.Text = "Saleprice pc/tot dkk"
+        Me.salepricePcTotDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_tilbud2
         '
@@ -1024,14 +1039,15 @@ Partial Class metal_tilbud
         Me.Label36.TabIndex = 185
         Me.Label36.Text = "%"
         '
-        'Label35
+        'profitLbl
         '
-        Me.Label35.AutoSize = True
-        Me.Label35.Location = New System.Drawing.Point(17, 173)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(31, 13)
-        Me.Label35.TabIndex = 184
-        Me.Label35.Text = "Profit"
+        Me.profitLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.profitLbl.Location = New System.Drawing.Point(0, 173)
+        Me.profitLbl.Name = "profitLbl"
+        Me.profitLbl.Size = New System.Drawing.Size(50, 13)
+        Me.profitLbl.TabIndex = 184
+        Me.profitLbl.Text = "Profit"
+        Me.profitLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_avance
         '
@@ -1044,77 +1060,77 @@ Partial Class metal_tilbud
         Me.tb_avance.Text = "20"
         Me.tb_avance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label49
+        'sumPcTotDkkLbl
         '
-        Me.Label49.AutoSize = True
-        Me.Label49.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.Location = New System.Drawing.Point(27, 154)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(84, 13)
-        Me.Label49.TabIndex = 183
-        Me.Label49.Text = "Sum  pc/tot dkk"
-        Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.sumPcTotDkkLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sumPcTotDkkLbl.Location = New System.Drawing.Point(0, 156)
+        Me.sumPcTotDkkLbl.Name = "sumPcTotDkkLbl"
+        Me.sumPcTotDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.sumPcTotDkkLbl.TabIndex = 183
+        Me.sumPcTotDkkLbl.Text = "Sum  pc/tot dkk"
+        Me.sumPcTotDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label48
+        'rawMatPcTotDkkLbl
         '
-        Me.Label48.AutoSize = True
-        Me.Label48.Location = New System.Drawing.Point(9, 134)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(102, 13)
-        Me.Label48.TabIndex = 182
-        Me.Label48.Text = "Raw mat pc/tot dkk"
-        Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.rawMatPcTotDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.rawMatPcTotDkkLbl.Location = New System.Drawing.Point(0, 136)
+        Me.rawMatPcTotDkkLbl.Name = "rawMatPcTotDkkLbl"
+        Me.rawMatPcTotDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.rawMatPcTotDkkLbl.TabIndex = 182
+        Me.rawMatPcTotDkkLbl.Text = "Raw mat pc/tot dkk"
+        Me.rawMatPcTotDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label47
+        'outsourcedServDkkLbl
         '
-        Me.Label47.AutoSize = True
-        Me.Label47.Location = New System.Drawing.Point(1, 114)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(109, 13)
-        Me.Label47.TabIndex = 181
-        Me.Label47.Text = "Outsourced serv. dkk"
-        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.outsourcedServDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.outsourcedServDkkLbl.Location = New System.Drawing.Point(0, 117)
+        Me.outsourcedServDkkLbl.Name = "outsourcedServDkkLbl"
+        Me.outsourcedServDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.outsourcedServDkkLbl.TabIndex = 181
+        Me.outsourcedServDkkLbl.Text = "Outsourced serv. dkk"
+        Me.outsourcedServDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label53
+        'TimeCostDkkLbl
         '
-        Me.Label53.AutoSize = True
-        Me.Label53.Location = New System.Drawing.Point(36, 94)
-        Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(74, 13)
-        Me.Label53.TabIndex = 180
-        Me.Label53.Text = "Time cost dkk"
-        Me.Label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.TimeCostDkkLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.TimeCostDkkLbl.Location = New System.Drawing.Point(0, 97)
+        Me.TimeCostDkkLbl.Name = "TimeCostDkkLbl"
+        Me.TimeCostDkkLbl.Size = New System.Drawing.Size(109, 13)
+        Me.TimeCostDkkLbl.TabIndex = 180
+        Me.TimeCostDkkLbl.Text = "Time cost dkk"
+        Me.TimeCostDkkLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label52
+        'CNCCostDkkHoursLbl
         '
-        Me.Label52.AutoSize = True
-        Me.Label52.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label52.Location = New System.Drawing.Point(19, 73)
-        Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(89, 12)
-        Me.Label52.TabIndex = 179
-        Me.Label52.Text = "CNC cost dkk-hours"
-        Me.Label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.CNCCostDkkHoursLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CNCCostDkkHoursLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.CNCCostDkkHoursLbl.Location = New System.Drawing.Point(0, 76)
+        Me.CNCCostDkkHoursLbl.Name = "CNCCostDkkHoursLbl"
+        Me.CNCCostDkkHoursLbl.Size = New System.Drawing.Size(109, 12)
+        Me.CNCCostDkkHoursLbl.TabIndex = 179
+        Me.CNCCostDkkHoursLbl.Text = "CNC cost dkk-hours"
+        Me.CNCCostDkkHoursLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label46
+        'ManCostDkkHoursLbl
         '
-        Me.Label46.AutoSize = True
-        Me.Label46.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.Location = New System.Drawing.Point(19, 54)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(89, 12)
-        Me.Label46.TabIndex = 178
-        Me.Label46.Text = "Man cost dkk -hours"
-        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.ManCostDkkHoursLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ManCostDkkHoursLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ManCostDkkHoursLbl.Location = New System.Drawing.Point(0, 57)
+        Me.ManCostDkkHoursLbl.Name = "ManCostDkkHoursLbl"
+        Me.ManCostDkkHoursLbl.Size = New System.Drawing.Size(109, 12)
+        Me.ManCostDkkHoursLbl.TabIndex = 178
+        Me.ManCostDkkHoursLbl.Text = "Man cost dkk -hours"
+        Me.ManCostDkkHoursLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label45
+        'qtyLbl
         '
-        Me.Label45.AutoSize = True
-        Me.Label45.Location = New System.Drawing.Point(84, 27)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(23, 13)
-        Me.Label45.TabIndex = 177
-        Me.Label45.Text = "Qty"
+        Me.qtyLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.qtyLbl.Location = New System.Drawing.Point(70, 27)
+        Me.qtyLbl.Name = "qtyLbl"
+        Me.qtyLbl.Size = New System.Drawing.Size(35, 13)
+        Me.qtyLbl.TabIndex = 177
+        Me.qtyLbl.Text = "Qty"
+        Me.qtyLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_salg2
         '
@@ -1503,14 +1519,14 @@ Partial Class metal_tilbud
         Me.tb_antal1.TabIndex = 82
         Me.tb_antal1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label4
+        'revLbl
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(1149, 10)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(32, 13)
-        Me.Label4.TabIndex = 132
-        Me.Label4.Text = "REV." & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.revLbl.AutoSize = True
+        Me.revLbl.Location = New System.Drawing.Point(1149, 10)
+        Me.revLbl.Name = "revLbl"
+        Me.revLbl.Size = New System.Drawing.Size(32, 13)
+        Me.revLbl.TabIndex = 132
+        Me.revLbl.Text = "REV." & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'tb_revision
         '
@@ -1521,23 +1537,23 @@ Partial Class metal_tilbud
         Me.tb_revision.Size = New System.Drawing.Size(77, 24)
         Me.tb_revision.TabIndex = 4
         '
-        'Label3
+        'drawingNumbLbl
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(802, 9)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(63, 13)
-        Me.Label3.TabIndex = 129
-        Me.Label3.Text = "Drawing Nr."
+        Me.drawingNumbLbl.AutoSize = True
+        Me.drawingNumbLbl.Location = New System.Drawing.Point(802, 9)
+        Me.drawingNumbLbl.Name = "drawingNumbLbl"
+        Me.drawingNumbLbl.Size = New System.Drawing.Size(63, 13)
+        Me.drawingNumbLbl.TabIndex = 129
+        Me.drawingNumbLbl.Text = "Drawing Nr."
         '
-        'Label2
+        'partNameLbl
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(344, 10)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 13)
-        Me.Label2.TabIndex = 127
-        Me.Label2.Text = "PART NAME"
+        Me.partNameLbl.AutoSize = True
+        Me.partNameLbl.Location = New System.Drawing.Point(344, 10)
+        Me.partNameLbl.Name = "partNameLbl"
+        Me.partNameLbl.Size = New System.Drawing.Size(70, 13)
+        Me.partNameLbl.TabIndex = 127
+        Me.partNameLbl.Text = "PART NAME"
         '
         'tb_emne
         '
@@ -1548,14 +1564,14 @@ Partial Class metal_tilbud
         Me.tb_emne.Size = New System.Drawing.Size(370, 24)
         Me.tb_emne.TabIndex = 2
         '
-        'Label1
+        'clientLbl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(8, 10)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
-        Me.Label1.TabIndex = 124
-        Me.Label1.Text = "CLIENT"
+        Me.clientLbl.AutoSize = True
+        Me.clientLbl.Location = New System.Drawing.Point(8, 10)
+        Me.clientLbl.Name = "clientLbl"
+        Me.clientLbl.Size = New System.Drawing.Size(45, 13)
+        Me.clientLbl.TabIndex = 124
+        Me.clientLbl.Text = "CLIENT"
         '
         'cb_kunde
         '
@@ -1602,14 +1618,15 @@ Partial Class metal_tilbud
         Me.rb_brutto.Text = "GROSS raw material"
         Me.rb_brutto.UseVisualStyleBackColor = True
         '
-        'lb_tykkelse
+        'plateThicknessLbl
         '
-        Me.lb_tykkelse.AutoSize = True
-        Me.lb_tykkelse.Location = New System.Drawing.Point(7, 53)
-        Me.lb_tykkelse.Name = "lb_tykkelse"
-        Me.lb_tykkelse.Size = New System.Drawing.Size(78, 13)
-        Me.lb_tykkelse.TabIndex = 302
-        Me.lb_tykkelse.Text = "plate thickness"
+        Me.plateThicknessLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.plateThicknessLbl.Location = New System.Drawing.Point(1, 53)
+        Me.plateThicknessLbl.Name = "plateThicknessLbl"
+        Me.plateThicknessLbl.Size = New System.Drawing.Size(93, 13)
+        Me.plateThicknessLbl.TabIndex = 302
+        Me.plateThicknessLbl.Text = "plate thickness"
+        Me.plateThicknessLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_pladetykkelse
         '
@@ -1635,41 +1652,32 @@ Partial Class metal_tilbud
         'gb_gruppe1
         '
         Me.gb_gruppe1.BackColor = System.Drawing.Color.LavenderBlush
-        Me.gb_gruppe1.Controls.Add(Me.Label32)
         Me.gb_gruppe1.Controls.Add(Me.tb_hulantal_2C)
         Me.gb_gruppe1.Controls.Add(Me.tb_hulantal_3C)
         Me.gb_gruppe1.Controls.Add(Me.Label241)
-        Me.gb_gruppe1.Controls.Add(Me.Label238)
+        Me.gb_gruppe1.Controls.Add(Me.qty2Lbl)
         Me.gb_gruppe1.Controls.Add(Me.tb_hulantal_4C)
         Me.gb_gruppe1.Controls.Add(Me.lb_laser_ialtuk)
-        Me.gb_gruppe1.Controls.Add(Me.Label234)
+        Me.gb_gruppe1.Controls.Add(Me.cLaserTotalOQ1)
         Me.gb_gruppe1.Controls.Add(Me.lb_laser_ialt)
         Me.gb_gruppe1.Controls.Add(Me.lb_laser_opstart)
-        Me.gb_gruppe1.Controls.Add(Me.Label85)
+        Me.gb_gruppe1.Controls.Add(Me.numbHoles51to100Lbl)
         Me.gb_gruppe1.Controls.Add(Me.lb_laserCNC_tid)
         Me.gb_gruppe1.Controls.Add(Me.tb_laserCNC_tid_uk)
         Me.gb_gruppe1.Controls.Add(Me.tb_laser_opstart_uk)
-        Me.gb_gruppe1.Controls.Add(Me.Label97)
-        Me.gb_gruppe1.Controls.Add(Me.Label64)
-        Me.gb_gruppe1.Controls.Add(Me.Label98)
+        Me.gb_gruppe1.Controls.Add(Me.overruleLbl4)
+        Me.gb_gruppe1.Controls.Add(Me.numbHoles11to50Lbl)
+        Me.gb_gruppe1.Controls.Add(Me.cncMinOQ1Lbl)
         Me.gb_gruppe1.Controls.Add(Me.tb_hulantal_1C)
-        Me.gb_gruppe1.Controls.Add(Me.lb_opstart)
+        Me.gb_gruppe1.Controls.Add(Me.setupMin2)
         Me.gb_gruppe1.Controls.Add(Me.tb_cuttinglength_C)
-        Me.gb_gruppe1.Controls.Add(Me.Label31)
+        Me.gb_gruppe1.Controls.Add(Me.numbOfHoles2to10Lbl)
+        Me.gb_gruppe1.Controls.Add(Me.totCuttingLen100Lbl)
         Me.gb_gruppe1.Location = New System.Drawing.Point(349, 292)
         Me.gb_gruppe1.Name = "gb_gruppe1"
         Me.gb_gruppe1.Size = New System.Drawing.Size(279, 173)
         Me.gb_gruppe1.TabIndex = 222
         Me.gb_gruppe1.TabStop = False
-        '
-        'Label32
-        '
-        Me.Label32.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(2, 77)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(130, 13)
-        Me.Label32.TabIndex = 250
-        Me.Label32.Text = "Tot cutting length (> ø100)"
         '
         'tb_hulantal_2C
         '
@@ -1696,14 +1704,14 @@ Partial Class metal_tilbud
         Me.Label241.TabIndex = 267
         Me.Label241.Text = "mm"
         '
-        'Label238
+        'qty2Lbl
         '
-        Me.Label238.AutoSize = True
-        Me.Label238.Location = New System.Drawing.Point(243, 77)
-        Me.Label238.Name = "Label238"
-        Me.Label238.Size = New System.Drawing.Size(23, 13)
-        Me.Label238.TabIndex = 266
-        Me.Label238.Text = "Qty"
+        Me.qty2Lbl.AutoSize = True
+        Me.qty2Lbl.Location = New System.Drawing.Point(243, 77)
+        Me.qty2Lbl.Name = "qty2Lbl"
+        Me.qty2Lbl.Size = New System.Drawing.Size(23, 13)
+        Me.qty2Lbl.TabIndex = 266
+        Me.qty2Lbl.Text = "Qty"
         '
         'tb_hulantal_4C
         '
@@ -1722,14 +1730,14 @@ Partial Class metal_tilbud
         Me.lb_laser_ialtuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_laser_ialtuk.TabIndex = 264
         '
-        'Label234
+        'cLaserTotalOQ1
         '
-        Me.Label234.AutoSize = True
-        Me.Label234.Location = New System.Drawing.Point(24, 152)
-        Me.Label234.Name = "Label234"
-        Me.Label234.Size = New System.Drawing.Size(101, 13)
-        Me.Label234.TabIndex = 263
-        Me.Label234.Text = "C-laser total/O.qty.1"
+        Me.cLaserTotalOQ1.AutoSize = True
+        Me.cLaserTotalOQ1.Location = New System.Drawing.Point(24, 152)
+        Me.cLaserTotalOQ1.Name = "cLaserTotalOQ1"
+        Me.cLaserTotalOQ1.Size = New System.Drawing.Size(101, 13)
+        Me.cLaserTotalOQ1.TabIndex = 263
+        Me.cLaserTotalOQ1.Text = "C-laser total/O.qty.1"
         '
         'lb_laser_ialt
         '
@@ -1749,14 +1757,14 @@ Partial Class metal_tilbud
         Me.lb_laser_opstart.Size = New System.Drawing.Size(53, 20)
         Me.lb_laser_opstart.TabIndex = 261
         '
-        'Label85
+        'numbHoles51to100Lbl
         '
-        Me.Label85.AutoSize = True
-        Me.Label85.Location = New System.Drawing.Point(3, 58)
-        Me.Label85.Name = "Label85"
-        Me.Label85.Size = New System.Drawing.Size(132, 13)
-        Me.Label85.TabIndex = 255
-        Me.Label85.Text = "Numb. of holes (ø51-ø100)"
+        Me.numbHoles51to100Lbl.Location = New System.Drawing.Point(1, 58)
+        Me.numbHoles51to100Lbl.Name = "numbHoles51to100Lbl"
+        Me.numbHoles51to100Lbl.Size = New System.Drawing.Size(132, 13)
+        Me.numbHoles51to100Lbl.TabIndex = 255
+        Me.numbHoles51to100Lbl.Text = "Numb. of holes (ø51-ø100)"
+        Me.numbHoles51to100Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_laserCNC_tid
         '
@@ -1781,32 +1789,32 @@ Partial Class metal_tilbud
         Me.tb_laser_opstart_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_laser_opstart_uk.TabIndex = 256
         '
-        'Label97
+        'overruleLbl4
         '
-        Me.Label97.AutoSize = True
-        Me.Label97.Location = New System.Drawing.Point(188, 92)
-        Me.Label97.Name = "Label97"
-        Me.Label97.Size = New System.Drawing.Size(47, 13)
-        Me.Label97.TabIndex = 246
-        Me.Label97.Text = "Overrule"
+        Me.overruleLbl4.AutoSize = True
+        Me.overruleLbl4.Location = New System.Drawing.Point(188, 92)
+        Me.overruleLbl4.Name = "overruleLbl4"
+        Me.overruleLbl4.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl4.TabIndex = 246
+        Me.overruleLbl4.Text = "Overrule"
         '
-        'Label64
+        'numbHoles11to50Lbl
         '
-        Me.Label64.AutoSize = True
-        Me.Label64.Location = New System.Drawing.Point(8, 37)
-        Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(126, 13)
-        Me.Label64.TabIndex = 253
-        Me.Label64.Text = "Numb. of holes (ø11-ø50)"
+        Me.numbHoles11to50Lbl.Location = New System.Drawing.Point(1, 37)
+        Me.numbHoles11to50Lbl.Name = "numbHoles11to50Lbl"
+        Me.numbHoles11to50Lbl.Size = New System.Drawing.Size(132, 13)
+        Me.numbHoles11to50Lbl.TabIndex = 253
+        Me.numbHoles11to50Lbl.Text = "Numb. of holes (ø11-ø50)"
+        Me.numbHoles11to50Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label98
+        'cncMinOQ1Lbl
         '
-        Me.Label98.AutoSize = True
-        Me.Label98.Location = New System.Drawing.Point(22, 106)
-        Me.Label98.Name = "Label98"
-        Me.Label98.Size = New System.Drawing.Size(90, 13)
-        Me.Label98.TabIndex = 247
-        Me.Label98.Text = "CNC min./O.qty.1"
+        Me.cncMinOQ1Lbl.AutoSize = True
+        Me.cncMinOQ1Lbl.Location = New System.Drawing.Point(22, 106)
+        Me.cncMinOQ1Lbl.Name = "cncMinOQ1Lbl"
+        Me.cncMinOQ1Lbl.Size = New System.Drawing.Size(90, 13)
+        Me.cncMinOQ1Lbl.TabIndex = 247
+        Me.cncMinOQ1Lbl.Text = "CNC min./O.qty.1"
         '
         'tb_hulantal_1C
         '
@@ -1816,14 +1824,14 @@ Partial Class metal_tilbud
         Me.tb_hulantal_1C.Size = New System.Drawing.Size(53, 20)
         Me.tb_hulantal_1C.TabIndex = 35
         '
-        'lb_opstart
+        'setupMin2
         '
-        Me.lb_opstart.AutoSize = True
-        Me.lb_opstart.Location = New System.Drawing.Point(22, 129)
-        Me.lb_opstart.Name = "lb_opstart"
-        Me.lb_opstart.Size = New System.Drawing.Size(57, 13)
-        Me.lb_opstart.TabIndex = 253
-        Me.lb_opstart.Text = "Setup min."
+        Me.setupMin2.AutoSize = True
+        Me.setupMin2.Location = New System.Drawing.Point(22, 129)
+        Me.setupMin2.Name = "setupMin2"
+        Me.setupMin2.Size = New System.Drawing.Size(57, 13)
+        Me.setupMin2.TabIndex = 253
+        Me.setupMin2.Text = "Setup min."
         '
         'tb_cuttinglength_C
         '
@@ -1833,25 +1841,33 @@ Partial Class metal_tilbud
         Me.tb_cuttinglength_C.Size = New System.Drawing.Size(53, 20)
         Me.tb_cuttinglength_C.TabIndex = 38
         '
-        'Label31
+        'numbOfHoles2to10Lbl
         '
-        Me.Label31.AutoSize = True
-        Me.Label31.Location = New System.Drawing.Point(14, 18)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(120, 13)
-        Me.Label31.TabIndex = 248
-        Me.Label31.Text = "Numb. of holes (ø2-ø10)"
+        Me.numbOfHoles2to10Lbl.Location = New System.Drawing.Point(1, 18)
+        Me.numbOfHoles2to10Lbl.Name = "numbOfHoles2to10Lbl"
+        Me.numbOfHoles2to10Lbl.Size = New System.Drawing.Size(132, 13)
+        Me.numbOfHoles2to10Lbl.TabIndex = 248
+        Me.numbOfHoles2to10Lbl.Text = "Numb. of holes (ø2-ø10)"
+        Me.numbOfHoles2to10Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'totCuttingLen100Lbl
+        '
+        Me.totCuttingLen100Lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totCuttingLen100Lbl.Location = New System.Drawing.Point(1, 77)
+        Me.totCuttingLen100Lbl.Name = "totCuttingLen100Lbl"
+        Me.totCuttingLen100Lbl.Size = New System.Drawing.Size(132, 13)
+        Me.totCuttingLen100Lbl.TabIndex = 250
+        Me.totCuttingLen100Lbl.Text = "Tot cutting length (> ø100)"
+        Me.totCuttingLen100Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'rb_C_laser
         '
         Me.rb_C_laser.AutoSize = True
         Me.rb_C_laser.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
-        Me.rb_C_laser.Checked = True
         Me.rb_C_laser.Location = New System.Drawing.Point(349, 273)
         Me.rb_C_laser.Name = "rb_C_laser"
         Me.rb_C_laser.Size = New System.Drawing.Size(57, 17)
         Me.rb_C_laser.TabIndex = 34
-        Me.rb_C_laser.TabStop = True
         Me.rb_C_laser.Text = "C-laser"
         Me.rb_C_laser.UseVisualStyleBackColor = False
         '
@@ -1893,13 +1909,12 @@ Partial Class metal_tilbud
         '
         'rb_klip
         '
-        Me.rb_klip.AutoSize = True
         Me.rb_klip.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.rb_klip.Location = New System.Drawing.Point(14, 762)
         Me.rb_klip.Name = "rb_klip"
-        Me.rb_klip.Size = New System.Drawing.Size(41, 17)
+        Me.rb_klip.Size = New System.Drawing.Size(68, 17)
         Me.rb_klip.TabIndex = 46
-        Me.rb_klip.Text = "Cut"
+        Me.rb_klip.Text = "Guillotine"
         Me.rb_klip.UseVisualStyleBackColor = False
         '
         'rb_D_stans
@@ -1908,9 +1923,9 @@ Partial Class metal_tilbud
         Me.rb_D_stans.BackColor = System.Drawing.Color.FromArgb(CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(210, Byte), Integer))
         Me.rb_D_stans.Location = New System.Drawing.Point(349, 466)
         Me.rb_D_stans.Name = "rb_D_stans"
-        Me.rb_D_stans.Size = New System.Drawing.Size(60, 17)
+        Me.rb_D_stans.Size = New System.Drawing.Size(65, 17)
         Me.rb_D_stans.TabIndex = 31
-        Me.rb_D_stans.Text = "B-stans"
+        Me.rb_D_stans.Text = "B-punch"
         Me.rb_D_stans.UseVisualStyleBackColor = False
         '
         'tb_CNCmin_uk
@@ -1924,8 +1939,8 @@ Partial Class metal_tilbud
         '
         Me.gb_gruppe2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.gb_gruppe2.Controls.Add(Me.cb_rette)
-        Me.gb_gruppe2.Controls.Add(Me.Label228)
-        Me.gb_gruppe2.Controls.Add(Me.tb_info)
+        Me.gb_gruppe2.Controls.Add(Me.onlyOQ1Lbl2)
+        Me.gb_gruppe2.Controls.Add(Me.onlyOQ1Lbl1)
         Me.gb_gruppe2.Controls.Add(Me.gb_stag)
         Me.gb_gruppe2.Controls.Add(Me.lb_stans_manuel)
         Me.gb_gruppe2.Controls.Add(Me.gb_gevind)
@@ -1934,24 +1949,24 @@ Partial Class metal_tilbud
         Me.gb_gruppe2.Controls.Add(Me.cb_brush)
         Me.gb_gruppe2.Controls.Add(Me.cb_vibrationsafgr)
         Me.gb_gruppe2.Controls.Add(Me.cb_afgrat)
-        Me.gb_gruppe2.Controls.Add(Me.Label41)
+        Me.gb_gruppe2.Controls.Add(Me.minOQ1Lbl1)
         Me.gb_gruppe2.Controls.Add(Me.lb_grinding)
         Me.gb_gruppe2.Controls.Add(Me.lb_afgrat)
         Me.gb_gruppe2.Controls.Add(Me.lb_rette)
         Me.gb_gruppe2.Controls.Add(Me.lb_vibration)
         Me.gb_gruppe2.Controls.Add(Me.lb_brush)
-        Me.gb_gruppe2.Controls.Add(Me.Label100)
+        Me.gb_gruppe2.Controls.Add(Me.overruleLbl9)
         Me.gb_gruppe2.Controls.Add(Me.tb_vibration_uk)
         Me.gb_gruppe2.Controls.Add(Me.tb_afgrat_uk)
-        Me.gb_gruppe2.Controls.Add(Me.Label106)
+        Me.gb_gruppe2.Controls.Add(Me.manualDeburringLbl)
         Me.gb_gruppe2.Controls.Add(Me.tb_grinding_uk)
         Me.gb_gruppe2.Controls.Add(Me.Label105)
         Me.gb_gruppe2.Controls.Add(Me.tb_brush_uk)
-        Me.gb_gruppe2.Controls.Add(Me.Label104)
-        Me.gb_gruppe2.Controls.Add(Me.Label103)
-        Me.gb_gruppe2.Controls.Add(Me.Label101)
+        Me.gb_gruppe2.Controls.Add(Me.brushDeburring)
+        Me.gb_gruppe2.Controls.Add(Me.vibrateDeburring)
+        Me.gb_gruppe2.Controls.Add(Me.manualPunchLbl)
         Me.gb_gruppe2.Controls.Add(Me.tb_rette_uk)
-        Me.gb_gruppe2.Controls.Add(Me.Label102)
+        Me.gb_gruppe2.Controls.Add(Me.strainghtMachineLbl)
         Me.gb_gruppe2.Controls.Add(Me.tb_stans_manuel_uk)
         Me.gb_gruppe2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.gb_gruppe2.Location = New System.Drawing.Point(684, 288)
@@ -1971,54 +1986,54 @@ Partial Class metal_tilbud
         Me.cb_rette.TabIndex = 51
         Me.cb_rette.UseVisualStyleBackColor = False
         '
-        'Label228
+        'onlyOQ1Lbl2
         '
-        Me.Label228.AutoSize = True
-        Me.Label228.ForeColor = System.Drawing.Color.Red
-        Me.Label228.Location = New System.Drawing.Point(100, 128)
-        Me.Label228.Name = "Label228"
-        Me.Label228.Size = New System.Drawing.Size(90, 13)
-        Me.Label228.TabIndex = 452
-        Me.Label228.Text = "(only Order qty. 1)"
+        Me.onlyOQ1Lbl2.AutoSize = True
+        Me.onlyOQ1Lbl2.ForeColor = System.Drawing.Color.Red
+        Me.onlyOQ1Lbl2.Location = New System.Drawing.Point(100, 128)
+        Me.onlyOQ1Lbl2.Name = "onlyOQ1Lbl2"
+        Me.onlyOQ1Lbl2.Size = New System.Drawing.Size(90, 13)
+        Me.onlyOQ1Lbl2.TabIndex = 452
+        Me.onlyOQ1Lbl2.Text = "(only Order qty. 1)"
         '
-        'tb_info
+        'onlyOQ1Lbl1
         '
-        Me.tb_info.AutoSize = True
-        Me.tb_info.ForeColor = System.Drawing.Color.Red
-        Me.tb_info.Location = New System.Drawing.Point(100, 88)
-        Me.tb_info.Name = "tb_info"
-        Me.tb_info.Size = New System.Drawing.Size(90, 13)
-        Me.tb_info.TabIndex = 451
-        Me.tb_info.Text = "(only Order qty. 1)"
+        Me.onlyOQ1Lbl1.AutoSize = True
+        Me.onlyOQ1Lbl1.ForeColor = System.Drawing.Color.Red
+        Me.onlyOQ1Lbl1.Location = New System.Drawing.Point(100, 88)
+        Me.onlyOQ1Lbl1.Name = "onlyOQ1Lbl1"
+        Me.onlyOQ1Lbl1.Size = New System.Drawing.Size(90, 13)
+        Me.onlyOQ1Lbl1.TabIndex = 451
+        Me.onlyOQ1Lbl1.Text = "(only Order qty. 1)"
         '
         'gb_stag
         '
-        Me.gb_stag.Controls.Add(Me.Label213)
+        Me.gb_stag.Controls.Add(Me.pressTagQPILbl)
         Me.gb_stag.Controls.Add(Me.tb_presstag_antal)
         Me.gb_stag.Controls.Add(Me.lb_presstag)
         Me.gb_stag.Controls.Add(Me.tb_presstag_uk)
-        Me.gb_stag.Controls.Add(Me.Label146)
+        Me.gb_stag.Controls.Add(Me.screwWeldQPILbl)
         Me.gb_stag.Controls.Add(Me.tb_pressnut_uk)
         Me.gb_stag.Controls.Add(Me.tb_boltesvejs_uk)
         Me.gb_stag.Controls.Add(Me.lb_pressnut)
         Me.gb_stag.Controls.Add(Me.lb_boltesvejs)
         Me.gb_stag.Controls.Add(Me.tb_presmøtrik_antal)
         Me.gb_stag.Controls.Add(Me.tb_boltesvejs_antal)
-        Me.gb_stag.Controls.Add(Me.Label147)
+        Me.gb_stag.Controls.Add(Me.presnutQPILbl)
         Me.gb_stag.Location = New System.Drawing.Point(6, 145)
         Me.gb_stag.Name = "gb_stag"
         Me.gb_stag.Size = New System.Drawing.Size(242, 76)
         Me.gb_stag.TabIndex = 441
         Me.gb_stag.TabStop = False
         '
-        'Label213
+        'pressTagQPILbl
         '
-        Me.Label213.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label213.Location = New System.Drawing.Point(11, 4)
-        Me.Label213.Name = "Label213"
-        Me.Label213.Size = New System.Drawing.Size(74, 23)
-        Me.Label213.TabIndex = 464
-        Me.Label213.Text = "Presstag" & Global.Microsoft.VisualBasic.ChrW(13) & "qty per item"
+        Me.pressTagQPILbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pressTagQPILbl.Location = New System.Drawing.Point(11, 4)
+        Me.pressTagQPILbl.Name = "pressTagQPILbl"
+        Me.pressTagQPILbl.Size = New System.Drawing.Size(74, 23)
+        Me.pressTagQPILbl.TabIndex = 464
+        Me.pressTagQPILbl.Text = "Presstag" & Global.Microsoft.VisualBasic.ChrW(13) & "qty per item"
         '
         'tb_presstag_antal
         '
@@ -2045,14 +2060,14 @@ Partial Class metal_tilbud
         Me.tb_presstag_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_presstag_uk.TabIndex = 461
         '
-        'Label146
+        'screwWeldQPILbl
         '
-        Me.Label146.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label146.Location = New System.Drawing.Point(11, 52)
-        Me.Label146.Name = "Label146"
-        Me.Label146.Size = New System.Drawing.Size(74, 23)
-        Me.Label146.TabIndex = 292
-        Me.Label146.Text = "ScrewWeld" & Global.Microsoft.VisualBasic.ChrW(13) & "qty per item"
+        Me.screwWeldQPILbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.screwWeldQPILbl.Location = New System.Drawing.Point(11, 52)
+        Me.screwWeldQPILbl.Name = "screwWeldQPILbl"
+        Me.screwWeldQPILbl.Size = New System.Drawing.Size(74, 23)
+        Me.screwWeldQPILbl.TabIndex = 292
+        Me.screwWeldQPILbl.Text = "ScrewWeld" & Global.Microsoft.VisualBasic.ChrW(13) & "qty per item"
         '
         'tb_pressnut_uk
         '
@@ -2104,14 +2119,14 @@ Partial Class metal_tilbud
         Me.tb_boltesvejs_antal.Size = New System.Drawing.Size(31, 20)
         Me.tb_boltesvejs_antal.TabIndex = 53
         '
-        'Label147
+        'presnutQPILbl
         '
-        Me.Label147.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label147.Location = New System.Drawing.Point(11, 29)
-        Me.Label147.Name = "Label147"
-        Me.Label147.Size = New System.Drawing.Size(74, 23)
-        Me.Label147.TabIndex = 259
-        Me.Label147.Text = "Presnut" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "qty per item"
+        Me.presnutQPILbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.presnutQPILbl.Location = New System.Drawing.Point(11, 29)
+        Me.presnutQPILbl.Name = "presnutQPILbl"
+        Me.presnutQPILbl.Size = New System.Drawing.Size(74, 23)
+        Me.presnutQPILbl.TabIndex = 259
+        Me.presnutQPILbl.Text = "Presnut" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "qty per item"
         '
         'lb_stans_manuel
         '
@@ -2128,9 +2143,9 @@ Partial Class metal_tilbud
         '
         Me.gb_gevind.Controls.Add(Me.Label22)
         Me.gb_gevind.Controls.Add(Me.tb_m6)
-        Me.gb_gevind.Controls.Add(Me.Label180)
+        Me.gb_gevind.Controls.Add(Me.overruleLbl7)
         Me.gb_gevind.Controls.Add(Me.Label23)
-        Me.gb_gevind.Controls.Add(Me.Label179)
+        Me.gb_gevind.Controls.Add(Me.minOQ1Lbl2)
         Me.gb_gevind.Controls.Add(Me.tb_m8)
         Me.gb_gevind.Controls.Add(Me.Label24)
         Me.gb_gevind.Controls.Add(Me.tb_m10)
@@ -2142,12 +2157,12 @@ Partial Class metal_tilbud
         Me.gb_gevind.Controls.Add(Me.tb_m3)
         Me.gb_gevind.Controls.Add(Me.Label142)
         Me.gb_gevind.Controls.Add(Me.tb_m4)
-        Me.gb_gevind.Controls.Add(Me.Label143)
-        Me.gb_gevind.Controls.Add(Me.Label144)
+        Me.gb_gevind.Controls.Add(Me.qtyPerItemLbl1)
+        Me.gb_gevind.Controls.Add(Me.threadSizeLbl)
         Me.gb_gevind.Controls.Add(Me.Label145)
         Me.gb_gevind.Controls.Add(Me.tb_m2)
         Me.gb_gevind.Controls.Add(Me.lb_gevind_antal)
-        Me.gb_gevind.Controls.Add(Me.Label151)
+        Me.gb_gevind.Controls.Add(Me.totalQtyLbl)
         Me.gb_gevind.Controls.Add(Me.lb_gevind)
         Me.gb_gevind.Controls.Add(Me.tb_gevind_uk)
         Me.gb_gevind.Location = New System.Drawing.Point(3, 225)
@@ -2174,14 +2189,14 @@ Partial Class metal_tilbud
         Me.tb_m6.Size = New System.Drawing.Size(48, 20)
         Me.tb_m6.TabIndex = 59
         '
-        'Label180
+        'overruleLbl7
         '
-        Me.Label180.AutoSize = True
-        Me.Label180.Location = New System.Drawing.Point(10, 247)
-        Me.Label180.Name = "Label180"
-        Me.Label180.Size = New System.Drawing.Size(47, 13)
-        Me.Label180.TabIndex = 289
-        Me.Label180.Text = "Overrule"
+        Me.overruleLbl7.Location = New System.Drawing.Point(0, 247)
+        Me.overruleLbl7.Name = "overruleLbl7"
+        Me.overruleLbl7.Size = New System.Drawing.Size(60, 13)
+        Me.overruleLbl7.TabIndex = 289
+        Me.overruleLbl7.Text = "Overrule"
+        Me.overruleLbl7.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label23
         '
@@ -2192,14 +2207,14 @@ Partial Class metal_tilbud
         Me.Label23.Text = "M8"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label179
+        'minOQ1Lbl2
         '
-        Me.Label179.Location = New System.Drawing.Point(5, 216)
-        Me.Label179.Name = "Label179"
-        Me.Label179.Size = New System.Drawing.Size(55, 30)
-        Me.Label179.TabIndex = 288
-        Me.Label179.Text = "min./  O.qty.1"
-        Me.Label179.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.minOQ1Lbl2.Location = New System.Drawing.Point(5, 216)
+        Me.minOQ1Lbl2.Name = "minOQ1Lbl2"
+        Me.minOQ1Lbl2.Size = New System.Drawing.Size(55, 30)
+        Me.minOQ1Lbl2.TabIndex = 288
+        Me.minOQ1Lbl2.Text = "min./  O.qty.1"
+        Me.minOQ1Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tb_m8
         '
@@ -2294,23 +2309,23 @@ Partial Class metal_tilbud
         Me.tb_m4.Size = New System.Drawing.Size(48, 20)
         Me.tb_m4.TabIndex = 57
         '
-        'Label143
+        'qtyPerItemLbl1
         '
-        Me.Label143.Location = New System.Drawing.Point(60, 15)
-        Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(51, 33)
-        Me.Label143.TabIndex = 276
-        Me.Label143.Text = "Qty per item"
-        Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.qtyPerItemLbl1.Location = New System.Drawing.Point(60, 15)
+        Me.qtyPerItemLbl1.Name = "qtyPerItemLbl1"
+        Me.qtyPerItemLbl1.Size = New System.Drawing.Size(51, 33)
+        Me.qtyPerItemLbl1.TabIndex = 276
+        Me.qtyPerItemLbl1.Text = "Qty per item"
+        Me.qtyPerItemLbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label144
+        'threadSizeLbl
         '
-        Me.Label144.Location = New System.Drawing.Point(11, 15)
-        Me.Label144.Name = "Label144"
-        Me.Label144.Size = New System.Drawing.Size(43, 30)
-        Me.Label144.TabIndex = 273
-        Me.Label144.Text = "Thread size"
-        Me.Label144.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.threadSizeLbl.Location = New System.Drawing.Point(11, 15)
+        Me.threadSizeLbl.Name = "threadSizeLbl"
+        Me.threadSizeLbl.Size = New System.Drawing.Size(43, 30)
+        Me.threadSizeLbl.TabIndex = 273
+        Me.threadSizeLbl.Text = "Thread size"
+        Me.threadSizeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label145
         '
@@ -2338,14 +2353,14 @@ Partial Class metal_tilbud
         Me.lb_gevind_antal.Size = New System.Drawing.Size(48, 20)
         Me.lb_gevind_antal.TabIndex = 266
         '
-        'Label151
+        'totalQtyLbl
         '
-        Me.Label151.AutoSize = True
-        Me.Label151.Location = New System.Drawing.Point(12, 190)
-        Me.Label151.Name = "Label151"
-        Me.Label151.Size = New System.Drawing.Size(48, 13)
-        Me.Label151.TabIndex = 264
-        Me.Label151.Text = "Total qty"
+        Me.totalQtyLbl.AutoSize = True
+        Me.totalQtyLbl.Location = New System.Drawing.Point(12, 190)
+        Me.totalQtyLbl.Name = "totalQtyLbl"
+        Me.totalQtyLbl.Size = New System.Drawing.Size(48, 13)
+        Me.totalQtyLbl.TabIndex = 264
+        Me.totalQtyLbl.Text = "Total qty"
         '
         'lb_gevind
         '
@@ -2369,16 +2384,16 @@ Partial Class metal_tilbud
         Me.gb_undersænk.Controls.Add(Me.tb_2)
         Me.gb_undersænk.Controls.Add(Me.Label184)
         Me.gb_undersænk.Controls.Add(Me.tb_3)
-        Me.gb_undersænk.Controls.Add(Me.Label185)
+        Me.gb_undersænk.Controls.Add(Me.over15mmLbl)
         Me.gb_undersænk.Controls.Add(Me.tb_4)
-        Me.gb_undersænk.Controls.Add(Me.Label186)
-        Me.gb_undersænk.Controls.Add(Me.Label187)
+        Me.gb_undersænk.Controls.Add(Me.qtyPerItemLbl2)
+        Me.gb_undersænk.Controls.Add(Me.diameterThreadSizeLbl)
         Me.gb_undersænk.Controls.Add(Me.Label188)
         Me.gb_undersænk.Controls.Add(Me.tb_1)
-        Me.gb_undersænk.Controls.Add(Me.Label182)
-        Me.gb_undersænk.Controls.Add(Me.Label181)
+        Me.gb_undersænk.Controls.Add(Me.overruleLbl8)
+        Me.gb_undersænk.Controls.Add(Me.minOQ1Lbl3)
         Me.gb_undersænk.Controls.Add(Me.lb_undersænk_antal)
-        Me.gb_undersænk.Controls.Add(Me.Label148)
+        Me.gb_undersænk.Controls.Add(Me.totalQtyLbl2)
         Me.gb_undersænk.Controls.Add(Me.lb_countersink)
         Me.gb_undersænk.Controls.Add(Me.tb_countersink_uk)
         Me.gb_undersænk.Location = New System.Drawing.Point(121, 225)
@@ -2422,14 +2437,14 @@ Partial Class metal_tilbud
         Me.tb_3.Size = New System.Drawing.Size(35, 20)
         Me.tb_3.TabIndex = 64
         '
-        'Label185
+        'over15mmLbl
         '
-        Me.Label185.Location = New System.Drawing.Point(17, 115)
-        Me.Label185.Name = "Label185"
-        Me.Label185.Size = New System.Drawing.Size(69, 29)
-        Me.Label185.TabIndex = 298
-        Me.Label185.Text = "over 15 mm (M10-M12)"
-        Me.Label185.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.over15mmLbl.Location = New System.Drawing.Point(17, 115)
+        Me.over15mmLbl.Name = "over15mmLbl"
+        Me.over15mmLbl.Size = New System.Drawing.Size(69, 29)
+        Me.over15mmLbl.TabIndex = 298
+        Me.over15mmLbl.Text = "over 15 mm (M10-M12)"
+        Me.over15mmLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_4
         '
@@ -2439,23 +2454,23 @@ Partial Class metal_tilbud
         Me.tb_4.Size = New System.Drawing.Size(35, 20)
         Me.tb_4.TabIndex = 65
         '
-        'Label186
+        'qtyPerItemLbl2
         '
-        Me.Label186.Location = New System.Drawing.Point(82, 16)
-        Me.Label186.Name = "Label186"
-        Me.Label186.Size = New System.Drawing.Size(43, 27)
-        Me.Label186.TabIndex = 296
-        Me.Label186.Text = "Qty per item"
-        Me.Label186.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.qtyPerItemLbl2.Location = New System.Drawing.Point(82, 16)
+        Me.qtyPerItemLbl2.Name = "qtyPerItemLbl2"
+        Me.qtyPerItemLbl2.Size = New System.Drawing.Size(43, 27)
+        Me.qtyPerItemLbl2.TabIndex = 296
+        Me.qtyPerItemLbl2.Text = "Qty per item"
+        Me.qtyPerItemLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label187
+        'diameterThreadSizeLbl
         '
-        Me.Label187.Location = New System.Drawing.Point(13, 20)
-        Me.Label187.Name = "Label187"
-        Me.Label187.Size = New System.Drawing.Size(76, 29)
-        Me.Label187.TabIndex = 294
-        Me.Label187.Text = "Diameter (Thread size.)"
-        Me.Label187.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.diameterThreadSizeLbl.Location = New System.Drawing.Point(13, 20)
+        Me.diameterThreadSizeLbl.Name = "diameterThreadSizeLbl"
+        Me.diameterThreadSizeLbl.Size = New System.Drawing.Size(76, 29)
+        Me.diameterThreadSizeLbl.TabIndex = 294
+        Me.diameterThreadSizeLbl.Text = "Diameter (Thread size)"
+        Me.diameterThreadSizeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label188
         '
@@ -2474,23 +2489,23 @@ Partial Class metal_tilbud
         Me.tb_1.Size = New System.Drawing.Size(35, 20)
         Me.tb_1.TabIndex = 62
         '
-        'Label182
+        'overruleLbl8
         '
-        Me.Label182.AutoSize = True
-        Me.Label182.Location = New System.Drawing.Point(12, 247)
-        Me.Label182.Name = "Label182"
-        Me.Label182.Size = New System.Drawing.Size(47, 13)
-        Me.Label182.TabIndex = 290
-        Me.Label182.Text = "Overrule"
+        Me.overruleLbl8.Location = New System.Drawing.Point(5, 247)
+        Me.overruleLbl8.Name = "overruleLbl8"
+        Me.overruleLbl8.Size = New System.Drawing.Size(60, 13)
+        Me.overruleLbl8.TabIndex = 290
+        Me.overruleLbl8.Text = "Overrule"
+        Me.overruleLbl8.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label181
+        'minOQ1Lbl3
         '
-        Me.Label181.Location = New System.Drawing.Point(8, 216)
-        Me.Label181.Name = "Label181"
-        Me.Label181.Size = New System.Drawing.Size(55, 30)
-        Me.Label181.TabIndex = 289
-        Me.Label181.Text = "min./  O.qty.1"
-        Me.Label181.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.minOQ1Lbl3.Location = New System.Drawing.Point(8, 216)
+        Me.minOQ1Lbl3.Name = "minOQ1Lbl3"
+        Me.minOQ1Lbl3.Size = New System.Drawing.Size(55, 30)
+        Me.minOQ1Lbl3.TabIndex = 289
+        Me.minOQ1Lbl3.Text = "min./  O.qty.1"
+        Me.minOQ1Lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_undersænk_antal
         '
@@ -2501,14 +2516,14 @@ Partial Class metal_tilbud
         Me.lb_undersænk_antal.Size = New System.Drawing.Size(35, 20)
         Me.lb_undersænk_antal.TabIndex = 268
         '
-        'Label148
+        'totalQtyLbl2
         '
-        Me.Label148.AutoSize = True
-        Me.Label148.Location = New System.Drawing.Point(44, 147)
-        Me.Label148.Name = "Label148"
-        Me.Label148.Size = New System.Drawing.Size(48, 13)
-        Me.Label148.TabIndex = 261
-        Me.Label148.Text = "Total qty"
+        Me.totalQtyLbl2.AutoSize = True
+        Me.totalQtyLbl2.Location = New System.Drawing.Point(44, 147)
+        Me.totalQtyLbl2.Name = "totalQtyLbl2"
+        Me.totalQtyLbl2.Size = New System.Drawing.Size(48, 13)
+        Me.totalQtyLbl2.TabIndex = 261
+        Me.totalQtyLbl2.Text = "Total qty"
         '
         'lb_countersink
         '
@@ -2569,14 +2584,14 @@ Partial Class metal_tilbud
         Me.cb_afgrat.TabIndex = 47
         Me.cb_afgrat.UseVisualStyleBackColor = False
         '
-        'Label41
+        'minOQ1Lbl1
         '
-        Me.Label41.AutoSize = True
-        Me.Label41.Location = New System.Drawing.Point(124, 9)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(65, 13)
-        Me.Label41.TabIndex = 269
-        Me.Label41.Text = "min./O.qty.1"
+        Me.minOQ1Lbl1.AutoSize = True
+        Me.minOQ1Lbl1.Location = New System.Drawing.Point(124, 9)
+        Me.minOQ1Lbl1.Name = "minOQ1Lbl1"
+        Me.minOQ1Lbl1.Size = New System.Drawing.Size(65, 13)
+        Me.minOQ1Lbl1.TabIndex = 269
+        Me.minOQ1Lbl1.Text = "min./O.qty.1"
         '
         'lb_grinding
         '
@@ -2629,14 +2644,14 @@ Partial Class metal_tilbud
         Me.lb_brush.TabIndex = 242
         Me.lb_brush.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label100
+        'overruleLbl9
         '
-        Me.Label100.AutoSize = True
-        Me.Label100.Location = New System.Drawing.Point(187, 9)
-        Me.Label100.Name = "Label100"
-        Me.Label100.Size = New System.Drawing.Size(47, 13)
-        Me.Label100.TabIndex = 242
-        Me.Label100.Text = "Overrule"
+        Me.overruleLbl9.AutoSize = True
+        Me.overruleLbl9.Location = New System.Drawing.Point(187, 9)
+        Me.overruleLbl9.Name = "overruleLbl9"
+        Me.overruleLbl9.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl9.TabIndex = 242
+        Me.overruleLbl9.Text = "Overrule"
         '
         'tb_vibration_uk
         '
@@ -2652,14 +2667,14 @@ Partial Class metal_tilbud
         Me.tb_afgrat_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_afgrat_uk.TabIndex = 400
         '
-        'Label106
+        'manualDeburringLbl
         '
-        Me.Label106.AutoSize = True
-        Me.Label106.Location = New System.Drawing.Point(4, 28)
-        Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(89, 13)
-        Me.Label106.TabIndex = 235
-        Me.Label106.Text = "Manual deburring"
+        Me.manualDeburringLbl.AutoSize = True
+        Me.manualDeburringLbl.Location = New System.Drawing.Point(4, 28)
+        Me.manualDeburringLbl.Name = "manualDeburringLbl"
+        Me.manualDeburringLbl.Size = New System.Drawing.Size(89, 13)
+        Me.manualDeburringLbl.TabIndex = 235
+        Me.manualDeburringLbl.Text = "Manual deburring"
         '
         'tb_grinding_uk
         '
@@ -2684,32 +2699,32 @@ Partial Class metal_tilbud
         Me.tb_brush_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_brush_uk.TabIndex = 420
         '
-        'Label104
+        'brushDeburring
         '
-        Me.Label104.AutoSize = True
-        Me.Label104.Location = New System.Drawing.Point(4, 68)
-        Me.Label104.Name = "Label104"
-        Me.Label104.Size = New System.Drawing.Size(81, 13)
-        Me.Label104.TabIndex = 241
-        Me.Label104.Text = "Brush deburring"
+        Me.brushDeburring.AutoSize = True
+        Me.brushDeburring.Location = New System.Drawing.Point(4, 68)
+        Me.brushDeburring.Name = "brushDeburring"
+        Me.brushDeburring.Size = New System.Drawing.Size(81, 13)
+        Me.brushDeburring.TabIndex = 241
+        Me.brushDeburring.Text = "Brush deburring"
         '
-        'Label103
+        'vibrateDeburring
         '
-        Me.Label103.AutoSize = True
-        Me.Label103.Location = New System.Drawing.Point(4, 88)
-        Me.Label103.Name = "Label103"
-        Me.Label103.Size = New System.Drawing.Size(87, 13)
-        Me.Label103.TabIndex = 244
-        Me.Label103.Text = "Vibrate deburring"
+        Me.vibrateDeburring.AutoSize = True
+        Me.vibrateDeburring.Location = New System.Drawing.Point(4, 88)
+        Me.vibrateDeburring.Name = "vibrateDeburring"
+        Me.vibrateDeburring.Size = New System.Drawing.Size(87, 13)
+        Me.vibrateDeburring.TabIndex = 244
+        Me.vibrateDeburring.Text = "Vibrate deburring"
         '
-        'Label101
+        'manualPunchLbl
         '
-        Me.Label101.AutoSize = True
-        Me.Label101.Location = New System.Drawing.Point(4, 128)
-        Me.Label101.Name = "Label101"
-        Me.Label101.Size = New System.Drawing.Size(72, 13)
-        Me.Label101.TabIndex = 250
-        Me.Label101.Text = "Manual Stans"
+        Me.manualPunchLbl.AutoSize = True
+        Me.manualPunchLbl.Location = New System.Drawing.Point(4, 128)
+        Me.manualPunchLbl.Name = "manualPunchLbl"
+        Me.manualPunchLbl.Size = New System.Drawing.Size(76, 13)
+        Me.manualPunchLbl.TabIndex = 250
+        Me.manualPunchLbl.Text = "Manual Punch"
         '
         'tb_rette_uk
         '
@@ -2718,15 +2733,15 @@ Partial Class metal_tilbud
         Me.tb_rette_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_rette_uk.TabIndex = 440
         '
-        'Label102
+        'strainghtMachineLbl
         '
-        Me.Label102.AutoSize = True
-        Me.Label102.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.Location = New System.Drawing.Point(4, 108)
-        Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(106, 13)
-        Me.Label102.TabIndex = 247
-        Me.Label102.Text = "Straightener machine"
+        Me.strainghtMachineLbl.AutoSize = True
+        Me.strainghtMachineLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.strainghtMachineLbl.Location = New System.Drawing.Point(4, 108)
+        Me.strainghtMachineLbl.Name = "strainghtMachineLbl"
+        Me.strainghtMachineLbl.Size = New System.Drawing.Size(106, 13)
+        Me.strainghtMachineLbl.TabIndex = 247
+        Me.strainghtMachineLbl.Text = "Straightener machine"
         '
         'tb_stans_manuel_uk
         '
@@ -2740,12 +2755,12 @@ Partial Class metal_tilbud
         Me.gb_gruppe3.BackColor = System.Drawing.Color.LightCyan
         Me.gb_gruppe3.Controls.Add(Me.tb_numberofspotweldseams)
         Me.gb_gruppe3.Controls.Add(Me.cb_spotweld)
-        Me.gb_gruppe3.Controls.Add(Me.Label34)
-        Me.gb_gruppe3.Controls.Add(Me.Label203)
+        Me.gb_gruppe3.Controls.Add(Me.numbWeldsPerItemLbl)
+        Me.gb_gruppe3.Controls.Add(Me.numbSpotWeldsPerItemLbl)
         Me.gb_gruppe3.Controls.Add(Me.tb_numberofspots)
-        Me.gb_gruppe3.Controls.Add(Me.Label202)
-        Me.gb_gruppe3.Controls.Add(Me.Label201)
-        Me.gb_gruppe3.Controls.Add(Me.Label128)
+        Me.gb_gruppe3.Controls.Add(Me.minOQ1Lbl4)
+        Me.gb_gruppe3.Controls.Add(Me.spotWeldLbl)
+        Me.gb_gruppe3.Controls.Add(Me.overruleLbl10)
         Me.gb_gruppe3.Controls.Add(Me.lb_spotweld)
         Me.gb_gruppe3.Controls.Add(Me.tb_spotweld_uk)
         Me.gb_gruppe3.Location = New System.Drawing.Point(1018, 288)
@@ -2775,23 +2790,23 @@ Partial Class metal_tilbud
         Me.cb_spotweld.TabIndex = 68
         Me.cb_spotweld.UseVisualStyleBackColor = False
         '
-        'Label34
+        'numbWeldsPerItemLbl
         '
-        Me.Label34.Location = New System.Drawing.Point(17, 16)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(140, 14)
-        Me.Label34.TabIndex = 281
-        Me.Label34.Text = "Number of welds per item"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.numbWeldsPerItemLbl.Location = New System.Drawing.Point(11, 16)
+        Me.numbWeldsPerItemLbl.Name = "numbWeldsPerItemLbl"
+        Me.numbWeldsPerItemLbl.Size = New System.Drawing.Size(140, 14)
+        Me.numbWeldsPerItemLbl.TabIndex = 281
+        Me.numbWeldsPerItemLbl.Text = "Number of welds per item"
+        Me.numbWeldsPerItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label203
+        'numbSpotWeldsPerItemLbl
         '
-        Me.Label203.Location = New System.Drawing.Point(1, 37)
-        Me.Label203.Name = "Label203"
-        Me.Label203.Size = New System.Drawing.Size(154, 14)
-        Me.Label203.TabIndex = 279
-        Me.Label203.Text = "Number of spotWelds per item"
-        Me.Label203.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.numbSpotWeldsPerItemLbl.Location = New System.Drawing.Point(1, 37)
+        Me.numbSpotWeldsPerItemLbl.Name = "numbSpotWeldsPerItemLbl"
+        Me.numbSpotWeldsPerItemLbl.Size = New System.Drawing.Size(154, 14)
+        Me.numbSpotWeldsPerItemLbl.TabIndex = 279
+        Me.numbSpotWeldsPerItemLbl.Text = "Number of spotWelds per item"
+        Me.numbSpotWeldsPerItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'tb_numberofspots
         '
@@ -2802,32 +2817,32 @@ Partial Class metal_tilbud
         Me.tb_numberofspots.TabIndex = 67
         Me.tb_numberofspots.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label202
+        'minOQ1Lbl4
         '
-        Me.Label202.AutoSize = True
-        Me.Label202.Location = New System.Drawing.Point(86, 58)
-        Me.Label202.Name = "Label202"
-        Me.Label202.Size = New System.Drawing.Size(65, 13)
-        Me.Label202.TabIndex = 277
-        Me.Label202.Text = "min./O.qty.1"
+        Me.minOQ1Lbl4.AutoSize = True
+        Me.minOQ1Lbl4.Location = New System.Drawing.Point(86, 58)
+        Me.minOQ1Lbl4.Name = "minOQ1Lbl4"
+        Me.minOQ1Lbl4.Size = New System.Drawing.Size(65, 13)
+        Me.minOQ1Lbl4.TabIndex = 277
+        Me.minOQ1Lbl4.Text = "min./O.qty.1"
         '
-        'Label201
+        'spotWeldLbl
         '
-        Me.Label201.AutoSize = True
-        Me.Label201.Location = New System.Drawing.Point(2, 76)
-        Me.Label201.Name = "Label201"
-        Me.Label201.Size = New System.Drawing.Size(65, 13)
-        Me.Label201.TabIndex = 276
-        Me.Label201.Text = "Spotwelding"
+        Me.spotWeldLbl.AutoSize = True
+        Me.spotWeldLbl.Location = New System.Drawing.Point(2, 76)
+        Me.spotWeldLbl.Name = "spotWeldLbl"
+        Me.spotWeldLbl.Size = New System.Drawing.Size(65, 13)
+        Me.spotWeldLbl.TabIndex = 276
+        Me.spotWeldLbl.Text = "Spotwelding"
         '
-        'Label128
+        'overruleLbl10
         '
-        Me.Label128.AutoSize = True
-        Me.Label128.Location = New System.Drawing.Point(154, 58)
-        Me.Label128.Name = "Label128"
-        Me.Label128.Size = New System.Drawing.Size(47, 13)
-        Me.Label128.TabIndex = 250
-        Me.Label128.Text = "Overrule"
+        Me.overruleLbl10.AutoSize = True
+        Me.overruleLbl10.Location = New System.Drawing.Point(151, 58)
+        Me.overruleLbl10.Name = "overruleLbl10"
+        Me.overruleLbl10.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl10.TabIndex = 250
+        Me.overruleLbl10.Text = "Overrule"
         '
         'lb_spotweld
         '
@@ -2851,19 +2866,19 @@ Partial Class metal_tilbud
         Me.gb_gruppe4.Controls.Add(Me.tb_numberofwelds)
         Me.gb_gruppe4.Controls.Add(Me.tb_weldlength)
         Me.gb_gruppe4.Controls.Add(Me.cb_rettesvejs)
-        Me.gb_gruppe4.Controls.Add(Me.Label226)
+        Me.gb_gruppe4.Controls.Add(Me.strainghteningLbl)
         Me.gb_gruppe4.Controls.Add(Me.lb_rettesvejs_tid)
         Me.gb_gruppe4.Controls.Add(Me.tb_rettesvejs_uk)
         Me.gb_gruppe4.Controls.Add(Me.rb_migmag)
         Me.gb_gruppe4.Controls.Add(Me.rb_tig)
         Me.gb_gruppe4.Controls.Add(Me.cb_weld)
         Me.gb_gruppe4.Controls.Add(Me.cb_tackweld)
-        Me.gb_gruppe4.Controls.Add(Me.Label194)
-        Me.gb_gruppe4.Controls.Add(Me.Label197)
-        Me.gb_gruppe4.Controls.Add(Me.Label192)
-        Me.gb_gruppe4.Controls.Add(Me.Label189)
-        Me.gb_gruppe4.Controls.Add(Me.Label150)
-        Me.gb_gruppe4.Controls.Add(Me.Label132)
+        Me.gb_gruppe4.Controls.Add(Me.onlyTackWeldingLbl)
+        Me.gb_gruppe4.Controls.Add(Me.fullWeldingLbl)
+        Me.gb_gruppe4.Controls.Add(Me.minOQ1Lbl5)
+        Me.gb_gruppe4.Controls.Add(Me.numbWeldsPerItemLbl2)
+        Me.gb_gruppe4.Controls.Add(Me.weldingLengthPerItemLbl)
+        Me.gb_gruppe4.Controls.Add(Me.overruleLbl11)
         Me.gb_gruppe4.Controls.Add(Me.lb_weld)
         Me.gb_gruppe4.Controls.Add(Me.lb_tackweld)
         Me.gb_gruppe4.Controls.Add(Me.tb_weld_uk)
@@ -2904,14 +2919,14 @@ Partial Class metal_tilbud
         Me.cb_rettesvejs.TabIndex = 277
         Me.cb_rettesvejs.UseVisualStyleBackColor = False
         '
-        'Label226
+        'strainghteningLbl
         '
-        Me.Label226.AutoSize = True
-        Me.Label226.Location = New System.Drawing.Point(1, 144)
-        Me.Label226.Name = "Label226"
-        Me.Label226.Size = New System.Drawing.Size(69, 13)
-        Me.Label226.TabIndex = 280
-        Me.Label226.Text = "Straightening"
+        Me.strainghteningLbl.AutoSize = True
+        Me.strainghteningLbl.Location = New System.Drawing.Point(1, 144)
+        Me.strainghteningLbl.Name = "strainghteningLbl"
+        Me.strainghteningLbl.Size = New System.Drawing.Size(69, 13)
+        Me.strainghteningLbl.TabIndex = 280
+        Me.strainghteningLbl.Text = "Straightening"
         '
         'lb_rettesvejs_tid
         '
@@ -2977,60 +2992,60 @@ Partial Class metal_tilbud
         Me.cb_tackweld.TabIndex = 73
         Me.cb_tackweld.UseVisualStyleBackColor = False
         '
-        'Label194
+        'onlyTackWeldingLbl
         '
-        Me.Label194.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label194.Location = New System.Drawing.Point(1, 80)
-        Me.Label194.Name = "Label194"
-        Me.Label194.Size = New System.Drawing.Size(71, 26)
-        Me.Label194.TabIndex = 274
-        Me.Label194.Text = "Only tack welding"
+        Me.onlyTackWeldingLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.onlyTackWeldingLbl.Location = New System.Drawing.Point(1, 80)
+        Me.onlyTackWeldingLbl.Name = "onlyTackWeldingLbl"
+        Me.onlyTackWeldingLbl.Size = New System.Drawing.Size(71, 26)
+        Me.onlyTackWeldingLbl.TabIndex = 274
+        Me.onlyTackWeldingLbl.Text = "Only tack welding"
         '
-        'Label197
+        'fullWeldingLbl
         '
-        Me.Label197.AutoSize = True
-        Me.Label197.Location = New System.Drawing.Point(1, 118)
-        Me.Label197.Name = "Label197"
-        Me.Label197.Size = New System.Drawing.Size(62, 13)
-        Me.Label197.TabIndex = 275
-        Me.Label197.Text = "Full welding"
+        Me.fullWeldingLbl.AutoSize = True
+        Me.fullWeldingLbl.Location = New System.Drawing.Point(1, 118)
+        Me.fullWeldingLbl.Name = "fullWeldingLbl"
+        Me.fullWeldingLbl.Size = New System.Drawing.Size(62, 13)
+        Me.fullWeldingLbl.TabIndex = 275
+        Me.fullWeldingLbl.Text = "Full welding"
         '
-        'Label192
+        'minOQ1Lbl5
         '
-        Me.Label192.AutoSize = True
-        Me.Label192.Location = New System.Drawing.Point(85, 75)
-        Me.Label192.Name = "Label192"
-        Me.Label192.Size = New System.Drawing.Size(65, 13)
-        Me.Label192.TabIndex = 270
-        Me.Label192.Text = "min./O.qty.1"
+        Me.minOQ1Lbl5.AutoSize = True
+        Me.minOQ1Lbl5.Location = New System.Drawing.Point(85, 75)
+        Me.minOQ1Lbl5.Name = "minOQ1Lbl5"
+        Me.minOQ1Lbl5.Size = New System.Drawing.Size(65, 13)
+        Me.minOQ1Lbl5.TabIndex = 270
+        Me.minOQ1Lbl5.Text = "min./O.qty.1"
         '
-        'Label189
+        'numbWeldsPerItemLbl2
         '
-        Me.Label189.Location = New System.Drawing.Point(12, 16)
-        Me.Label189.Name = "Label189"
-        Me.Label189.Size = New System.Drawing.Size(140, 14)
-        Me.Label189.TabIndex = 260
-        Me.Label189.Text = "Number of welds per item"
-        Me.Label189.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.numbWeldsPerItemLbl2.Location = New System.Drawing.Point(8, 16)
+        Me.numbWeldsPerItemLbl2.Name = "numbWeldsPerItemLbl2"
+        Me.numbWeldsPerItemLbl2.Size = New System.Drawing.Size(140, 14)
+        Me.numbWeldsPerItemLbl2.TabIndex = 260
+        Me.numbWeldsPerItemLbl2.Text = "Number of welds per item"
+        Me.numbWeldsPerItemLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label150
+        'weldingLengthPerItemLbl
         '
-        Me.Label150.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Label150.Location = New System.Drawing.Point(2, 36)
-        Me.Label150.Name = "Label150"
-        Me.Label150.Size = New System.Drawing.Size(145, 15)
-        Me.Label150.TabIndex = 258
-        Me.Label150.Text = "welding length per item in mm"
-        Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.weldingLengthPerItemLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.weldingLengthPerItemLbl.Location = New System.Drawing.Point(2, 36)
+        Me.weldingLengthPerItemLbl.Name = "weldingLengthPerItemLbl"
+        Me.weldingLengthPerItemLbl.Size = New System.Drawing.Size(145, 15)
+        Me.weldingLengthPerItemLbl.TabIndex = 258
+        Me.weldingLengthPerItemLbl.Text = "welding length per item in mm"
+        Me.weldingLengthPerItemLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label132
+        'overruleLbl11
         '
-        Me.Label132.AutoSize = True
-        Me.Label132.Location = New System.Drawing.Point(153, 76)
-        Me.Label132.Name = "Label132"
-        Me.Label132.Size = New System.Drawing.Size(47, 13)
-        Me.Label132.TabIndex = 256
-        Me.Label132.Text = "Overrule"
+        Me.overruleLbl11.AutoSize = True
+        Me.overruleLbl11.Location = New System.Drawing.Point(153, 76)
+        Me.overruleLbl11.Name = "overruleLbl11"
+        Me.overruleLbl11.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl11.TabIndex = 256
+        Me.overruleLbl11.Text = "Overrule"
         '
         'lb_weld
         '
@@ -3452,14 +3467,14 @@ Partial Class metal_tilbud
         Me.cb_grind_weld.TabIndex = 75
         Me.cb_grind_weld.UseVisualStyleBackColor = False
         '
-        'Label200
+        'weldGrindingLbl2
         '
-        Me.Label200.AutoSize = True
-        Me.Label200.Location = New System.Drawing.Point(2, 78)
-        Me.Label200.Name = "Label200"
-        Me.Label200.Size = New System.Drawing.Size(72, 13)
-        Me.Label200.TabIndex = 276
-        Me.Label200.Text = "Weld grinding"
+        Me.weldGrindingLbl2.Location = New System.Drawing.Point(4, 78)
+        Me.weldGrindingLbl2.Name = "weldGrindingLbl2"
+        Me.weldGrindingLbl2.Size = New System.Drawing.Size(72, 13)
+        Me.weldGrindingLbl2.TabIndex = 276
+        Me.weldGrindingLbl2.Text = "Weld grinding"
+        Me.weldGrindingLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_grind_weld
         '
@@ -3482,12 +3497,12 @@ Partial Class metal_tilbud
         'gb_gruppe6
         '
         Me.gb_gruppe6.BackColor = System.Drawing.Color.LightGoldenrodYellow
-        Me.gb_gruppe6.Controls.Add(Me.Label63)
-        Me.gb_gruppe6.Controls.Add(Me.Label137)
+        Me.gb_gruppe6.Controls.Add(Me.minutesLbl)
+        Me.gb_gruppe6.Controls.Add(Me.controlLbl)
         Me.gb_gruppe6.Controls.Add(Me.lb_kontrol)
         Me.gb_gruppe6.Controls.Add(Me.tb_kontrol_uk)
-        Me.gb_gruppe6.Controls.Add(Me.Label133)
-        Me.gb_gruppe6.Controls.Add(Me.Label134)
+        Me.gb_gruppe6.Controls.Add(Me.overruleLbl13)
+        Me.gb_gruppe6.Controls.Add(Me.officeLbl)
         Me.gb_gruppe6.Controls.Add(Me.lb_kontor)
         Me.gb_gruppe6.Controls.Add(Me.tb_kontor_uk)
         Me.gb_gruppe6.Location = New System.Drawing.Point(1023, 798)
@@ -3497,23 +3512,23 @@ Partial Class metal_tilbud
         Me.gb_gruppe6.TabStop = False
         Me.gb_gruppe6.Text = "Group 6"
         '
-        'Label63
+        'minutesLbl
         '
-        Me.Label63.AutoSize = True
-        Me.Label63.Location = New System.Drawing.Point(97, 7)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(44, 13)
-        Me.Label63.TabIndex = 249
-        Me.Label63.Text = "Minutes"
+        Me.minutesLbl.AutoSize = True
+        Me.minutesLbl.Location = New System.Drawing.Point(97, 7)
+        Me.minutesLbl.Name = "minutesLbl"
+        Me.minutesLbl.Size = New System.Drawing.Size(44, 13)
+        Me.minutesLbl.TabIndex = 249
+        Me.minutesLbl.Text = "Minutes"
         '
-        'Label137
+        'controlLbl
         '
-        Me.Label137.Location = New System.Drawing.Point(36, 44)
-        Me.Label137.Name = "Label137"
-        Me.Label137.Size = New System.Drawing.Size(58, 20)
-        Me.Label137.TabIndex = 248
-        Me.Label137.Text = "Control"
-        Me.Label137.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.controlLbl.Location = New System.Drawing.Point(36, 44)
+        Me.controlLbl.Name = "controlLbl"
+        Me.controlLbl.Size = New System.Drawing.Size(58, 20)
+        Me.controlLbl.TabIndex = 248
+        Me.controlLbl.Text = "Control"
+        Me.controlLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_kontrol
         '
@@ -3533,23 +3548,23 @@ Partial Class metal_tilbud
         Me.tb_kontrol_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_kontrol_uk.TabIndex = 77
         '
-        'Label133
+        'overruleLbl13
         '
-        Me.Label133.AutoSize = True
-        Me.Label133.Location = New System.Drawing.Point(149, 7)
-        Me.Label133.Name = "Label133"
-        Me.Label133.Size = New System.Drawing.Size(47, 13)
-        Me.Label133.TabIndex = 245
-        Me.Label133.Text = "Overrule"
+        Me.overruleLbl13.AutoSize = True
+        Me.overruleLbl13.Location = New System.Drawing.Point(149, 7)
+        Me.overruleLbl13.Name = "overruleLbl13"
+        Me.overruleLbl13.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl13.TabIndex = 245
+        Me.overruleLbl13.Text = "Overrule"
         '
-        'Label134
+        'officeLbl
         '
-        Me.Label134.Location = New System.Drawing.Point(36, 23)
-        Me.Label134.Name = "Label134"
-        Me.Label134.Size = New System.Drawing.Size(58, 20)
-        Me.Label134.TabIndex = 244
-        Me.Label134.Text = "Office"
-        Me.Label134.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.officeLbl.Location = New System.Drawing.Point(36, 23)
+        Me.officeLbl.Name = "officeLbl"
+        Me.officeLbl.Size = New System.Drawing.Size(58, 20)
+        Me.officeLbl.TabIndex = 244
+        Me.officeLbl.Text = "Office"
+        Me.officeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_kontor
         '
@@ -3574,25 +3589,25 @@ Partial Class metal_tilbud
         Me.gb_admin.BackColor = System.Drawing.Color.WhiteSmoke
         Me.gb_admin.Controls.Add(Me.lb_filnavn)
         Me.gb_admin.Controls.Add(Me.lb_operatør_opr)
-        Me.gb_admin.Controls.Add(Me.Label250)
+        Me.gb_admin.Controls.Add(Me.operatorLbl)
         Me.gb_admin.Controls.Add(Me.lb_dato_opr)
-        Me.gb_admin.Controls.Add(Me.Label252)
+        Me.gb_admin.Controls.Add(Me.oprDateLbl)
         Me.gb_admin.Controls.Add(Me.rb_danmark)
         Me.gb_admin.Controls.Add(Me.rb_polen)
         Me.gb_admin.Controls.Add(Me.tb_timesats_C)
         Me.gb_admin.Controls.Add(Me.tb_timesats_B)
         Me.gb_admin.Controls.Add(Me.Label58)
         Me.gb_admin.Controls.Add(Me.tb_timesats_D)
-        Me.gb_admin.Controls.Add(Me.Label11)
+        Me.gb_admin.Controls.Add(Me.hourPricesLbl)
         Me.gb_admin.Controls.Add(Me.Label43)
         Me.gb_admin.Controls.Add(Me.tb_timesats_mand)
-        Me.gb_admin.Controls.Add(Me.Label40)
+        Me.gb_admin.Controls.Add(Me.bPunchLbl)
         Me.gb_admin.Controls.Add(Me.lb_operatør)
-        Me.gb_admin.Controls.Add(Me.Label68)
-        Me.gb_admin.Controls.Add(Me.Label12)
+        Me.gb_admin.Controls.Add(Me.operatorLbl2)
+        Me.gb_admin.Controls.Add(Me.manLbl)
         Me.gb_admin.Controls.Add(Me.lb_dato)
-        Me.gb_admin.Controls.Add(Me.Label69)
-        Me.gb_admin.Controls.Add(Me.Label88)
+        Me.gb_admin.Controls.Add(Me.updateDateLbl)
+        Me.gb_admin.Controls.Add(Me.fileNameLbl)
         Me.gb_admin.Location = New System.Drawing.Point(1297, 772)
         Me.gb_admin.Name = "gb_admin"
         Me.gb_admin.Size = New System.Drawing.Size(272, 140)
@@ -3619,14 +3634,14 @@ Partial Class metal_tilbud
         Me.lb_operatør_opr.Size = New System.Drawing.Size(80, 20)
         Me.lb_operatør_opr.TabIndex = 304
         '
-        'Label250
+        'operatorLbl
         '
-        Me.Label250.AutoSize = True
-        Me.Label250.Location = New System.Drawing.Point(137, 13)
-        Me.Label250.Name = "Label250"
-        Me.Label250.Size = New System.Drawing.Size(48, 13)
-        Me.Label250.TabIndex = 306
-        Me.Label250.Text = "Operator"
+        Me.operatorLbl.AutoSize = True
+        Me.operatorLbl.Location = New System.Drawing.Point(137, 13)
+        Me.operatorLbl.Name = "operatorLbl"
+        Me.operatorLbl.Size = New System.Drawing.Size(48, 13)
+        Me.operatorLbl.TabIndex = 306
+        Me.operatorLbl.Text = "Operator"
         '
         'lb_dato_opr
         '
@@ -3637,14 +3652,14 @@ Partial Class metal_tilbud
         Me.lb_dato_opr.Size = New System.Drawing.Size(65, 20)
         Me.lb_dato_opr.TabIndex = 303
         '
-        'Label252
+        'oprDateLbl
         '
-        Me.Label252.AutoSize = True
-        Me.Label252.Location = New System.Drawing.Point(10, 13)
-        Me.Label252.Name = "Label252"
-        Me.Label252.Size = New System.Drawing.Size(53, 13)
-        Me.Label252.TabIndex = 305
-        Me.Label252.Text = "Opr. Date"
+        Me.oprDateLbl.AutoSize = True
+        Me.oprDateLbl.Location = New System.Drawing.Point(10, 13)
+        Me.oprDateLbl.Name = "oprDateLbl"
+        Me.oprDateLbl.Size = New System.Drawing.Size(53, 13)
+        Me.oprDateLbl.TabIndex = 305
+        Me.oprDateLbl.Text = "Opr. Date"
         '
         'rb_danmark
         '
@@ -3718,14 +3733,14 @@ Partial Class metal_tilbud
         Me.tb_timesats_D.Text = "700"
         Me.tb_timesats_D.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label11
+        'hourPricesLbl
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(75, 89)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(82, 13)
-        Me.Label11.TabIndex = 268
-        Me.Label11.Text = "Hour prices dkk"
+        Me.hourPricesLbl.AutoSize = True
+        Me.hourPricesLbl.Location = New System.Drawing.Point(75, 89)
+        Me.hourPricesLbl.Name = "hourPricesLbl"
+        Me.hourPricesLbl.Size = New System.Drawing.Size(82, 13)
+        Me.hourPricesLbl.TabIndex = 268
+        Me.hourPricesLbl.Text = "Hour prices dkk"
         '
         'Label43
         '
@@ -3745,76 +3760,79 @@ Partial Class metal_tilbud
         Me.tb_timesats_mand.Text = "300"
         Me.tb_timesats_mand.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label40
+        'bPunchLbl
         '
-        Me.Label40.AutoSize = True
-        Me.Label40.Location = New System.Drawing.Point(56, 100)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(42, 13)
-        Me.Label40.TabIndex = 270
-        Me.Label40.Text = "B stans"
+        Me.bPunchLbl.AutoSize = True
+        Me.bPunchLbl.Location = New System.Drawing.Point(56, 100)
+        Me.bPunchLbl.Name = "bPunchLbl"
+        Me.bPunchLbl.Size = New System.Drawing.Size(47, 13)
+        Me.bPunchLbl.TabIndex = 270
+        Me.bPunchLbl.Text = "B punch"
         '
-        'Label12
+        'manLbl
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(14, 100)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(27, 13)
-        Me.Label12.TabIndex = 267
-        Me.Label12.Text = "man"
+        Me.manLbl.AutoSize = True
+        Me.manLbl.Location = New System.Drawing.Point(14, 100)
+        Me.manLbl.Name = "manLbl"
+        Me.manLbl.Size = New System.Drawing.Size(27, 13)
+        Me.manLbl.TabIndex = 267
+        Me.manLbl.Text = "man"
         '
-        'Label88
+        'fileNameLbl
         '
-        Me.Label88.AutoSize = True
-        Me.Label88.Location = New System.Drawing.Point(5, 57)
-        Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(52, 13)
-        Me.Label88.TabIndex = 234
-        Me.Label88.Text = "File name"
+        Me.fileNameLbl.AutoSize = True
+        Me.fileNameLbl.Location = New System.Drawing.Point(5, 57)
+        Me.fileNameLbl.Name = "fileNameLbl"
+        Me.fileNameLbl.Size = New System.Drawing.Size(52, 13)
+        Me.fileNameLbl.TabIndex = 234
+        Me.fileNameLbl.Text = "File name"
         '
-        'Label10
+        'oneTo6Lbl
         '
-        Me.Label10.Location = New System.Drawing.Point(150, 139)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(35, 13)
-        Me.Label10.TabIndex = 265
-        Me.Label10.Text = "1 to 6"
+        Me.oneTo6Lbl.Location = New System.Drawing.Point(150, 139)
+        Me.oneTo6Lbl.Name = "oneTo6Lbl"
+        Me.oneTo6Lbl.Size = New System.Drawing.Size(35, 13)
+        Me.oneTo6Lbl.TabIndex = 265
+        Me.oneTo6Lbl.Text = "1 to 6"
         '
-        'Label7
+        'materialGroupLbl
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(8, 101)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(74, 13)
-        Me.Label7.TabIndex = 262
-        Me.Label7.Text = "Material group"
+        Me.materialGroupLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.materialGroupLbl.Location = New System.Drawing.Point(1, 101)
+        Me.materialGroupLbl.Name = "materialGroupLbl"
+        Me.materialGroupLbl.Size = New System.Drawing.Size(93, 13)
+        Me.materialGroupLbl.TabIndex = 262
+        Me.materialGroupLbl.Text = "Material group"
+        Me.materialGroupLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label6
+        'difficultyLbl
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(7, 140)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 13)
-        Me.Label6.TabIndex = 261
-        Me.Label6.Text = "Difficulty"
+        Me.difficultyLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.difficultyLbl.Location = New System.Drawing.Point(1, 140)
+        Me.difficultyLbl.Name = "difficultyLbl"
+        Me.difficultyLbl.Size = New System.Drawing.Size(93, 13)
+        Me.difficultyLbl.TabIndex = 261
+        Me.difficultyLbl.Text = "Difficulty"
+        Me.difficultyLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label5
+        'moduleSizeLbl
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(8, 81)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(63, 13)
-        Me.Label5.TabIndex = 260
-        Me.Label5.Text = "Module size"
+        Me.moduleSizeLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.moduleSizeLbl.Location = New System.Drawing.Point(1, 81)
+        Me.moduleSizeLbl.Name = "moduleSizeLbl"
+        Me.moduleSizeLbl.Size = New System.Drawing.Size(93, 13)
+        Me.moduleSizeLbl.TabIndex = 260
+        Me.moduleSizeLbl.Text = "Module size"
+        Me.moduleSizeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'gb_overfladebeh
         '
         Me.gb_overfladebeh.BackColor = System.Drawing.Color.Beige
         Me.gb_overfladebeh.Controls.Add(Me.Label251)
-        Me.gb_overfladebeh.Controls.Add(Me.Label249)
+        Me.gb_overfladebeh.Controls.Add(Me.surfaceQtyLbl)
         Me.gb_overfladebeh.Controls.Add(Me.tb_numberofsurface)
         Me.gb_overfladebeh.Controls.Add(Me.GroupBox5)
-        Me.gb_overfladebeh.Controls.Add(Me.Label237)
+        Me.gb_overfladebeh.Controls.Add(Me.offerDkkPcLbl)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_tilbudpris3_uk)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_tilbudpris2_uk)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_tilbudpris1_uk)
@@ -3829,7 +3847,7 @@ Partial Class metal_tilbud
         Me.gb_overfladebeh.Controls.Add(Me.cb_1side_2)
         Me.gb_overfladebeh.Controls.Add(Me.cb_1side_3)
         Me.gb_overfladebeh.Controls.Add(Me.cb_1side_1)
-        Me.gb_overfladebeh.Controls.Add(Me.Label42)
+        Me.gb_overfladebeh.Controls.Add(Me.overruleLbl15)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris2_uk)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris3_uk)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris1_uk)
@@ -3856,15 +3874,15 @@ Partial Class metal_tilbud
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris2)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_afdæk2)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_opstart2)
-        Me.gb_overfladebeh.Controls.Add(Me.Label140)
+        Me.gb_overfladebeh.Controls.Add(Me.dkkPcLbl)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris100_1)
-        Me.gb_overfladebeh.Controls.Add(Me.Label130)
+        Me.gb_overfladebeh.Controls.Add(Me.profitLbl3)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_avance1)
-        Me.gb_overfladebeh.Controls.Add(Me.Label67)
-        Me.gb_overfladebeh.Controls.Add(Me.Label66)
-        Me.gb_overfladebeh.Controls.Add(Me.Label65)
-        Me.gb_overfladebeh.Controls.Add(Me.Label62)
-        Me.gb_overfladebeh.Controls.Add(Me.Label61)
+        Me.gb_overfladebeh.Controls.Add(Me.priceDkkPcLbl)
+        Me.gb_overfladebeh.Controls.Add(Me.coatingDkkPc)
+        Me.gb_overfladebeh.Controls.Add(Me.setupDkkLbl2)
+        Me.gb_overfladebeh.Controls.Add(Me.surfaceTreatmentLbl)
+        Me.gb_overfladebeh.Controls.Add(Me.supplierLbl)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_pris1)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_afdæk1)
         Me.gb_overfladebeh.Controls.Add(Me.tb_overfl_opstart1)
@@ -3883,14 +3901,14 @@ Partial Class metal_tilbud
         Me.Label251.TabIndex = 322
         Me.Label251.Text = "1 - 6"
         '
-        'Label249
+        'surfaceQtyLbl
         '
-        Me.Label249.AutoSize = True
-        Me.Label249.Location = New System.Drawing.Point(517, 7)
-        Me.Label249.Name = "Label249"
-        Me.Label249.Size = New System.Drawing.Size(63, 13)
-        Me.Label249.TabIndex = 321
-        Me.Label249.Text = "Surface Qty"
+        Me.surfaceQtyLbl.AutoSize = True
+        Me.surfaceQtyLbl.Location = New System.Drawing.Point(517, 7)
+        Me.surfaceQtyLbl.Name = "surfaceQtyLbl"
+        Me.surfaceQtyLbl.Size = New System.Drawing.Size(63, 13)
+        Me.surfaceQtyLbl.TabIndex = 321
+        Me.surfaceQtyLbl.Text = "Surface Qty"
         '
         'tb_numberofsurface
         '
@@ -3905,8 +3923,8 @@ Partial Class metal_tilbud
         '
         Me.GroupBox5.BackColor = System.Drawing.Color.Beige
         Me.GroupBox5.Controls.Add(Me.tb_overfltilbud_antal)
-        Me.GroupBox5.Controls.Add(Me.Label233)
-        Me.GroupBox5.Controls.Add(Me.Label229)
+        Me.GroupBox5.Controls.Add(Me.PcsLbl)
+        Me.GroupBox5.Controls.Add(Me.offerAppliesToLbl)
         Me.GroupBox5.Location = New System.Drawing.Point(1120, 8)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(162, 115)
@@ -3923,35 +3941,35 @@ Partial Class metal_tilbud
         Me.tb_overfltilbud_antal.TabIndex = 78
         Me.tb_overfltilbud_antal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label233
+        'PcsLbl
         '
-        Me.Label233.AutoSize = True
-        Me.Label233.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label233.Location = New System.Drawing.Point(106, 61)
-        Me.Label233.Name = "Label233"
-        Me.Label233.Size = New System.Drawing.Size(35, 20)
-        Me.Label233.TabIndex = 1
-        Me.Label233.Text = "Pcs"
+        Me.PcsLbl.AutoSize = True
+        Me.PcsLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PcsLbl.Location = New System.Drawing.Point(106, 61)
+        Me.PcsLbl.Name = "PcsLbl"
+        Me.PcsLbl.Size = New System.Drawing.Size(35, 20)
+        Me.PcsLbl.TabIndex = 1
+        Me.PcsLbl.Text = "Pcs"
         '
-        'Label229
+        'offerAppliesToLbl
         '
-        Me.Label229.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label229.Location = New System.Drawing.Point(8, 3)
-        Me.Label229.Name = "Label229"
-        Me.Label229.Size = New System.Drawing.Size(140, 43)
-        Me.Label229.TabIndex = 0
-        Me.Label229.Text = "Offer applies to"
-        Me.Label229.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label229.UseCompatibleTextRendering = True
+        Me.offerAppliesToLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.offerAppliesToLbl.Location = New System.Drawing.Point(8, 3)
+        Me.offerAppliesToLbl.Name = "offerAppliesToLbl"
+        Me.offerAppliesToLbl.Size = New System.Drawing.Size(140, 43)
+        Me.offerAppliesToLbl.TabIndex = 0
+        Me.offerAppliesToLbl.Text = "Offer applies to"
+        Me.offerAppliesToLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.offerAppliesToLbl.UseCompatibleTextRendering = True
         '
-        'Label237
+        'offerDkkPcLbl
         '
-        Me.Label237.AutoSize = True
-        Me.Label237.Location = New System.Drawing.Point(1037, 5)
-        Me.Label237.Name = "Label237"
-        Me.Label237.Size = New System.Drawing.Size(68, 13)
-        Me.Label237.TabIndex = 319
-        Me.Label237.Text = "Offer dkk/pc"
+        Me.offerDkkPcLbl.AutoSize = True
+        Me.offerDkkPcLbl.Location = New System.Drawing.Point(1037, 5)
+        Me.offerDkkPcLbl.Name = "offerDkkPcLbl"
+        Me.offerDkkPcLbl.Size = New System.Drawing.Size(68, 13)
+        Me.offerDkkPcLbl.TabIndex = 319
+        Me.offerDkkPcLbl.Text = "Offer dkk/pc"
         '
         'tb_overfl_tilbudpris3_uk
         '
@@ -4087,14 +4105,14 @@ Partial Class metal_tilbud
         Me.cb_1side_1.TabIndex = 304
         Me.cb_1side_1.UseVisualStyleBackColor = False
         '
-        'Label42
+        'overruleLbl15
         '
-        Me.Label42.AutoSize = True
-        Me.Label42.Location = New System.Drawing.Point(831, 7)
-        Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(47, 13)
-        Me.Label42.TabIndex = 303
-        Me.Label42.Text = "Overrule"
+        Me.overruleLbl15.AutoSize = True
+        Me.overruleLbl15.Location = New System.Drawing.Point(831, 7)
+        Me.overruleLbl15.Name = "overruleLbl15"
+        Me.overruleLbl15.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl15.TabIndex = 303
+        Me.overruleLbl15.Text = "Overrule"
         '
         'tb_overfl_pris2_uk
         '
@@ -4350,14 +4368,14 @@ Partial Class metal_tilbud
         Me.tb_overfl_opstart2.TabIndex = 272
         Me.tb_overfl_opstart2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label140
+        'dkkPcLbl
         '
-        Me.Label140.AutoSize = True
-        Me.Label140.Location = New System.Drawing.Point(977, 6)
-        Me.Label140.Name = "Label140"
-        Me.Label140.Size = New System.Drawing.Size(43, 13)
-        Me.Label140.TabIndex = 269
-        Me.Label140.Text = "dkk pc "
+        Me.dkkPcLbl.AutoSize = True
+        Me.dkkPcLbl.Location = New System.Drawing.Point(977, 6)
+        Me.dkkPcLbl.Name = "dkkPcLbl"
+        Me.dkkPcLbl.Size = New System.Drawing.Size(43, 13)
+        Me.dkkPcLbl.TabIndex = 269
+        Me.dkkPcLbl.Text = "dkk pc "
         '
         'tb_overfl_pris100_1
         '
@@ -4369,14 +4387,14 @@ Partial Class metal_tilbud
         Me.tb_overfl_pris100_1.TabIndex = 268
         Me.tb_overfl_pris100_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label130
+        'profitLbl3
         '
-        Me.Label130.AutoSize = True
-        Me.Label130.Location = New System.Drawing.Point(907, 6)
-        Me.Label130.Name = "Label130"
-        Me.Label130.Size = New System.Drawing.Size(42, 13)
-        Me.Label130.TabIndex = 267
-        Me.Label130.Text = "Profit %"
+        Me.profitLbl3.AutoSize = True
+        Me.profitLbl3.Location = New System.Drawing.Point(907, 6)
+        Me.profitLbl3.Name = "profitLbl3"
+        Me.profitLbl3.Size = New System.Drawing.Size(42, 13)
+        Me.profitLbl3.TabIndex = 267
+        Me.profitLbl3.Text = "Profit %"
         '
         'tb_overfl_avance1
         '
@@ -4390,50 +4408,50 @@ Partial Class metal_tilbud
         Me.tb_overfl_avance1.Text = "15"
         Me.tb_overfl_avance1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label67
+        'priceDkkPcLbl
         '
-        Me.Label67.AutoSize = True
-        Me.Label67.Location = New System.Drawing.Point(756, 7)
-        Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(69, 13)
-        Me.Label67.TabIndex = 265
-        Me.Label67.Text = "Price dkk/pc"
+        Me.priceDkkPcLbl.AutoSize = True
+        Me.priceDkkPcLbl.Location = New System.Drawing.Point(756, 7)
+        Me.priceDkkPcLbl.Name = "priceDkkPcLbl"
+        Me.priceDkkPcLbl.Size = New System.Drawing.Size(69, 13)
+        Me.priceDkkPcLbl.TabIndex = 265
+        Me.priceDkkPcLbl.Text = "Price dkk/pc"
         '
-        'Label66
+        'coatingDkkPc
         '
-        Me.Label66.AutoSize = True
-        Me.Label66.Location = New System.Drawing.Point(661, 7)
-        Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(81, 13)
-        Me.Label66.TabIndex = 264
-        Me.Label66.Text = "Coating dkk/pc"
+        Me.coatingDkkPc.AutoSize = True
+        Me.coatingDkkPc.Location = New System.Drawing.Point(661, 7)
+        Me.coatingDkkPc.Name = "coatingDkkPc"
+        Me.coatingDkkPc.Size = New System.Drawing.Size(81, 13)
+        Me.coatingDkkPc.TabIndex = 264
+        Me.coatingDkkPc.Text = "Coating dkk/pc"
         '
-        'Label65
+        'setupDkkLbl2
         '
-        Me.Label65.AutoSize = True
-        Me.Label65.Location = New System.Drawing.Point(590, 7)
-        Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(56, 13)
-        Me.Label65.TabIndex = 263
-        Me.Label65.Text = "Setup dkk"
+        Me.setupDkkLbl2.AutoSize = True
+        Me.setupDkkLbl2.Location = New System.Drawing.Point(590, 7)
+        Me.setupDkkLbl2.Name = "setupDkkLbl2"
+        Me.setupDkkLbl2.Size = New System.Drawing.Size(56, 13)
+        Me.setupDkkLbl2.TabIndex = 263
+        Me.setupDkkLbl2.Text = "Setup dkk"
         '
-        'Label62
+        'surfaceTreatmentLbl
         '
-        Me.Label62.AutoSize = True
-        Me.Label62.Location = New System.Drawing.Point(60, 8)
-        Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(206, 13)
-        Me.Label62.TabIndex = 262
-        Me.Label62.Text = "SURFACE TREATMENT / OUTSOURCE"
+        Me.surfaceTreatmentLbl.AutoSize = True
+        Me.surfaceTreatmentLbl.Location = New System.Drawing.Point(60, 8)
+        Me.surfaceTreatmentLbl.Name = "surfaceTreatmentLbl"
+        Me.surfaceTreatmentLbl.Size = New System.Drawing.Size(206, 13)
+        Me.surfaceTreatmentLbl.TabIndex = 262
+        Me.surfaceTreatmentLbl.Text = "SURFACE TREATMENT / OUTSOURCE"
         '
-        'Label61
+        'supplierLbl
         '
-        Me.Label61.AutoSize = True
-        Me.Label61.Location = New System.Drawing.Point(340, 8)
-        Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(60, 13)
-        Me.Label61.TabIndex = 261
-        Me.Label61.Text = "SUPPLIER"
+        Me.supplierLbl.AutoSize = True
+        Me.supplierLbl.Location = New System.Drawing.Point(340, 8)
+        Me.supplierLbl.Name = "supplierLbl"
+        Me.supplierLbl.Size = New System.Drawing.Size(60, 13)
+        Me.supplierLbl.TabIndex = 261
+        Me.supplierLbl.Text = "SUPPLIER"
         '
         'tb_overfl_pris1
         '
@@ -4474,86 +4492,86 @@ Partial Class metal_tilbud
         Me.tb_bukmax_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_bukmax_y.TabIndex = 19
         '
-        'Label70
+        'biggestMeasureLbl
         '
-        Me.Label70.AutoSize = True
-        Me.Label70.BackColor = System.Drawing.Color.White
-        Me.Label70.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.Location = New System.Drawing.Point(6, 28)
-        Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(75, 12)
-        Me.Label70.TabIndex = 300
-        Me.Label70.Text = "Biggest Measure"
+        Me.biggestMeasureLbl.AutoSize = True
+        Me.biggestMeasureLbl.BackColor = System.Drawing.Color.White
+        Me.biggestMeasureLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.biggestMeasureLbl.Location = New System.Drawing.Point(6, 28)
+        Me.biggestMeasureLbl.Name = "biggestMeasureLbl"
+        Me.biggestMeasureLbl.Size = New System.Drawing.Size(75, 12)
+        Me.biggestMeasureLbl.TabIndex = 300
+        Me.biggestMeasureLbl.Text = "Biggest Measure"
         '
         'gb_buk
         '
         Me.gb_buk.BackColor = System.Drawing.Color.LightCyan
         Me.gb_buk.Controls.Add(Me.lb_buk_opst)
         Me.gb_buk.Controls.Add(Me.tb_stepantal)
-        Me.gb_buk.Controls.Add(Me.Label244)
+        Me.gb_buk.Controls.Add(Me.stepBendLbl)
         Me.gb_buk.Controls.Add(Me.lb_stepbuk)
-        Me.gb_buk.Controls.Add(Me.Label242)
+        Me.gb_buk.Controls.Add(Me.stepbenNumbstepsLbl)
         Me.gb_buk.Controls.Add(Me.tb_stepbuk_uk)
         Me.gb_buk.Controls.Add(Me.lb_buk_ialtuk)
-        Me.gb_buk.Controls.Add(Me.Label230)
+        Me.gb_buk.Controls.Add(Me.totalBendTime)
         Me.gb_buk.Controls.Add(Me.lb_buk_ialt)
         Me.gb_buk.Controls.Add(Me.tb_valsning_uk)
-        Me.gb_buk.Controls.Add(Me.Label225)
+        Me.gb_buk.Controls.Add(Me.rollingLbl)
         Me.gb_buk.Controls.Add(Me.lb_valsetid)
-        Me.gb_buk.Controls.Add(Me.Label44)
-        Me.gb_buk.Controls.Add(Me.Label204)
+        Me.gb_buk.Controls.Add(Me.paint1sideLbl)
+        Me.gb_buk.Controls.Add(Me.areaM2Lbl)
         Me.gb_buk.Controls.Add(Me.lb_nettoareal)
         Me.gb_buk.Controls.Add(Me.tb_buk_opst_uk)
-        Me.gb_buk.Controls.Add(Me.Label30)
+        Me.gb_buk.Controls.Add(Me.setupBending)
         Me.gb_buk.Controls.Add(Me.Label96)
         Me.gb_buk.Controls.Add(Me.Label95)
-        Me.gb_buk.Controls.Add(Me.Label94)
-        Me.gb_buk.Controls.Add(Me.Label93)
+        Me.gb_buk.Controls.Add(Me.overrule3Lbl)
+        Me.gb_buk.Controls.Add(Me.bendMinOQ1)
         Me.gb_buk.Controls.Add(Me.lb_buk_tid)
         Me.gb_buk.Controls.Add(Me.tb_buk_uk)
         Me.gb_buk.Controls.Add(Me.lb_udfold_y)
         Me.gb_buk.Controls.Add(Me.TextBox77)
         Me.gb_buk.Controls.Add(Me.lb_udfold_x)
         Me.gb_buk.Controls.Add(Me.TextBox76)
-        Me.gb_buk.Controls.Add(Me.Label84)
+        Me.gb_buk.Controls.Add(Me.unfoldingLbl)
         Me.gb_buk.Controls.Add(Me.TextBox75)
-        Me.gb_buk.Controls.Add(Me.Label83)
+        Me.gb_buk.Controls.Add(Me.bend11Lbl)
         Me.gb_buk.Controls.Add(Me.TextBox74)
         Me.gb_buk.Controls.Add(Me.tb_buk11_x)
         Me.gb_buk.Controls.Add(Me.TextBox73)
         Me.gb_buk.Controls.Add(Me.tb_buk11_y)
-        Me.gb_buk.Controls.Add(Me.Label82)
+        Me.gb_buk.Controls.Add(Me.bend10Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk10_x)
         Me.gb_buk.Controls.Add(Me.TextBox72)
         Me.gb_buk.Controls.Add(Me.tb_buk10_y)
-        Me.gb_buk.Controls.Add(Me.Label81)
+        Me.gb_buk.Controls.Add(Me.bend9Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk9_x)
         Me.gb_buk.Controls.Add(Me.tb_buk9_y)
-        Me.gb_buk.Controls.Add(Me.Label80)
+        Me.gb_buk.Controls.Add(Me.bend8Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk8_x)
         Me.gb_buk.Controls.Add(Me.tb_buk8_y)
-        Me.gb_buk.Controls.Add(Me.Label79)
+        Me.gb_buk.Controls.Add(Me.bend7Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk7_x)
         Me.gb_buk.Controls.Add(Me.tb_buk7_y)
-        Me.gb_buk.Controls.Add(Me.Label77)
+        Me.gb_buk.Controls.Add(Me.bend6Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk6_x)
         Me.gb_buk.Controls.Add(Me.tb_buk6_y)
-        Me.gb_buk.Controls.Add(Me.Label75)
+        Me.gb_buk.Controls.Add(Me.bend5Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk5_x)
         Me.gb_buk.Controls.Add(Me.tb_buk5_y)
-        Me.gb_buk.Controls.Add(Me.Label74)
+        Me.gb_buk.Controls.Add(Me.bend4Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk4_x)
         Me.gb_buk.Controls.Add(Me.tb_buk4_y)
-        Me.gb_buk.Controls.Add(Me.Label73)
+        Me.gb_buk.Controls.Add(Me.bend3Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk3_x)
         Me.gb_buk.Controls.Add(Me.tb_buk3_y)
-        Me.gb_buk.Controls.Add(Me.Label72)
+        Me.gb_buk.Controls.Add(Me.bend2Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk2_x)
         Me.gb_buk.Controls.Add(Me.tb_buk2_y)
-        Me.gb_buk.Controls.Add(Me.Label71)
+        Me.gb_buk.Controls.Add(Me.bend1Lbl)
         Me.gb_buk.Controls.Add(Me.tb_buk1_x)
         Me.gb_buk.Controls.Add(Me.tb_buk1_y)
-        Me.gb_buk.Controls.Add(Me.Label70)
+        Me.gb_buk.Controls.Add(Me.biggestMeasureLbl)
         Me.gb_buk.Controls.Add(Me.tb_bukmax_x)
         Me.gb_buk.Controls.Add(Me.tb_bukmax_y)
         Me.gb_buk.Controls.Add(Me.TextBox67)
@@ -4585,14 +4603,15 @@ Partial Class metal_tilbud
         Me.tb_stepantal.Size = New System.Drawing.Size(53, 20)
         Me.tb_stepantal.TabIndex = 2026
         '
-        'Label244
+        'stepBendLbl
         '
-        Me.Label244.AutoSize = True
-        Me.Label244.Location = New System.Drawing.Point(24, 342)
-        Me.Label244.Name = "Label244"
-        Me.Label244.Size = New System.Drawing.Size(56, 13)
-        Me.Label244.TabIndex = 2025
-        Me.Label244.Text = "Step bend"
+        Me.stepBendLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.stepBendLbl.Location = New System.Drawing.Point(1, 342)
+        Me.stepBendLbl.Name = "stepBendLbl"
+        Me.stepBendLbl.Size = New System.Drawing.Size(80, 13)
+        Me.stepBendLbl.TabIndex = 2025
+        Me.stepBendLbl.Text = "Step bend"
+        Me.stepBendLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_stepbuk
         '
@@ -4603,14 +4622,14 @@ Partial Class metal_tilbud
         Me.lb_stepbuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_stepbuk.TabIndex = 2024
         '
-        'Label242
+        'stepbenNumbstepsLbl
         '
-        Me.Label242.AutoSize = True
-        Me.Label242.Location = New System.Drawing.Point(35, 323)
-        Me.Label242.Name = "Label242"
-        Me.Label242.Size = New System.Drawing.Size(160, 13)
-        Me.Label242.TabIndex = 2023
-        Me.Label242.Text = "Stepbend, nmr of steps per. Item"
+        Me.stepbenNumbstepsLbl.AutoSize = True
+        Me.stepbenNumbstepsLbl.Location = New System.Drawing.Point(35, 323)
+        Me.stepbenNumbstepsLbl.Name = "stepbenNumbstepsLbl"
+        Me.stepbenNumbstepsLbl.Size = New System.Drawing.Size(160, 13)
+        Me.stepbenNumbstepsLbl.TabIndex = 2023
+        Me.stepbenNumbstepsLbl.Text = "Stepbend, nmr of steps per. Item"
         '
         'tb_stepbuk_uk
         '
@@ -4628,14 +4647,15 @@ Partial Class metal_tilbud
         Me.lb_buk_ialtuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_buk_ialtuk.TabIndex = 2021
         '
-        'Label230
+        'totalBendTime
         '
-        Me.Label230.AutoSize = True
-        Me.Label230.Location = New System.Drawing.Point(1, 386)
-        Me.Label230.Name = "Label230"
-        Me.Label230.Size = New System.Drawing.Size(80, 13)
-        Me.Label230.TabIndex = 2020
-        Me.Label230.Text = "Total bend time"
+        Me.totalBendTime.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.totalBendTime.Location = New System.Drawing.Point(1, 386)
+        Me.totalBendTime.Name = "totalBendTime"
+        Me.totalBendTime.Size = New System.Drawing.Size(80, 13)
+        Me.totalBendTime.TabIndex = 2020
+        Me.totalBendTime.Text = "Total bend time"
+        Me.totalBendTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_buk_ialt
         '
@@ -4653,14 +4673,15 @@ Partial Class metal_tilbud
         Me.tb_valsning_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_valsning_uk.TabIndex = 2017
         '
-        'Label225
+        'rollingLbl
         '
-        Me.Label225.AutoSize = True
-        Me.Label225.Location = New System.Drawing.Point(42, 413)
-        Me.Label225.Name = "Label225"
-        Me.Label225.Size = New System.Drawing.Size(39, 13)
-        Me.Label225.TabIndex = 2016
-        Me.Label225.Text = "Rolling"
+        Me.rollingLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.rollingLbl.Location = New System.Drawing.Point(1, 413)
+        Me.rollingLbl.Name = "rollingLbl"
+        Me.rollingLbl.Size = New System.Drawing.Size(80, 13)
+        Me.rollingLbl.TabIndex = 2016
+        Me.rollingLbl.Text = "Rolling"
+        Me.rollingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_valsetid
         '
@@ -4672,23 +4693,23 @@ Partial Class metal_tilbud
         Me.lb_valsetid.TabIndex = 2015
         Me.lb_valsetid.Visible = False
         '
-        'Label44
+        'paint1sideLbl
         '
-        Me.Label44.Location = New System.Drawing.Point(200, 285)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(44, 27)
-        Me.Label44.TabIndex = 2014
-        Me.Label44.Text = "(paint) 1 side"
-        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.paint1sideLbl.Location = New System.Drawing.Point(200, 285)
+        Me.paint1sideLbl.Name = "paint1sideLbl"
+        Me.paint1sideLbl.Size = New System.Drawing.Size(44, 27)
+        Me.paint1sideLbl.TabIndex = 2014
+        Me.paint1sideLbl.Text = "(paint) 1 side"
+        Me.paint1sideLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label204
+        'areaM2Lbl
         '
-        Me.Label204.Location = New System.Drawing.Point(200, 238)
-        Me.Label204.Name = "Label204"
-        Me.Label204.Size = New System.Drawing.Size(44, 27)
-        Me.Label204.TabIndex = 2013
-        Me.Label204.Text = "Area  M2"
-        Me.Label204.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.areaM2Lbl.Location = New System.Drawing.Point(200, 238)
+        Me.areaM2Lbl.Name = "areaM2Lbl"
+        Me.areaM2Lbl.Size = New System.Drawing.Size(44, 27)
+        Me.areaM2Lbl.TabIndex = 2013
+        Me.areaM2Lbl.Text = "Area  M2"
+        Me.areaM2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_nettoareal
         '
@@ -4706,14 +4727,15 @@ Partial Class metal_tilbud
         Me.tb_buk_opst_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk_opst_uk.TabIndex = 373
         '
-        'Label30
+        'setupBending
         '
-        Me.Label30.AutoSize = True
-        Me.Label30.Location = New System.Drawing.Point(5, 367)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(76, 13)
-        Me.Label30.TabIndex = 243
-        Me.Label30.Text = "Setup bending"
+        Me.setupBending.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.setupBending.Location = New System.Drawing.Point(1, 365)
+        Me.setupBending.Name = "setupBending"
+        Me.setupBending.Size = New System.Drawing.Size(80, 13)
+        Me.setupBending.TabIndex = 243
+        Me.setupBending.Text = "Setup bending"
+        Me.setupBending.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Label96
         '
@@ -4733,23 +4755,23 @@ Partial Class metal_tilbud
         Me.Label95.TabIndex = 206
         Me.Label95.Text = "x"
         '
-        'Label94
+        'overrule3Lbl
         '
-        Me.Label94.AutoSize = True
-        Me.Label94.Location = New System.Drawing.Point(139, 285)
-        Me.Label94.Name = "Label94"
-        Me.Label94.Size = New System.Drawing.Size(47, 13)
-        Me.Label94.TabIndex = 241
-        Me.Label94.Text = "Overrule"
+        Me.overrule3Lbl.AutoSize = True
+        Me.overrule3Lbl.Location = New System.Drawing.Point(139, 285)
+        Me.overrule3Lbl.Name = "overrule3Lbl"
+        Me.overrule3Lbl.Size = New System.Drawing.Size(47, 13)
+        Me.overrule3Lbl.TabIndex = 241
+        Me.overrule3Lbl.Text = "Overrule"
         '
-        'Label93
+        'bendMinOQ1
         '
-        Me.Label93.Location = New System.Drawing.Point(6, 295)
-        Me.Label93.Name = "Label93"
-        Me.Label93.Size = New System.Drawing.Size(70, 26)
-        Me.Label93.TabIndex = 241
-        Me.Label93.Text = "Bend min./O.qty.1"
-        Me.Label93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.bendMinOQ1.Location = New System.Drawing.Point(6, 295)
+        Me.bendMinOQ1.Name = "bendMinOQ1"
+        Me.bendMinOQ1.Size = New System.Drawing.Size(70, 26)
+        Me.bendMinOQ1.TabIndex = 241
+        Me.bendMinOQ1.Text = "Bend min./O.qty.1"
+        Me.bendMinOQ1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lb_buk_tid
         '
@@ -4801,14 +4823,14 @@ Partial Class metal_tilbud
         Me.TextBox76.Size = New System.Drawing.Size(126, 20)
         Me.TextBox76.TabIndex = 64
         '
-        'Label84
+        'unfoldingLbl
         '
-        Me.Label84.AutoSize = True
-        Me.Label84.Location = New System.Drawing.Point(6, 273)
-        Me.Label84.Name = "Label84"
-        Me.Label84.Size = New System.Drawing.Size(52, 13)
-        Me.Label84.TabIndex = 236
-        Me.Label84.Text = "Unfolding"
+        Me.unfoldingLbl.AutoSize = True
+        Me.unfoldingLbl.Location = New System.Drawing.Point(6, 271)
+        Me.unfoldingLbl.Name = "unfoldingLbl"
+        Me.unfoldingLbl.Size = New System.Drawing.Size(52, 13)
+        Me.unfoldingLbl.TabIndex = 236
+        Me.unfoldingLbl.Text = "Unfolding"
         '
         'TextBox75
         '
@@ -4818,14 +4840,14 @@ Partial Class metal_tilbud
         Me.TextBox75.Size = New System.Drawing.Size(126, 20)
         Me.TextBox75.TabIndex = 65
         '
-        'Label83
+        'bend11Lbl
         '
-        Me.Label83.AutoSize = True
-        Me.Label83.Location = New System.Drawing.Point(6, 247)
-        Me.Label83.Name = "Label83"
-        Me.Label83.Size = New System.Drawing.Size(47, 13)
-        Me.Label83.TabIndex = 235
-        Me.Label83.Text = "Bend 11"
+        Me.bend11Lbl.AutoSize = True
+        Me.bend11Lbl.Location = New System.Drawing.Point(6, 247)
+        Me.bend11Lbl.Name = "bend11Lbl"
+        Me.bend11Lbl.Size = New System.Drawing.Size(47, 13)
+        Me.bend11Lbl.TabIndex = 235
+        Me.bend11Lbl.Text = "Bend 11"
         '
         'TextBox74
         '
@@ -4859,14 +4881,14 @@ Partial Class metal_tilbud
         Me.tb_buk11_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk11_y.TabIndex = 30
         '
-        'Label82
+        'bend10Lbl
         '
-        Me.Label82.AutoSize = True
-        Me.Label82.Location = New System.Drawing.Point(6, 228)
-        Me.Label82.Name = "Label82"
-        Me.Label82.Size = New System.Drawing.Size(47, 13)
-        Me.Label82.TabIndex = 232
-        Me.Label82.Text = "Bend 10"
+        Me.bend10Lbl.AutoSize = True
+        Me.bend10Lbl.Location = New System.Drawing.Point(6, 228)
+        Me.bend10Lbl.Name = "bend10Lbl"
+        Me.bend10Lbl.Size = New System.Drawing.Size(47, 13)
+        Me.bend10Lbl.TabIndex = 232
+        Me.bend10Lbl.Text = "Bend 10"
         '
         'tb_buk10_x
         '
@@ -4895,14 +4917,14 @@ Partial Class metal_tilbud
         Me.tb_buk10_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk10_y.TabIndex = 29
         '
-        'Label81
+        'bend9Lbl
         '
-        Me.Label81.AutoSize = True
-        Me.Label81.Location = New System.Drawing.Point(6, 208)
-        Me.Label81.Name = "Label81"
-        Me.Label81.Size = New System.Drawing.Size(41, 13)
-        Me.Label81.TabIndex = 229
-        Me.Label81.Text = "Bend 9"
+        Me.bend9Lbl.AutoSize = True
+        Me.bend9Lbl.Location = New System.Drawing.Point(6, 208)
+        Me.bend9Lbl.Name = "bend9Lbl"
+        Me.bend9Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend9Lbl.TabIndex = 229
+        Me.bend9Lbl.Text = "Bend 9"
         '
         'tb_buk9_x
         '
@@ -4920,14 +4942,14 @@ Partial Class metal_tilbud
         Me.tb_buk9_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk9_y.TabIndex = 28
         '
-        'Label80
+        'bend8Lbl
         '
-        Me.Label80.AutoSize = True
-        Me.Label80.Location = New System.Drawing.Point(6, 188)
-        Me.Label80.Name = "Label80"
-        Me.Label80.Size = New System.Drawing.Size(41, 13)
-        Me.Label80.TabIndex = 226
-        Me.Label80.Text = "Bend 8"
+        Me.bend8Lbl.AutoSize = True
+        Me.bend8Lbl.Location = New System.Drawing.Point(6, 188)
+        Me.bend8Lbl.Name = "bend8Lbl"
+        Me.bend8Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend8Lbl.TabIndex = 226
+        Me.bend8Lbl.Text = "Bend 8"
         '
         'tb_buk8_x
         '
@@ -4945,14 +4967,14 @@ Partial Class metal_tilbud
         Me.tb_buk8_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk8_y.TabIndex = 27
         '
-        'Label79
+        'bend7Lbl
         '
-        Me.Label79.AutoSize = True
-        Me.Label79.Location = New System.Drawing.Point(6, 168)
-        Me.Label79.Name = "Label79"
-        Me.Label79.Size = New System.Drawing.Size(41, 13)
-        Me.Label79.TabIndex = 223
-        Me.Label79.Text = "Bend 7"
+        Me.bend7Lbl.AutoSize = True
+        Me.bend7Lbl.Location = New System.Drawing.Point(6, 168)
+        Me.bend7Lbl.Name = "bend7Lbl"
+        Me.bend7Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend7Lbl.TabIndex = 223
+        Me.bend7Lbl.Text = "Bend 7"
         '
         'tb_buk7_x
         '
@@ -4970,14 +4992,14 @@ Partial Class metal_tilbud
         Me.tb_buk7_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk7_y.TabIndex = 26
         '
-        'Label77
+        'bend6Lbl
         '
-        Me.Label77.AutoSize = True
-        Me.Label77.Location = New System.Drawing.Point(6, 148)
-        Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(41, 13)
-        Me.Label77.TabIndex = 220
-        Me.Label77.Text = "Bend 6"
+        Me.bend6Lbl.AutoSize = True
+        Me.bend6Lbl.Location = New System.Drawing.Point(6, 148)
+        Me.bend6Lbl.Name = "bend6Lbl"
+        Me.bend6Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend6Lbl.TabIndex = 220
+        Me.bend6Lbl.Text = "Bend 6"
         '
         'tb_buk6_x
         '
@@ -4995,14 +5017,14 @@ Partial Class metal_tilbud
         Me.tb_buk6_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk6_y.TabIndex = 25
         '
-        'Label75
+        'bend5Lbl
         '
-        Me.Label75.AutoSize = True
-        Me.Label75.Location = New System.Drawing.Point(6, 128)
-        Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(41, 13)
-        Me.Label75.TabIndex = 217
-        Me.Label75.Text = "Bend 5"
+        Me.bend5Lbl.AutoSize = True
+        Me.bend5Lbl.Location = New System.Drawing.Point(6, 128)
+        Me.bend5Lbl.Name = "bend5Lbl"
+        Me.bend5Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend5Lbl.TabIndex = 217
+        Me.bend5Lbl.Text = "Bend 5"
         '
         'tb_buk5_x
         '
@@ -5020,14 +5042,14 @@ Partial Class metal_tilbud
         Me.tb_buk5_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk5_y.TabIndex = 24
         '
-        'Label74
+        'bend4Lbl
         '
-        Me.Label74.AutoSize = True
-        Me.Label74.Location = New System.Drawing.Point(6, 108)
-        Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(41, 13)
-        Me.Label74.TabIndex = 214
-        Me.Label74.Text = "Bend 4"
+        Me.bend4Lbl.AutoSize = True
+        Me.bend4Lbl.Location = New System.Drawing.Point(6, 108)
+        Me.bend4Lbl.Name = "bend4Lbl"
+        Me.bend4Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend4Lbl.TabIndex = 214
+        Me.bend4Lbl.Text = "Bend 4"
         '
         'tb_buk4_x
         '
@@ -5045,14 +5067,14 @@ Partial Class metal_tilbud
         Me.tb_buk4_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk4_y.TabIndex = 23
         '
-        'Label73
+        'bend3Lbl
         '
-        Me.Label73.AutoSize = True
-        Me.Label73.Location = New System.Drawing.Point(6, 88)
-        Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(41, 13)
-        Me.Label73.TabIndex = 2011
-        Me.Label73.Text = "Bend 3"
+        Me.bend3Lbl.AutoSize = True
+        Me.bend3Lbl.Location = New System.Drawing.Point(6, 88)
+        Me.bend3Lbl.Name = "bend3Lbl"
+        Me.bend3Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend3Lbl.TabIndex = 2011
+        Me.bend3Lbl.Text = "Bend 3"
         '
         'tb_buk3_x
         '
@@ -5070,14 +5092,14 @@ Partial Class metal_tilbud
         Me.tb_buk3_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk3_y.TabIndex = 22
         '
-        'Label72
+        'bend2Lbl
         '
-        Me.Label72.AutoSize = True
-        Me.Label72.Location = New System.Drawing.Point(6, 68)
-        Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(41, 13)
-        Me.Label72.TabIndex = 208
-        Me.Label72.Text = "Bend 2"
+        Me.bend2Lbl.AutoSize = True
+        Me.bend2Lbl.Location = New System.Drawing.Point(6, 68)
+        Me.bend2Lbl.Name = "bend2Lbl"
+        Me.bend2Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend2Lbl.TabIndex = 208
+        Me.bend2Lbl.Text = "Bend 2"
         '
         'tb_buk2_x
         '
@@ -5095,14 +5117,14 @@ Partial Class metal_tilbud
         Me.tb_buk2_y.Size = New System.Drawing.Size(53, 20)
         Me.tb_buk2_y.TabIndex = 21
         '
-        'Label71
+        'bend1Lbl
         '
-        Me.Label71.AutoSize = True
-        Me.Label71.Location = New System.Drawing.Point(6, 48)
-        Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(41, 13)
-        Me.Label71.TabIndex = 205
-        Me.Label71.Text = "Bend 1"
+        Me.bend1Lbl.AutoSize = True
+        Me.bend1Lbl.Location = New System.Drawing.Point(6, 48)
+        Me.bend1Lbl.Name = "bend1Lbl"
+        Me.bend1Lbl.Size = New System.Drawing.Size(41, 13)
+        Me.bend1Lbl.TabIndex = 205
+        Me.bend1Lbl.Text = "Bend 1"
         '
         'tb_buk1_x
         '
@@ -5187,17 +5209,17 @@ Partial Class metal_tilbud
         Me.gb_hul.BackColor = System.Drawing.Color.LavenderBlush
         Me.gb_hul.Controls.Add(Me.tb_slag_til_huller)
         Me.gb_hul.Controls.Add(Me.lb_stans_ialtuk)
-        Me.gb_hul.Controls.Add(Me.Label236)
+        Me.gb_hul.Controls.Add(Me.dStansTotOQ1)
         Me.gb_hul.Controls.Add(Me.lb_stans_ialt)
         Me.gb_hul.Controls.Add(Me.tb_CNCmin_uk)
-        Me.gb_hul.Controls.Add(Me.Label90)
-        Me.gb_hul.Controls.Add(Me.Label107)
+        Me.gb_hul.Controls.Add(Me.setupMinLbl3)
+        Me.gb_hul.Controls.Add(Me.cncMinOQ1Lbl2)
         Me.gb_hul.Controls.Add(Me.lb_gruppe1_opstart)
-        Me.gb_hul.Controls.Add(Me.Label108)
-        Me.gb_hul.Controls.Add(Me.Label86)
-        Me.gb_hul.Controls.Add(Me.Label33)
+        Me.gb_hul.Controls.Add(Me.overruleLbl5)
+        Me.gb_hul.Controls.Add(Me.numberOfStrokesPerHoleLbl)
+        Me.gb_hul.Controls.Add(Me.perItemLbl)
         Me.gb_hul.Controls.Add(Me.tb_toolshift)
-        Me.gb_hul.Controls.Add(Me.Label99)
+        Me.gb_hul.Controls.Add(Me.toolChangeLbl1)
         Me.gb_hul.Controls.Add(Me.lb_gruppe1_tid)
         Me.gb_hul.Controls.Add(Me.tb_gruppe1_opstart_uk)
         Me.gb_hul.Location = New System.Drawing.Point(347, 482)
@@ -5223,14 +5245,14 @@ Partial Class metal_tilbud
         Me.lb_stans_ialtuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_stans_ialtuk.TabIndex = 263
         '
-        'Label236
+        'dStansTotOQ1
         '
-        Me.Label236.AutoSize = True
-        Me.Label236.Location = New System.Drawing.Point(24, 112)
-        Me.Label236.Name = "Label236"
-        Me.Label236.Size = New System.Drawing.Size(97, 13)
-        Me.Label236.TabIndex = 262
-        Me.Label236.Text = "D-stans tot/O.qty.1"
+        Me.dStansTotOQ1.AutoSize = True
+        Me.dStansTotOQ1.Location = New System.Drawing.Point(24, 112)
+        Me.dStansTotOQ1.Name = "dStansTotOQ1"
+        Me.dStansTotOQ1.Size = New System.Drawing.Size(97, 13)
+        Me.dStansTotOQ1.TabIndex = 262
+        Me.dStansTotOQ1.Text = "D-stans tot/O.qty.1"
         '
         'lb_stans_ialt
         '
@@ -5241,50 +5263,50 @@ Partial Class metal_tilbud
         Me.lb_stans_ialt.Size = New System.Drawing.Size(53, 20)
         Me.lb_stans_ialt.TabIndex = 261
         '
-        'Label90
+        'setupMinLbl3
         '
-        Me.Label90.AutoSize = True
-        Me.Label90.Location = New System.Drawing.Point(23, 90)
-        Me.Label90.Name = "Label90"
-        Me.Label90.Size = New System.Drawing.Size(57, 13)
-        Me.Label90.TabIndex = 260
-        Me.Label90.Text = "Setup min."
+        Me.setupMinLbl3.AutoSize = True
+        Me.setupMinLbl3.Location = New System.Drawing.Point(23, 90)
+        Me.setupMinLbl3.Name = "setupMinLbl3"
+        Me.setupMinLbl3.Size = New System.Drawing.Size(57, 13)
+        Me.setupMinLbl3.TabIndex = 260
+        Me.setupMinLbl3.Text = "Setup min."
         '
-        'Label107
+        'cncMinOQ1Lbl2
         '
-        Me.Label107.AutoSize = True
-        Me.Label107.Location = New System.Drawing.Point(23, 71)
-        Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(90, 13)
-        Me.Label107.TabIndex = 257
-        Me.Label107.Text = "CNC min./O.qty.1"
+        Me.cncMinOQ1Lbl2.AutoSize = True
+        Me.cncMinOQ1Lbl2.Location = New System.Drawing.Point(23, 71)
+        Me.cncMinOQ1Lbl2.Name = "cncMinOQ1Lbl2"
+        Me.cncMinOQ1Lbl2.Size = New System.Drawing.Size(90, 13)
+        Me.cncMinOQ1Lbl2.TabIndex = 257
+        Me.cncMinOQ1Lbl2.Text = "CNC min./O.qty.1"
         '
-        'Label108
+        'overruleLbl5
         '
-        Me.Label108.AutoSize = True
-        Me.Label108.Location = New System.Drawing.Point(189, 52)
-        Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(47, 13)
-        Me.Label108.TabIndex = 256
-        Me.Label108.Text = "Overrule"
+        Me.overruleLbl5.AutoSize = True
+        Me.overruleLbl5.Location = New System.Drawing.Point(189, 52)
+        Me.overruleLbl5.Name = "overruleLbl5"
+        Me.overruleLbl5.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl5.TabIndex = 256
+        Me.overruleLbl5.Text = "Overrule"
         '
-        'Label86
+        'numberOfStrokesPerHoleLbl
         '
-        Me.Label86.AutoSize = True
-        Me.Label86.Location = New System.Drawing.Point(8, 42)
-        Me.Label86.Name = "Label86"
-        Me.Label86.Size = New System.Drawing.Size(127, 13)
-        Me.Label86.TabIndex = 253
-        Me.Label86.Text = "Nmbr of strokes per holes"
+        Me.numberOfStrokesPerHoleLbl.Location = New System.Drawing.Point(22, 42)
+        Me.numberOfStrokesPerHoleLbl.Name = "numberOfStrokesPerHoleLbl"
+        Me.numberOfStrokesPerHoleLbl.Size = New System.Drawing.Size(110, 13)
+        Me.numberOfStrokesPerHoleLbl.TabIndex = 253
+        Me.numberOfStrokesPerHoleLbl.Text = "Strokes per holes"
+        Me.numberOfStrokesPerHoleLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label33
+        'perItemLbl
         '
-        Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(135, 6)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(44, 13)
-        Me.Label33.TabIndex = 251
-        Me.Label33.Text = "per item"
+        Me.perItemLbl.AutoSize = True
+        Me.perItemLbl.Location = New System.Drawing.Point(135, 6)
+        Me.perItemLbl.Name = "perItemLbl"
+        Me.perItemLbl.Size = New System.Drawing.Size(44, 13)
+        Me.perItemLbl.TabIndex = 251
+        Me.perItemLbl.Text = "per item"
         '
         'tb_toolshift
         '
@@ -5294,14 +5316,14 @@ Partial Class metal_tilbud
         Me.tb_toolshift.Size = New System.Drawing.Size(53, 20)
         Me.tb_toolshift.TabIndex = 32
         '
-        'Label99
+        'toolChangeLbl1
         '
-        Me.Label99.AutoSize = True
-        Me.Label99.Location = New System.Drawing.Point(68, 23)
-        Me.Label99.Name = "Label99"
-        Me.Label99.Size = New System.Drawing.Size(67, 13)
-        Me.Label99.TabIndex = 245
-        Me.Label99.Text = "Tool change"
+        Me.toolChangeLbl1.AutoSize = True
+        Me.toolChangeLbl1.Location = New System.Drawing.Point(22, 23)
+        Me.toolChangeLbl1.Name = "toolChangeLbl1"
+        Me.toolChangeLbl1.Size = New System.Drawing.Size(67, 13)
+        Me.toolChangeLbl1.TabIndex = 245
+        Me.toolChangeLbl1.Text = "Tool change"
         '
         'tb_opstart_kr_uk
         '
@@ -5323,14 +5345,13 @@ Partial Class metal_tilbud
         Me.tb_Program_kr_uk.TabIndex = 545
         Me.tb_Program_kr_uk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label91
+        'overrule1Lbl
         '
-        Me.Label91.AutoSize = True
-        Me.Label91.Location = New System.Drawing.Point(145, 37)
-        Me.Label91.Name = "Label91"
-        Me.Label91.Size = New System.Drawing.Size(47, 13)
-        Me.Label91.TabIndex = 240
-        Me.Label91.Text = "Overrule"
+        Me.overrule1Lbl.Location = New System.Drawing.Point(140, 37)
+        Me.overrule1Lbl.Name = "overrule1Lbl"
+        Me.overrule1Lbl.Size = New System.Drawing.Size(55, 13)
+        Me.overrule1Lbl.TabIndex = 240
+        Me.overrule1Lbl.Text = "Overrule"
         '
         'gb_pristabel
         '
@@ -5358,27 +5379,27 @@ Partial Class metal_tilbud
         Me.gb_pristabel.Controls.Add(Me.lb_mand2_tid)
         Me.gb_pristabel.Controls.Add(Me.lb_CNC1_tid)
         Me.gb_pristabel.Controls.Add(Me.lb_mand1_tid)
-        Me.gb_pristabel.Controls.Add(Me.Label118)
-        Me.gb_pristabel.Controls.Add(Me.Label117)
-        Me.gb_pristabel.Controls.Add(Me.Label116)
-        Me.gb_pristabel.Controls.Add(Me.Label115)
-        Me.gb_pristabel.Controls.Add(Me.Label76)
-        Me.gb_pristabel.Controls.Add(Me.Label38)
-        Me.gb_pristabel.Controls.Add(Me.Label37)
+        Me.gb_pristabel.Controls.Add(Me.oQty2Lbl)
+        Me.gb_pristabel.Controls.Add(Me.oQty3Lbl)
+        Me.gb_pristabel.Controls.Add(Me.oQty4Lbl)
+        Me.gb_pristabel.Controls.Add(Me.oQty5Lbl)
+        Me.gb_pristabel.Controls.Add(Me.oQty1Lbl)
+        Me.gb_pristabel.Controls.Add(Me.actualOfferDkkLbl)
+        Me.gb_pristabel.Controls.Add(Me.salepricePcTotDkkLbl)
         Me.gb_pristabel.Controls.Add(Me.tb_tilbud2)
         Me.gb_pristabel.Controls.Add(Me.tb_tilbud3)
         Me.gb_pristabel.Controls.Add(Me.tb_tilbud4)
         Me.gb_pristabel.Controls.Add(Me.tb_tilbud5)
         Me.gb_pristabel.Controls.Add(Me.Label36)
-        Me.gb_pristabel.Controls.Add(Me.Label35)
+        Me.gb_pristabel.Controls.Add(Me.profitLbl)
         Me.gb_pristabel.Controls.Add(Me.tb_avance)
-        Me.gb_pristabel.Controls.Add(Me.Label49)
-        Me.gb_pristabel.Controls.Add(Me.Label48)
-        Me.gb_pristabel.Controls.Add(Me.Label47)
-        Me.gb_pristabel.Controls.Add(Me.Label53)
-        Me.gb_pristabel.Controls.Add(Me.Label52)
-        Me.gb_pristabel.Controls.Add(Me.Label46)
-        Me.gb_pristabel.Controls.Add(Me.Label45)
+        Me.gb_pristabel.Controls.Add(Me.sumPcTotDkkLbl)
+        Me.gb_pristabel.Controls.Add(Me.rawMatPcTotDkkLbl)
+        Me.gb_pristabel.Controls.Add(Me.outsourcedServDkkLbl)
+        Me.gb_pristabel.Controls.Add(Me.TimeCostDkkLbl)
+        Me.gb_pristabel.Controls.Add(Me.CNCCostDkkHoursLbl)
+        Me.gb_pristabel.Controls.Add(Me.ManCostDkkHoursLbl)
+        Me.gb_pristabel.Controls.Add(Me.qtyLbl)
         Me.gb_pristabel.Controls.Add(Me.lb_salg2)
         Me.gb_pristabel.Controls.Add(Me.lb_salg3)
         Me.gb_pristabel.Controls.Add(Me.lb_salg4)
@@ -5573,41 +5594,41 @@ Partial Class metal_tilbud
         Me.lb_mand1_tid.TabIndex = 219
         Me.lb_mand1_tid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label118
+        'oQty2Lbl
         '
-        Me.Label118.AutoSize = True
-        Me.Label118.Location = New System.Drawing.Point(266, 8)
-        Me.Label118.Name = "Label118"
-        Me.Label118.Size = New System.Drawing.Size(62, 13)
-        Me.Label118.TabIndex = 218
-        Me.Label118.Text = "Order qty. 2"
+        Me.oQty2Lbl.AutoSize = True
+        Me.oQty2Lbl.Location = New System.Drawing.Point(266, 8)
+        Me.oQty2Lbl.Name = "oQty2Lbl"
+        Me.oQty2Lbl.Size = New System.Drawing.Size(62, 13)
+        Me.oQty2Lbl.TabIndex = 218
+        Me.oQty2Lbl.Text = "Order qty. 2"
         '
-        'Label117
+        'oQty3Lbl
         '
-        Me.Label117.AutoSize = True
-        Me.Label117.Location = New System.Drawing.Point(405, 8)
-        Me.Label117.Name = "Label117"
-        Me.Label117.Size = New System.Drawing.Size(62, 13)
-        Me.Label117.TabIndex = 217
-        Me.Label117.Text = "Order qty. 3"
+        Me.oQty3Lbl.AutoSize = True
+        Me.oQty3Lbl.Location = New System.Drawing.Point(405, 8)
+        Me.oQty3Lbl.Name = "oQty3Lbl"
+        Me.oQty3Lbl.Size = New System.Drawing.Size(62, 13)
+        Me.oQty3Lbl.TabIndex = 217
+        Me.oQty3Lbl.Text = "Order qty. 3"
         '
-        'Label116
+        'oQty4Lbl
         '
-        Me.Label116.AutoSize = True
-        Me.Label116.Location = New System.Drawing.Point(537, 8)
-        Me.Label116.Name = "Label116"
-        Me.Label116.Size = New System.Drawing.Size(62, 13)
-        Me.Label116.TabIndex = 216
-        Me.Label116.Text = "Order qty. 4"
+        Me.oQty4Lbl.AutoSize = True
+        Me.oQty4Lbl.Location = New System.Drawing.Point(537, 8)
+        Me.oQty4Lbl.Name = "oQty4Lbl"
+        Me.oQty4Lbl.Size = New System.Drawing.Size(62, 13)
+        Me.oQty4Lbl.TabIndex = 216
+        Me.oQty4Lbl.Text = "Order qty. 4"
         '
-        'Label115
+        'oQty5Lbl
         '
-        Me.Label115.AutoSize = True
-        Me.Label115.Location = New System.Drawing.Point(670, 8)
-        Me.Label115.Name = "Label115"
-        Me.Label115.Size = New System.Drawing.Size(62, 13)
-        Me.Label115.TabIndex = 215
-        Me.Label115.Text = "Order qty. 5"
+        Me.oQty5Lbl.AutoSize = True
+        Me.oQty5Lbl.Location = New System.Drawing.Point(670, 8)
+        Me.oQty5Lbl.Name = "oQty5Lbl"
+        Me.oQty5Lbl.Size = New System.Drawing.Size(62, 13)
+        Me.oQty5Lbl.TabIndex = 215
+        Me.oQty5Lbl.Text = "Order qty. 5"
         '
         'lb_timer2
         '
@@ -5680,20 +5701,20 @@ Partial Class metal_tilbud
         Me.gb_opstart.BackColor = System.Drawing.Color.Linen
         Me.gb_opstart.Controls.Add(Me.tb_antal_program_uk)
         Me.gb_opstart.Controls.Add(Me.tb_antal_opstart_uk)
-        Me.gb_opstart.Controls.Add(Me.Label126)
-        Me.gb_opstart.Controls.Add(Me.Label91)
+        Me.gb_opstart.Controls.Add(Me.programQtyLbl)
+        Me.gb_opstart.Controls.Add(Me.overrule1Lbl)
         Me.gb_opstart.Controls.Add(Me.tb_Program_kr_uk)
         Me.gb_opstart.Controls.Add(Me.tb_opstart_kr_uk)
-        Me.gb_opstart.Controls.Add(Me.Label56)
-        Me.gb_opstart.Controls.Add(Me.Label39)
-        Me.gb_opstart.Controls.Add(Me.Label50)
+        Me.gb_opstart.Controls.Add(Me.programsDkkLbl)
+        Me.gb_opstart.Controls.Add(Me.actualOfferDkk2Lbl)
+        Me.gb_opstart.Controls.Add(Me.salespriceSetupProgDkkLbl)
         Me.gb_opstart.Controls.Add(Me.tb_opstart_afgivettilbud)
         Me.gb_opstart.Controls.Add(Me.Label51)
-        Me.gb_opstart.Controls.Add(Me.Label54)
+        Me.gb_opstart.Controls.Add(Me.profit2Lbl)
         Me.gb_opstart.Controls.Add(Me.tb_opstart_avance)
-        Me.gb_opstart.Controls.Add(Me.Label55)
-        Me.gb_opstart.Controls.Add(Me.Label59)
-        Me.gb_opstart.Controls.Add(Me.Label60)
+        Me.gb_opstart.Controls.Add(Me.setupProgramsTotalDkkLbl)
+        Me.gb_opstart.Controls.Add(Me.setupDkkLbl)
+        Me.gb_opstart.Controls.Add(Me.setup1stTimeLbl)
         Me.gb_opstart.Controls.Add(Me.lb_opst_prog_brutto)
         Me.gb_opstart.Controls.Add(Me.lb_opstart_program)
         Me.gb_opstart.Controls.Add(Me.lb_opstart_kr)
@@ -5728,14 +5749,15 @@ Partial Class metal_tilbud
         Me.tb_antal_opstart_uk.TabIndex = 542
         Me.tb_antal_opstart_uk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label126
+        'programQtyLbl
         '
-        Me.Label126.AutoSize = True
-        Me.Label126.Location = New System.Drawing.Point(3, 119)
-        Me.Label126.Name = "Label126"
-        Me.Label126.Size = New System.Drawing.Size(66, 13)
-        Me.Label126.TabIndex = 241
-        Me.Label126.Text = "Program  qty"
+        Me.programQtyLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.programQtyLbl.Location = New System.Drawing.Point(1, 119)
+        Me.programQtyLbl.Name = "programQtyLbl"
+        Me.programQtyLbl.Size = New System.Drawing.Size(79, 13)
+        Me.programQtyLbl.TabIndex = 241
+        Me.programQtyLbl.Text = "Program  qty"
+        Me.programQtyLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_opstart_kr
         '
@@ -5762,28 +5784,28 @@ Partial Class metal_tilbud
         Me.gb_matr.BackColor = System.Drawing.Color.AliceBlue
         Me.gb_matr.Controls.Add(Me.tb_Kilopris_uk)
         Me.gb_matr.Controls.Add(Me.lb_pladeforbrug)
-        Me.gb_matr.Controls.Add(Me.Label235)
+        Me.gb_matr.Controls.Add(Me.plateConsumptionLbl)
         Me.gb_matr.Controls.Add(Me.cb_fravælg_1000_2000)
         Me.gb_matr.Controls.Add(Me.cb_fravælg_1250_2500)
         Me.gb_matr.Controls.Add(Me.cb_fravælg_1500_3000)
-        Me.gb_matr.Controls.Add(Me.Label178)
-        Me.gb_matr.Controls.Add(Me.Label177)
-        Me.gb_matr.Controls.Add(Me.Label149)
+        Me.gb_matr.Controls.Add(Me.overruleCostPriceLbl)
+        Me.gb_matr.Controls.Add(Me.DkkKgLbl)
+        Me.gb_matr.Controls.Add(Me.overrule2Lbl)
         Me.gb_matr.Controls.Add(Me.tb_sværhed_uk)
         Me.gb_matr.Controls.Add(Me.lb_faktor)
-        Me.gb_matr.Controls.Add(Me.Label20)
+        Me.gb_matr.Controls.Add(Me.factorLbl)
         Me.gb_matr.Controls.Add(Me.lb_sværhed)
         Me.gb_matr.Controls.Add(Me.cb_fravælg)
         Me.gb_matr.Controls.Add(Me.lb_spildnetto)
         Me.gb_matr.Controls.Add(Me.Lb_Kilopris)
-        Me.gb_matr.Controls.Add(Me.Label92)
+        Me.gb_matr.Controls.Add(Me.costPriceDkkKgLbl)
         Me.gb_matr.Controls.Add(Me.Lb_matrgruppe)
         Me.gb_matr.Controls.Add(Me.Lb_klasse)
-        Me.gb_matr.Controls.Add(Me.Label89)
+        Me.gb_matr.Controls.Add(Me.gradeLbl)
         Me.gb_matr.Controls.Add(Me.lb_emnevægt)
-        Me.gb_matr.Controls.Add(Me.Label8)
+        Me.gb_matr.Controls.Add(Me.itemWeightLbl)
         Me.gb_matr.Controls.Add(Me.lb_modulstr)
-        Me.gb_matr.Controls.Add(Me.Label21)
+        Me.gb_matr.Controls.Add(Me.forOQty1Lbl)
         Me.gb_matr.Controls.Add(Me.lb_spildtype)
         Me.gb_matr.Controls.Add(Me.Label19)
         Me.gb_matr.Controls.Add(Me.Label13)
@@ -5794,18 +5816,18 @@ Partial Class metal_tilbud
         Me.gb_matr.Controls.Add(Me.cb_materiale)
         Me.gb_matr.Controls.Add(Me.lb_emner_prplade)
         Me.gb_matr.Controls.Add(Me.lb_pladeformatX)
-        Me.gb_matr.Controls.Add(Me.lb_tykkelse)
+        Me.gb_matr.Controls.Add(Me.plateThicknessLbl)
         Me.gb_matr.Controls.Add(Me.lb_antalplader)
         Me.gb_matr.Controls.Add(Me.tb_pladetykkelse)
         Me.gb_matr.Controls.Add(Me.Label14)
-        Me.gb_matr.Controls.Add(Me.Label15)
-        Me.gb_matr.Controls.Add(Me.Label16)
-        Me.gb_matr.Controls.Add(Me.Label17)
-        Me.gb_matr.Controls.Add(Me.Label5)
-        Me.gb_matr.Controls.Add(Me.Label18)
-        Me.gb_matr.Controls.Add(Me.Label6)
-        Me.gb_matr.Controls.Add(Me.Label7)
-        Me.gb_matr.Controls.Add(Me.Label10)
+        Me.gb_matr.Controls.Add(Me.wasteLbl)
+        Me.gb_matr.Controls.Add(Me.plateFormatLbl)
+        Me.gb_matr.Controls.Add(Me.itemsPerPlateLbl)
+        Me.gb_matr.Controls.Add(Me.moduleSizeLbl)
+        Me.gb_matr.Controls.Add(Me.plateQtyLbl)
+        Me.gb_matr.Controls.Add(Me.difficultyLbl)
+        Me.gb_matr.Controls.Add(Me.materialGroupLbl)
+        Me.gb_matr.Controls.Add(Me.oneTo6Lbl)
         Me.gb_matr.Location = New System.Drawing.Point(1289, 3)
         Me.gb_matr.Name = "gb_matr"
         Me.gb_matr.Size = New System.Drawing.Size(272, 409)
@@ -5831,14 +5853,15 @@ Partial Class metal_tilbud
         Me.lb_pladeforbrug.TabIndex = 318
         Me.lb_pladeforbrug.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label235
+        'plateConsumptionLbl
         '
-        Me.Label235.AutoSize = True
-        Me.Label235.Location = New System.Drawing.Point(5, 224)
-        Me.Label235.Name = "Label235"
-        Me.Label235.Size = New System.Drawing.Size(94, 13)
-        Me.Label235.TabIndex = 316
-        Me.Label235.Text = "Plate consumption"
+        Me.plateConsumptionLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.plateConsumptionLbl.Location = New System.Drawing.Point(1, 224)
+        Me.plateConsumptionLbl.Name = "plateConsumptionLbl"
+        Me.plateConsumptionLbl.Size = New System.Drawing.Size(94, 13)
+        Me.plateConsumptionLbl.TabIndex = 316
+        Me.plateConsumptionLbl.Text = "Plate consumption"
+        Me.plateConsumptionLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'cb_fravælg_1000_2000
         '
@@ -5870,32 +5893,32 @@ Partial Class metal_tilbud
         Me.cb_fravælg_1500_3000.Text = "EXCLUDE size 1500x3000"
         Me.cb_fravælg_1500_3000.UseVisualStyleBackColor = True
         '
-        'Label178
+        'overruleCostPriceLbl
         '
-        Me.Label178.AutoSize = True
-        Me.Label178.Location = New System.Drawing.Point(4, 288)
-        Me.Label178.Name = "Label178"
-        Me.Label178.Size = New System.Drawing.Size(96, 13)
-        Me.Label178.TabIndex = 312
-        Me.Label178.Text = "Overrule cost price"
+        Me.overruleCostPriceLbl.Location = New System.Drawing.Point(4, 288)
+        Me.overruleCostPriceLbl.Margin = New System.Windows.Forms.Padding(1, 0, 3, 0)
+        Me.overruleCostPriceLbl.Name = "overruleCostPriceLbl"
+        Me.overruleCostPriceLbl.Size = New System.Drawing.Size(96, 13)
+        Me.overruleCostPriceLbl.TabIndex = 312
+        Me.overruleCostPriceLbl.Text = "Overrule cost price"
         '
-        'Label177
+        'DkkKgLbl
         '
-        Me.Label177.AutoSize = True
-        Me.Label177.Location = New System.Drawing.Point(150, 287)
-        Me.Label177.Name = "Label177"
-        Me.Label177.Size = New System.Drawing.Size(38, 13)
-        Me.Label177.TabIndex = 311
-        Me.Label177.Text = "Kr./Kg"
+        Me.DkkKgLbl.AutoSize = True
+        Me.DkkKgLbl.Location = New System.Drawing.Point(150, 287)
+        Me.DkkKgLbl.Name = "DkkKgLbl"
+        Me.DkkKgLbl.Size = New System.Drawing.Size(38, 13)
+        Me.DkkKgLbl.TabIndex = 311
+        Me.DkkKgLbl.Text = "Kr./Kg"
         '
-        'Label149
+        'overrule2Lbl
         '
-        Me.Label149.AutoSize = True
-        Me.Label149.Location = New System.Drawing.Point(175, 123)
-        Me.Label149.Name = "Label149"
-        Me.Label149.Size = New System.Drawing.Size(47, 13)
-        Me.Label149.TabIndex = 309
-        Me.Label149.Text = "Overrule"
+        Me.overrule2Lbl.AutoSize = True
+        Me.overrule2Lbl.Location = New System.Drawing.Point(175, 123)
+        Me.overrule2Lbl.Name = "overrule2Lbl"
+        Me.overrule2Lbl.Size = New System.Drawing.Size(47, 13)
+        Me.overrule2Lbl.TabIndex = 309
+        Me.overrule2Lbl.Text = "Overrule"
         '
         'tb_sværhed_uk
         '
@@ -5915,14 +5938,14 @@ Partial Class metal_tilbud
         Me.lb_faktor.TabIndex = 307
         Me.lb_faktor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label20
+        'factorLbl
         '
-        Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(218, 122)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(37, 13)
-        Me.Label20.TabIndex = 306
-        Me.Label20.Text = "Factor"
+        Me.factorLbl.AutoSize = True
+        Me.factorLbl.Location = New System.Drawing.Point(218, 122)
+        Me.factorLbl.Name = "factorLbl"
+        Me.factorLbl.Size = New System.Drawing.Size(37, 13)
+        Me.factorLbl.TabIndex = 306
+        Me.factorLbl.Text = "Factor"
         '
         'lb_sværhed
         '
@@ -5941,9 +5964,9 @@ Partial Class metal_tilbud
         Me.cb_fravælg.CheckState = System.Windows.Forms.CheckState.Checked
         Me.cb_fravælg.Location = New System.Drawing.Point(34, 331)
         Me.cb_fravælg.Name = "cb_fravælg"
-        Me.cb_fravælg.Size = New System.Drawing.Size(174, 17)
+        Me.cb_fravælg.Size = New System.Drawing.Size(153, 17)
         Me.cb_fravælg.TabIndex = 304
-        Me.cb_fravælg.Text = "EXCLUDE oversize 2000x4000"
+        Me.cb_fravælg.Text = "EXCLUDE size 2000x4000"
         Me.cb_fravælg.UseVisualStyleBackColor = True
         '
         'lb_spildnetto
@@ -5965,14 +5988,15 @@ Partial Class metal_tilbud
         Me.Lb_Kilopris.TabIndex = 302
         Me.Lb_Kilopris.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label92
+        'costPriceDkkKgLbl
         '
-        Me.Label92.AutoSize = True
-        Me.Label92.Location = New System.Drawing.Point(6, 265)
-        Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(93, 13)
-        Me.Label92.TabIndex = 301
-        Me.Label92.Text = "Cost price dkk/Kg"
+        Me.costPriceDkkKgLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.costPriceDkkKgLbl.Location = New System.Drawing.Point(1, 265)
+        Me.costPriceDkkKgLbl.Name = "costPriceDkkKgLbl"
+        Me.costPriceDkkKgLbl.Size = New System.Drawing.Size(93, 13)
+        Me.costPriceDkkKgLbl.TabIndex = 301
+        Me.costPriceDkkKgLbl.Text = "Cost price dkk/Kg"
+        Me.costPriceDkkKgLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Lb_matrgruppe
         '
@@ -5994,14 +6018,15 @@ Partial Class metal_tilbud
         Me.Lb_klasse.TabIndex = 299
         Me.Lb_klasse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label89
+        'gradeLbl
         '
-        Me.Label89.AutoSize = True
-        Me.Label89.Location = New System.Drawing.Point(7, 120)
-        Me.Label89.Name = "Label89"
-        Me.Label89.Size = New System.Drawing.Size(36, 13)
-        Me.Label89.TabIndex = 298
-        Me.Label89.Text = "Grade"
+        Me.gradeLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.gradeLbl.Location = New System.Drawing.Point(1, 120)
+        Me.gradeLbl.Name = "gradeLbl"
+        Me.gradeLbl.Size = New System.Drawing.Size(93, 13)
+        Me.gradeLbl.TabIndex = 298
+        Me.gradeLbl.Text = "Grade"
+        Me.gradeLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_emnevægt
         '
@@ -6013,14 +6038,14 @@ Partial Class metal_tilbud
         Me.lb_emnevægt.TabIndex = 296
         Me.lb_emnevægt.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label8
+        'itemWeightLbl
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(153, 202)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(61, 13)
-        Me.Label8.TabIndex = 295
-        Me.Label8.Text = "Item weight"
+        Me.itemWeightLbl.AutoSize = True
+        Me.itemWeightLbl.Location = New System.Drawing.Point(153, 202)
+        Me.itemWeightLbl.Name = "itemWeightLbl"
+        Me.itemWeightLbl.Size = New System.Drawing.Size(61, 13)
+        Me.itemWeightLbl.TabIndex = 295
+        Me.itemWeightLbl.Text = "Item weight"
         '
         'lb_modulstr
         '
@@ -6032,14 +6057,14 @@ Partial Class metal_tilbud
         Me.lb_modulstr.TabIndex = 294
         Me.lb_modulstr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label21
+        'forOQty1Lbl
         '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(155, 161)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(75, 13)
-        Me.Label21.TabIndex = 289
-        Me.Label21.Text = "for order qty. 1"
+        Me.forOQty1Lbl.AutoSize = True
+        Me.forOQty1Lbl.Location = New System.Drawing.Point(155, 161)
+        Me.forOQty1Lbl.Name = "forOQty1Lbl"
+        Me.forOQty1Lbl.Size = New System.Drawing.Size(75, 13)
+        Me.forOQty1Lbl.TabIndex = 289
+        Me.forOQty1Lbl.Text = "for order qty. 1"
         '
         'lb_spildtype
         '
@@ -6128,41 +6153,45 @@ Partial Class metal_tilbud
         Me.Label14.TabIndex = 280
         Me.Label14.Text = "M2"
         '
-        'Label15
+        'wasteLbl
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(6, 245)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(38, 13)
-        Me.Label15.TabIndex = 279
-        Me.Label15.Text = "Waste"
+        Me.wasteLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.wasteLbl.Location = New System.Drawing.Point(1, 245)
+        Me.wasteLbl.Name = "wasteLbl"
+        Me.wasteLbl.Size = New System.Drawing.Size(93, 13)
+        Me.wasteLbl.TabIndex = 279
+        Me.wasteLbl.Text = "Waste"
+        Me.wasteLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label16
+        'plateFormatLbl
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(7, 184)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(63, 13)
-        Me.Label16.TabIndex = 274
-        Me.Label16.Text = "Plate format"
+        Me.plateFormatLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.plateFormatLbl.Location = New System.Drawing.Point(1, 184)
+        Me.plateFormatLbl.Name = "plateFormatLbl"
+        Me.plateFormatLbl.Size = New System.Drawing.Size(93, 13)
+        Me.plateFormatLbl.TabIndex = 274
+        Me.plateFormatLbl.Text = "Plate format"
+        Me.plateFormatLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label17
+        'itemsPerPlateLbl
         '
-        Me.Label17.AutoSize = True
-        Me.Label17.Location = New System.Drawing.Point(7, 204)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(76, 13)
-        Me.Label17.TabIndex = 273
-        Me.Label17.Text = "Items per plate"
+        Me.itemsPerPlateLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.itemsPerPlateLbl.Location = New System.Drawing.Point(1, 204)
+        Me.itemsPerPlateLbl.Name = "itemsPerPlateLbl"
+        Me.itemsPerPlateLbl.Size = New System.Drawing.Size(93, 13)
+        Me.itemsPerPlateLbl.TabIndex = 273
+        Me.itemsPerPlateLbl.Text = "Items per plate"
+        Me.itemsPerPlateLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label18
+        'plateQtyLbl
         '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(7, 164)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(49, 13)
-        Me.Label18.TabIndex = 272
-        Me.Label18.Text = "plate Qty"
+        Me.plateQtyLbl.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.plateQtyLbl.Location = New System.Drawing.Point(1, 164)
+        Me.plateQtyLbl.Name = "plateQtyLbl"
+        Me.plateQtyLbl.Size = New System.Drawing.Size(93, 13)
+        Me.plateQtyLbl.TabIndex = 272
+        Me.plateQtyLbl.Text = "plate Qty"
+        Me.plateQtyLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'bu_udskriv
         '
@@ -6185,28 +6214,28 @@ Partial Class metal_tilbud
         Me.GroupBox1.Controls.Add(Me.tb_hulantal_1B)
         Me.GroupBox1.Controls.Add(Me.tb_slag_til_huller_B)
         Me.GroupBox1.Controls.Add(Me.Label240)
-        Me.GroupBox1.Controls.Add(Me.Label239)
+        Me.GroupBox1.Controls.Add(Me.qtyLbl3)
         Me.GroupBox1.Controls.Add(Me.tb_hulantal_4B)
         Me.GroupBox1.Controls.Add(Me.lb_combi_ialtuk)
-        Me.GroupBox1.Controls.Add(Me.Label232)
+        Me.GroupBox1.Controls.Add(Me.BCombiTotOQ1Lbl)
         Me.GroupBox1.Controls.Add(Me.lb_combi_ialt)
         Me.GroupBox1.Controls.Add(Me.tb_CombiCNCstans_tid_uk)
-        Me.GroupBox1.Controls.Add(Me.Label227)
-        Me.GroupBox1.Controls.Add(Me.Label123)
-        Me.GroupBox1.Controls.Add(Me.Label131)
-        Me.GroupBox1.Controls.Add(Me.Label135)
+        Me.GroupBox1.Controls.Add(Me.CncMinStansOQ1)
+        Me.GroupBox1.Controls.Add(Me.totCuttingLen100Lbl2)
+        Me.GroupBox1.Controls.Add(Me.numberOfStrokesPerHoleLbl2)
+        Me.GroupBox1.Controls.Add(Me.peritemLbl2)
         Me.GroupBox1.Controls.Add(Me.tb_toolshift_B)
-        Me.GroupBox1.Controls.Add(Me.Label136)
+        Me.GroupBox1.Controls.Add(Me.toolChange2)
         Me.GroupBox1.Controls.Add(Me.tb_combiCNC_tid_uk)
-        Me.GroupBox1.Controls.Add(Me.Label109)
+        Me.GroupBox1.Controls.Add(Me.numbHoles51to100Lbl2)
         Me.GroupBox1.Controls.Add(Me.lb_Combi_opstart)
-        Me.GroupBox1.Controls.Add(Me.Label111)
-        Me.GroupBox1.Controls.Add(Me.Label112)
-        Me.GroupBox1.Controls.Add(Me.Label113)
-        Me.GroupBox1.Controls.Add(Me.Label114)
+        Me.GroupBox1.Controls.Add(Me.overruleLbl6)
+        Me.GroupBox1.Controls.Add(Me.numbHoles11to50Lbl2)
+        Me.GroupBox1.Controls.Add(Me.CncMinLaserOQ1Lbl)
+        Me.GroupBox1.Controls.Add(Me.setupMinLbl4)
         Me.GroupBox1.Controls.Add(Me.lb_CombiCNC_tid)
         Me.GroupBox1.Controls.Add(Me.tb_combi_opstart_uk)
-        Me.GroupBox1.Controls.Add(Me.Label125)
+        Me.GroupBox1.Controls.Add(Me.numbOfHoles2to10Lbl2)
         Me.GroupBox1.Location = New System.Drawing.Point(348, 633)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(280, 241)
@@ -6271,14 +6300,14 @@ Partial Class metal_tilbud
         Me.Label240.TabIndex = 354
         Me.Label240.Text = "mm"
         '
-        'Label239
+        'qtyLbl3
         '
-        Me.Label239.AutoSize = True
-        Me.Label239.Location = New System.Drawing.Point(243, 125)
-        Me.Label239.Name = "Label239"
-        Me.Label239.Size = New System.Drawing.Size(23, 13)
-        Me.Label239.TabIndex = 353
-        Me.Label239.Text = "Qty"
+        Me.qtyLbl3.AutoSize = True
+        Me.qtyLbl3.Location = New System.Drawing.Point(243, 125)
+        Me.qtyLbl3.Name = "qtyLbl3"
+        Me.qtyLbl3.Size = New System.Drawing.Size(23, 13)
+        Me.qtyLbl3.TabIndex = 353
+        Me.qtyLbl3.Text = "Qty"
         '
         'tb_hulantal_4B
         '
@@ -6297,14 +6326,14 @@ Partial Class metal_tilbud
         Me.lb_combi_ialtuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_combi_ialtuk.TabIndex = 351
         '
-        'Label232
+        'BCombiTotOQ1Lbl
         '
-        Me.Label232.AutoSize = True
-        Me.Label232.Location = New System.Drawing.Point(16, 220)
-        Me.Label232.Name = "Label232"
-        Me.Label232.Size = New System.Drawing.Size(99, 13)
-        Me.Label232.TabIndex = 350
-        Me.Label232.Text = "B-combi tot/O.qty.1"
+        Me.BCombiTotOQ1Lbl.AutoSize = True
+        Me.BCombiTotOQ1Lbl.Location = New System.Drawing.Point(16, 220)
+        Me.BCombiTotOQ1Lbl.Name = "BCombiTotOQ1Lbl"
+        Me.BCombiTotOQ1Lbl.Size = New System.Drawing.Size(99, 13)
+        Me.BCombiTotOQ1Lbl.TabIndex = 350
+        Me.BCombiTotOQ1Lbl.Text = "B-combi tot/O.qty.1"
         '
         'lb_combi_ialt
         '
@@ -6322,41 +6351,44 @@ Partial Class metal_tilbud
         Me.tb_CombiCNCstans_tid_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_CombiCNCstans_tid_uk.TabIndex = 348
         '
-        'Label227
+        'CncMinStansOQ1
         '
-        Me.Label227.AutoSize = True
-        Me.Label227.Location = New System.Drawing.Point(20, 177)
-        Me.Label227.Name = "Label227"
-        Me.Label227.Size = New System.Drawing.Size(115, 13)
-        Me.Label227.TabIndex = 346
-        Me.Label227.Text = "CNC min.stans/O.qty.1"
+        Me.CncMinStansOQ1.AutoSize = True
+        Me.CncMinStansOQ1.Location = New System.Drawing.Point(20, 177)
+        Me.CncMinStansOQ1.Name = "CncMinStansOQ1"
+        Me.CncMinStansOQ1.Size = New System.Drawing.Size(115, 13)
+        Me.CncMinStansOQ1.TabIndex = 346
+        Me.CncMinStansOQ1.Text = "CNC min.stans/O.qty.1"
         '
-        'Label123
+        'totCuttingLen100Lbl2
         '
-        Me.Label123.AutoSize = True
-        Me.Label123.Location = New System.Drawing.Point(2, 128)
-        Me.Label123.Name = "Label123"
-        Me.Label123.Size = New System.Drawing.Size(132, 13)
-        Me.Label123.TabIndex = 261
-        Me.Label123.Text = "Tot cutting length (> ø100)"
+        Me.totCuttingLen100Lbl2.AutoSize = True
+        Me.totCuttingLen100Lbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.totCuttingLen100Lbl2.Location = New System.Drawing.Point(1, 128)
+        Me.totCuttingLen100Lbl2.Name = "totCuttingLen100Lbl2"
+        Me.totCuttingLen100Lbl2.Size = New System.Drawing.Size(132, 13)
+        Me.totCuttingLen100Lbl2.TabIndex = 261
+        Me.totCuttingLen100Lbl2.Text = "Tot cutting length (> ø100)"
+        Me.totCuttingLen100Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label131
+        'numberOfStrokesPerHoleLbl2
         '
-        Me.Label131.AutoSize = True
-        Me.Label131.Location = New System.Drawing.Point(8, 45)
-        Me.Label131.Name = "Label131"
-        Me.Label131.Size = New System.Drawing.Size(127, 13)
-        Me.Label131.TabIndex = 260
-        Me.Label131.Text = "Nmbr of strokes per holes"
+        Me.numberOfStrokesPerHoleLbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.numberOfStrokesPerHoleLbl2.Location = New System.Drawing.Point(1, 45)
+        Me.numberOfStrokesPerHoleLbl2.Name = "numberOfStrokesPerHoleLbl2"
+        Me.numberOfStrokesPerHoleLbl2.Size = New System.Drawing.Size(132, 13)
+        Me.numberOfStrokesPerHoleLbl2.TabIndex = 260
+        Me.numberOfStrokesPerHoleLbl2.Text = "Strokes per holes"
+        Me.numberOfStrokesPerHoleLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label135
+        'peritemLbl2
         '
-        Me.Label135.AutoSize = True
-        Me.Label135.Location = New System.Drawing.Point(132, 8)
-        Me.Label135.Name = "Label135"
-        Me.Label135.Size = New System.Drawing.Size(44, 13)
-        Me.Label135.TabIndex = 258
-        Me.Label135.Text = "per item"
+        Me.peritemLbl2.AutoSize = True
+        Me.peritemLbl2.Location = New System.Drawing.Point(132, 8)
+        Me.peritemLbl2.Name = "peritemLbl2"
+        Me.peritemLbl2.Size = New System.Drawing.Size(44, 13)
+        Me.peritemLbl2.TabIndex = 258
+        Me.peritemLbl2.Text = "per item"
         '
         'tb_toolshift_B
         '
@@ -6366,14 +6398,15 @@ Partial Class metal_tilbud
         Me.tb_toolshift_B.Size = New System.Drawing.Size(53, 20)
         Me.tb_toolshift_B.TabIndex = 40
         '
-        'Label136
+        'toolChange2
         '
-        Me.Label136.AutoSize = True
-        Me.Label136.Location = New System.Drawing.Point(68, 26)
-        Me.Label136.Name = "Label136"
-        Me.Label136.Size = New System.Drawing.Size(67, 13)
-        Me.Label136.TabIndex = 256
-        Me.Label136.Text = "Tool change"
+        Me.toolChange2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.toolChange2.Location = New System.Drawing.Point(1, 26)
+        Me.toolChange2.Name = "toolChange2"
+        Me.toolChange2.Size = New System.Drawing.Size(132, 13)
+        Me.toolChange2.TabIndex = 256
+        Me.toolChange2.Text = "Tool change"
+        Me.toolChange2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'tb_combiCNC_tid_uk
         '
@@ -6382,14 +6415,15 @@ Partial Class metal_tilbud
         Me.tb_combiCNC_tid_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_combiCNC_tid_uk.TabIndex = 344
         '
-        'Label109
+        'numbHoles51to100Lbl2
         '
-        Me.Label109.AutoSize = True
-        Me.Label109.Location = New System.Drawing.Point(3, 106)
-        Me.Label109.Name = "Label109"
-        Me.Label109.Size = New System.Drawing.Size(132, 13)
-        Me.Label109.TabIndex = 255
-        Me.Label109.Text = "Numb. of holes (ø51-ø100)"
+        Me.numbHoles51to100Lbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.numbHoles51to100Lbl2.Location = New System.Drawing.Point(1, 106)
+        Me.numbHoles51to100Lbl2.Name = "numbHoles51to100Lbl2"
+        Me.numbHoles51to100Lbl2.Size = New System.Drawing.Size(132, 13)
+        Me.numbHoles51to100Lbl2.TabIndex = 255
+        Me.numbHoles51to100Lbl2.Text = "Numb. of holes (ø51-ø100)"
+        Me.numbHoles51to100Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_Combi_opstart
         '
@@ -6400,41 +6434,42 @@ Partial Class metal_tilbud
         Me.lb_Combi_opstart.Size = New System.Drawing.Size(53, 20)
         Me.lb_Combi_opstart.TabIndex = 254
         '
-        'Label111
+        'overruleLbl6
         '
-        Me.Label111.AutoSize = True
-        Me.Label111.Location = New System.Drawing.Point(188, 140)
-        Me.Label111.Name = "Label111"
-        Me.Label111.Size = New System.Drawing.Size(47, 13)
-        Me.Label111.TabIndex = 246
-        Me.Label111.Text = "Overrule"
+        Me.overruleLbl6.AutoSize = True
+        Me.overruleLbl6.Location = New System.Drawing.Point(188, 140)
+        Me.overruleLbl6.Name = "overruleLbl6"
+        Me.overruleLbl6.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl6.TabIndex = 246
+        Me.overruleLbl6.Text = "Overrule"
         '
-        'Label112
+        'numbHoles11to50Lbl2
         '
-        Me.Label112.AutoSize = True
-        Me.Label112.Location = New System.Drawing.Point(8, 87)
-        Me.Label112.Name = "Label112"
-        Me.Label112.Size = New System.Drawing.Size(126, 13)
-        Me.Label112.TabIndex = 253
-        Me.Label112.Text = "Numb. of holes (ø11-ø50)"
+        Me.numbHoles11to50Lbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.numbHoles11to50Lbl2.Location = New System.Drawing.Point(1, 87)
+        Me.numbHoles11to50Lbl2.Name = "numbHoles11to50Lbl2"
+        Me.numbHoles11to50Lbl2.Size = New System.Drawing.Size(132, 13)
+        Me.numbHoles11to50Lbl2.TabIndex = 253
+        Me.numbHoles11to50Lbl2.Text = "Numb. of holes (ø11-ø50)"
+        Me.numbHoles11to50Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
-        'Label113
+        'CncMinLaserOQ1Lbl
         '
-        Me.Label113.AutoSize = True
-        Me.Label113.Location = New System.Drawing.Point(20, 156)
-        Me.Label113.Name = "Label113"
-        Me.Label113.Size = New System.Drawing.Size(112, 13)
-        Me.Label113.TabIndex = 247
-        Me.Label113.Text = "CNC min.laser/O.qty.1"
+        Me.CncMinLaserOQ1Lbl.AutoSize = True
+        Me.CncMinLaserOQ1Lbl.Location = New System.Drawing.Point(20, 156)
+        Me.CncMinLaserOQ1Lbl.Name = "CncMinLaserOQ1Lbl"
+        Me.CncMinLaserOQ1Lbl.Size = New System.Drawing.Size(112, 13)
+        Me.CncMinLaserOQ1Lbl.TabIndex = 247
+        Me.CncMinLaserOQ1Lbl.Text = "CNC min.laser/O.qty.1"
         '
-        'Label114
+        'setupMinLbl4
         '
-        Me.Label114.AutoSize = True
-        Me.Label114.Location = New System.Drawing.Point(22, 198)
-        Me.Label114.Name = "Label114"
-        Me.Label114.Size = New System.Drawing.Size(57, 13)
-        Me.Label114.TabIndex = 253
-        Me.Label114.Text = "Setup min."
+        Me.setupMinLbl4.AutoSize = True
+        Me.setupMinLbl4.Location = New System.Drawing.Point(22, 198)
+        Me.setupMinLbl4.Name = "setupMinLbl4"
+        Me.setupMinLbl4.Size = New System.Drawing.Size(57, 13)
+        Me.setupMinLbl4.TabIndex = 253
+        Me.setupMinLbl4.Text = "Setup min."
         '
         'lb_CombiCNC_tid
         '
@@ -6452,25 +6487,26 @@ Partial Class metal_tilbud
         Me.tb_combi_opstart_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_combi_opstart_uk.TabIndex = 345
         '
-        'Label125
+        'numbOfHoles2to10Lbl2
         '
-        Me.Label125.AutoSize = True
-        Me.Label125.Location = New System.Drawing.Point(14, 66)
-        Me.Label125.Name = "Label125"
-        Me.Label125.Size = New System.Drawing.Size(120, 13)
-        Me.Label125.TabIndex = 248
-        Me.Label125.Text = "Numb. of holes (ø2-ø10)"
+        Me.numbOfHoles2to10Lbl2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.numbOfHoles2to10Lbl2.Location = New System.Drawing.Point(1, 66)
+        Me.numbOfHoles2to10Lbl2.Name = "numbOfHoles2to10Lbl2"
+        Me.numbOfHoles2to10Lbl2.Size = New System.Drawing.Size(132, 13)
+        Me.numbOfHoles2to10Lbl2.TabIndex = 248
+        Me.numbOfHoles2to10Lbl2.Text = "Numb. of holes (ø2-ø10)"
+        Me.numbOfHoles2to10Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'GroupBox2
         '
         Me.GroupBox2.BackColor = System.Drawing.Color.LavenderBlush
         Me.GroupBox2.Controls.Add(Me.lb_klip_ialtuk)
-        Me.GroupBox2.Controls.Add(Me.Label231)
+        Me.GroupBox2.Controls.Add(Me.cutTotalOQ1Lbl)
         Me.GroupBox2.Controls.Add(Me.lb_klip_ialt)
         Me.GroupBox2.Controls.Add(Me.tb_klip_tid_uk)
         Me.GroupBox2.Controls.Add(Me.lb_klip_opstart)
-        Me.GroupBox2.Controls.Add(Me.Label127)
-        Me.GroupBox2.Controls.Add(Me.Label129)
+        Me.GroupBox2.Controls.Add(Me.cutMinOQ1Lbl)
+        Me.GroupBox2.Controls.Add(Me.setupMinLbl)
         Me.GroupBox2.Controls.Add(Me.lb_klip_tid)
         Me.GroupBox2.Controls.Add(Me.tb_klip_opstart_uk)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 774)
@@ -6488,14 +6524,14 @@ Partial Class metal_tilbud
         Me.lb_klip_ialtuk.Size = New System.Drawing.Size(53, 20)
         Me.lb_klip_ialtuk.TabIndex = 366
         '
-        'Label231
+        'cutTotalOQ1Lbl
         '
-        Me.Label231.AutoSize = True
-        Me.Label231.Location = New System.Drawing.Point(19, 66)
-        Me.Label231.Name = "Label231"
-        Me.Label231.Size = New System.Drawing.Size(85, 13)
-        Me.Label231.TabIndex = 365
-        Me.Label231.Text = "Cut total/O.qty.1"
+        Me.cutTotalOQ1Lbl.AutoSize = True
+        Me.cutTotalOQ1Lbl.Location = New System.Drawing.Point(19, 66)
+        Me.cutTotalOQ1Lbl.Name = "cutTotalOQ1Lbl"
+        Me.cutTotalOQ1Lbl.Size = New System.Drawing.Size(85, 13)
+        Me.cutTotalOQ1Lbl.TabIndex = 365
+        Me.cutTotalOQ1Lbl.Text = "Cut total/O.qty.1"
         '
         'lb_klip_ialt
         '
@@ -6522,23 +6558,23 @@ Partial Class metal_tilbud
         Me.lb_klip_opstart.Size = New System.Drawing.Size(53, 20)
         Me.lb_klip_opstart.TabIndex = 260
         '
-        'Label127
+        'cutMinOQ1Lbl
         '
-        Me.Label127.AutoSize = True
-        Me.Label127.Location = New System.Drawing.Point(18, 16)
-        Me.Label127.Name = "Label127"
-        Me.Label127.Size = New System.Drawing.Size(84, 13)
-        Me.Label127.TabIndex = 256
-        Me.Label127.Text = "Cut min./O.qty.1"
+        Me.cutMinOQ1Lbl.AutoSize = True
+        Me.cutMinOQ1Lbl.Location = New System.Drawing.Point(18, 16)
+        Me.cutMinOQ1Lbl.Name = "cutMinOQ1Lbl"
+        Me.cutMinOQ1Lbl.Size = New System.Drawing.Size(84, 13)
+        Me.cutMinOQ1Lbl.TabIndex = 256
+        Me.cutMinOQ1Lbl.Text = "Cut min./O.qty.1"
         '
-        'Label129
+        'setupMinLbl
         '
-        Me.Label129.AutoSize = True
-        Me.Label129.Location = New System.Drawing.Point(18, 40)
-        Me.Label129.Name = "Label129"
-        Me.Label129.Size = New System.Drawing.Size(57, 13)
-        Me.Label129.TabIndex = 259
-        Me.Label129.Text = "Setup min."
+        Me.setupMinLbl.AutoSize = True
+        Me.setupMinLbl.Location = New System.Drawing.Point(18, 40)
+        Me.setupMinLbl.Name = "setupMinLbl"
+        Me.setupMinLbl.Size = New System.Drawing.Size(57, 13)
+        Me.setupMinLbl.TabIndex = 259
+        Me.setupMinLbl.Text = "Setup min."
         '
         'lb_klip_tid
         '
@@ -6556,45 +6592,45 @@ Partial Class metal_tilbud
         Me.tb_klip_opstart_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_klip_opstart_uk.TabIndex = 363
         '
-        'Label9
+        'group1Lbl4
         '
-        Me.Label9.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label9.Location = New System.Drawing.Point(407, 465)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(186, 18)
-        Me.Label9.TabIndex = 261
-        Me.Label9.Text = "Group 1"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group1Lbl4.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group1Lbl4.Location = New System.Drawing.Point(413, 465)
+        Me.group1Lbl4.Name = "group1Lbl4"
+        Me.group1Lbl4.Size = New System.Drawing.Size(186, 18)
+        Me.group1Lbl4.TabIndex = 261
+        Me.group1Lbl4.Text = "Group 1"
+        Me.group1Lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label110
+        'group1Lbl3
         '
-        Me.Label110.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label110.Location = New System.Drawing.Point(405, 273)
-        Me.Label110.Name = "Label110"
-        Me.Label110.Size = New System.Drawing.Size(192, 18)
-        Me.Label110.TabIndex = 262
-        Me.Label110.Text = "Group 1"
-        Me.Label110.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group1Lbl3.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group1Lbl3.Location = New System.Drawing.Point(405, 273)
+        Me.group1Lbl3.Name = "group1Lbl3"
+        Me.group1Lbl3.Size = New System.Drawing.Size(192, 18)
+        Me.group1Lbl3.TabIndex = 262
+        Me.group1Lbl3.Text = "Group 1"
+        Me.group1Lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label124
+        'group1Lbl5
         '
-        Me.Label124.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label124.Location = New System.Drawing.Point(408, 618)
-        Me.Label124.Name = "Label124"
-        Me.Label124.Size = New System.Drawing.Size(186, 18)
-        Me.Label124.TabIndex = 263
-        Me.Label124.Text = "Group 1"
-        Me.Label124.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group1Lbl5.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group1Lbl5.Location = New System.Drawing.Point(408, 618)
+        Me.group1Lbl5.Name = "group1Lbl5"
+        Me.group1Lbl5.Size = New System.Drawing.Size(186, 18)
+        Me.group1Lbl5.TabIndex = 263
+        Me.group1Lbl5.Text = "Group 1"
+        Me.group1Lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label138
+        'group1Lbl2
         '
-        Me.Label138.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label138.Location = New System.Drawing.Point(53, 763)
-        Me.Label138.Name = "Label138"
-        Me.Label138.Size = New System.Drawing.Size(207, 18)
-        Me.Label138.TabIndex = 264
-        Me.Label138.Text = "Group 1"
-        Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group1Lbl2.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group1Lbl2.Location = New System.Drawing.Point(85, 763)
+        Me.group1Lbl2.Name = "group1Lbl2"
+        Me.group1Lbl2.Size = New System.Drawing.Size(177, 18)
+        Me.group1Lbl2.TabIndex = 264
+        Me.group1Lbl2.Text = "Group 1"
+        Me.group1Lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lb_rækkeantal
         '
@@ -6609,22 +6645,22 @@ Partial Class metal_tilbud
         '
         Me.gb_forbrug.BackColor = System.Drawing.Color.WhiteSmoke
         Me.gb_forbrug.Controls.Add(Me.tb_presstag_kr_uk)
-        Me.gb_forbrug.Controls.Add(Me.Label87)
+        Me.gb_forbrug.Controls.Add(Me.dkkPerItemLbl1)
         Me.gb_forbrug.Controls.Add(Me.lb_presstag_kr)
-        Me.gb_forbrug.Controls.Add(Me.Label215)
-        Me.gb_forbrug.Controls.Add(Me.Label199)
+        Me.gb_forbrug.Controls.Add(Me.presstagLbl)
+        Me.gb_forbrug.Controls.Add(Me.overruleLbl14)
         Me.gb_forbrug.Controls.Add(Me.tb_svejsestag_kr_uk)
         Me.gb_forbrug.Controls.Add(Me.tb_tilsatsmatr_kr_uk)
         Me.gb_forbrug.Controls.Add(Me.tb_pressnut_kr_uk)
-        Me.gb_forbrug.Controls.Add(Me.Label196)
+        Me.gb_forbrug.Controls.Add(Me.dkkPerItemLbl4)
         Me.gb_forbrug.Controls.Add(Me.lb_tilsatsmatr_kr)
-        Me.gb_forbrug.Controls.Add(Me.Label198)
-        Me.gb_forbrug.Controls.Add(Me.Label193)
+        Me.gb_forbrug.Controls.Add(Me.additionalMatLbl)
+        Me.gb_forbrug.Controls.Add(Me.dkkPerItemLbl3)
         Me.gb_forbrug.Controls.Add(Me.lb_svejsestag_kr)
-        Me.gb_forbrug.Controls.Add(Me.Label195)
-        Me.gb_forbrug.Controls.Add(Me.Label191)
+        Me.gb_forbrug.Controls.Add(Me.screwWeldLbl)
+        Me.gb_forbrug.Controls.Add(Me.dkkPerItemLbl2)
         Me.gb_forbrug.Controls.Add(Me.lb_pressnut_kr)
-        Me.gb_forbrug.Controls.Add(Me.Label190)
+        Me.gb_forbrug.Controls.Add(Me.presnutLbl)
         Me.gb_forbrug.Location = New System.Drawing.Point(1289, 475)
         Me.gb_forbrug.Name = "gb_forbrug"
         Me.gb_forbrug.Size = New System.Drawing.Size(272, 111)
@@ -6639,14 +6675,14 @@ Partial Class metal_tilbud
         Me.tb_presstag_kr_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_presstag_kr_uk.TabIndex = 247
         '
-        'Label87
+        'dkkPerItemLbl1
         '
-        Me.Label87.AutoSize = True
-        Me.Label87.Location = New System.Drawing.Point(136, 24)
-        Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(65, 13)
-        Me.Label87.TabIndex = 246
-        Me.Label87.Text = "dkk per item"
+        Me.dkkPerItemLbl1.AutoSize = True
+        Me.dkkPerItemLbl1.Location = New System.Drawing.Point(136, 24)
+        Me.dkkPerItemLbl1.Name = "dkkPerItemLbl1"
+        Me.dkkPerItemLbl1.Size = New System.Drawing.Size(65, 13)
+        Me.dkkPerItemLbl1.TabIndex = 246
+        Me.dkkPerItemLbl1.Text = "dkk per item"
         '
         'lb_presstag_kr
         '
@@ -6658,23 +6694,23 @@ Partial Class metal_tilbud
         Me.lb_presstag_kr.TabIndex = 244
         Me.lb_presstag_kr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label215
+        'presstagLbl
         '
-        Me.Label215.AutoSize = True
-        Me.Label215.Location = New System.Drawing.Point(7, 24)
-        Me.Label215.Name = "Label215"
-        Me.Label215.Size = New System.Drawing.Size(48, 13)
-        Me.Label215.TabIndex = 245
-        Me.Label215.Text = "Presstag"
+        Me.presstagLbl.AutoSize = True
+        Me.presstagLbl.Location = New System.Drawing.Point(7, 24)
+        Me.presstagLbl.Name = "presstagLbl"
+        Me.presstagLbl.Size = New System.Drawing.Size(48, 13)
+        Me.presstagLbl.TabIndex = 245
+        Me.presstagLbl.Text = "Presstag"
         '
-        'Label199
+        'overruleLbl14
         '
-        Me.Label199.AutoSize = True
-        Me.Label199.Location = New System.Drawing.Point(203, 7)
-        Me.Label199.Name = "Label199"
-        Me.Label199.Size = New System.Drawing.Size(47, 13)
-        Me.Label199.TabIndex = 243
-        Me.Label199.Text = "Overrule"
+        Me.overruleLbl14.AutoSize = True
+        Me.overruleLbl14.Location = New System.Drawing.Point(203, 7)
+        Me.overruleLbl14.Name = "overruleLbl14"
+        Me.overruleLbl14.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl14.TabIndex = 243
+        Me.overruleLbl14.Text = "Overrule"
         '
         'tb_svejsestag_kr_uk
         '
@@ -6697,14 +6733,14 @@ Partial Class metal_tilbud
         Me.tb_pressnut_kr_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_pressnut_kr_uk.TabIndex = 218
         '
-        'Label196
+        'dkkPerItemLbl4
         '
-        Me.Label196.AutoSize = True
-        Me.Label196.Location = New System.Drawing.Point(136, 87)
-        Me.Label196.Name = "Label196"
-        Me.Label196.Size = New System.Drawing.Size(65, 13)
-        Me.Label196.TabIndex = 217
-        Me.Label196.Text = "dkk per item"
+        Me.dkkPerItemLbl4.AutoSize = True
+        Me.dkkPerItemLbl4.Location = New System.Drawing.Point(136, 87)
+        Me.dkkPerItemLbl4.Name = "dkkPerItemLbl4"
+        Me.dkkPerItemLbl4.Size = New System.Drawing.Size(65, 13)
+        Me.dkkPerItemLbl4.TabIndex = 217
+        Me.dkkPerItemLbl4.Text = "dkk per item"
         '
         'lb_tilsatsmatr_kr
         '
@@ -6716,23 +6752,23 @@ Partial Class metal_tilbud
         Me.lb_tilsatsmatr_kr.TabIndex = 215
         Me.lb_tilsatsmatr_kr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label198
+        'additionalMatLbl
         '
-        Me.Label198.AutoSize = True
-        Me.Label198.Location = New System.Drawing.Point(7, 87)
-        Me.Label198.Name = "Label198"
-        Me.Label198.Size = New System.Drawing.Size(76, 13)
-        Me.Label198.TabIndex = 216
-        Me.Label198.Text = "Additional mat."
+        Me.additionalMatLbl.AutoSize = True
+        Me.additionalMatLbl.Location = New System.Drawing.Point(7, 87)
+        Me.additionalMatLbl.Name = "additionalMatLbl"
+        Me.additionalMatLbl.Size = New System.Drawing.Size(76, 13)
+        Me.additionalMatLbl.TabIndex = 216
+        Me.additionalMatLbl.Text = "Additional mat."
         '
-        'Label193
+        'dkkPerItemLbl3
         '
-        Me.Label193.AutoSize = True
-        Me.Label193.Location = New System.Drawing.Point(136, 66)
-        Me.Label193.Name = "Label193"
-        Me.Label193.Size = New System.Drawing.Size(65, 13)
-        Me.Label193.TabIndex = 214
-        Me.Label193.Text = "dkk per item"
+        Me.dkkPerItemLbl3.AutoSize = True
+        Me.dkkPerItemLbl3.Location = New System.Drawing.Point(136, 66)
+        Me.dkkPerItemLbl3.Name = "dkkPerItemLbl3"
+        Me.dkkPerItemLbl3.Size = New System.Drawing.Size(65, 13)
+        Me.dkkPerItemLbl3.TabIndex = 214
+        Me.dkkPerItemLbl3.Text = "dkk per item"
         '
         'lb_svejsestag_kr
         '
@@ -6744,23 +6780,23 @@ Partial Class metal_tilbud
         Me.lb_svejsestag_kr.TabIndex = 212
         Me.lb_svejsestag_kr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label195
+        'screwWeldLbl
         '
-        Me.Label195.AutoSize = True
-        Me.Label195.Location = New System.Drawing.Point(7, 66)
-        Me.Label195.Name = "Label195"
-        Me.Label195.Size = New System.Drawing.Size(62, 13)
-        Me.Label195.TabIndex = 213
-        Me.Label195.Text = "Screw weld"
+        Me.screwWeldLbl.AutoSize = True
+        Me.screwWeldLbl.Location = New System.Drawing.Point(7, 66)
+        Me.screwWeldLbl.Name = "screwWeldLbl"
+        Me.screwWeldLbl.Size = New System.Drawing.Size(62, 13)
+        Me.screwWeldLbl.TabIndex = 213
+        Me.screwWeldLbl.Text = "Screw weld"
         '
-        'Label191
+        'dkkPerItemLbl2
         '
-        Me.Label191.AutoSize = True
-        Me.Label191.Location = New System.Drawing.Point(136, 45)
-        Me.Label191.Name = "Label191"
-        Me.Label191.Size = New System.Drawing.Size(65, 13)
-        Me.Label191.TabIndex = 210
-        Me.Label191.Text = "dkk per item"
+        Me.dkkPerItemLbl2.AutoSize = True
+        Me.dkkPerItemLbl2.Location = New System.Drawing.Point(136, 45)
+        Me.dkkPerItemLbl2.Name = "dkkPerItemLbl2"
+        Me.dkkPerItemLbl2.Size = New System.Drawing.Size(65, 13)
+        Me.dkkPerItemLbl2.TabIndex = 210
+        Me.dkkPerItemLbl2.Text = "dkk per item"
         '
         'lb_pressnut_kr
         '
@@ -6772,14 +6808,14 @@ Partial Class metal_tilbud
         Me.lb_pressnut_kr.TabIndex = 208
         Me.lb_pressnut_kr.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label190
+        'presnutLbl
         '
-        Me.Label190.AutoSize = True
-        Me.Label190.Location = New System.Drawing.Point(7, 45)
-        Me.Label190.Name = "Label190"
-        Me.Label190.Size = New System.Drawing.Size(43, 13)
-        Me.Label190.TabIndex = 209
-        Me.Label190.Text = "Presnut"
+        Me.presnutLbl.AutoSize = True
+        Me.presnutLbl.Location = New System.Drawing.Point(7, 45)
+        Me.presnutLbl.Name = "presnutLbl"
+        Me.presnutLbl.Size = New System.Drawing.Size(43, 13)
+        Me.presnutLbl.TabIndex = 209
+        Me.presnutLbl.Text = "Presnut"
         '
         'bu_gem
         '
@@ -6801,64 +6837,64 @@ Partial Class metal_tilbud
         Me.bu_hent.Text = "LOAD OFFER"
         Me.bu_hent.UseVisualStyleBackColor = False
         '
-        'Label206
+        'groupTimesByOQty1Lbl
         '
-        Me.Label206.AutoSize = True
-        Me.Label206.Location = New System.Drawing.Point(8, 0)
-        Me.Label206.Name = "Label206"
-        Me.Label206.Size = New System.Drawing.Size(135, 13)
-        Me.Label206.TabIndex = 471
-        Me.Label206.Text = "Group times by Order qty. 1"
+        Me.groupTimesByOQty1Lbl.AutoSize = True
+        Me.groupTimesByOQty1Lbl.Location = New System.Drawing.Point(8, 0)
+        Me.groupTimesByOQty1Lbl.Name = "groupTimesByOQty1Lbl"
+        Me.groupTimesByOQty1Lbl.Size = New System.Drawing.Size(135, 13)
+        Me.groupTimesByOQty1Lbl.TabIndex = 471
+        Me.groupTimesByOQty1Lbl.Text = "Group times by Order qty. 1"
         '
-        'Label207
+        'group1Lbl
         '
-        Me.Label207.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label207.Location = New System.Drawing.Point(2, 27)
-        Me.Label207.Name = "Label207"
-        Me.Label207.Size = New System.Drawing.Size(65, 18)
-        Me.Label207.TabIndex = 472
-        Me.Label207.Text = "Group 1"
-        Me.Label207.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group1Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group1Lbl.Location = New System.Drawing.Point(2, 27)
+        Me.group1Lbl.Name = "group1Lbl"
+        Me.group1Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group1Lbl.TabIndex = 472
+        Me.group1Lbl.Text = "Group 1"
+        Me.group1Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label208
+        'group2Lbl
         '
-        Me.Label208.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label208.Location = New System.Drawing.Point(2, 47)
-        Me.Label208.Name = "Label208"
-        Me.Label208.Size = New System.Drawing.Size(65, 18)
-        Me.Label208.TabIndex = 473
-        Me.Label208.Text = "Group 2"
-        Me.Label208.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group2Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group2Lbl.Location = New System.Drawing.Point(2, 47)
+        Me.group2Lbl.Name = "group2Lbl"
+        Me.group2Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group2Lbl.TabIndex = 473
+        Me.group2Lbl.Text = "Group 2"
+        Me.group2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label209
+        'group3Lbl
         '
-        Me.Label209.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label209.Location = New System.Drawing.Point(2, 67)
-        Me.Label209.Name = "Label209"
-        Me.Label209.Size = New System.Drawing.Size(65, 18)
-        Me.Label209.TabIndex = 474
-        Me.Label209.Text = "Group 3"
-        Me.Label209.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group3Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group3Lbl.Location = New System.Drawing.Point(2, 67)
+        Me.group3Lbl.Name = "group3Lbl"
+        Me.group3Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group3Lbl.TabIndex = 474
+        Me.group3Lbl.Text = "Group 3"
+        Me.group3Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label210
+        'group4Lbl
         '
-        Me.Label210.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label210.Location = New System.Drawing.Point(2, 87)
-        Me.Label210.Name = "Label210"
-        Me.Label210.Size = New System.Drawing.Size(65, 18)
-        Me.Label210.TabIndex = 475
-        Me.Label210.Text = "Group 4"
-        Me.Label210.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group4Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group4Lbl.Location = New System.Drawing.Point(2, 87)
+        Me.group4Lbl.Name = "group4Lbl"
+        Me.group4Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group4Lbl.TabIndex = 475
+        Me.group4Lbl.Text = "Group 4"
+        Me.group4Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label211
+        'group6Lbl
         '
-        Me.Label211.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label211.Location = New System.Drawing.Point(2, 127)
-        Me.Label211.Name = "Label211"
-        Me.Label211.Size = New System.Drawing.Size(65, 18)
-        Me.Label211.TabIndex = 476
-        Me.Label211.Text = "Group 6"
-        Me.Label211.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group6Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group6Lbl.Location = New System.Drawing.Point(2, 127)
+        Me.group6Lbl.Name = "group6Lbl"
+        Me.group6Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group6Lbl.TabIndex = 476
+        Me.group6Lbl.Text = "Group 6"
+        Me.group6Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lb_gruppetid1
         '
@@ -6910,14 +6946,14 @@ Partial Class metal_tilbud
         Me.lb_gruppetid5.TabIndex = 481
         Me.lb_gruppetid5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label212
+        'hoursLbl
         '
-        Me.Label212.AutoSize = True
-        Me.Label212.Location = New System.Drawing.Point(75, 12)
-        Me.Label212.Name = "Label212"
-        Me.Label212.Size = New System.Drawing.Size(35, 13)
-        Me.Label212.TabIndex = 482
-        Me.Label212.Text = "Hours"
+        Me.hoursLbl.AutoSize = True
+        Me.hoursLbl.Location = New System.Drawing.Point(75, 12)
+        Me.hoursLbl.Name = "hoursLbl"
+        Me.hoursLbl.Size = New System.Drawing.Size(35, 13)
+        Me.hoursLbl.TabIndex = 482
+        Me.hoursLbl.Text = "Hours"
         '
         'lb_ukTime
         '
@@ -6947,29 +6983,29 @@ Partial Class metal_tilbud
         Me.lb_gruppetid5slib.TabIndex = 486
         Me.lb_gruppetid5slib.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label216
+        'group5Lbl
         '
-        Me.Label216.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label216.Location = New System.Drawing.Point(2, 107)
-        Me.Label216.Name = "Label216"
-        Me.Label216.Size = New System.Drawing.Size(65, 18)
-        Me.Label216.TabIndex = 485
-        Me.Label216.Text = "Group 5"
-        Me.Label216.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.group5Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.group5Lbl.Location = New System.Drawing.Point(2, 107)
+        Me.group5Lbl.Name = "group5Lbl"
+        Me.group5Lbl.Size = New System.Drawing.Size(65, 18)
+        Me.group5Lbl.TabIndex = 485
+        Me.group5Lbl.Text = "Group 5"
+        Me.group5Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'gb_gruppe5
         '
         Me.gb_gruppe5.BackColor = System.Drawing.Color.Lavender
-        Me.gb_gruppe5.Controls.Add(Me.Label200)
+        Me.gb_gruppe5.Controls.Add(Me.cb_grind_weld)
+        Me.gb_gruppe5.Controls.Add(Me.weldGrindingLbl2)
         Me.gb_gruppe5.Controls.Add(Me.cb_slib)
         Me.gb_gruppe5.Controls.Add(Me.cb_glasbl)
-        Me.gb_gruppe5.Controls.Add(Me.Label254)
+        Me.gb_gruppe5.Controls.Add(Me.grindingLbl2)
         Me.gb_gruppe5.Controls.Add(Me.lb_slib)
         Me.gb_gruppe5.Controls.Add(Me.tb_slib_uk)
-        Me.gb_gruppe5.Controls.Add(Me.Label214)
-        Me.gb_gruppe5.Controls.Add(Me.Label219)
-        Me.gb_gruppe5.Controls.Add(Me.Label220)
-        Me.gb_gruppe5.Controls.Add(Me.cb_grind_weld)
+        Me.gb_gruppe5.Controls.Add(Me.minOQ1Lbl6)
+        Me.gb_gruppe5.Controls.Add(Me.overruleLbl12)
+        Me.gb_gruppe5.Controls.Add(Me.sandblastingLbl)
         Me.gb_gruppe5.Controls.Add(Me.lb_glasbl)
         Me.gb_gruppe5.Controls.Add(Me.tb_glasbl_uk)
         Me.gb_gruppe5.Controls.Add(Me.lb_grind_weld)
@@ -7001,14 +7037,14 @@ Partial Class metal_tilbud
         Me.cb_glasbl.TabIndex = 278
         Me.cb_glasbl.UseVisualStyleBackColor = False
         '
-        'Label254
+        'grindingLbl2
         '
-        Me.Label254.Location = New System.Drawing.Point(3, 50)
-        Me.Label254.Name = "Label254"
-        Me.Label254.Size = New System.Drawing.Size(71, 20)
-        Me.Label254.TabIndex = 274
-        Me.Label254.Text = "Grinding"
-        Me.Label254.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.grindingLbl2.Location = New System.Drawing.Point(3, 50)
+        Me.grindingLbl2.Name = "grindingLbl2"
+        Me.grindingLbl2.Size = New System.Drawing.Size(71, 20)
+        Me.grindingLbl2.TabIndex = 274
+        Me.grindingLbl2.Text = "Grinding"
+        Me.grindingLbl2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_slib
         '
@@ -7027,32 +7063,32 @@ Partial Class metal_tilbud
         Me.tb_slib_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_slib_uk.TabIndex = 272
         '
-        'Label214
+        'minOQ1Lbl6
         '
-        Me.Label214.AutoSize = True
-        Me.Label214.Location = New System.Drawing.Point(86, 8)
-        Me.Label214.Name = "Label214"
-        Me.Label214.Size = New System.Drawing.Size(65, 13)
-        Me.Label214.TabIndex = 271
-        Me.Label214.Text = "min./O.qty.1"
+        Me.minOQ1Lbl6.AutoSize = True
+        Me.minOQ1Lbl6.Location = New System.Drawing.Point(86, 8)
+        Me.minOQ1Lbl6.Name = "minOQ1Lbl6"
+        Me.minOQ1Lbl6.Size = New System.Drawing.Size(65, 13)
+        Me.minOQ1Lbl6.TabIndex = 271
+        Me.minOQ1Lbl6.Text = "min./O.qty.1"
         '
-        'Label219
+        'overruleLbl12
         '
-        Me.Label219.AutoSize = True
-        Me.Label219.Location = New System.Drawing.Point(152, 7)
-        Me.Label219.Name = "Label219"
-        Me.Label219.Size = New System.Drawing.Size(47, 13)
-        Me.Label219.TabIndex = 245
-        Me.Label219.Text = "Overrule"
+        Me.overruleLbl12.AutoSize = True
+        Me.overruleLbl12.Location = New System.Drawing.Point(152, 7)
+        Me.overruleLbl12.Name = "overruleLbl12"
+        Me.overruleLbl12.Size = New System.Drawing.Size(47, 13)
+        Me.overruleLbl12.TabIndex = 245
+        Me.overruleLbl12.Text = "Overrule"
         '
-        'Label220
+        'sandblastingLbl
         '
-        Me.Label220.Location = New System.Drawing.Point(3, 23)
-        Me.Label220.Name = "Label220"
-        Me.Label220.Size = New System.Drawing.Size(71, 15)
-        Me.Label220.TabIndex = 244
-        Me.Label220.Text = "Sandblasting"
-        Me.Label220.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.sandblastingLbl.Location = New System.Drawing.Point(3, 23)
+        Me.sandblastingLbl.Name = "sandblastingLbl"
+        Me.sandblastingLbl.Size = New System.Drawing.Size(71, 15)
+        Me.sandblastingLbl.TabIndex = 244
+        Me.sandblastingLbl.Text = "Sandblasting"
+        Me.sandblastingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lb_glasbl
         '
@@ -7071,65 +7107,65 @@ Partial Class metal_tilbud
         Me.tb_glasbl_uk.Size = New System.Drawing.Size(53, 20)
         Me.tb_glasbl_uk.TabIndex = 76
         '
-        'Label217
+        'grindingLbl
         '
-        Me.Label217.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label217.Location = New System.Drawing.Point(128, 108)
-        Me.Label217.Name = "Label217"
-        Me.Label217.Size = New System.Drawing.Size(155, 18)
-        Me.Label217.TabIndex = 493
-        Me.Label217.Text = "Grinding"
-        Me.Label217.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.grindingLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.grindingLbl.Location = New System.Drawing.Point(128, 108)
+        Me.grindingLbl.Name = "grindingLbl"
+        Me.grindingLbl.Size = New System.Drawing.Size(155, 18)
+        Me.grindingLbl.TabIndex = 493
+        Me.grindingLbl.Text = "Grinding"
+        Me.grindingLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label218
+        'officeControl
         '
-        Me.Label218.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label218.Location = New System.Drawing.Point(128, 128)
-        Me.Label218.Name = "Label218"
-        Me.Label218.Size = New System.Drawing.Size(155, 18)
-        Me.Label218.TabIndex = 492
-        Me.Label218.Text = "Office + Control"
-        Me.Label218.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.officeControl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.officeControl.Location = New System.Drawing.Point(128, 128)
+        Me.officeControl.Name = "officeControl"
+        Me.officeControl.Size = New System.Drawing.Size(155, 18)
+        Me.officeControl.TabIndex = 492
+        Me.officeControl.Text = "Office + Control"
+        Me.officeControl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label221
+        'weldStraiLbl
         '
-        Me.Label221.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label221.Location = New System.Drawing.Point(128, 88)
-        Me.Label221.Name = "Label221"
-        Me.Label221.Size = New System.Drawing.Size(155, 18)
-        Me.Label221.TabIndex = 491
-        Me.Label221.Text = "Welding + straightening"
-        Me.Label221.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.weldStraiLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.weldStraiLbl.Location = New System.Drawing.Point(128, 88)
+        Me.weldStraiLbl.Name = "weldStraiLbl"
+        Me.weldStraiLbl.Size = New System.Drawing.Size(155, 18)
+        Me.weldStraiLbl.TabIndex = 491
+        Me.weldStraiLbl.Text = "Welding + straightening"
+        Me.weldStraiLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label222
+        'bendSpotRollLbl
         '
-        Me.Label222.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label222.Location = New System.Drawing.Point(128, 68)
-        Me.Label222.Name = "Label222"
-        Me.Label222.Size = New System.Drawing.Size(155, 18)
-        Me.Label222.TabIndex = 490
-        Me.Label222.Text = "Bend + spot weld + roll"
-        Me.Label222.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.bendSpotRollLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.bendSpotRollLbl.Location = New System.Drawing.Point(128, 68)
+        Me.bendSpotRollLbl.Name = "bendSpotRollLbl"
+        Me.bendSpotRollLbl.Size = New System.Drawing.Size(155, 18)
+        Me.bendSpotRollLbl.TabIndex = 490
+        Me.bendSpotRollLbl.Text = "Bend + spot weld + roll"
+        Me.bendSpotRollLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label223
+        'manualLbl
         '
-        Me.Label223.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label223.Location = New System.Drawing.Point(128, 48)
-        Me.Label223.Name = "Label223"
-        Me.Label223.Size = New System.Drawing.Size(155, 18)
-        Me.Label223.TabIndex = 489
-        Me.Label223.Text = "Manual"
-        Me.Label223.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.manualLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.manualLbl.Location = New System.Drawing.Point(128, 48)
+        Me.manualLbl.Name = "manualLbl"
+        Me.manualLbl.Size = New System.Drawing.Size(155, 18)
+        Me.manualLbl.TabIndex = 489
+        Me.manualLbl.Text = "Manual"
+        Me.manualLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Label224
+        'cncGiloLbl
         '
-        Me.Label224.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label224.Location = New System.Drawing.Point(128, 28)
-        Me.Label224.Name = "Label224"
-        Me.Label224.Size = New System.Drawing.Size(155, 18)
-        Me.Label224.TabIndex = 488
-        Me.Label224.Text = "CNC + cut"
-        Me.Label224.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.cncGiloLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.cncGiloLbl.Location = New System.Drawing.Point(128, 28)
+        Me.cncGiloLbl.Name = "cncGiloLbl"
+        Me.cncGiloLbl.Size = New System.Drawing.Size(155, 18)
+        Me.cncGiloLbl.TabIndex = 488
+        Me.cncGiloLbl.Text = "CNC + cut"
+        Me.cncGiloLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lb_ukCNCstanstime
         '
@@ -7142,26 +7178,26 @@ Partial Class metal_tilbud
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.Label217)
-        Me.GroupBox3.Controls.Add(Me.Label218)
-        Me.GroupBox3.Controls.Add(Me.Label221)
-        Me.GroupBox3.Controls.Add(Me.Label222)
-        Me.GroupBox3.Controls.Add(Me.Label223)
-        Me.GroupBox3.Controls.Add(Me.Label224)
+        Me.GroupBox3.Controls.Add(Me.grindingLbl)
+        Me.GroupBox3.Controls.Add(Me.officeControl)
+        Me.GroupBox3.Controls.Add(Me.weldStraiLbl)
+        Me.GroupBox3.Controls.Add(Me.bendSpotRollLbl)
+        Me.GroupBox3.Controls.Add(Me.manualLbl)
+        Me.GroupBox3.Controls.Add(Me.cncGiloLbl)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid5slib)
-        Me.GroupBox3.Controls.Add(Me.Label216)
-        Me.GroupBox3.Controls.Add(Me.Label212)
+        Me.GroupBox3.Controls.Add(Me.group5Lbl)
+        Me.GroupBox3.Controls.Add(Me.hoursLbl)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid5)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid4)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid3)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid2)
         Me.GroupBox3.Controls.Add(Me.lb_gruppetid1)
-        Me.GroupBox3.Controls.Add(Me.Label211)
-        Me.GroupBox3.Controls.Add(Me.Label210)
-        Me.GroupBox3.Controls.Add(Me.Label209)
-        Me.GroupBox3.Controls.Add(Me.Label208)
-        Me.GroupBox3.Controls.Add(Me.Label207)
-        Me.GroupBox3.Controls.Add(Me.Label206)
+        Me.GroupBox3.Controls.Add(Me.group6Lbl)
+        Me.GroupBox3.Controls.Add(Me.group4Lbl)
+        Me.GroupBox3.Controls.Add(Me.group3Lbl)
+        Me.GroupBox3.Controls.Add(Me.group2Lbl)
+        Me.GroupBox3.Controls.Add(Me.group1Lbl)
+        Me.GroupBox3.Controls.Add(Me.groupTimesByOQty1Lbl)
         Me.GroupBox3.Location = New System.Drawing.Point(996, 34)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(287, 153)
@@ -7290,26 +7326,26 @@ Partial Class metal_tilbud
         Me.tb_tilbudnr.TabIndex = 498
         Me.tb_tilbudnr.WordWrap = False
         '
-        'Label243
+        'offerNrLbl
         '
-        Me.Label243.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label243.Location = New System.Drawing.Point(1306, 988)
-        Me.Label243.Name = "Label243"
-        Me.Label243.Size = New System.Drawing.Size(103, 27)
-        Me.Label243.TabIndex = 499
-        Me.Label243.Text = "OFFER  NR."
-        Me.Label243.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Label243.UseCompatibleTextRendering = True
+        Me.offerNrLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.offerNrLbl.Location = New System.Drawing.Point(1306, 988)
+        Me.offerNrLbl.Name = "offerNrLbl"
+        Me.offerNrLbl.Size = New System.Drawing.Size(103, 27)
+        Me.offerNrLbl.TabIndex = 499
+        Me.offerNrLbl.Text = "OFFER  NR."
+        Me.offerNrLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.offerNrLbl.UseCompatibleTextRendering = True
         '
-        'Label245
+        'nitrogenLbl
         '
-        Me.Label245.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label245.Location = New System.Drawing.Point(993, 240)
-        Me.Label245.Name = "Label245"
-        Me.Label245.Size = New System.Drawing.Size(65, 18)
-        Me.Label245.TabIndex = 500
-        Me.Label245.Text = "Nitrogen"
-        Me.Label245.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.nitrogenLbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.nitrogenLbl.Location = New System.Drawing.Point(993, 240)
+        Me.nitrogenLbl.Name = "nitrogenLbl"
+        Me.nitrogenLbl.Size = New System.Drawing.Size(65, 18)
+        Me.nitrogenLbl.TabIndex = 500
+        Me.nitrogenLbl.Text = "Nitrogen"
+        Me.nitrogenLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'lb_nitrogen
         '
@@ -7321,15 +7357,15 @@ Partial Class metal_tilbud
         Me.lb_nitrogen.TabIndex = 501
         Me.lb_nitrogen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label247
+        'dkkNetByOQty1Lbl
         '
-        Me.Label247.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Label247.Location = New System.Drawing.Point(1124, 240)
-        Me.Label247.Name = "Label247"
-        Me.Label247.Size = New System.Drawing.Size(125, 18)
-        Me.Label247.TabIndex = 502
-        Me.Label247.Text = "dkk net by Order qty. 1"
-        Me.Label247.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.dkkNetByOQty1Lbl.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.dkkNetByOQty1Lbl.Location = New System.Drawing.Point(1124, 240)
+        Me.dkkNetByOQty1Lbl.Name = "dkkNetByOQty1Lbl"
+        Me.dkkNetByOQty1Lbl.Size = New System.Drawing.Size(125, 18)
+        Me.dkkNetByOQty1Lbl.TabIndex = 502
+        Me.dkkNetByOQty1Lbl.Text = "dkk net by Order qty. 1"
+        Me.dkkNetByOQty1Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'tb_samkørsel
         '
@@ -7341,30 +7377,30 @@ Partial Class metal_tilbud
         Me.tb_samkørsel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.tb_samkørsel.WordWrap = False
         '
-        'Label246
+        'samkorselLbl
         '
-        Me.Label246.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label246.Location = New System.Drawing.Point(2, 6)
-        Me.Label246.Name = "Label246"
-        Me.Label246.Size = New System.Drawing.Size(255, 18)
-        Me.Label246.TabIndex = 504
-        Me.Label246.Text = "Samkørsel with   (reduced setup time)"
+        Me.samkorselLbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.samkorselLbl.Location = New System.Drawing.Point(2, 6)
+        Me.samkorselLbl.Name = "samkorselLbl"
+        Me.samkorselLbl.Size = New System.Drawing.Size(255, 18)
+        Me.samkorselLbl.TabIndex = 504
+        Me.samkorselLbl.Text = "Samkørsel with   (reduced setup time)"
         '
-        'Label248
+        'drawingNumbLbl2
         '
-        Me.Label248.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label248.Location = New System.Drawing.Point(0, 38)
-        Me.Label248.Name = "Label248"
-        Me.Label248.Size = New System.Drawing.Size(74, 20)
-        Me.Label248.TabIndex = 505
-        Me.Label248.Text = "Drawing nr."
+        Me.drawingNumbLbl2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.drawingNumbLbl2.Location = New System.Drawing.Point(0, 38)
+        Me.drawingNumbLbl2.Name = "drawingNumbLbl2"
+        Me.drawingNumbLbl2.Size = New System.Drawing.Size(74, 20)
+        Me.drawingNumbLbl2.TabIndex = 505
+        Me.drawingNumbLbl2.Text = "Drawing nr."
         '
         'gb_samkørsel
         '
         Me.gb_samkørsel.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
         Me.gb_samkørsel.Controls.Add(Me.tb_samkørsel)
-        Me.gb_samkørsel.Controls.Add(Me.Label248)
-        Me.gb_samkørsel.Controls.Add(Me.Label246)
+        Me.gb_samkørsel.Controls.Add(Me.drawingNumbLbl2)
+        Me.gb_samkørsel.Controls.Add(Me.samkorselLbl)
         Me.gb_samkørsel.Location = New System.Drawing.Point(1300, 700)
         Me.gb_samkørsel.Name = "gb_samkørsel"
         Me.gb_samkørsel.Size = New System.Drawing.Size(268, 64)
@@ -7389,14 +7425,14 @@ Partial Class metal_tilbud
         Me.lb_tapsvejs_tid.TabIndex = 282
         Me.lb_tapsvejs_tid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label255
+        'tapWeldingLbl
         '
-        Me.Label255.AutoSize = True
-        Me.Label255.Location = New System.Drawing.Point(5, 33)
-        Me.Label255.Name = "Label255"
-        Me.Label255.Size = New System.Drawing.Size(61, 13)
-        Me.Label255.TabIndex = 284
-        Me.Label255.Text = "tap welding"
+        Me.tapWeldingLbl.AutoSize = True
+        Me.tapWeldingLbl.Location = New System.Drawing.Point(5, 33)
+        Me.tapWeldingLbl.Name = "tapWeldingLbl"
+        Me.tapWeldingLbl.Size = New System.Drawing.Size(61, 13)
+        Me.tapWeldingLbl.TabIndex = 284
+        Me.tapWeldingLbl.Text = "tap welding"
         '
         'tb_tapantal
         '
@@ -7407,55 +7443,55 @@ Partial Class metal_tilbud
         Me.tb_tapantal.Size = New System.Drawing.Size(53, 20)
         Me.tb_tapantal.TabIndex = 285
         '
-        'Label256
+        'tapQtyLbl
         '
-        Me.Label256.AutoSize = True
-        Me.Label256.Location = New System.Drawing.Point(74, 11)
-        Me.Label256.Name = "Label256"
-        Me.Label256.Size = New System.Drawing.Size(45, 13)
-        Me.Label256.TabIndex = 286
-        Me.Label256.Text = "Tap Qty"
+        Me.tapQtyLbl.AutoSize = True
+        Me.tapQtyLbl.Location = New System.Drawing.Point(74, 11)
+        Me.tapQtyLbl.Name = "tapQtyLbl"
+        Me.tapQtyLbl.Size = New System.Drawing.Size(45, 13)
+        Me.tapQtyLbl.TabIndex = 286
+        Me.tapQtyLbl.Text = "Tap Qty"
         '
-        'Label257
+        'weldingDifficulty
         '
-        Me.Label257.AutoSize = True
-        Me.Label257.ForeColor = System.Drawing.Color.Red
-        Me.Label257.Location = New System.Drawing.Point(25, 53)
-        Me.Label257.Name = "Label257"
-        Me.Label257.Size = New System.Drawing.Size(122, 13)
-        Me.Label257.TabIndex = 287
-        Me.Label257.Text = "WELDING DIFFICULTY"
+        Me.weldingDifficulty.AutoSize = True
+        Me.weldingDifficulty.ForeColor = System.Drawing.Color.Red
+        Me.weldingDifficulty.Location = New System.Drawing.Point(25, 53)
+        Me.weldingDifficulty.Name = "weldingDifficulty"
+        Me.weldingDifficulty.Size = New System.Drawing.Size(122, 13)
+        Me.weldingDifficulty.TabIndex = 287
+        Me.weldingDifficulty.Text = "WELDING DIFFICULTY"
         '
         'GroupBox6
         '
         Me.GroupBox6.BackColor = System.Drawing.Color.Honeydew
-        Me.GroupBox6.Controls.Add(Me.Label259)
+        Me.GroupBox6.Controls.Add(Me.totalWeldingTime)
         Me.GroupBox6.Controls.Add(Me.tb_svejstid_ialt)
         Me.GroupBox6.Controls.Add(Me.rb_factor5)
         Me.GroupBox6.Controls.Add(Me.rb_factor2)
         Me.GroupBox6.Controls.Add(Me.rb_factor3)
         Me.GroupBox6.Controls.Add(Me.rb_factor4)
         Me.GroupBox6.Controls.Add(Me.rb_factor1)
-        Me.GroupBox6.Controls.Add(Me.Label257)
-        Me.GroupBox6.Controls.Add(Me.Label256)
+        Me.GroupBox6.Controls.Add(Me.weldingDifficulty)
+        Me.GroupBox6.Controls.Add(Me.tapQtyLbl)
         Me.GroupBox6.Controls.Add(Me.lb_tapsvejs_tid)
         Me.GroupBox6.Controls.Add(Me.tb_tapantal)
         Me.GroupBox6.Controls.Add(Me.tb_tapsvejs_uk)
-        Me.GroupBox6.Controls.Add(Me.Label255)
+        Me.GroupBox6.Controls.Add(Me.tapWeldingLbl)
         Me.GroupBox6.Location = New System.Drawing.Point(1021, 565)
         Me.GroupBox6.Name = "GroupBox6"
         Me.GroupBox6.Size = New System.Drawing.Size(210, 115)
         Me.GroupBox6.TabIndex = 507
         Me.GroupBox6.TabStop = False
         '
-        'Label259
+        'totalWeldingTime
         '
-        Me.Label259.AutoSize = True
-        Me.Label259.Location = New System.Drawing.Point(1, 95)
-        Me.Label259.Name = "Label259"
-        Me.Label259.Size = New System.Drawing.Size(92, 13)
-        Me.Label259.TabIndex = 294
-        Me.Label259.Text = "Total welding time"
+        Me.totalWeldingTime.AutoSize = True
+        Me.totalWeldingTime.Location = New System.Drawing.Point(1, 95)
+        Me.totalWeldingTime.Name = "totalWeldingTime"
+        Me.totalWeldingTime.Size = New System.Drawing.Size(92, 13)
+        Me.totalWeldingTime.TabIndex = 294
+        Me.totalWeldingTime.Text = "Total welding time"
         '
         'tb_svejstid_ialt
         '
@@ -7520,6 +7556,57 @@ Partial Class metal_tilbud
         Me.rb_factor4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.rb_factor4.UseVisualStyleBackColor = False
         '
+        'engRadio
+        '
+        Me.engRadio.AutoSize = True
+        Me.engRadio.Checked = True
+        Me.engRadio.Location = New System.Drawing.Point(11, 35)
+        Me.engRadio.Name = "engRadio"
+        Me.engRadio.Size = New System.Drawing.Size(14, 13)
+        Me.engRadio.TabIndex = 508
+        Me.engRadio.TabStop = True
+        Me.engRadio.UseVisualStyleBackColor = True
+        '
+        'danRadio
+        '
+        Me.danRadio.AutoSize = True
+        Me.danRadio.Location = New System.Drawing.Point(11, 76)
+        Me.danRadio.Name = "danRadio"
+        Me.danRadio.Size = New System.Drawing.Size(14, 13)
+        Me.danRadio.TabIndex = 509
+        Me.danRadio.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(6, 16)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(30, 13)
+        Me.Label1.TabIndex = 510
+        Me.Label1.Text = "ENG"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(6, 59)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(30, 13)
+        Me.Label2.TabIndex = 511
+        Me.Label2.Text = "DAN"
+        '
+        'langBox
+        '
+        Me.langBox.BackColor = System.Drawing.Color.Linen
+        Me.langBox.Controls.Add(Me.Label1)
+        Me.langBox.Controls.Add(Me.Label2)
+        Me.langBox.Controls.Add(Me.engRadio)
+        Me.langBox.Controls.Add(Me.danRadio)
+        Me.langBox.Location = New System.Drawing.Point(1564, 19)
+        Me.langBox.Name = "langBox"
+        Me.langBox.Size = New System.Drawing.Size(37, 100)
+        Me.langBox.TabIndex = 512
+        Me.langBox.TabStop = False
+        '
         'metal_tilbud
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7527,13 +7614,14 @@ Partial Class metal_tilbud
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FloralWhite
         Me.ClientSize = New System.Drawing.Size(1604, 1018)
+        Me.Controls.Add(Me.langBox)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.gb_samkørsel)
         Me.Controls.Add(Me.rb_D_stans)
-        Me.Controls.Add(Me.Label247)
+        Me.Controls.Add(Me.dkkNetByOQty1Lbl)
         Me.Controls.Add(Me.lb_nitrogen)
-        Me.Controls.Add(Me.Label245)
-        Me.Controls.Add(Me.Label243)
+        Me.Controls.Add(Me.nitrogenLbl)
+        Me.Controls.Add(Me.offerNrLbl)
         Me.Controls.Add(Me.tb_tilbudnr)
         Me.Controls.Add(Me.gb_presmøtrik)
         Me.Controls.Add(Me.GroupBox4)
@@ -7544,10 +7632,10 @@ Partial Class metal_tilbud
         Me.Controls.Add(Me.lb_ukTime)
         Me.Controls.Add(Me.gb_forbrug)
         Me.Controls.Add(Me.lb_rækkeantal)
-        Me.Controls.Add(Me.Label138)
-        Me.Controls.Add(Me.Label124)
-        Me.Controls.Add(Me.Label110)
-        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.group1Lbl2)
+        Me.Controls.Add(Me.group1Lbl5)
+        Me.Controls.Add(Me.group1Lbl3)
+        Me.Controls.Add(Me.group1Lbl4)
         Me.Controls.Add(Me.rb_klip)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -7566,15 +7654,15 @@ Partial Class metal_tilbud
         Me.Controls.Add(Me.gb_gruppe2)
         Me.Controls.Add(Me.gb_gruppe1)
         Me.Controls.Add(Me.gb_buk)
-        Me.Controls.Add(Me.Label78)
+        Me.Controls.Add(Me.additionalInfoLbl)
         Me.Controls.Add(Me.rtb_bem)
         Me.Controls.Add(Me.Label57)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.revLbl)
         Me.Controls.Add(Me.tb_revision)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.drawingNumbLbl)
+        Me.Controls.Add(Me.partNameLbl)
         Me.Controls.Add(Me.tb_emne)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.clientLbl)
         Me.Controls.Add(Me.cb_kunde)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.Cursor = System.Windows.Forms.Cursors.Arrow
@@ -7635,49 +7723,51 @@ Partial Class metal_tilbud
         Me.gb_samkørsel.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
+        Me.langBox.ResumeLayout(False)
+        Me.langBox.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Label78 As System.Windows.Forms.Label
+    Friend WithEvents additionalInfoLbl As System.Windows.Forms.Label
     Friend WithEvents rtb_bem As System.Windows.Forms.RichTextBox
-    Friend WithEvents Label76 As System.Windows.Forms.Label
-    Friend WithEvents Label68 As System.Windows.Forms.Label
-    Friend WithEvents Label69 As System.Windows.Forms.Label
+    Friend WithEvents oQty1Lbl As System.Windows.Forms.Label
+    Friend WithEvents operatorLbl2 As System.Windows.Forms.Label
+    Friend WithEvents updateDateLbl As System.Windows.Forms.Label
     Friend WithEvents lb_operatør As System.Windows.Forms.Label
     Friend WithEvents lb_dato As System.Windows.Forms.Label
-    Friend WithEvents Label56 As System.Windows.Forms.Label
+    Friend WithEvents programsDkkLbl As System.Windows.Forms.Label
     Friend WithEvents Label57 As System.Windows.Forms.Label
-    Friend WithEvents Label39 As System.Windows.Forms.Label
-    Friend WithEvents Label50 As System.Windows.Forms.Label
+    Friend WithEvents actualOfferDkk2Lbl As System.Windows.Forms.Label
+    Friend WithEvents salespriceSetupProgDkkLbl As System.Windows.Forms.Label
     Friend WithEvents tb_opstart_afgivettilbud As System.Windows.Forms.TextBox
     Friend WithEvents Label51 As System.Windows.Forms.Label
-    Friend WithEvents Label54 As System.Windows.Forms.Label
+    Friend WithEvents profit2Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_opstart_avance As System.Windows.Forms.TextBox
-    Friend WithEvents Label55 As System.Windows.Forms.Label
-    Friend WithEvents Label59 As System.Windows.Forms.Label
-    Friend WithEvents Label60 As System.Windows.Forms.Label
+    Friend WithEvents setupProgramsTotalDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents setupDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents setup1stTimeLbl As System.Windows.Forms.Label
     Friend WithEvents lb_opst_prog_brutto As System.Windows.Forms.Label
     Friend WithEvents lb_opstart_program As System.Windows.Forms.Label
     Friend WithEvents lb_program_kr As System.Windows.Forms.Label
     Friend WithEvents lb_antal_opstart As System.Windows.Forms.Label
-    Friend WithEvents Label38 As System.Windows.Forms.Label
-    Friend WithEvents Label37 As System.Windows.Forms.Label
+    Friend WithEvents actualOfferDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents salepricePcTotDkkLbl As System.Windows.Forms.Label
     Friend WithEvents tb_tilbud2 As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilbud3 As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilbud4 As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilbud5 As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilbud1 As System.Windows.Forms.TextBox
     Friend WithEvents Label36 As System.Windows.Forms.Label
-    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents profitLbl As System.Windows.Forms.Label
     Friend WithEvents tb_avance As System.Windows.Forms.TextBox
-    Friend WithEvents Label49 As System.Windows.Forms.Label
-    Friend WithEvents Label48 As System.Windows.Forms.Label
-    Friend WithEvents Label47 As System.Windows.Forms.Label
-    Friend WithEvents Label53 As System.Windows.Forms.Label
-    Friend WithEvents Label52 As System.Windows.Forms.Label
-    Friend WithEvents Label46 As System.Windows.Forms.Label
-    Friend WithEvents Label45 As System.Windows.Forms.Label
+    Friend WithEvents sumPcTotDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents rawMatPcTotDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents outsourcedServDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents TimeCostDkkLbl As System.Windows.Forms.Label
+    Friend WithEvents CNCCostDkkHoursLbl As System.Windows.Forms.Label
+    Friend WithEvents ManCostDkkHoursLbl As System.Windows.Forms.Label
+    Friend WithEvents qtyLbl As System.Windows.Forms.Label
     Friend WithEvents lb_salg2 As System.Windows.Forms.Label
     Friend WithEvents lb_salg3 As System.Windows.Forms.Label
     Friend WithEvents lb_salg4 As System.Windows.Forms.Label
@@ -7718,15 +7808,15 @@ Partial Class metal_tilbud
     Friend WithEvents tb_antal4 As System.Windows.Forms.TextBox
     Friend WithEvents tb_antal5 As System.Windows.Forms.TextBox
     Friend WithEvents tb_antal1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents revLbl As System.Windows.Forms.Label
     Friend WithEvents tb_revision As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents drawingNumbLbl As System.Windows.Forms.Label
+    Friend WithEvents partNameLbl As System.Windows.Forms.Label
     Friend WithEvents tb_emne As System.Windows.Forms.TextBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents clientLbl As System.Windows.Forms.Label
     Friend WithEvents cb_kunde As System.Windows.Forms.ComboBox
     Friend WithEvents bu_Reset As System.Windows.Forms.Button
-    Friend WithEvents lb_tykkelse As System.Windows.Forms.Label
+    Friend WithEvents plateThicknessLbl As System.Windows.Forms.Label
     Friend WithEvents tb_pladetykkelse As System.Windows.Forms.TextBox
     Friend WithEvents cb_materiale As System.Windows.Forms.ComboBox
     Friend WithEvents gb_gruppe1 As System.Windows.Forms.GroupBox
@@ -7737,53 +7827,53 @@ Partial Class metal_tilbud
     Friend WithEvents gb_admin As System.Windows.Forms.GroupBox
     Friend WithEvents gb_overfladebeh As System.Windows.Forms.GroupBox
     Friend WithEvents tb_bukmax_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label70 As System.Windows.Forms.Label
+    Friend WithEvents biggestMeasureLbl As System.Windows.Forms.Label
     Friend WithEvents gb_buk As System.Windows.Forms.GroupBox
-    Friend WithEvents Label75 As System.Windows.Forms.Label
+    Friend WithEvents bend5Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk5_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk5_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label74 As System.Windows.Forms.Label
+    Friend WithEvents bend4Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk4_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk4_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label73 As System.Windows.Forms.Label
+    Friend WithEvents bend3Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk3_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk3_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label72 As System.Windows.Forms.Label
+    Friend WithEvents bend2Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk2_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk2_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label71 As System.Windows.Forms.Label
+    Friend WithEvents bend1Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk1_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk1_y As System.Windows.Forms.TextBox
     Friend WithEvents lb_udfold_y As System.Windows.Forms.Label
     Friend WithEvents lb_udfold_x As System.Windows.Forms.Label
-    Friend WithEvents Label84 As System.Windows.Forms.Label
-    Friend WithEvents Label83 As System.Windows.Forms.Label
+    Friend WithEvents unfoldingLbl As System.Windows.Forms.Label
+    Friend WithEvents bend11Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk11_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk11_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label82 As System.Windows.Forms.Label
+    Friend WithEvents bend10Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk10_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk10_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label81 As System.Windows.Forms.Label
+    Friend WithEvents bend9Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk9_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk9_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label80 As System.Windows.Forms.Label
+    Friend WithEvents bend8Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk8_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk8_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label79 As System.Windows.Forms.Label
+    Friend WithEvents bend7Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk7_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk7_y As System.Windows.Forms.TextBox
-    Friend WithEvents Label77 As System.Windows.Forms.Label
+    Friend WithEvents bend6Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_buk6_x As System.Windows.Forms.TextBox
     Friend WithEvents tb_buk6_y As System.Windows.Forms.TextBox
     Friend WithEvents cb_Tegning As System.Windows.Forms.ComboBox
     Friend WithEvents gb_hul As System.Windows.Forms.GroupBox
-    Friend WithEvents Label88 As System.Windows.Forms.Label
+    Friend WithEvents fileNameLbl As System.Windows.Forms.Label
     Friend WithEvents lb_filnavn As System.Windows.Forms.Label
     Friend WithEvents tb_opstart_kr_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_Program_kr_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label91 As System.Windows.Forms.Label
-    Friend WithEvents Label94 As System.Windows.Forms.Label
-    Friend WithEvents Label93 As System.Windows.Forms.Label
+    Friend WithEvents overrule1Lbl As System.Windows.Forms.Label
+    Friend WithEvents overrule3Lbl As System.Windows.Forms.Label
+    Friend WithEvents bendMinOQ1 As System.Windows.Forms.Label
     Friend WithEvents lb_buk_tid As System.Windows.Forms.Label
     Friend WithEvents tb_buk_uk As System.Windows.Forms.TextBox
     Friend WithEvents Label96 As System.Windows.Forms.Label
@@ -7791,39 +7881,38 @@ Partial Class metal_tilbud
     Friend WithEvents tb_vibration_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_boltesvejs_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_afgrat_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label106 As System.Windows.Forms.Label
+    Friend WithEvents manualDeburringLbl As System.Windows.Forms.Label
     Friend WithEvents tb_pressnut_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_grinding_uk As System.Windows.Forms.TextBox
     Friend WithEvents Label105 As System.Windows.Forms.Label
     Friend WithEvents tb_gevind_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_brush_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label104 As System.Windows.Forms.Label
+    Friend WithEvents brushDeburring As System.Windows.Forms.Label
     Friend WithEvents tb_countersink_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label103 As System.Windows.Forms.Label
-    Friend WithEvents Label101 As System.Windows.Forms.Label
+    Friend WithEvents vibrateDeburring As System.Windows.Forms.Label
     Friend WithEvents tb_stans_manuel_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_rette_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label102 As System.Windows.Forms.Label
-    Friend WithEvents Label100 As System.Windows.Forms.Label
+    Friend WithEvents strainghtMachineLbl As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl9 As System.Windows.Forms.Label
     Friend WithEvents gb_pristabel As System.Windows.Forms.GroupBox
     Friend WithEvents gb_opstart As System.Windows.Forms.GroupBox
     Friend WithEvents gb_matr As System.Windows.Forms.GroupBox
-    Friend WithEvents Label98 As System.Windows.Forms.Label
-    Friend WithEvents Label97 As System.Windows.Forms.Label
+    Friend WithEvents cncMinOQ1Lbl As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl4 As System.Windows.Forms.Label
     Friend WithEvents tb_CNCmin_uk As System.Windows.Forms.TextBox
     Friend WithEvents rb_klip As System.Windows.Forms.RadioButton
     Friend WithEvents rb_C_laser As System.Windows.Forms.RadioButton
     Friend WithEvents rb_D_stans As System.Windows.Forms.RadioButton
-    Friend WithEvents Label99 As System.Windows.Forms.Label
+    Friend WithEvents toolChangeLbl1 As System.Windows.Forms.Label
     Friend WithEvents lb_gruppe1_tid As System.Windows.Forms.Label
     Friend WithEvents lb_boltesvejs As System.Windows.Forms.Label
     Friend WithEvents lb_pressnut As System.Windows.Forms.Label
     Friend WithEvents lb_gevind As System.Windows.Forms.Label
     Friend WithEvents lb_countersink As System.Windows.Forms.Label
-    Friend WithEvents Label118 As System.Windows.Forms.Label
-    Friend WithEvents Label117 As System.Windows.Forms.Label
-    Friend WithEvents Label116 As System.Windows.Forms.Label
-    Friend WithEvents Label115 As System.Windows.Forms.Label
+    Friend WithEvents oQty2Lbl As System.Windows.Forms.Label
+    Friend WithEvents oQty3Lbl As System.Windows.Forms.Label
+    Friend WithEvents oQty4Lbl As System.Windows.Forms.Label
+    Friend WithEvents oQty5Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_timer2 As System.Windows.Forms.Label
     Friend WithEvents lb_timer3 As System.Windows.Forms.Label
     Friend WithEvents lb_timer4 As System.Windows.Forms.Label
@@ -7834,21 +7923,21 @@ Partial Class metal_tilbud
     Friend WithEvents Label119 As System.Windows.Forms.Label
     Friend WithEvents rb_netto As System.Windows.Forms.RadioButton
     Friend WithEvents rb_brutto As System.Windows.Forms.RadioButton
-    Friend WithEvents Label128 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl10 As System.Windows.Forms.Label
     Friend WithEvents lb_spotweld As System.Windows.Forms.Label
     Friend WithEvents tb_spotweld_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label132 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl11 As System.Windows.Forms.Label
     Friend WithEvents lb_grind_weld As System.Windows.Forms.Label
     Friend WithEvents lb_weld As System.Windows.Forms.Label
     Friend WithEvents lb_tackweld As System.Windows.Forms.Label
     Friend WithEvents tb_grind_weld_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_weld_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_tackweld_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label137 As System.Windows.Forms.Label
+    Friend WithEvents controlLbl As System.Windows.Forms.Label
     Friend WithEvents lb_kontrol As System.Windows.Forms.Label
     Friend WithEvents tb_kontrol_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label133 As System.Windows.Forms.Label
-    Friend WithEvents Label134 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl13 As System.Windows.Forms.Label
+    Friend WithEvents officeLbl As System.Windows.Forms.Label
     Friend WithEvents lb_kontor As System.Windows.Forms.Label
     Friend WithEvents tb_kontor_uk As System.Windows.Forms.TextBox
     Friend WithEvents rb_B_kombi As System.Windows.Forms.RadioButton
@@ -7860,9 +7949,9 @@ Partial Class metal_tilbud
     Friend WithEvents lb_rette As System.Windows.Forms.Label
     Friend WithEvents lb_vibration As System.Windows.Forms.Label
     Friend WithEvents lb_brush As System.Windows.Forms.Label
-    Friend WithEvents Label147 As System.Windows.Forms.Label
-    Friend WithEvents Label151 As System.Windows.Forms.Label
-    Friend WithEvents Label148 As System.Windows.Forms.Label
+    Friend WithEvents presnutQPILbl As System.Windows.Forms.Label
+    Friend WithEvents totalQtyLbl As System.Windows.Forms.Label
+    Friend WithEvents totalQtyLbl2 As System.Windows.Forms.Label
     Friend WithEvents TextBox77 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox76 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox75 As System.Windows.Forms.TextBox
@@ -7917,100 +8006,100 @@ Partial Class metal_tilbud
     Friend WithEvents bu_udskriv As System.Windows.Forms.Button
     Friend WithEvents lb_gevind_antal As System.Windows.Forms.Label
     Friend WithEvents lb_undersænk_antal As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents moduleSizeLbl As System.Windows.Forms.Label
+    Friend WithEvents materialGroupLbl As System.Windows.Forms.Label
+    Friend WithEvents difficultyLbl As System.Windows.Forms.Label
+    Friend WithEvents oneTo6Lbl As System.Windows.Forms.Label
+    Friend WithEvents hourPricesLbl As System.Windows.Forms.Label
+    Friend WithEvents manLbl As System.Windows.Forms.Label
     Friend WithEvents tb_timesats_mand As System.Windows.Forms.TextBox
-    Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents plateFormatLbl As System.Windows.Forms.Label
+    Friend WithEvents itemsPerPlateLbl As System.Windows.Forms.Label
+    Friend WithEvents plateQtyLbl As System.Windows.Forms.Label
     Friend WithEvents lb_antalplader As System.Windows.Forms.Label
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents wasteLbl As System.Windows.Forms.Label
     Friend WithEvents lb_emner_prplade As System.Windows.Forms.Label
     Friend WithEvents lb_pladeformatX As System.Windows.Forms.Label
     Friend WithEvents lb_pladeformatY As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents lb_spild As System.Windows.Forms.Label
     Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents forOQty1Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_spildtype As System.Windows.Forms.Label
     Friend WithEvents lb_modulstr As System.Windows.Forms.Label
-    Friend WithEvents Label30 As System.Windows.Forms.Label
+    Friend WithEvents setupBending As System.Windows.Forms.Label
     Friend WithEvents lb_buk_opst As System.Windows.Forms.Label
     Friend WithEvents tb_buk_opst_uk As System.Windows.Forms.TextBox
     Friend WithEvents lb_emnevægt As System.Windows.Forms.Label
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label31 As System.Windows.Forms.Label
+    Friend WithEvents itemWeightLbl As System.Windows.Forms.Label
+    Friend WithEvents numbOfHoles2to10Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_slag_til_huller As System.Windows.Forms.TextBox
     Friend WithEvents tb_toolshift As System.Windows.Forms.TextBox
-    Friend WithEvents Label32 As System.Windows.Forms.Label
+    Friend WithEvents totCuttingLen100Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_cuttinglength_C As System.Windows.Forms.TextBox
-    Friend WithEvents Label33 As System.Windows.Forms.Label
-    Friend WithEvents Label41 As System.Windows.Forms.Label
+    Friend WithEvents perItemLbl As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl1 As System.Windows.Forms.Label
     Friend WithEvents Label58 As System.Windows.Forms.Label
     Friend WithEvents tb_timesats_C As System.Windows.Forms.TextBox
     Friend WithEvents Label43 As System.Windows.Forms.Label
     Friend WithEvents tb_timesats_B As System.Windows.Forms.TextBox
-    Friend WithEvents Label40 As System.Windows.Forms.Label
+    Friend WithEvents bPunchLbl As System.Windows.Forms.Label
     Friend WithEvents tb_timesats_D As System.Windows.Forms.TextBox
     Friend WithEvents lb_gruppe1_opstart As System.Windows.Forms.Label
-    Friend WithEvents lb_opstart As System.Windows.Forms.Label
+    Friend WithEvents setupMin2 As System.Windows.Forms.Label
     Friend WithEvents tb_gruppe1_opstart_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label64 As System.Windows.Forms.Label
+    Friend WithEvents numbHoles11to50Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_2C As System.Windows.Forms.TextBox
-    Friend WithEvents Label85 As System.Windows.Forms.Label
+    Friend WithEvents numbHoles51to100Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_3C As System.Windows.Forms.TextBox
     Friend WithEvents lb_laser_opstart As System.Windows.Forms.Label
-    Friend WithEvents Label90 As System.Windows.Forms.Label
+    Friend WithEvents setupMinLbl3 As System.Windows.Forms.Label
     Friend WithEvents tb_laser_opstart_uk As System.Windows.Forms.TextBox
     Friend WithEvents lb_laserCNC_tid As System.Windows.Forms.Label
-    Friend WithEvents Label107 As System.Windows.Forms.Label
-    Friend WithEvents Label108 As System.Windows.Forms.Label
+    Friend WithEvents cncMinOQ1Lbl2 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl5 As System.Windows.Forms.Label
     Friend WithEvents tb_laserCNC_tid_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label86 As System.Windows.Forms.Label
+    Friend WithEvents numberOfStrokesPerHoleLbl As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_1C As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents tb_combiCNC_tid_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label109 As System.Windows.Forms.Label
+    Friend WithEvents numbHoles51to100Lbl2 As System.Windows.Forms.Label
     Friend WithEvents lb_Combi_opstart As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_3B As System.Windows.Forms.TextBox
-    Friend WithEvents Label111 As System.Windows.Forms.Label
-    Friend WithEvents Label112 As System.Windows.Forms.Label
-    Friend WithEvents Label113 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl6 As System.Windows.Forms.Label
+    Friend WithEvents numbHoles11to50Lbl2 As System.Windows.Forms.Label
+    Friend WithEvents CncMinLaserOQ1Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_2B As System.Windows.Forms.TextBox
-    Friend WithEvents Label114 As System.Windows.Forms.Label
+    Friend WithEvents setupMinLbl4 As System.Windows.Forms.Label
     Friend WithEvents lb_CombiCNC_tid As System.Windows.Forms.Label
     Friend WithEvents tb_cuttinglength_B As System.Windows.Forms.TextBox
     Friend WithEvents tb_combi_opstart_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label125 As System.Windows.Forms.Label
+    Friend WithEvents numbOfHoles2to10Lbl2 As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_1B As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents tb_klip_tid_uk As System.Windows.Forms.TextBox
     Friend WithEvents lb_klip_opstart As System.Windows.Forms.Label
-    Friend WithEvents Label127 As System.Windows.Forms.Label
-    Friend WithEvents Label129 As System.Windows.Forms.Label
+    Friend WithEvents cutMinOQ1Lbl As System.Windows.Forms.Label
+    Friend WithEvents setupMinLbl As System.Windows.Forms.Label
     Friend WithEvents lb_klip_tid As System.Windows.Forms.Label
     Friend WithEvents tb_klip_opstart_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label131 As System.Windows.Forms.Label
+    Friend WithEvents numberOfStrokesPerHoleLbl2 As System.Windows.Forms.Label
     Friend WithEvents tb_slag_til_huller_B As System.Windows.Forms.TextBox
-    Friend WithEvents Label135 As System.Windows.Forms.Label
+    Friend WithEvents peritemLbl2 As System.Windows.Forms.Label
     Friend WithEvents tb_toolshift_B As System.Windows.Forms.TextBox
-    Friend WithEvents Label136 As System.Windows.Forms.Label
-    Friend WithEvents Label123 As System.Windows.Forms.Label
-    Friend WithEvents Label89 As System.Windows.Forms.Label
+    Friend WithEvents toolChange2 As System.Windows.Forms.Label
+    Friend WithEvents totCuttingLen100Lbl2 As System.Windows.Forms.Label
+    Friend WithEvents gradeLbl As System.Windows.Forms.Label
     Friend WithEvents Lb_klasse As System.Windows.Forms.Label
     Friend WithEvents Lb_matrgruppe As System.Windows.Forms.Label
     Friend WithEvents Lb_Kilopris As System.Windows.Forms.Label
-    Friend WithEvents Label92 As System.Windows.Forms.Label
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents Label110 As System.Windows.Forms.Label
-    Friend WithEvents Label124 As System.Windows.Forms.Label
-    Friend WithEvents Label138 As System.Windows.Forms.Label
-    Friend WithEvents Label126 As System.Windows.Forms.Label
+    Friend WithEvents costPriceDkkKgLbl As System.Windows.Forms.Label
+    Friend WithEvents group1Lbl4 As System.Windows.Forms.Label
+    Friend WithEvents group1Lbl3 As System.Windows.Forms.Label
+    Friend WithEvents group1Lbl5 As System.Windows.Forms.Label
+    Friend WithEvents group1Lbl2 As System.Windows.Forms.Label
+    Friend WithEvents programQtyLbl As System.Windows.Forms.Label
     Friend WithEvents cb_afgrat As System.Windows.Forms.CheckBox
     Friend WithEvents cb_steelmaster As System.Windows.Forms.CheckBox
     Friend WithEvents cb_brush As System.Windows.Forms.CheckBox
@@ -8019,20 +8108,20 @@ Partial Class metal_tilbud
     Friend WithEvents tb_antal_program_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_antal_opstart_uk As System.Windows.Forms.TextBox
     Friend WithEvents lb_rækkeantal As System.Windows.Forms.Label
-    Friend WithEvents Label63 As System.Windows.Forms.Label
+    Friend WithEvents minutesLbl As System.Windows.Forms.Label
     Friend WithEvents lb_opstart_kr As System.Windows.Forms.Label
     Friend WithEvents lb_antal_program As System.Windows.Forms.Label
-    Friend WithEvents Label61 As System.Windows.Forms.Label
+    Friend WithEvents supplierLbl As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_pris1 As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_afdæk1 As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_opstart1 As System.Windows.Forms.TextBox
-    Friend WithEvents Label67 As System.Windows.Forms.Label
-    Friend WithEvents Label66 As System.Windows.Forms.Label
-    Friend WithEvents Label65 As System.Windows.Forms.Label
-    Friend WithEvents Label62 As System.Windows.Forms.Label
-    Friend WithEvents Label140 As System.Windows.Forms.Label
+    Friend WithEvents priceDkkPcLbl As System.Windows.Forms.Label
+    Friend WithEvents coatingDkkPc As System.Windows.Forms.Label
+    Friend WithEvents setupDkkLbl2 As System.Windows.Forms.Label
+    Friend WithEvents surfaceTreatmentLbl As System.Windows.Forms.Label
+    Friend WithEvents dkkPcLbl As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_pris100_1 As System.Windows.Forms.Label
-    Friend WithEvents Label130 As System.Windows.Forms.Label
+    Friend WithEvents profitLbl3 As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_avance1 As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_pris100_3 As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_avance3 As System.Windows.Forms.TextBox
@@ -8067,7 +8156,7 @@ Partial Class metal_tilbud
     Friend WithEvents lb_mand2_tid As System.Windows.Forms.Label
     Friend WithEvents lb_sværhed As System.Windows.Forms.Label
     Friend WithEvents lb_faktor As System.Windows.Forms.Label
-    Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents factorLbl As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents tb_m6 As System.Windows.Forms.TextBox
     Friend WithEvents Label23 As System.Windows.Forms.Label
@@ -8082,67 +8171,67 @@ Partial Class metal_tilbud
     Friend WithEvents tb_m3 As System.Windows.Forms.TextBox
     Friend WithEvents Label142 As System.Windows.Forms.Label
     Friend WithEvents tb_m4 As System.Windows.Forms.TextBox
-    Friend WithEvents Label143 As System.Windows.Forms.Label
-    Friend WithEvents Label144 As System.Windows.Forms.Label
+    Friend WithEvents qtyPerItemLbl1 As System.Windows.Forms.Label
+    Friend WithEvents threadSizeLbl As System.Windows.Forms.Label
     Friend WithEvents Label145 As System.Windows.Forms.Label
     Friend WithEvents tb_m2 As System.Windows.Forms.TextBox
-    Friend WithEvents Label179 As System.Windows.Forms.Label
-    Friend WithEvents Label180 As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl2 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl7 As System.Windows.Forms.Label
     Friend WithEvents gb_gevind As System.Windows.Forms.GroupBox
     Friend WithEvents gb_undersænk As System.Windows.Forms.GroupBox
-    Friend WithEvents Label182 As System.Windows.Forms.Label
-    Friend WithEvents Label181 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl8 As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl3 As System.Windows.Forms.Label
     Friend WithEvents Label183 As System.Windows.Forms.Label
     Friend WithEvents tb_2 As System.Windows.Forms.TextBox
     Friend WithEvents Label184 As System.Windows.Forms.Label
     Friend WithEvents tb_3 As System.Windows.Forms.TextBox
-    Friend WithEvents Label185 As System.Windows.Forms.Label
+    Friend WithEvents over15mmLbl As System.Windows.Forms.Label
     Friend WithEvents tb_4 As System.Windows.Forms.TextBox
-    Friend WithEvents Label186 As System.Windows.Forms.Label
-    Friend WithEvents Label187 As System.Windows.Forms.Label
+    Friend WithEvents qtyPerItemLbl2 As System.Windows.Forms.Label
+    Friend WithEvents diameterThreadSizeLbl As System.Windows.Forms.Label
     Friend WithEvents Label188 As System.Windows.Forms.Label
     Friend WithEvents tb_1 As System.Windows.Forms.TextBox
     Friend WithEvents gb_forbrug As System.Windows.Forms.GroupBox
-    Friend WithEvents Label191 As System.Windows.Forms.Label
+    Friend WithEvents dkkPerItemLbl2 As System.Windows.Forms.Label
     Friend WithEvents lb_pressnut_kr As System.Windows.Forms.Label
-    Friend WithEvents Label190 As System.Windows.Forms.Label
+    Friend WithEvents presnutLbl As System.Windows.Forms.Label
     Friend WithEvents tb_svejsestag_kr_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilsatsmatr_kr_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_pressnut_kr_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label196 As System.Windows.Forms.Label
+    Friend WithEvents dkkPerItemLbl4 As System.Windows.Forms.Label
     Friend WithEvents lb_tilsatsmatr_kr As System.Windows.Forms.Label
-    Friend WithEvents Label198 As System.Windows.Forms.Label
-    Friend WithEvents Label193 As System.Windows.Forms.Label
+    Friend WithEvents additionalMatLbl As System.Windows.Forms.Label
+    Friend WithEvents dkkPerItemLbl3 As System.Windows.Forms.Label
     Friend WithEvents lb_svejsestag_kr As System.Windows.Forms.Label
-    Friend WithEvents Label195 As System.Windows.Forms.Label
-    Friend WithEvents Label199 As System.Windows.Forms.Label
-    Friend WithEvents Label146 As System.Windows.Forms.Label
+    Friend WithEvents screwWeldLbl As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl14 As System.Windows.Forms.Label
+    Friend WithEvents screwWeldQPILbl As System.Windows.Forms.Label
     Friend WithEvents bu_gem As System.Windows.Forms.Button
     Friend WithEvents bu_hent As System.Windows.Forms.Button
-    Friend WithEvents Label149 As System.Windows.Forms.Label
+    Friend WithEvents overrule2Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_sværhed_uk As System.Windows.Forms.TextBox
     Friend WithEvents cb_overfl_beh4 As System.Windows.Forms.ComboBox
     Friend WithEvents cb_overfl_beh3 As System.Windows.Forms.ComboBox
     Friend WithEvents cb_overfl_beh2 As System.Windows.Forms.ComboBox
     Friend WithEvents cb_overfl_beh1 As System.Windows.Forms.ComboBox
     Friend WithEvents tb_weldlength As System.Windows.Forms.TextBox
-    Friend WithEvents Label189 As System.Windows.Forms.Label
+    Friend WithEvents numbWeldsPerItemLbl2 As System.Windows.Forms.Label
     Friend WithEvents tb_numberofwelds As System.Windows.Forms.TextBox
-    Friend WithEvents Label150 As System.Windows.Forms.Label
+    Friend WithEvents weldingLengthPerItemLbl As System.Windows.Forms.Label
     Friend WithEvents cb_weld As System.Windows.Forms.CheckBox
     Friend WithEvents cb_grind_weld As System.Windows.Forms.CheckBox
     Friend WithEvents cb_tackweld As System.Windows.Forms.CheckBox
-    Friend WithEvents Label194 As System.Windows.Forms.Label
-    Friend WithEvents Label197 As System.Windows.Forms.Label
-    Friend WithEvents Label200 As System.Windows.Forms.Label
-    Friend WithEvents Label192 As System.Windows.Forms.Label
-    Friend WithEvents Label203 As System.Windows.Forms.Label
+    Friend WithEvents onlyTackWeldingLbl As System.Windows.Forms.Label
+    Friend WithEvents fullWeldingLbl As System.Windows.Forms.Label
+    Friend WithEvents weldGrindingLbl2 As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl5 As System.Windows.Forms.Label
+    Friend WithEvents numbSpotWeldsPerItemLbl As System.Windows.Forms.Label
     Friend WithEvents tb_numberofspots As System.Windows.Forms.TextBox
-    Friend WithEvents Label202 As System.Windows.Forms.Label
-    Friend WithEvents Label201 As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl4 As System.Windows.Forms.Label
+    Friend WithEvents spotWeldLbl As System.Windows.Forms.Label
     Friend WithEvents rb_migmag As System.Windows.Forms.RadioButton
     Friend WithEvents rb_tig As System.Windows.Forms.RadioButton
-    Friend WithEvents Label34 As System.Windows.Forms.Label
+    Friend WithEvents numbWeldsPerItemLbl As System.Windows.Forms.Label
     Friend WithEvents tb_numberofspotweldseams As System.Windows.Forms.TextBox
     Friend WithEvents cb_spotweld As System.Windows.Forms.CheckBox
     Friend WithEvents lb_råvarer1 As System.Windows.Forms.Label
@@ -8150,87 +8239,87 @@ Partial Class metal_tilbud
     Friend WithEvents lb_råvarerstk4 As System.Windows.Forms.Label
     Friend WithEvents lb_råvarerstk3 As System.Windows.Forms.Label
     Friend WithEvents lb_råvarerstk2 As System.Windows.Forms.Label
-    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl15 As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_pris2_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_pris3_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_pris1_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label204 As System.Windows.Forms.Label
+    Friend WithEvents areaM2Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_nettoareal As System.Windows.Forms.Label
     Friend WithEvents cb_1side_2 As System.Windows.Forms.CheckBox
     Friend WithEvents cb_1side_3 As System.Windows.Forms.CheckBox
     Friend WithEvents cb_1side_1 As System.Windows.Forms.CheckBox
-    Friend WithEvents Label44 As System.Windows.Forms.Label
+    Friend WithEvents paint1sideLbl As System.Windows.Forms.Label
     Friend WithEvents Label205 As System.Windows.Forms.Label
-    Friend WithEvents Label178 As System.Windows.Forms.Label
-    Friend WithEvents Label177 As System.Windows.Forms.Label
+    Friend WithEvents overruleCostPriceLbl As System.Windows.Forms.Label
+    Friend WithEvents DkkKgLbl As System.Windows.Forms.Label
     Friend WithEvents tb_Kilopris_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label206 As System.Windows.Forms.Label
-    Friend WithEvents Label207 As System.Windows.Forms.Label
-    Friend WithEvents Label208 As System.Windows.Forms.Label
-    Friend WithEvents Label209 As System.Windows.Forms.Label
-    Friend WithEvents Label210 As System.Windows.Forms.Label
-    Friend WithEvents Label211 As System.Windows.Forms.Label
+    Friend WithEvents groupTimesByOQty1Lbl As System.Windows.Forms.Label
+    Friend WithEvents group1Lbl As System.Windows.Forms.Label
+    Friend WithEvents group2Lbl As System.Windows.Forms.Label
+    Friend WithEvents group3Lbl As System.Windows.Forms.Label
+    Friend WithEvents group4Lbl As System.Windows.Forms.Label
+    Friend WithEvents group6Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid1 As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid2 As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid3 As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid4 As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid5 As System.Windows.Forms.Label
-    Friend WithEvents Label212 As System.Windows.Forms.Label
+    Friend WithEvents hoursLbl As System.Windows.Forms.Label
     Friend WithEvents rb_danmark As System.Windows.Forms.RadioButton
     Friend WithEvents rb_polen As System.Windows.Forms.RadioButton
     Friend WithEvents lb_ukTime As System.Windows.Forms.Label
     Friend WithEvents lb_ukCNCtime As System.Windows.Forms.Label
     Friend WithEvents gb_stag As System.Windows.Forms.GroupBox
-    Friend WithEvents Label213 As System.Windows.Forms.Label
+    Friend WithEvents pressTagQPILbl As System.Windows.Forms.Label
     Friend WithEvents tb_presstag_antal As System.Windows.Forms.TextBox
     Friend WithEvents lb_presstag As System.Windows.Forms.Label
     Friend WithEvents tb_presstag_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_presstag_kr_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label87 As System.Windows.Forms.Label
+    Friend WithEvents dkkPerItemLbl1 As System.Windows.Forms.Label
     Friend WithEvents lb_presstag_kr As System.Windows.Forms.Label
-    Friend WithEvents Label215 As System.Windows.Forms.Label
+    Friend WithEvents presstagLbl As System.Windows.Forms.Label
     Friend WithEvents lb_gruppetid5slib As System.Windows.Forms.Label
-    Friend WithEvents Label216 As System.Windows.Forms.Label
+    Friend WithEvents group5Lbl As System.Windows.Forms.Label
     Friend WithEvents gb_gruppe5 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label219 As System.Windows.Forms.Label
-    Friend WithEvents Label220 As System.Windows.Forms.Label
+    Friend WithEvents overruleLbl12 As System.Windows.Forms.Label
+    Friend WithEvents sandblastingLbl As System.Windows.Forms.Label
     Friend WithEvents lb_glasbl As System.Windows.Forms.Label
     Friend WithEvents tb_glasbl_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label217 As System.Windows.Forms.Label
-    Friend WithEvents Label218 As System.Windows.Forms.Label
-    Friend WithEvents Label221 As System.Windows.Forms.Label
-    Friend WithEvents Label222 As System.Windows.Forms.Label
-    Friend WithEvents Label223 As System.Windows.Forms.Label
-    Friend WithEvents Label224 As System.Windows.Forms.Label
-    Friend WithEvents Label214 As System.Windows.Forms.Label
+    Friend WithEvents grindingLbl As System.Windows.Forms.Label
+    Friend WithEvents officeControl As System.Windows.Forms.Label
+    Friend WithEvents weldStraiLbl As System.Windows.Forms.Label
+    Friend WithEvents bendSpotRollLbl As System.Windows.Forms.Label
+    Friend WithEvents manualLbl As System.Windows.Forms.Label
+    Friend WithEvents cncGiloLbl As System.Windows.Forms.Label
+    Friend WithEvents minOQ1Lbl6 As System.Windows.Forms.Label
     Friend WithEvents tb_bukmax_x As System.Windows.Forms.TextBox
     Friend WithEvents cb_fravælg_1000_2000 As System.Windows.Forms.CheckBox
     Friend WithEvents cb_fravælg_1250_2500 As System.Windows.Forms.CheckBox
     Friend WithEvents cb_fravælg_1500_3000 As System.Windows.Forms.CheckBox
     Friend WithEvents tb_valsning_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label225 As System.Windows.Forms.Label
+    Friend WithEvents rollingLbl As System.Windows.Forms.Label
     Friend WithEvents lb_valsetid As System.Windows.Forms.Label
     Friend WithEvents cb_rettesvejs As System.Windows.Forms.CheckBox
-    Friend WithEvents Label226 As System.Windows.Forms.Label
+    Friend WithEvents strainghteningLbl As System.Windows.Forms.Label
     Friend WithEvents lb_rettesvejs_tid As System.Windows.Forms.Label
     Friend WithEvents tb_rettesvejs_uk As System.Windows.Forms.TextBox
-    Friend WithEvents tb_info As System.Windows.Forms.Label
+    Friend WithEvents onlyOQ1Lbl1 As System.Windows.Forms.Label
     Friend WithEvents tb_CombiCNCstans_tid_uk As System.Windows.Forms.TextBox
-    Friend WithEvents Label227 As System.Windows.Forms.Label
+    Friend WithEvents CncMinStansOQ1 As System.Windows.Forms.Label
     Friend WithEvents lb_CombiCNCstans_tid As System.Windows.Forms.Label
     Friend WithEvents lb_ukCNCstanstime As System.Windows.Forms.Label
-    Friend WithEvents Label228 As System.Windows.Forms.Label
+    Friend WithEvents onlyOQ1Lbl2 As System.Windows.Forms.Label
     Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label230 As System.Windows.Forms.Label
+    Friend WithEvents totalBendTime As System.Windows.Forms.Label
     Friend WithEvents lb_buk_ialt As System.Windows.Forms.Label
-    Friend WithEvents Label234 As System.Windows.Forms.Label
+    Friend WithEvents cLaserTotalOQ1 As System.Windows.Forms.Label
     Friend WithEvents lb_laser_ialt As System.Windows.Forms.Label
-    Friend WithEvents Label232 As System.Windows.Forms.Label
+    Friend WithEvents BCombiTotOQ1Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_combi_ialt As System.Windows.Forms.Label
-    Friend WithEvents Label236 As System.Windows.Forms.Label
+    Friend WithEvents dStansTotOQ1 As System.Windows.Forms.Label
     Friend WithEvents lb_stans_ialt As System.Windows.Forms.Label
-    Friend WithEvents Label231 As System.Windows.Forms.Label
+    Friend WithEvents cutTotalOQ1Lbl As System.Windows.Forms.Label
     Friend WithEvents lb_klip_ialt As System.Windows.Forms.Label
     Friend WithEvents lb_stans_ialtuk As System.Windows.Forms.Label
     Friend WithEvents lb_laser_ialtuk As System.Windows.Forms.Label
@@ -8238,7 +8327,7 @@ Partial Class metal_tilbud
     Friend WithEvents lb_klip_ialtuk As System.Windows.Forms.Label
     Friend WithEvents lb_buk_ialtuk As System.Windows.Forms.Label
     Friend WithEvents lb_pladeforbrug As System.Windows.Forms.Label
-    Friend WithEvents Label235 As System.Windows.Forms.Label
+    Friend WithEvents plateConsumptionLbl As System.Windows.Forms.Label
     Friend WithEvents cb_overfl_beh5 As System.Windows.Forms.ComboBox
     Friend WithEvents cb_overfl_leverandør5 As System.Windows.Forms.ComboBox
     Friend WithEvents tb_overfl_pris100_5 As System.Windows.Forms.Label
@@ -8247,9 +8336,9 @@ Partial Class metal_tilbud
     Friend WithEvents tb_overfl_afdæk5 As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_opstart5 As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label233 As System.Windows.Forms.Label
-    Friend WithEvents Label229 As System.Windows.Forms.Label
-    Friend WithEvents Label237 As System.Windows.Forms.Label
+    Friend WithEvents PcsLbl As System.Windows.Forms.Label
+    Friend WithEvents offerAppliesToLbl As System.Windows.Forms.Label
+    Friend WithEvents offerDkkPcLbl As System.Windows.Forms.Label
     Friend WithEvents tb_overfl_tilbudpris3_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_tilbudpris2_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_overfl_tilbudpris1_uk As System.Windows.Forms.TextBox
@@ -8266,41 +8355,41 @@ Partial Class metal_tilbud
     Friend WithEvents rb_rustfri As System.Windows.Forms.RadioButton
     Friend WithEvents rb_jern As System.Windows.Forms.RadioButton
     Friend WithEvents tb_hulantal_4C As System.Windows.Forms.TextBox
-    Friend WithEvents Label239 As System.Windows.Forms.Label
+    Friend WithEvents qtyLbl3 As System.Windows.Forms.Label
     Friend WithEvents tb_hulantal_4B As System.Windows.Forms.TextBox
     Friend WithEvents Label241 As System.Windows.Forms.Label
-    Friend WithEvents Label238 As System.Windows.Forms.Label
+    Friend WithEvents qty2Lbl As System.Windows.Forms.Label
     Friend WithEvents Label240 As System.Windows.Forms.Label
-    Friend WithEvents Label242 As System.Windows.Forms.Label
+    Friend WithEvents stepbenNumbstepsLbl As System.Windows.Forms.Label
     Friend WithEvents tb_stepbuk_uk As System.Windows.Forms.TextBox
     Friend WithEvents tb_tilbudnr As System.Windows.Forms.TextBox
-    Friend WithEvents Label243 As System.Windows.Forms.Label
+    Friend WithEvents offerNrLbl As System.Windows.Forms.Label
     Friend WithEvents lb_stepbuk As System.Windows.Forms.Label
     Friend WithEvents tb_stepantal As System.Windows.Forms.TextBox
-    Friend WithEvents Label244 As System.Windows.Forms.Label
-    Friend WithEvents Label245 As System.Windows.Forms.Label
+    Friend WithEvents stepBendLbl As System.Windows.Forms.Label
+    Friend WithEvents nitrogenLbl As System.Windows.Forms.Label
     Friend WithEvents lb_nitrogen As System.Windows.Forms.Label
-    Friend WithEvents Label247 As System.Windows.Forms.Label
+    Friend WithEvents dkkNetByOQty1Lbl As System.Windows.Forms.Label
     Friend WithEvents tb_samkørsel As System.Windows.Forms.TextBox
-    Friend WithEvents Label246 As System.Windows.Forms.Label
-    Friend WithEvents Label248 As System.Windows.Forms.Label
+    Friend WithEvents samkorselLbl As System.Windows.Forms.Label
+    Friend WithEvents drawingNumbLbl2 As System.Windows.Forms.Label
     Friend WithEvents gb_samkørsel As System.Windows.Forms.GroupBox
     Friend WithEvents lb_operatør_opr As System.Windows.Forms.Label
-    Friend WithEvents Label250 As System.Windows.Forms.Label
+    Friend WithEvents operatorLbl As System.Windows.Forms.Label
     Friend WithEvents lb_dato_opr As System.Windows.Forms.Label
-    Friend WithEvents Label252 As System.Windows.Forms.Label
+    Friend WithEvents oprDateLbl As System.Windows.Forms.Label
     Friend WithEvents Label251 As System.Windows.Forms.Label
-    Friend WithEvents Label249 As System.Windows.Forms.Label
+    Friend WithEvents surfaceQtyLbl As System.Windows.Forms.Label
     Friend WithEvents tb_numberofsurface As System.Windows.Forms.TextBox
-    Friend WithEvents Label254 As System.Windows.Forms.Label
+    Friend WithEvents grindingLbl2 As System.Windows.Forms.Label
     Friend WithEvents lb_slib As System.Windows.Forms.Label
     Friend WithEvents tb_slib_uk As System.Windows.Forms.TextBox
     Friend WithEvents cb_slib As System.Windows.Forms.CheckBox
     Friend WithEvents cb_glasbl As System.Windows.Forms.CheckBox
-    Friend WithEvents Label257 As System.Windows.Forms.Label
-    Friend WithEvents Label256 As System.Windows.Forms.Label
+    Friend WithEvents weldingDifficulty As System.Windows.Forms.Label
+    Friend WithEvents tapQtyLbl As System.Windows.Forms.Label
     Friend WithEvents tb_tapantal As System.Windows.Forms.TextBox
-    Friend WithEvents Label255 As System.Windows.Forms.Label
+    Friend WithEvents tapWeldingLbl As System.Windows.Forms.Label
     Friend WithEvents lb_tapsvejs_tid As System.Windows.Forms.Label
     Friend WithEvents tb_tapsvejs_uk As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox6 As System.Windows.Forms.GroupBox
@@ -8309,6 +8398,12 @@ Partial Class metal_tilbud
     Friend WithEvents rb_factor3 As System.Windows.Forms.RadioButton
     Friend WithEvents rb_factor4 As System.Windows.Forms.RadioButton
     Friend WithEvents tb_svejstid_ialt As System.Windows.Forms.Label
-    Friend WithEvents Label259 As System.Windows.Forms.Label
+    Friend WithEvents totalWeldingTime As System.Windows.Forms.Label
     Friend WithEvents rb_factor1 As System.Windows.Forms.RadioButton
+    Friend WithEvents engRadio As RadioButton
+    Friend WithEvents danRadio As RadioButton
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents manualPunchLbl As Label
+    Friend WithEvents langBox As GroupBox
 End Class

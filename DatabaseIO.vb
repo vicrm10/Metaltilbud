@@ -1075,6 +1075,94 @@ Public Class DatabaseIO
         GetMaterials = alReturn
     End Function
 
+    Public Function GetMaterialsStrings(lang As String) As ArrayList
+
+        Dim alRow As ArrayList
+
+
+
+        alRow = New ArrayList(15)
+
+        If lang = "E" Then
+            alRow.Add("Steel, P01 AM, 12.03")
+        Else
+            alRow.Add("Jern, P01 AM, 12.03")
+        End If
+        If lang = "E" Then
+            alRow.Add("ALU, 2S Al99")
+        Else
+            alRow.Add("ALU, 2S Al99")
+        End If
+        If lang = "E" Then
+            alRow.Add("ALU, AlMg3,Seawater resistant")
+        Else
+            alRow.Add("ALU, AlMg3, Søvandsbestandig")
+        End If
+        If lang = "E" Then
+            alRow.Add("Stainless AISI 304, 1.4301")
+        Else
+            alRow.Add("Rustfri AISI 304, 1.4301")
+        End If
+        If lang = "E" Then
+            alRow.Add("Stainless AISI 316L, 1.4404")
+        Else
+            alRow.Add("Rustfri AISI 316L, 1.4404")
+        End If
+        If lang = "E" Then
+            alRow.Add("Brass")
+        Else
+            alRow.Add("Messing")
+        End If
+        If lang = "E" Then
+            alRow.Add("Elgalv, Fe P01 ZE, Zintec")
+        Else
+            alRow.Add("Elgalv, Fe P01 ZE, Zintec")
+        End If
+        If lang = "E" Then
+            alRow.Add("Aluzink, B500A")
+        Else
+            alRow.Add("Aluzink, B500A")
+        End If
+        If lang = "E" Then
+            alRow.Add("ALU, AlMg3, Seawter resist. Foiled")
+        Else
+            alRow.Add("ALU, AlMg3, Søvandsbest.m.PVC")
+        End If
+        If lang = "E" Then
+            alRow.Add("ALU, AlMg1,Foiled")
+        Else
+            alRow.Add("ALU, AlMg1,m.PVC")
+        End If
+        If lang = "E" Then
+            alRow.Add("Stainless AISI 304, 1.4301 Foiled")
+        Else
+            alRow.Add("Rustfri AISI 304, 1.4301 m.PVC")
+        End If
+        If lang = "E" Then
+            alRow.Add("Stainless AISI 304, 1.4301 Polished")
+        Else
+            alRow.Add("Rustfri AISI 304, 1.4301 Slebet")
+        End If
+        If lang = "E" Then
+            alRow.Add("Stainless AISI 316L, 1.4404 Foiled")
+        Else
+            alRow.Add("Rustfri AISI 316L, 1.4404 m.PVC")
+        End If
+        If lang = "E" Then
+            alRow.Add("Copper")
+        Else
+            alRow.Add("Kobber")
+        End If
+        If lang = "E" Then
+            alRow.Add("Hot-dip galvanized")
+        Else
+            alRow.Add("Varmgalvaniseret")
+        End If
+
+
+        GetMaterialsStrings = alRow
+    End Function
+
     Private Function retreiveSharepointPrices() As ArrayList
         Dim prices As New ArrayList()
         Dim urlSite As String
@@ -1292,6 +1380,125 @@ Public Class DatabaseIO
         alRow = New ArrayList(2)
         alRow.Add(0)
         alRow.Add("No Surface Treatment")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(1)
+        alRow.Add("Laduco")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(2)
+        alRow.Add("Miltona")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(3)
+        alRow.Add("Næstved Powder coating")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(4)
+        alRow.Add("Jowis")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(5)
+        alRow.Add("Greve Powder Coating")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(6)
+        alRow.Add("Cuwi")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(7)
+        alRow.Add("Stjernecrom")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(8)
+        alRow.Add("Croma")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(9)
+        alRow.Add("Værløse Galvaniske")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(10)
+        alRow.Add("Aluscan")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(11)
+        alRow.Add("CGB")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(12)
+        alRow.Add("Dan-Pol Serigrafi")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(13)
+        alRow.Add("Mekalod Serigrafi")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(14)
+        alRow.Add("Gladsaxe Metalsliberi")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(15)
+        alRow.Add("Letech")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(16)
+        alRow.Add("Dansk Indistricoating")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(17)
+        alRow.Add("Karlslunde Metalindistri")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(18)
+        alRow.Add("Unicoat")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(19)
+        alRow.Add("Elplatek")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(20)
+        alRow.Add("DOT")
+        alReturn.Add(alRow)
+        GetSuppliers = alReturn
+
+    End Function
+
+    Public Function GetSuppliers(lang As String) As ArrayList
+        Dim alReturn As ArrayList
+        Dim alRow As ArrayList
+
+
+        alReturn = New ArrayList(21)
+        alRow = New ArrayList(2)
+        alRow.Add(0)
+
+        If lang = "E" Then
+            alRow.Add("No Surface Treatment")
+        Else
+            alRow.Add("Ingen Overfladebehandling")
+        End If
         alReturn.Add(alRow)
         GetSuppliers = alReturn
         alRow = New ArrayList(2)
@@ -2067,7 +2274,64 @@ Public Class DatabaseIO
 
 
     End Function
+    Public Function GetSurfacetreatment(lang As String) As ArrayList
+        Dim alReturn As ArrayList
+        Dim alRow As ArrayList
 
+        alReturn = New ArrayList(6)
+        alRow = New ArrayList(2)
+        alRow.Add(0)
+        If lang = "E" Then
+            alRow.Add("No Surface Treatment")
+        Else
+            alRow.Add("Ingen Overfladebehandling")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(1)
+        If lang = "E" Then
+            alRow.Add("Wet Varnish")
+        Else
+            alRow.Add("Vådlak")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(2)
+        If lang = "E" Then
+            alRow.Add("Powder Coating")
+        Else
+            alRow.Add("Pulverlak")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(3)
+        If lang = "E" Then
+            alRow.Add("Chromite (Iron)")
+        Else
+            alRow.Add("Chromit (jern)")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(4)
+        alRow.Add("ChromitAL (alu)")
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(5)
+        If lang = "E" Then
+            alRow.Add("Anodizing (natural / black)")
+        Else
+            alRow.Add("Eloxering (natur/sort)")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment = alReturn
+
+
+    End Function
     Public Function GetSurfacetreatment() As ArrayList
         Dim alReturn As ArrayList
         Dim alRow As ArrayList
@@ -2101,7 +2365,7 @@ Public Class DatabaseIO
         GetSurfacetreatment = alReturn
         alRow = New ArrayList(2)
         alRow.Add(5)
-        alRow.Add("anodizing (natural / black)")
+        alRow.Add("Anodizing (natural / black)")
         alReturn.Add(alRow)
         GetSurfacetreatment = alReturn
 
@@ -2171,6 +2435,118 @@ Public Class DatabaseIO
         alRow = New ArrayList(2)
         alRow.Add(11)
         alRow.Add("Hot dip galvanizing")
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+    End Function
+
+    Public Function GetSurfacetreatment1(lang As String) As ArrayList
+        Dim alReturn As ArrayList
+        Dim alRow As ArrayList
+
+
+        alReturn = New ArrayList(12)
+        alRow = New ArrayList(2)
+        alRow.Add(0)
+        If lang = "E" Then
+            alRow.Add("No Surface Treatment")
+        Else
+            alRow.Add("Ingen Overfladebehandling")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(1)
+        If lang = "E" Then
+            alRow.Add("Wet Varnish")
+        Else
+            alRow.Add("Vådlak")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(2)
+        If lang = "E" Then
+            alRow.Add("Powder Coating")
+        Else
+            alRow.Add("Pulverlak")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(3)
+        If lang = "E" Then
+            alRow.Add("Chromite (Iron)")
+        Else
+            alRow.Add("Chromit (jern)")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(4)
+        alRow.Add("ChromitAL (alu)")
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(5)
+        If lang = "E" Then
+            alRow.Add("Anodizing (natural / black)")
+        Else
+            alRow.Add("Eloxering (natur/sort)")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(6)
+        If lang = "E" Then
+            alRow.Add("Screen printing")
+        Else
+            alRow.Add("Silketryk")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(7)
+        If lang = "E" Then
+            alRow.Add("Nickel plating / Tinning")
+        Else
+            alRow.Add("Fornikling/Fortinning")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(8)
+        If lang = "E" Then
+            alRow.Add("Black Oxide (brunering)")
+        Else
+            alRow.Add("Black Oxide (brunering)")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(9)
+        If lang = "E" Then
+            alRow.Add("Glass blasting")
+        Else
+            alRow.Add("Glasblæsning")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(10)
+        If lang = "E" Then
+            alRow.Add("Acidification")
+        Else
+            alRow.Add("Afsyring")
+        End If
+        alReturn.Add(alRow)
+        GetSurfacetreatment1 = alReturn
+        alRow = New ArrayList(2)
+        alRow.Add(11)
+        If lang = "E" Then
+            alRow.Add("Hot dip galvanizing")
+        Else
+            alRow.Add("Varmgalvanisering")
+        End If
         alReturn.Add(alRow)
         GetSurfacetreatment1 = alReturn
     End Function
