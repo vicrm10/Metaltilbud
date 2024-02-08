@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="9.75" />
+  <Class Name="Metaltilbud1.DatabaseIO" Collapsed="true">
+    <Position X="1" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>DatabaseIO.vb</FileName>
+      <HashCode>AAABREEKIJAEkAAoIIACgEAAAAk1EBcEOAOAEhgUAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>
