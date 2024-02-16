@@ -1859,11 +1859,11 @@ Partial Class metal_tilbud
         '
         'Label32
         '
-        Me.Label32.Location = New System.Drawing.Point(2, 77)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(130, 13)
-        Me.Label32.TabIndex = 250
-        Me.Label32.Text = "Skærelængde ialt (>ø100)"
+        'Me.Label32.Location = New System.Drawing.Point(2, 77)
+        'Me.Label32.Name = "Label32"
+        'Me.Label32.Size = New System.Drawing.Size(130, 13)
+        'Me.Label32.TabIndex = 250
+        'Me.Label32.Text = "Skærelængde ialt (>ø100)"
         '
         'tb_cuttinglength_C
         '
@@ -2800,7 +2800,7 @@ Partial Class metal_tilbud
         '
         Me.gb_gruppe3.BackColor = System.Drawing.Color.LightCyan
         Me.gb_gruppe3.Controls.Add(Me.cb_spotweld)
-        Me.gb_gruppe3.Controls.Add(Me.Label34)
+        'Me.gb_gruppe3.Controls.Add(Me.Label34)
         Me.gb_gruppe3.Controls.Add(Me.tb_numberofspotweldseams)
         Me.gb_gruppe3.Controls.Add(Me.cb_spotweld)
         Me.gb_gruppe3.Controls.Add(Me.numbWeldsPerItemLbl)
@@ -6026,12 +6026,12 @@ Partial Class metal_tilbud
         '
         'Label149
         '
-        Me.Label149.AutoSize = True
-        Me.Label149.Location = New System.Drawing.Point(188, 123)
-        Me.Label149.Name = "Label149"
-        Me.Label149.Size = New System.Drawing.Size(22, 13)
-        Me.Label149.TabIndex = 309
-        Me.Label149.Text = "UK"
+        'Me.Label149.AutoSize = True
+        'Me.Label149.Location = New System.Drawing.Point(188, 123)
+        'Me.Label149.Name = "Label149"
+        'Me.Label149.Size = New System.Drawing.Size(22, 13)
+        'Me.Label149.TabIndex = 309
+        'Me.Label149.Text = "UK"
         '
         'tb_sværhed_uk
         '
@@ -6515,12 +6515,12 @@ Partial Class metal_tilbud
         '
         'Label135
         '
-        Me.Label135.AutoSize = True
-        Me.Label135.Location = New System.Drawing.Point(129, 8)
-        Me.Label135.Name = "Label135"
-        Me.Label135.Size = New System.Drawing.Size(48, 13)
-        Me.Label135.TabIndex = 258
-        Me.Label135.Text = "pr. emne"
+        'Me.Label135.AutoSize = True
+        'Me.Label135.Location = New System.Drawing.Point(129, 8)
+        'Me.Label135.Name = "Label135"
+        'Me.Label135.Size = New System.Drawing.Size(48, 13)
+        'Me.Label135.TabIndex = 258
+        'Me.Label135.Text = "pr. emne"
         '
         'tb_toolshift_B
         '
@@ -6613,12 +6613,12 @@ Partial Class metal_tilbud
         '
         'Label114
         '
-        Me.Label114.AutoSize = True
-        Me.Label114.Location = New System.Drawing.Point(22, 198)
-        Me.Label114.Name = "Label114"
-        Me.Label114.Size = New System.Drawing.Size(63, 13)
-        Me.Label114.TabIndex = 253
-        Me.Label114.Text = "Opstart min."
+        'Me.Label114.AutoSize = True
+        'Me.Label114.Location = New System.Drawing.Point(22, 198)
+        'Me.Label114.Name = "Label114"
+        'Me.Label114.Size = New System.Drawing.Size(63, 13)
+        'Me.Label114.TabIndex = 253
+        'Me.Label114.Text = "Opstart min."
         '
         'lb_CombiCNC_tid
         '
@@ -8571,9 +8571,5 @@ Partial Class metal_tilbud
     Friend WithEvents Label2 As Label
     Friend WithEvents manualPunchLbl As Label
     Friend WithEvents langBox As GroupBox
-    Friend WithEvents label32 As Label
-    Friend WithEvents label34 As Label
-    Friend WithEvents label114 As Label
-    Friend WithEvents label135 As Label
-    Friend WithEvents label149 As Label
+
 End Class
