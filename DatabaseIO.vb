@@ -1185,7 +1185,7 @@ Public Class DatabaseIO
         urlSite = "http://intrasrv01:8080/sites/Poland/materialPrices/"
         Dim listName = "Metal Prices"
         urlSite = "http://intranet/Metalindustri/"
-        Dim listName = "Materiale liste"
+        Dim listName1 = "Materiale liste"
         Dim trackingList As List
         Dim camlXmlQuery = "<View><Query><Where><Geq><FieldRef Name='ID'/>" +
                     "<Value Type='Number'>0</Value></Geq></Where></Query><RowLimit>500</RowLimit></View>"

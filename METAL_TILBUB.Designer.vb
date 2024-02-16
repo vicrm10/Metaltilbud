@@ -8571,4 +8571,9 @@ Partial Class metal_tilbud
     Friend WithEvents Label2 As Label
     Friend WithEvents manualPunchLbl As Label
     Friend WithEvents langBox As GroupBox
+    Friend WithEvents label32 As Label
+    Friend WithEvents label34 As Label
+    Friend WithEvents label114 As Label
+    Friend WithEvents label135 As Label
+    Friend WithEvents label149 As Label
 End Class
