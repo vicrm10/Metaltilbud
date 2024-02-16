@@ -7,12 +7,25 @@ Public Class Listsurfaces
         RefreshData()
     End Sub
 
+    Public Sub New(ByRef cmbTarget As ComboBox, lang As String)
+        pcmbTarget = cmbTarget
+        RefreshData(lang)
+    End Sub
+
     Public Sub RefreshData()
         Dim objDatabaseIO As DatabaseIO
 
 
         objDatabaseIO = New DatabaseIO
         palSuppliers = objDatabaseIO.GetSurfacetreatment()
+    End Sub
+
+    Public Sub RefreshData(lang As String)
+        Dim objDatabaseIO As DatabaseIO
+
+
+        objDatabaseIO = New DatabaseIO
+        palSuppliers = objDatabaseIO.GetSurfacetreatment(lang)
     End Sub
 
     Public Sub List()

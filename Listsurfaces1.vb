@@ -16,6 +16,14 @@
         palSuppliers = objDatabaseIO.GetSurfacetreatment1()
     End Sub
 
+    Public Sub RefreshData(lang As String)
+        Dim objDatabaseIO As DatabaseIO
+
+
+        objDatabaseIO = New DatabaseIO
+        palSuppliers = objDatabaseIO.GetSurfacetreatment1(lang)
+    End Sub
+
     Public Sub List()
         Dim alItem As ArrayList
 

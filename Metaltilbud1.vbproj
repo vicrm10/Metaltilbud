@@ -45,6 +45,7 @@
     <DocumentationFile>Metaltilbud1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>false</Optimize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -81,8 +82,6 @@
     <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.SharePoint.Client.14.0.4762.1000\lib\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -105,6 +104,9 @@
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include=".Designer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BendCalculations.vb" />
     <Compile Include="CombiLaserCalculations.vb" />
     <Compile Include="CombiPunchCalculations.vb" />
@@ -117,6 +119,12 @@
     <Compile Include="CuttingCalculations.vb" />
     <Compile Include="DatabaseIO.vb" />
     <Compile Include="FilterKeys.vb" />
+    <Compile Include="oper_sequence.Designer.vb">
+      <DependentUpon>oper_sequence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="oper_sequence.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="GetsurfacetreatmentValues.vb" />
     <Compile Include="Kommakontrol.vb" />
     <Compile Include="LaserCalculations.vb" />
@@ -158,6 +166,12 @@
     </Compile>
     <Compile Include="ODBCConnection.vb" />
     <Compile Include="PressnutCalculations.vb" />
+    <Compile Include="progressBarForma.Designer.vb">
+      <DependentUpon>progressBarForma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="progressBarForma.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PunchCalculations.vb" />
     <Compile Include="SAMLET TILBUD.Designer.vb">
       <DependentUpon>SAMLET TILBUD.vb</DependentUpon>
@@ -166,6 +180,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Settings.vb" />
+    <Compile Include="TextStrings.vb" />
     <Compile Include="thread_input.Designer.vb">
       <DependentUpon>thread_input.vb</DependentUpon>
     </Compile>
@@ -187,6 +202,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oper_sequence.resx">
+      <DependentUpon>oper_sequence.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="progressBarForma.resx">
+      <DependentUpon>progressBarForma.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SAMLET TILBUD.resx">
       <DependentUpon>SAMLET TILBUD.vb</DependentUpon>
