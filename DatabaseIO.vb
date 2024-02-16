@@ -1184,8 +1184,6 @@ Public Class DatabaseIO
         Dim urlSite As String
         urlSite = "http://intrasrv01:8080/sites/Poland/materialPrices/"
         Dim listName = "Metal Prices"
-        urlSite = "http://intranet/Metalindustri/"
-        Dim listName1 = "Materiale liste"
         Dim trackingList As List
         Dim camlXmlQuery = "<View><Query><Where><Geq><FieldRef Name='ID'/>" +
                     "<Value Type='Number'>0</Value></Geq></Where></Query><RowLimit>500</RowLimit></View>"
@@ -1204,7 +1202,6 @@ Public Class DatabaseIO
         For Each item As ListItem In collTrackings
 
             prices.Add(item("Price_Kg"))
-            prices.Add(item("Pris"))
 
         Next
         retreiveSharepointPrices = prices
