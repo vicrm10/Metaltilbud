@@ -4086,6 +4086,7 @@ Public Class metal_tilbud
     'tb_antal5.Text = ""
     'End Sub
 
+    Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
 
 
     Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
@@ -4434,19 +4435,6 @@ Public Class metal_tilbud
         Dim sRevision As String
         Dim filnavn As String
 
-
-        If cb_Tegning.Text = "" Then
-            MsgBox("Tegningsnummer mangler")
-            Exit Sub
-        End If
-        If cb_kunde.Text = "" Then
-            MsgBox("Kundenavn mangler")
-            Exit Sub
-        End If
-        If tb_tilbudnr.Text = "" Then
-            MsgBox("Tilbudsnummer mangler")
-            Exit Sub
-        End If
 
         sFilename = cb_Tegning.Text
         sKundenavn = cb_kunde.Text

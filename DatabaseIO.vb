@@ -404,11 +404,6 @@ Public Class DatabaseIO
         Dim alRow As ArrayList
 
 
-
-
-
-
-
         alReturn = New ArrayList(4)
         alRow = New ArrayList(2)
         alRow.Add(1000)
@@ -884,7 +879,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(1)
         alRow.Add("Steel, P01 AM, 12.03")
-        alRow.Add("Jern, P01 AM, 12.03")
         If prices.Count > 0 Then
             alRow.Add(prices(0))
         Else
@@ -911,7 +905,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(3)
         alRow.Add("ALU, AlMg3,Seawater resistant")
-        alRow.Add("ALU, AlMg3, Søvandsbestandig")
         If prices.Count > 0 Then
             alRow.Add(prices(2))
         Else
@@ -925,7 +918,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(4)
         alRow.Add("Stainless AISI 304, 1.4301")
-        alRow.Add("Rustfri AISI 304, 1.4301")
         If prices.Count > 0 Then
             alRow.Add(prices(3))
         Else
@@ -939,7 +931,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(5)
         alRow.Add("Stainless AISI 316L, 1.4404")
-        alRow.Add("Rustfri AISI 316L, 1.4404")
         If prices.Count > 0 Then
             alRow.Add(prices(4))
         Else
@@ -953,7 +944,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(6)
         alRow.Add("Brass")
-        alRow.Add("Messing")
         If prices.Count > 0 Then
             alRow.Add(prices(5))
         Else
@@ -993,7 +983,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(7)
         alRow.Add(9)
         alRow.Add("ALU, AlMg3, Seawter rest .m.PVC")
-        alRow.Add("ALU, AlMg3, Søvandsbest.m.PVC")
         If prices.Count > 0 Then
             alRow.Add(prices(8))
         Else
@@ -1020,7 +1009,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(11)
         alRow.Add(11)
         alRow.Add("Stainless AISI 304, 1.4301 m.PVC")
-        alRow.Add("Rustfri AISI 304, 1.4301 m.PVC")
         If prices.Count > 0 Then
             alRow.Add(prices(10))
         Else
@@ -1034,7 +1022,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(12)
         alRow.Add(12)
         alRow.Add("Stainless AISI 304, 1.4301 Slebet")
-        alRow.Add("Rustfri AISI 304, 1.4301 Slebet")
         If prices.Count > 0 Then
             alRow.Add(prices(11))
         Else
@@ -1048,7 +1035,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(13)
         alRow.Add(13)
         alRow.Add("Stainless AISI 316L, 1.4404 m.PVC")
-        alRow.Add("Rustfri AISI 316L, 1.4404 m.PVC")
         If prices.Count > 0 Then
             alRow.Add(prices(12))
         Else
@@ -1062,7 +1048,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(14)
         alRow.Add(14)
         alRow.Add("Copper")
-        alRow.Add("Kobber")
         If prices.Count > 0 Then
             alRow.Add(prices(13))
         Else
@@ -1076,7 +1061,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(15)
         alRow.Add(15)
         alRow.Add("Hot-dip galvanized")
-        alRow.Add("Varmgalvaniseret")
         If prices.Count > 0 Then
             alRow.Add(prices(14))
         Else
@@ -1206,150 +1190,6 @@ Public Class DatabaseIO
         Next
         retreiveSharepointPrices = prices
     End Function
-
-    'Public Function GetMaterials() As ArrayList
-    '    Dim alReturn As ArrayList
-    '    Dim alRow As ArrayList
-
-    '    alReturn = New ArrayList(15)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(1)
-    '    alRow.Add("Jern, P01 AM, 12.03")
-    '    alRow.Add(8.5)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(2)
-    '    alRow.Add("ALU, 2S Al99")
-    '    alRow.Add(25)
-    '    alRow.Add(3)
-    '    alRow.Add(1)
-    '    alRow.Add(2)
-    '    alRow.Add(3)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(3)
-    '    alRow.Add("ALU, AlMg3, Søvandsbestandig")
-    '    alRow.Add(26.8)
-    '    alRow.Add(3)
-    '    alRow.Add(1)
-    '    alRow.Add(2)
-    '    alRow.Add(3)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(4)
-    '    alRow.Add("Rustfri AISI 304, 1.4301")
-    '    alRow.Add(22.4)
-    '    alRow.Add(2)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(5)
-    '    alRow.Add("Rustfri AISI 316L, 1.4404")
-    '    alRow.Add(31.8)
-    '    alRow.Add(2)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(6)
-    '    alRow.Add("Messing")
-    '    alRow.Add(81)
-    '    alRow.Add(4)
-    '    alRow.Add(1)
-    '    alRow.Add(2)
-    '    alRow.Add(8.4)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(7)
-    '    alRow.Add("Elgalv, Fe P01 ZE, Zintec")
-    '    alRow.Add(10.6)
-    '    alRow.Add(5)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(8)
-    '    alRow.Add("Aluzink, B500A")
-    '    alRow.Add(10.6)
-    '    alRow.Add(5)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(9)
-    '    alRow.Add("ALU, AlMg3, Søvandsbest.m.PVC")
-    '    alRow.Add(28.1)
-    '    alRow.Add(3)
-    '    alRow.Add(1.75)
-    '    alRow.Add(2)
-    '    alRow.Add(3)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(7)
-    '    alRow.Add(10)
-    '    alRow.Add("ALU, AlMg1,m.PVC")
-    '    alRow.Add(26.3)
-    '    alRow.Add(3)
-    '    alRow.Add(1.75)
-    '    alRow.Add(2)
-    '    alRow.Add(3)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(11)
-    '    alRow.Add(11)
-    '    alRow.Add("Rustfri AISI 304, 1.4301 m.PVC")
-    '    alRow.Add(23.6)
-    '    alRow.Add(2)
-    '    alRow.Add(1.75)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(12)
-    '    alRow.Add(12)
-    '    alRow.Add("Rustfri AISI 304, 1.4301 Slebet")
-    '    alRow.Add(26.8)
-    '    alRow.Add(2)
-    '    alRow.Add(1)
-    '    alRow.Add(2)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(13)
-    '    alRow.Add(13)
-    '    alRow.Add("Rustfri AISI 316L, 1.4404 m.PVC")
-    '    alRow.Add(33.1)
-    '    alRow.Add(2)
-    '    alRow.Add(1.75)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(14)
-    '    alRow.Add(14)
-    '    alRow.Add("Kobber")
-    '    alRow.Add(93.8)
-    '    alRow.Add(4)
-    '    alRow.Add(1.75)
-    '    alRow.Add(1)
-    '    alRow.Add(8)
-    '    alReturn.Add(alRow)
-    '    alRow = New ArrayList(15)
-    '    alRow.Add(15)
-    '    alRow.Add("Varmgalvaniseret")
-    '    alRow.Add(10)
-    '    alRow.Add(5)
-    '    alRow.Add(1)
-    '    alRow.Add(1)
-    '    alRow.Add(9)
-    '    alReturn.Add(alRow)
-
-    '    GetMaterials = alReturn
-    'End Function
     Public Function GetDifficultclass(ByVal Klasse As Integer, ByVal Thickness As Double) As Double
         Dim Difficult As Integer
 
@@ -1674,7 +1514,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(2)
         alRow.Add(3)
         alRow.Add("Næstved Powder coating")
-        alRow.Add("Næstved Pulverlakering")
         alReturn.Add(alRow)
         GetSuppliers = alReturn
         alRow = New ArrayList(2)
@@ -1685,7 +1524,6 @@ Public Class DatabaseIO
         alRow = New ArrayList(2)
         alRow.Add(5)
         alRow.Add("Greve Powder Coating")
-        alRow.Add("Greve Pulverlakering")
         alReturn.Add(alRow)
         GetSuppliers = alReturn
         alRow = New ArrayList(2)
@@ -2439,7 +2277,6 @@ Public Class DatabaseIO
     Public Function GetSurfacetreatment(lang As String) As ArrayList
         Dim alReturn As ArrayList
         Dim alRow As ArrayList
-
 
         alReturn = New ArrayList(6)
         alRow = New ArrayList(2)
