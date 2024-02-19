@@ -4087,9 +4087,6 @@ Public Class metal_tilbud
     'End Sub
 
     Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
-
-
-    Private Sub rb_C_laser_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles rb_C_laser.CheckedChanged
         CalculateOrdrestr()
     End Sub
 

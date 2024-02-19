@@ -3838,16 +3838,19 @@ Namespace MetalTilbudDataSetTableAdapters
                 Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
                 If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
                             <> Global.System.Data.ConnectionState.Open) Then
-                    Me.Adapter.UpdateCommand.Connection.Open
+                    Me.Adapter.UpdateCommand.Connection.Open()
                 End If
                 If (Original_Name Is Nothing) Then
                     Throw New Global.System.ArgumentNullException("Original_Name")
                 Else
                 End If
-                Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+                ' Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
+                If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open) _
         <> Global.System.Data.ConnectionState.Open) Then
-                Me.Adapter.UpdateCommand.Connection.Open
+                    Me.Adapter.UpdateCommand.Connection.Open()
+                End If
             End If
+        End Function
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0"),
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),
@@ -3855,25 +3858,10 @@ Namespace MetalTilbudDataSetTableAdapters
         Public Overridable Overloads Function Update(ByVal Name As String, ByVal Time As Decimal, ByVal Original_ID As Decimal, ByVal Original_Name As String, ByVal Original_Time As Decimal) As Integer
             Return Me.Update(Name, Time, Original_ID, Original_Name, Original_Time, Original_ID)
         End Function
-    End Class
-    Dim returnValue As Integer = Me.Adapter.UpdateCommand.ExecuteNonQuery
-    Return returnValue
-    Finally
-    If (previousConnectionState = Global.System.Data.ConnectionState.Closed) Then
-    <Global.System.ComponentModel.DesignerCategoryAttribute("code"),
-     Global.System.ComponentModel.ToolboxItem(True),
-     Global.System.ComponentModel.DataObjectAttribute(True),
-     Global.System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" &
-        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"),
-     Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")>  _
-        Me.Adapter.UpdateCommand.Connection.Close
-        End If
-    End Try
-    End Function
 
-    Return Me.Update(Name, Time, Original_ID, Original_Name, Original_Time, Original_ID)
-    End Function
     End Class
+
+
 
     '''<summary>
     '''Represents the connection and commands used to retrieve and save data.
