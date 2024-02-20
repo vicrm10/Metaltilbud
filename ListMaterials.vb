@@ -19,7 +19,21 @@ Public Class ListMaterials
 
 
         objDatabaseIO = New DatabaseIO
-        palMaterials = objDatabaseIO.getmaterials()
+        palMaterials = objDatabaseIO.GetMaterials()
+    End Sub
+
+    Public Sub RefreshData(lang As String)
+        Dim objDatabaseIO As DatabaseIO
+        Dim materialStrings As ArrayList
+        Dim i As Integer
+
+        objDatabaseIO = New DatabaseIO
+        materialStrings = objDatabaseIO.GetMaterialsStrings(lang)
+        For i = 0 To palMaterials.Count - 1
+            palMaterials(i)(1) = materialStrings(i)
+
+        Next
+
     End Sub
 
     Public Sub List()

@@ -1,4 +1,4 @@
-﻿Public Class ListSuppliersVåd
+﻿Public Class ListSuppliersVĺd
     Private palSuppliers As ArrayList
     Private WithEvents pcmbTarget As ComboBox
 
@@ -12,7 +12,7 @@
 
         objDatabaseIO = New DatabaseIO
 
-        palSuppliers = objDatabaseIO.GetSuppliersvåd()
+        palSuppliers = objDatabaseIO.GetSuppliersvĺd()
     End Sub
 
     Public Sub List()
