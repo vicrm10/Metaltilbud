@@ -12,6 +12,8 @@ variables:
 
 jobs:
 - job: Build
+  strategy:
+    parallel: 1  # Establece el número de trabajos paralelos en 1
   steps:
   - task: NuGetToolInstaller@1
 
@@ -45,4 +47,3 @@ jobs:
       AdminUserName: 'jvr@aks-poland.pl'
       AdminPassword: '$(Fer10pepe1)'
       TargetPath: 'C:\Metaltilbud'
-
