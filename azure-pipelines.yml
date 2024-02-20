@@ -10,29 +10,37 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-steps:
-- task: NuGetToolInstaller@1
+jobs:
+- job: Build
+  steps:
+  - task: NuGetToolInstaller@1
 
-- task: NuGetCommand@2
-  inputs:
-    restoreSolution: '$(solution)'
+  - task: NuGetCommand@2
+    inputs:
+      restoreSolution: '$(solution)'
 
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+  - task: VSBuild@1
+    inputs:
+      solution: '$(solution)'
+      platform: '$(buildPlatform)'
+      configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+- job: Test
+  dependsOn: Build
+  steps:
+  - task: VSTest@2
+    inputs:
+      platform: '$(buildPlatform)'
+      configuration: '$(buildConfiguration)'
 
 # Windows Machine File Copy
-- task: WindowsMachineFileCopy@2
-  inputs:
-    SourcePath: '$(System.DefaultWorkingDirectory)/Metaltilbud'
-    MachineNames: '172.16.27.103'
-    AdminUserName: 'jvr@aks-poland.pl'
-    AdminPassword: '$(Fer10pepe1)'
-    TargetPath: 'C:\Metaltilbud'
+- job: CopyFiles
+  dependsOn: Test
+  steps:
+  - task: WindowsMachineFileCopy@2
+    inputs:
+      SourcePath: '$(System.DefaultWorkingDirectory)/Metaltilbud'
+      MachineNames: '172.16.27.103'
+      AdminUserName: 'jvr@aks-poland.pl'
+      AdminPassword: '$(Fer10pepe1)'
+      TargetPath: 'C:\Metaltilbud'
