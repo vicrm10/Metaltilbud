@@ -9,8 +9,8 @@
 # Build and run tests for .NET Desktop or Windows classic desktop solutions.
 # Add steps that publish symbols, save build artifacts, and more:
 
--trigger:
--main-(not-USE)-
+ trigger:
+- main-(not-USE)-
 
 pool:
   vmImage: 'windows-latest'
