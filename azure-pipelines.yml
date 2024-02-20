@@ -33,7 +33,6 @@ jobs:
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
 
-# Windows Machine File Copy
 - job: CopyFiles
   dependsOn: Test
   steps:
