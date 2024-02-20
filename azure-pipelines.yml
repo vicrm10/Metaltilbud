@@ -11,7 +11,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net.
 
 trigger:
-main
+-main-(Not-USE)-
 
 pool:
   vmImage: 'windows-latest'
