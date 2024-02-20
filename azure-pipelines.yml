@@ -10,7 +10,7 @@
 # Add steps that publish symbols, save build artifacts, and more:
 
 trigger:
-main
+-main
 
 pool:
   vmImage: 'windows-latest'
