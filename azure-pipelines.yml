@@ -15,6 +15,6 @@ jobs:
     inputs:
       SourcePath: '$(System.DefaultWorkingDirectory)'
       MachineNames: '172.16.27.103'
-      AdminUserName: 'jvr@aks-poland.pl'
+      AdminUserName: 'aks\jvr'
       AdminPassword: '$(Fer10pepe1)'
       TargetPath: 'C:\Metaltilbud'
