@@ -5,44 +5,16 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
   outputPath: '$(System.DefaultWorkingDirectory)/output'
 
 jobs:
-- job: Build
-  strategy:
-    parallel: 1  # Establece el número de trabajos paralelos en 1
-  steps:
-  - task: NuGetToolInstaller@1
-
-  - task: NuGetCommand@2
-    inputs:
-      restoreSolution: '$(solution)'
-
-  - task: VSBuild@1
-    inputs:
-      solution: '$(solution)'
-      platform: '$(buildPlatform)'
-      configuration: '$(buildConfiguration)'
-      outputVariable: 'BuildOutputPath'
-      msbuildArgs: '/p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=true /p:publishUrl="$(outputPath)"'
-
-- job: Test
-  dependsOn: Build
-  steps:
-  - task: VSTest@2
-    inputs:
-      platform: '$(buildPlatform)'
-      configuration: '$(buildConfiguration)'
-
 - job: CopyFiles
-  dependsOn: Test
   steps:
+  - checkout: self
+
   - task: WindowsMachineFileCopy@2
     inputs:
-      SourcePath: '$(outputPath)'
+      SourcePath: '$(System.DefaultWorkingDirectory)'
       MachineNames: '172.16.27.103'
       AdminUserName: 'jvr@aks-poland.pl'
       AdminPassword: '$(Fer10pepe1)'
