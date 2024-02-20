@@ -1,4 +1,3 @@
-# .NET Desktop
 trigger:
 - main-(Not-USE)
 
@@ -9,6 +8,7 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  outputPath: '$(System.DefaultWorkingDirectory)/output'
 
 jobs:
 - job: Build
@@ -24,6 +24,8 @@ jobs:
       solution: '$(solution)'
       platform: '$(buildPlatform)'
       configuration: '$(buildConfiguration)'
+      outputVariable: 'BuildOutputPath'
+      msbuildArgs: '/p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:DeleteExistingFiles=true /p:publishUrl="$(outputPath)"'
 
 - job: Test
   dependsOn: Build
@@ -38,8 +40,9 @@ jobs:
   steps:
   - task: WindowsMachineFileCopy@2
     inputs:
-      SourcePath: '$(System.DefaultWorkingDirectory)/Metaltilbud'
+      SourcePath: '$(outputPath)'
       MachineNames: '172.16.27.103'
       AdminUserName: 'jvr@aks-poland.pl'
       AdminPassword: '$(Fer10pepe1)'
       TargetPath: 'C:\Metaltilbud'
+
