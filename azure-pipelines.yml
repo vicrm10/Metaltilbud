@@ -1,21 +1,20 @@
 trigger:
 - main-(Not-USE)
 
-pool:
-  vmImage: 'windows-latest'
-
 variables:
   outputPath: '$(System.DefaultWorkingDirectory)/output'
 
 jobs:
 - job: CopyFiles
+  pool:
+    vmImage: 'windows-latest'
   steps:
   - checkout: self
 
   - task: WindowsMachineFileCopy@2
     inputs:
       SourcePath: '$(System.DefaultWorkingDirectory)'
-      MachineNames: '172.16.27.103'
+      MachineNames: 'POL-AX'
       AdminUserName: 'jvr@aks-poland.pl'
       AdminPassword: '$(Fer10pepe1)'
       TargetPath: 'C:\Metaltilbud'
